@@ -27,8 +27,8 @@ body { font-family: -apple-system, sans-serif; background: var(--bg); color: var
     right: 25px;
     background: var(--accent);
     color: white;
-    width: 40px;  /* Фіксована ширина */
-    height: 40px; /* Фіксована висота */
+    width: 20px;  /* Фіксована ширина */
+    height: 20px; /* Фіксована висота */
     border-radius: 50%; /* Робимо коло */
     display: flex;
     align-items: center;
