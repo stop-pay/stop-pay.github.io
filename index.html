@@ -3,70 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StopPay 🛑 Скасувати підписки швидко</title>
-    <meta name="description" content="Прямі посилання на сторінки скасування підписок: YouTube, Netflix, Apple, Google Play та інші.">
+    <title>StopPay 🛑</title>
     <style>
-        :root { --primary: #ff4757; --bg: #f8f9fa; --card: #ffffff; --text: #2d3436; }
-        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        :root {
+            --bg: #f8f9fa; --card: #ffffff; --text: #2d3436; --border: #eee;
+        }
+        [data-theme="dark"] {
+            --bg: #1a1a1a; --card: #2d2d2d; --text: #f8f9fa; --border: #444;
+        }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); transition: 0.3s; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        
+        nav { width: 100%; max-width: 600px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .btn-tool { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 10px; cursor: pointer; font-size: 14px; }
+
         header { text-align: center; margin-bottom: 30px; }
-        h1 { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; width: 100%; max-width: 600px; }
-        .card { background: var(--card); padding: 20px; border-radius: 16px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-decoration: none; color: inherit; transition: 0.2s; font-weight: 600; border: 1px solid #eee; }
-        .card:active { transform: scale(0.96); background: #f1f2f6; }
-        .card img { width: 50px; height: 50px; object-fit: contain; margin-bottom: 12px; }
-        .donate-section { margin-top: 40px; padding: 25px; background: #fff; border-radius: 20px; text-align: center; max-width: 500px; border: 2px dashed #2ed573; }
-        .btn-donate { display: inline-block; margin-top: 15px; padding: 12px 25px; background: #2ed573; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.1rem; }
+        h1 { font-size: 2rem; color: #ff4757; margin: 0; }
+        
+        .section-title { width: 100%; max-width: 600px; margin: 20px 0 10px; font-size: 14px; text-transform: uppercase; opacity: 0.6; letter-spacing: 1px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; width: 100%; max-width: 600px; }
+        
+        .card { background: var(--card); padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-decoration: none; color: inherit; transition: 0.2s; font-weight: 600; border: 1px solid var(--border); }
+        .card:active { transform: scale(0.95); }
+        .card img { width: 40px; height: 40px; object-fit: contain; margin-bottom: 10px; }
+
+        .donate-section { margin-top: 40px; padding: 20px; background: var(--card); border-radius: 20px; text-align: center; max-width: 500px; border: 2px dashed #2ed573; }
+        .btn-donate { display: inline-block; margin-top: 15px; padding: 10px 25px; background: #2ed573; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; }
+        
+        .hidden { display: none; }
     </style>
 </head>
-<body>
+<body data-theme="light">
+
+<nav>
+    <button class="btn-tool" onclick="toggleLang()" id="langBtn">EN</button>
+    <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+</nav>
 
 <header>
-    <h1>StopPay 🛑</h1>
-    <p>Миттєвий перехід до керування підписками</p>
+    <h1 id="mainTitle">StopPay 🛑</h1>
+    <p id="mainDesc">Миттєвий перехід до керування підписками</p>
 </header>
 
-<div class="grid">
-    <a href="https://play.google.com/store/account/subscriptions" class="card" target="_blank">
+<div class="section-title" id="globalTitle">Global Services</div>
+<div class="grid" id="globalGrid">
+    <a href="https://play.google.com/store/account/subscriptions" class="card">
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="Play Store">
         <div>Google Play</div>
     </a>
-
-    <a href="https://appleid.apple.com/account/manage" class="card" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
-        <div>Apple ID</div>
-    </a>
-
-    <a href="https://www.youtube.com/paid_memberships" class="card" target="_blank">
+    <a href="https://www.youtube.com/paid_memberships" class="card">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube">
         <div>YouTube</div>
     </a>
-
-    <a href="https://www.netflix.com/cancelplan" class="card" target="_blank">
+    <a href="https://www.netflix.com/cancelplan" class="card">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
         <div>Netflix</div>
     </a>
+</div>
 
-    <a href="https://www.spotify.com/account/overview/" class="card" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
-        <div>Spotify</div>
-    </a>
-
-    <a href="https://zoom.us/billing/plan" class="card" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg" alt="Zoom">
-        <div>Zoom</div>
-    </a>
+<div id="localSection" class="hidden">
+    <div class="section-title">Ukraine Services</div>
+    <div class="grid">
+        <a href="https://megogo.net/uk/cabinet/subscription" class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Megogo_logo.svg" alt="Megogo">
+            <div>Megogo</div>
+        </a>
+        <a href="https://sweet.tv/cabinet/subscriptions" class="card">
+            <img src="https://sweet.tv/images/favicons/favicon-96x96.png" alt="Sweet.tv">
+            <div>Sweet.tv</div>
+        </a>
+    </div>
 </div>
 
 <div class="donate-section">
-    <h3>Зберегли гроші? 💸</h3>
-    <p>Якщо сервіс допоміг вам зупинити зайві списання, ви можете підтримати розробника.</p>
-    <a href="ВАШЕ_ПОСИЛАННЯ_НА_БАНКУ" class="btn-donate">Підтримати проект ☕</a>
+    <h3 id="donateTitle">Зберегли гроші? 💸</h3>
+    <p id="donateDesc">Підтримайте проект, якщо ми допомогли вам зупинити зайві списання.</p>
+    <a href="ВАШЕ_ПОСИЛАННЯ_НА_БАНКУ" class="btn-donate" id="donateBtn">Підтримати ☕</a>
 </div>
 
-<footer style="margin-top: 40px; font-size: 13px; color: #a4b0be; text-align: center;">
-    © 2026 StopPay • Створено для людей<br>
-    <small>Всі логотипи належать їх власникам</small>
-</footer>
+<script>
+    let currentLang = 'UA';
+    
+    // Авто-визначення теми
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        toggleTheme();
+    }
+
+    function toggleTheme() {
+        const body = document.body;
+        const btn = document.getElementById('themeBtn');
+        if (body.getAttribute('data-theme') === 'light') {
+            body.setAttribute('data-theme', 'dark');
+            btn.innerText = '☀️';
+        } else {
+            body.setAttribute('data-theme', 'light');
+            btn.innerText = '🌙';
+        }
+    }
+
+    function toggleLang() {
+        currentLang = currentLang === 'UA' ? 'EN' : 'UA';
+        updateContent();
+    }
+
+    function updateContent() {
+        const t = {
+            UA: {
+                title: "StopPay 🛑",
+                desc: "Миттєвий перехід до керування підписками",
+                global: "Глобальні сервіси",
+                donateT: "Зберегли гроші? 💸",
+                donateD: "Підтримайте проект, якщо ми допомогли вам.",
+                donateB: "Підтримати ☕",
+                langBtn: "EN"
+            },
+            EN: {
+                title: "StopPay 🛑",
+                desc: "Quick access to cancel your subscriptions",
+                global: "Global Services",
+                donateT: "Saved money? 💸",
+                donateD: "Support the project if we helped you stop unwanted charges.",
+                donateB: "Support ☕",
+                langBtn: "UA"
+            }
+        };
+
+        const content = t[currentLang];
+        document.getElementById('mainTitle').innerText = content.title;
+        document.getElementById('mainDesc').innerText = content.desc;
+        document.getElementById('globalTitle').innerText = content.global;
+        document.getElementById('donateTitle').innerText = content.donateT;
+        document.getElementById('donateDesc').innerText = content.donateD;
+        document.getElementById('donateBtn').innerText = content.donateB;
+        document.getElementById('langBtn').innerText = content.langBtn;
+
+        // Показ локальних сервісів тільки для UA
+        document.getElementById('localSection').classList.toggle('hidden', currentLang !== 'UA');
+    }
+
+    // Авто-визначення мови
+    if (!navigator.language.startsWith('uk')) {
+        toggleLang();
+    }
+</script>
 
 </body>
 </html>
