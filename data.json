@@ -64,10 +64,10 @@
       "type": "UA"
     },
     {
-      "id": "sweettv",
-      "name": "Sweet tv",
+      "id": "sweet.tv",
+      "name": "Sweet.tv",
       "url": "https://sweet.tv/cabinet/subscriptions",
-      "img": "icons/sweet tv.png",
+      "img": "icons/Sweet.tv_logo.png",
       "type": "UA"
     }
   ]
