@@ -8,20 +8,33 @@
         :root { --bg: #f8f9fa; --card: #ebebeb; --text: #2d3436; --border: #d1d1d1; }
         [data-theme="dark"] { --bg: #1a1a1a; --card: #3d3d3d; --text: #f8f9fa; --border: #555; }
         body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); transition: 0.3s; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-        nav { width: 100%; max-width: 600px; display: flex; justify-content: space-between; margin-bottom: 20px; }
         
-        /* Стиль для вибору мови (EN -> English) */
-        .lang-wrapper { position: relative; }
-        select { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 10px; border-radius: 10px; outline: none; font-size: 14px; font-weight: bold; cursor: pointer; }
+        nav { width: 100%; max-width: 600px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+
+        /* Стильна кнопка мови */
+        .lang-container { position: relative; display: flex; align-items: center; }
+        .lang-visual { 
+            position: absolute; pointer-events: none; 
+            background: var(--card); border: 1px solid var(--border); 
+            padding: 8px 12px; border-radius: 10px; 
+            font-weight: bold; font-size: 14px; 
+            min-width: 35px; text-align: center;
+        }
+        select { 
+            opacity: 0; height: 38px; width: 62px; cursor: pointer;
+            position: relative; z-index: 2;
+        }
+
+        .btn-tool { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 10px; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; }
         
-        .btn-tool { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 10px; cursor: pointer; }
         header { text-align: center; margin-bottom: 30px; }
         h1 { color: #ff4757; margin: 0; font-size: 2.2rem; }
         .section-title { width: 100%; max-width: 600px; margin: 25px 0 10px; font-size: 13px; text-transform: uppercase; opacity: 0.7; font-weight: bold; letter-spacing: 1px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; width: 100%; max-width: 600px; margin-bottom: 20px; }
-        .card { background: var(--card); padding: 18px; border-radius: 18px; text-align: center; text-decoration: none; color: inherit; font-weight: 600; border: 1px solid var(--border); transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .card { background: var(--card); padding: 18px; border-radius: 18px; text-align: center; text-decoration: none; color: inherit; font-weight: 600; border: 1px solid var(--border); transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; }
         .card:active { transform: scale(0.95); }
         .card img { width: 48px; height: 48px; object-fit: contain; margin-bottom: 12px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
+        
         .donate-section { margin-top: auto; padding: 25px; background: var(--card); border-radius: 20px; text-align: center; max-width: 500px; border: 2px dashed #2ed573; margin-bottom: 20px; }
         .btn-donate { display: inline-block; margin-top: 15px; padding: 12px 30px; background: #2ed573; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; }
     </style>
@@ -29,7 +42,8 @@
 <body data-theme="light">
 
 <nav>
-    <div class="lang-wrapper">
+    <div class="lang-container">
+        <div class="lang-visual" id="langVisual">UA</div>
         <select id="langSelect" onchange="saveAndRender()"></select>
     </div>
     <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
@@ -56,9 +70,9 @@
             const response = await fetch('data.json');
             siteData = await response.json();
             
-            applySavedSettings(); // 1. Читаємо пам'ять
-            initLangList();       // 2. Створюємо список мов
-            renderSite();         // 3. Малюємо сайт
+            applySavedSettings();
+            initLangList();
+            renderSite();
         } catch (e) {
             console.error(e);
             document.getElementById('mainDesc').innerText = "Помилка завантаження даних.";
@@ -66,7 +80,6 @@
     }
 
     function applySavedSettings() {
-        // Тема
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             document.body.setAttribute('data-theme', savedTheme);
@@ -85,23 +98,25 @@
         Object.keys(siteData.languages).forEach(code => {
             const opt = document.createElement('option');
             opt.value = code;
-            opt.innerText = siteData.languages[code].label; // Повна назва в списку
+            opt.innerText = siteData.languages[code].label; 
             select.appendChild(opt);
         });
 
-        // Пріоритет мови: 1. Збережена 2. Браузерна 3. Англійська
-        if (savedLang && siteData.languages[savedLang]) {
-            select.value = savedLang;
-        } else if (siteData.languages[browserLang]) {
-            select.value = browserLang;
-        } else {
-            select.value = 'EN';
-        }
+        let targetLang = 'EN';
+        if (savedLang && siteData.languages[savedLang]) targetLang = savedLang;
+        else if (siteData.languages[browserLang]) targetLang = browserLang;
+        
+        select.value = targetLang;
+        document.getElementById('langVisual').innerText = siteData.languages[targetLang].short || targetLang;
     }
 
     function saveAndRender() {
         const lang = document.getElementById('langSelect').value;
-        localStorage.setItem('lang', lang); // Запам'ятовуємо мову
+        localStorage.setItem('lang', lang);
+        
+        // Оновлюємо візуальну кнопку
+        document.getElementById('langVisual').innerText = siteData.languages[lang].short || lang;
+        
         renderSite();
     }
 
@@ -146,10 +161,9 @@
         const body = document.body;
         const isDark = body.getAttribute('data-theme') === 'dark';
         const newTheme = isDark ? 'light' : 'dark';
-        
         body.setAttribute('data-theme', newTheme);
         document.getElementById('themeBtn').innerText = newTheme === 'dark' ? '☀️' : '🌙';
-        localStorage.setItem('theme', newTheme); // Запам'ятовуємо тему
+        localStorage.setItem('theme', newTheme);
     }
 
     loadData();
