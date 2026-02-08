@@ -5,37 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StopPay 🛑</title>
     <style>
-        :root { --bg: #f8f9fa; --card: #ebebeb; --text: #2d3436; --border: #d1d1d1; }
-        [data-theme="dark"] { --bg: #1a1a1a; --card: #3d3d3d; --text: #f8f9fa; --border: #555; }
+        :root { --bg: #f8f9fa; --card: #ebebeb; --text: #2d3436; --border: #d1d1d1; --hover: #dcdde1; }
+        [data-theme="dark"] { --bg: #1a1a1a; --card: #3d3d3d; --text: #f8f9fa; --border: #555; --hover: #4b4b4b; }
         
         body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); transition: 0.3s; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-        nav { width: 100%; max-width: 600px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-
-        /* Контейнер мови */
-        .lang-container { position: relative; display: flex; align-items: center; }
-        .lang-visual { 
-            position: absolute; pointer-events: none; 
-            background: var(--card); border: 1px solid var(--border); 
-            padding: 8px 12px; border-radius: 10px; 
-            font-weight: bold; font-size: 14px; 
-            display: flex; align-items: center; gap: 8px;
-            white-space: nowrap; z-index: 1;
-        }
-        /* Стиль прапорця в кнопці */
-        .flag-img { width: 20px; height: 15px; object-fit: cover; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
         
-        select { 
-            opacity: 0; height: 40px; width: 85px; cursor: pointer;
-            position: relative; z-index: 2;
-        }
+        nav { width: 100%; max-width: 600px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative; z-index: 10; }
 
-        .btn-tool { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 10px; cursor: pointer; font-size: 18px; }
+        /* --- КАСТОМНЕ МЕНЮ --- */
+        .custom-select { position: relative; width: auto; }
+        
+        /* Кнопка вибору мови */
+        .select-btn {
+            background: var(--card); border: 1px solid var(--border);
+            color: var(--text); padding: 8px 12px; border-radius: 12px;
+            cursor: pointer; display: flex; align-items: center; gap: 8px;
+            font-weight: bold; font-size: 14px; min-width: 80px; justify-content: space-between;
+        }
+        .select-btn:hover { background: var(--hover); }
+
+        /* Випадаючий список */
+        .select-dropdown {
+            position: absolute; top: 110%; left: 0;
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 12px; padding: 5px; width: 160px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            display: none; /* Приховано за замовчуванням */
+            flex-direction: column; gap: 2px;
+            z-index: 100;
+        }
+        /* Клас для показу меню */
+        .select-dropdown.active { display: flex; animation: fadeIn 0.2s ease; }
+
+        /* Елемент списку */
+        .select-item {
+            padding: 10px; border-radius: 8px; cursor: pointer;
+            display: flex; align-items: center; gap: 10px;
+            transition: 0.2s; font-size: 14px;
+        }
+        .select-item:hover { background: var(--hover); }
+        
+        /* Прапорці */
+        .flag-icon { width: 22px; height: 16px; object-fit: cover; border-radius: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+        
+        /* Стрілочка */
+        .arrow { font-size: 10px; opacity: 0.6; transition: 0.2s; }
+        .active .arrow { transform: rotate(180deg); }
+
+        /* Анімація появи */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* --- РЕШТА СТИЛІВ --- */
+        .btn-tool { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 12px; cursor: pointer; font-size: 18px; }
         
         header { text-align: center; margin-bottom: 30px; }
         h1 { color: #ff4757; margin: 0; font-size: 2.2rem; }
         .section-title { width: 100%; max-width: 600px; margin: 25px 0 10px; font-size: 13px; text-transform: uppercase; opacity: 0.7; font-weight: bold; letter-spacing: 1px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; width: 100%; max-width: 600px; margin-bottom: 20px; }
-        .card { background: var(--card); padding: 18px; border-radius: 18px; text-align: center; text-decoration: none; color: inherit; font-weight: 600; border: 1px solid var(--border); transition: 0.2s; display: flex; flex-direction: column; align-items: center; }
+        .card { background: var(--card); padding: 18px; border-radius: 18px; text-align: center; text-decoration: none; color: inherit; font-weight: 600; border: 1px solid var(--border); transition: 0.2s; display: flex; flex-direction: column; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .card:active { transform: scale(0.95); }
         .card img { width: 48px; height: 48px; object-fit: contain; margin-bottom: 12px; }
         
@@ -46,13 +73,18 @@
 <body data-theme="light">
 
 <nav>
-    <div class="lang-container">
-        <div class="lang-visual" id="langVisual">
-            <img src="flags/UA.png" class="flag-img" id="currentFlag">
-            <span id="currentLangCode">UA</span>
+    <div class="custom-select" id="langSelector">
+        <div class="select-btn" onclick="toggleMenu()">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="" id="currentFlag" class="flag-icon">
+                <span id="currentShort">UA</span>
+            </div>
+            <span class="arrow">▼</span>
         </div>
-        <select id="langSelect" onchange="saveAndRender()"></select>
+        <div class="select-dropdown" id="dropdownList">
+            </div>
     </div>
+
     <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
 </nav>
 
@@ -77,10 +109,68 @@
             const response = await fetch('data.json');
             siteData = await response.json();
             applySavedSettings();
-            initLangList();
+            initCustomMenu(); // Будуємо меню
             renderSite();
         } catch (e) { console.error(e); }
     }
+
+    // --- ЛОГІКА КАСТОМНОГО МЕНЮ ---
+    
+    function initCustomMenu() {
+        const list = document.getElementById('dropdownList');
+        const savedLang = localStorage.getItem('lang') || 'EN';
+        
+        // Очищаємо список перед заповненням
+        list.innerHTML = '';
+
+        Object.keys(siteData.languages).forEach(code => {
+            const langData = siteData.languages[code];
+            
+            // Створюємо елемент списку
+            const item = document.createElement('div');
+            item.className = 'select-item';
+            item.innerHTML = `
+                <img src="flags/${code}.png" class="flag-icon">
+                <span>${langData.label}</span>
+            `;
+            // Додаємо дію при кліку
+            item.onclick = () => selectLanguage(code);
+            
+            list.appendChild(item);
+        });
+
+        updateVisuals(savedLang);
+    }
+
+    function toggleMenu() {
+        document.getElementById('dropdownList').classList.toggle('active');
+        document.querySelector('.arrow').style.transform = 
+            document.getElementById('dropdownList').classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+
+    function selectLanguage(code) {
+        localStorage.setItem('lang', code);
+        updateVisuals(code);
+        renderSite();
+        toggleMenu(); // Закриваємо меню
+    }
+
+    function updateVisuals(code) {
+        // Оновлюємо верхню кнопку
+        document.getElementById('currentFlag').src = `flags/${code}.png`;
+        document.getElementById('currentShort').innerText = siteData.languages[code].short || code;
+    }
+
+    // Закриваємо меню, якщо клікнули десь збоку
+    document.addEventListener('click', function(e) {
+        const selector = document.getElementById('langSelector');
+        if (!selector.contains(e.target)) {
+            document.getElementById('dropdownList').classList.remove('active');
+            document.querySelector('.arrow').style.transform = 'rotate(0deg)';
+        }
+    });
+
+    // --- КІНЕЦЬ ЛОГІКИ МЕНЮ ---
 
     function applySavedSettings() {
         const savedTheme = localStorage.getItem('theme');
@@ -93,38 +183,10 @@
         }
     }
 
-    function initLangList() {
-        const select = document.getElementById('langSelect');
-        const savedLang = localStorage.getItem('lang');
-        const browserLang = navigator.language.substring(0, 2).toUpperCase();
-        
-        Object.keys(siteData.languages).forEach(code => {
-            const opt = document.createElement('option');
-            opt.value = code;
-            opt.innerText = siteData.languages[code].label; // В списку - повна назва
-            select.appendChild(opt);
-        });
-
-        let targetLang = siteData.languages[savedLang] ? savedLang : (siteData.languages[browserLang] ? browserLang : 'EN');
-        select.value = targetLang;
-        updateLangVisual(targetLang);
-    }
-
-    function updateLangVisual(code) {
-        document.getElementById('currentFlag').src = `flags/${code}.png`;
-        document.getElementById('currentLangCode').innerText = siteData.languages[code].short || code;
-    }
-
-    function saveAndRender() {
-        const lang = document.getElementById('langSelect').value;
-        localStorage.setItem('lang', lang);
-        updateLangVisual(lang);
-        renderSite();
-    }
-
     function renderSite() {
-        const lang = document.getElementById('langSelect').value;
-        const info = siteData.languages[lang];
+        const lang = localStorage.getItem('lang') || 'EN';
+        // Перевірка, чи існує така мова в JSON (на випадок помилки)
+        const info = siteData.languages[lang] ? siteData.languages[lang] : siteData.languages['EN'];
         
         document.getElementById('mainTitle').innerText = info.title;
         document.getElementById('mainDesc').innerText = info.desc;
@@ -171,4 +233,4 @@
     loadData();
 </script>
 </body>
-            </html>
+</html>
