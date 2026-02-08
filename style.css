@@ -20,7 +20,7 @@ body { font-family: -apple-system, sans-serif; background: var(--bg); color: var
 .card img { width: 40px; height: 40px; object-fit: contain; margin-bottom: 8px; }
 .card:hover { border-color: var(--accent); transform: translateY(-2px); }
 
-/* Компактна кн опка + */
+/* Компактна кнопка + */
 .fab-btn {
     position: fixed;
     bottom: 25px;
