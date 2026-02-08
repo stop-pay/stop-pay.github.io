@@ -9,12 +9,17 @@
         [data-theme="dark"] { --bg: #1a1a1a; --card: #3d3d3d; --text: #f8f9fa; --border: #555; }
         body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); transition: 0.3s; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
         nav { width: 100%; max-width: 600px; display: flex; justify-content: space-between; margin-bottom: 20px; }
-        select, .btn-tool { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 10px; outline: none; font-size: 14px; }
+        
+        /* Стиль для вибору мови (EN -> English) */
+        .lang-wrapper { position: relative; }
+        select { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 10px; border-radius: 10px; outline: none; font-size: 14px; font-weight: bold; cursor: pointer; }
+        
+        .btn-tool { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 10px; cursor: pointer; }
         header { text-align: center; margin-bottom: 30px; }
         h1 { color: #ff4757; margin: 0; font-size: 2.2rem; }
         .section-title { width: 100%; max-width: 600px; margin: 25px 0 10px; font-size: 13px; text-transform: uppercase; opacity: 0.7; font-weight: bold; letter-spacing: 1px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; width: 100%; max-width: 600px; margin-bottom: 20px; }
-        .card { background: var(--card); padding: 18px; border-radius: 18px; text-align: center; text-decoration: none; color: inherit; font-weight: 600; border: 1px solid var(--border); transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .card { background: var(--card); padding: 18px; border-radius: 18px; text-align: center; text-decoration: none; color: inherit; font-weight: 600; border: 1px solid var(--border); transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; justify-content: center; }
         .card:active { transform: scale(0.95); }
         .card img { width: 48px; height: 48px; object-fit: contain; margin-bottom: 12px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
         .donate-section { margin-top: auto; padding: 25px; background: var(--card); border-radius: 20px; text-align: center; max-width: 500px; border: 2px dashed #2ed573; margin-bottom: 20px; }
@@ -24,13 +29,15 @@
 <body data-theme="light">
 
 <nav>
-    <select id="langSelect" onchange="renderSite()"></select>
+    <div class="lang-wrapper">
+        <select id="langSelect" onchange="saveAndRender()"></select>
+    </div>
     <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
 </nav>
 
 <header>
     <h1 id="mainTitle">StopPay 🛑</h1>
-    <p id="mainDesc">Завантаження...</p>
+    <p id="mainDesc">...</p>
 </header>
 
 <div id="siteContent" style="width: 100%; display: flex; flex-direction: column; align-items: center;"></div>
@@ -38,49 +45,64 @@
 <div class="donate-section">
     <h3 id="donateTitle">...</h3>
     <p id="donateDesc">...</p>
-    <a href="https://send.monobank.ua/ваша_банка" class="btn-donate" id="donateBtn" target="_blank">...</a>
+    <a href="#" class="btn-donate" id="donateBtn" target="_blank">...</a>
 </div>
 
 <script>
     let siteData = null;
-
-    function applySystemTheme() {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.setAttribute('data-theme', 'dark');
-            document.getElementById('themeBtn').innerText = '☀️';
-        }
-    }
 
     async function loadData() {
         try {
             const response = await fetch('data.json');
             siteData = await response.json();
             
-            applySystemTheme(); // Застосувати тему
-            initLang();         // Налаштувати список мов
-            renderSite();       // Намалювати контент
+            applySavedSettings(); // 1. Читаємо пам'ять
+            initLangList();       // 2. Створюємо список мов
+            renderSite();         // 3. Малюємо сайт
         } catch (e) {
-            console.error("Помилка завантаження даних:", e);
-            document.getElementById('mainDesc').innerText = "Помилка завантаження. Перевірте файл data.json";
+            console.error(e);
+            document.getElementById('mainDesc').innerText = "Помилка завантаження даних.";
         }
     }
 
-    function initLang() {
+    function applySavedSettings() {
+        // Тема
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.body.setAttribute('data-theme', savedTheme);
+            document.getElementById('themeBtn').innerText = savedTheme === 'dark' ? '☀️' : '🌙';
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.setAttribute('data-theme', 'dark');
+            document.getElementById('themeBtn').innerText = '☀️';
+        }
+    }
+
+    function initLangList() {
         const select = document.getElementById('langSelect');
-        const userLang = navigator.language.substring(0, 2).toUpperCase();
+        const savedLang = localStorage.getItem('lang');
+        const browserLang = navigator.language.substring(0, 2).toUpperCase();
         
-        Object.keys(siteData.languages).forEach(langCode => {
+        Object.keys(siteData.languages).forEach(code => {
             const opt = document.createElement('option');
-            opt.value = langCode;
-            opt.innerText = siteData.languages[langCode].label || langCode;
-            if (langCode === userLang) opt.selected = true;
+            opt.value = code;
+            opt.innerText = siteData.languages[code].label; // Повна назва в списку
             select.appendChild(opt);
         });
 
-        // Якщо мова браузера не підтримується, ставимо English за замовчуванням
-        if (!siteData.languages[userLang]) {
+        // Пріоритет мови: 1. Збережена 2. Браузерна 3. Англійська
+        if (savedLang && siteData.languages[savedLang]) {
+            select.value = savedLang;
+        } else if (siteData.languages[browserLang]) {
+            select.value = browserLang;
+        } else {
             select.value = 'EN';
         }
+    }
+
+    function saveAndRender() {
+        const lang = document.getElementById('langSelect').value;
+        localStorage.setItem('lang', lang); // Запам'ятовуємо мову
+        renderSite();
     }
 
     function renderSite() {
@@ -110,7 +132,7 @@
                 services.forEach(s => {
                     grid.innerHTML += `
                         <a href="${s.url}" class="card" target="_blank">
-                            <img src="${s.img}" alt="${s.name}">
+                            <img src="${s.img}" alt="${s.name}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/1055/1055183.png'">
                             <div>${s.name}</div>
                         </a>
                     `;
@@ -123,11 +145,14 @@
     function toggleTheme() {
         const body = document.body;
         const isDark = body.getAttribute('data-theme') === 'dark';
-        body.setAttribute('data-theme', isDark ? 'light' : 'dark');
-        document.getElementById('themeBtn').innerText = isDark ? '🌙' : '☀️';
+        const newTheme = isDark ? 'light' : 'dark';
+        
+        body.setAttribute('data-theme', newTheme);
+        document.getElementById('themeBtn').innerText = newTheme === 'dark' ? '☀️' : '🌙';
+        localStorage.setItem('theme', newTheme); // Запам'ятовуємо тему
     }
 
     loadData();
 </script>
 </body>
-  </html>
+</html>
