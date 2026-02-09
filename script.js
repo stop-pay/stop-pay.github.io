@@ -201,4 +201,30 @@ document.addEventListener('click', (e) => {
     }
 });
 
+function sendToAi() {
+    const input = document.getElementById('aiServiceInput');
+    const serviceName = input.value.trim();
+    
+    if (!serviceName) {
+        input.style.borderColor = "#ff4757"; // Підсвітка, якщо порожньо
+        return;
+    }
+
+    // ТУТ ВКАЖИ СВІЙ ЛОГІН ТА НАЗВУ РЕПОЗИТОРІЮ
+    const GITHUB_USERNAME = "ТВІЙ_ЛОГІН"; 
+    const REPO_NAME = "НАЗВА_РЕПО";
+
+    const title = encodeURIComponent("Add Service: " + serviceName);
+    const body = encodeURIComponent("Please add " + serviceName + " to the database. AI logic will handle this.");
+    
+    const issueUrl = `https://github.com/${GITHUB_USERNAME}/${REPO_NAME}/issues/new?title=${title}&body=${body}`;
+    
+    // Відкриваємо в новій вкладці
+    window.open(issueUrl, '_blank');
+    
+    // Очищуємо та закриваємо
+    input.value = "";
+    toggleModal();
+}
+
 loadData();
