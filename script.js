@@ -9,15 +9,34 @@ const BRIDGE_URL = "https://script.google.com/macros/s/AKfycbz6Eo2IAi-Vu7urkrFNN
 
 async function syncGlobalCounter(amountUsd = 0) {
     if (!BRIDGE_URL) return parseFloat(localStorage.getItem('cachedTotalSaved')) || 0;
+    
+    // Якщо amountUsd > 0 — це ЗАПИС, якщо 0 — це ЧИТАННЯ
+    const method = amountUsd > 0 ? 'POST' : 'GET';
+    const options = {
+        method: method,
+        mode: 'no-cors' // Це дозволить відправити дані без помилок безпеки
+    };
+
+    if (amountUsd > 0) {
+        options.body = JSON.stringify({ action: 'counter', amount: amountUsd });
+    }
+
     try {
-        const response = await fetch(BRIDGE_URL, {
-            method: 'POST',
-            body: JSON.stringify({ action: 'counter', amount: amountUsd })
-        });
-        const data = await response.json();
-        localStorage.setItem('cachedTotalSaved', data.new_total);
-        return data.new_total;
+        // Якщо ми просто читаємо (GET)
+        if (method === 'GET') {
+            const response = await fetch(BRIDGE_URL);
+            const data = await response.json();
+            localStorage.setItem('cachedTotalSaved', data.total_saved_usd);
+            return data.total_saved_usd;
+        } 
+        
+        // Якщо ми записуємо (POST)
+        // 'no-cors' не дає прочитати відповідь, тому ми просто шлемо і віримо в успіх
+        fetch(BRIDGE_URL, options); 
+        return totalSavedUsd; 
+
     } catch (e) {
+        console.error("Counter error:", e);
         return parseFloat(localStorage.getItem('cachedTotalSaved')) || 0;
     }
 }
