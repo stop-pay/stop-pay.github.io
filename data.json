@@ -44,7 +44,7 @@
       "id": "google",
       "name": "Google Play",
       "category": "phone",
-      "price": 400,
+      "price": 6.99,
       "url": "https://play.google.com/store/account/subscriptions",
       "img": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg",
       "type": "global"
@@ -53,7 +53,7 @@
       "id": "apple",
       "name": "Apple ID / iCloud",
       "category": "phone",
-      "price": 400,
+      "price": 6.99,
       "url": "https://appleid.apple.com/account/manage",
       "img": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
       "type": "global"
@@ -62,7 +62,7 @@
       "id": "netflix",
       "name": "Netflix",
       "category": "tv",
-      "price": 400,
+      "price": 6.99,
       "url": "https://www.netflix.com/cancelplan",
       "img": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
       "type": "global"
@@ -71,7 +71,7 @@
       "id": "megogo",
       "name": "Megogo",
       "category": "tv",
-      "price": 400,
+      "price": 6.99,
       "url": "https://megogo.net/uk/cabinet/subscription",
       "img": "icons/MEGOGO.png",
       "type": "UA"
@@ -80,7 +80,7 @@
       "id": "sweet.tv",
       "name": "Sweet.tv",
       "category": "tv",
-      "price": 400,
+      "price": 6.99,
       "url": "https://sweet.tv/cabinet/subscriptions",
       "img": "icons/Sweet.tv_logo.png",
       "type": "UA"
