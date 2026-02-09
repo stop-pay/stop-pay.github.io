@@ -205,30 +205,34 @@ document.addEventListener('click', (e) => {
     }
 });
 
-function sendToAi() {
+async function sendToAi() {
     const input = document.getElementById('aiServiceInput');
     const serviceName = input.value.trim();
     
-    if (!serviceName) {
-        input.style.borderColor = "#ff4757"; // Підсвітка, якщо порожньо
-        return;
+    if (!serviceName) return;
+
+    // Візуальний фідбек для кнопки
+    const btn = document.getElementById('modalBtn');
+    const originalText = btn.innerText;
+    btn.innerText = "⌛...";
+    btn.disabled = true;
+
+    try {
+        // Відправляємо запит на твій BRIDGE_URL
+        // Параметр ?service=... активує створення Issue в Google Скрипті
+        await fetch(`${BRIDGE_URL}?service=${encodeURIComponent(serviceName)}`, { mode: 'no-cors' });
+        
+        alert("✅ Запит прийнято! ШІ додасть сервіс протягом 1-2 хвилин. Перевірте список пізніше.");
+        
+        input.value = "";
+        toggleModal(); // Закриваємо модалку
+    } catch (e) {
+        console.error(e);
+        alert("Помилка відправки. Спробуйте пізніше.");
+    } finally {
+        btn.innerText = originalText;
+        btn.disabled = false;
     }
-
-    // ТУТ ВКАЖИ СВІЙ ЛОГІН ТА НАЗВУ РЕПОЗИТОРІЮ
-    const GITHUB_USERNAME = "pandadreamgs"; 
-    const REPO_NAME = "stop_pay";
-
-    const title = encodeURIComponent("Add Service: " + serviceName);
-    const body = encodeURIComponent("Please add " + serviceName + " to the database. AI logic will handle this.");
-    
-    const issueUrl = `https://github.com/${GITHUB_USERNAME}/${REPO_NAME}/issues/new?title=${title}&body=${body}`;
-    
-    // Відкриваємо в новій вкладці
-    window.open(issueUrl, '_blank');
-    
-    // Очищуємо та закриваємо
-    input.value = "";
-    toggleModal();
 }
 
 loadData();
