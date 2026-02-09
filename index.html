@@ -66,15 +66,17 @@
 </div>
 
 <div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
     <div class="modal-content">
         <span class="close-modal" onclick="toggleModal()">✕</span>
         <h3 id="modalTitle">...</h3>
         <p id="modalDesc">...</p>
-        <form action="https://formspree.io/f/ВАШ_КОД" method="POST">
-            <input type="text" name="service" class="modal-input" required>
-            <button type="submit" class="modal-btn" id="modalBtn">Send</button>
-        </form>
+        
+        <input type="text" id="aiServiceInput" class="modal-input" required>
+        
+        <button type="button" class="modal-btn" id="modalBtn" onclick="sendToAi()">Send</button>
     </div>
+</div>
 </div>
 
 <footer style="text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid rgba(128,128,128,0.1);">
