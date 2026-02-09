@@ -3,7 +3,7 @@
     "UA": {
       "label": "Українська",
       "short": "UA",
-      "total_saved": "Всього заощаджено:"
+      "total_saved": "Всього заощаджено:",
       "currency_symbol": "₴",
       "exchange_rate": 43.14,
       "title": "StopPay 🛑",
