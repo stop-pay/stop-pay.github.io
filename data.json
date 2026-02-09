@@ -3,6 +3,7 @@
     "UA": {
       "label": "Українська",
       "short": "UA",
+      "counter_label": "Всього збережено:",
       "currency_symbol": "₴",
       "exchange_rate": 43.14,
       "title": "StopPay 🛑",
@@ -24,6 +25,7 @@
     "EN": {
       "label": "English",
       "short": "EN",
+      "counter_label": "Total saved:",
       "currency_symbol": "$",
       "exchange_rate": 1,
       "title": "StopPay 🛑",
