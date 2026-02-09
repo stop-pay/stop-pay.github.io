@@ -60,12 +60,15 @@ function renderSite() {
     const container = document.getElementById('siteContent');
     if (!container) return;
     container.innerHTML = '';
+    const aiInput = document.getElementById('aiServiceInput');
+    if (aiInput) aiInput.placeholder = info.feedback_placeholder;
 
     const safeSet = (id, val) => { const el = document.getElementById(id); if (el) el.innerText = val; };
     safeSet('footerCreated', info.footer_created);
     safeSet('footerSlogan', info.footer_slogan);
     safeSet('counterLabel', info.total_saved);
     //safeSet('mainTitle', info.title);
+    
     safeSet('mainDesc', info.desc);
     safeSet('donateTitle', info.donate_t);
     safeSet('donateDesc', info.donate_d);
@@ -73,6 +76,7 @@ function renderSite() {
     safeSet('modalTitle', info.feedback_title);
     safeSet('modalDesc', info.feedback_desc);
     safeSet('modalBtn', info.feedback_btn);
+    
     if (document.getElementById('searchInput')) document.getElementById('searchInput').placeholder = info.search_placeholder;
     if (document.getElementById('seoContent')) document.getElementById('seoContent').innerHTML = info.seo_text;
 
