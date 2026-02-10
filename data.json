@@ -104,15 +104,6 @@
       "url": "https://sweet.tv/cabinet/subscriptions",
       "img": "icons/Sweet.tv_logo.png",
       "type": "UA"
-    },
-    {
-      "id": "youtube-premium",
-      "name": "YouTube Premium",
-      "category": "streaming-video",
-      "price": 13.99,
-      "url": "https://www.youtube.com/paid_memberships",
-      "img": "https://www.gstatic.com/youtube/img/promos/growth/94f79709680b1a2f0252e5ca59c337b85e5374f020649aa83e5864986188b98c/youtube_premium_logo.png",
-      "type": "global"
     }
   ]
 }
