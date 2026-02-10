@@ -3,7 +3,7 @@ let totalSavedUsd = 0;
 
 // Місток для майього Python + AI та лічильника
 // Поки що залиш порожнім або встав посилання на Apps Script
-const BRIDGE_URL = "https://script.google.com/macros/s/AKfycbxncDx1chSAMgYL43MwPikJelJ8R3Ce6kkEQ1dOOr8ITDV2wyd0MInT2aKYIhgkgWDHsg/exec"; 
+const BRIDGE_URL = "https://script.google.com/macros/s/AKfycbx_qjGohwiQnG6X4m9d2YtMLLu7cGjgqNb89k6v5XwCE-XqV88MpaIsenM4ZzgatQWpkw/exec"; 
 
 // --- ЛІЧИЛЬНИК ---
 
