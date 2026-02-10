@@ -27,7 +27,9 @@
       "footer_slogan": "Маленькі інструменти, великі мрії.",
       "cat_tv": "Телебачення та Стрімінг",
       "cat_local": "Українські сервіси",
-      "cat_phone": "Мобільні додатки"
+      "cat_phone": "Мобільні додатки",
+      "cat_cloud_storage": "Хмарне сховище",
+      "cat_productivity": "Продуктивність"
     },
     "EN": {
       "label": "English",
@@ -56,7 +58,9 @@
       "footer_slogan": "Small tools, big dreams.",
       "cat_tv": "Television and streaming",
       "cat_local": "England services",
-      "cat_phone": "Mobile adverts"
+      "cat_phone": "Mobile adverts",
+      "cat_cloud_storage": "Cloud Storage",
+      "cat_productivity": "Productivity"
     }
   },
   "services": [
@@ -104,6 +108,51 @@
       "url": "https://sweet.tv/cabinet/subscriptions",
       "img": "icons/Sweet.tv_logo.png",
       "type": "UA"
+    },
+    {
+      "id": "google-one",
+      "name": "Google One",
+      "category": "cloud_storage",
+      "price": 0.0,
+      "url": "https://one.google.com/storage",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Google_One_logo.svg/1200px-Google_One_logo.svg.png",
+      "type": "global"
+    },
+    {
+      "id": "google-workspace",
+      "name": "Google Workspace",
+      "category": "productivity",
+      "price": 0.0,
+      "url": "https://admin.google.com/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Workspace_logo.svg/1200px-Google_Workspace_logo.svg.png",
+      "type": "global"
+    },
+    {
+      "id": "google-photos",
+      "name": "Google Photos",
+      "category": "cloud_storage",
+      "price": 0.0,
+      "url": "https://photos.google.com/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Google_Photos_icon.svg/1200px-Google_Photos_icon.svg.png",
+      "type": "global"
+    },
+    {
+      "id": "youtube-premium",
+      "name": "YouTube Premium",
+      "category": "tv",
+      "price": 11.99,
+      "url": "https://www.youtube.com/paid_memberships",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/b/b9/YouTube_Premium_logo.svg",
+      "type": "global"
+    },
+    {
+      "id": "google-drive",
+      "name": "Google Drive",
+      "category": "cloud_storage",
+      "price": 0.0,
+      "url": "https://one.google.com/storage",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_Drive_logo.png/600px-Google_Drive_logo.png",
+      "type": "global"
     }
   ]
 }
