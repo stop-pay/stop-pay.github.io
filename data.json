@@ -106,51 +106,6 @@
       "url": "https://sweet.tv/cabinet/subscriptions",
       "img": "icons/Sweet.tv_logo.png",
       "type": "UA"
-    },
-    {
-      "id": "google-cloud-platform",
-      "name": "Google Cloud Platform",
-      "category": "cloud_storage",
-      "price": 0.0,
-      "url": "https://console.cloud.google.com/billing/subscriptions",
-      "img": "icons/default.png",
-      "type": "global"
-    },
-    {
-      "id": "google-workspace",
-      "name": "Google Workspace",
-      "category": "cloud_storage",
-      "price": 6.0,
-      "url": "https://admin.google.com/ac/billing/subscriptions",
-      "img": "icons/default.png",
-      "type": "global"
-    },
-    {
-      "id": "youtube-premium",
-      "name": "YouTube Premium",
-      "category": "tv",
-      "price": 13.99,
-      "url": "https://www.youtube.com/paid_memberships",
-      "img": "icons/default.png",
-      "type": "global"
-    },
-    {
-      "id": "google-one",
-      "name": "Google One",
-      "category": "cloud_storage",
-      "price": 1.99,
-      "url": "https://one.google.com/storage/plans",
-      "img": "icons/default.png",
-      "type": "global"
-    },
-    {
-      "id": "google-play-pass",
-      "name": "Google Play Pass",
-      "category": "cloud_storage",
-      "price": 4.99,
-      "url": "https://play.google.com/store/account/subscriptions",
-      "img": "icons/default.png",
-      "type": "global"
     }
   ]
 }
