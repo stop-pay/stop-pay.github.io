@@ -113,15 +113,6 @@
       "url": "https://www.youtube.com/paid_memberships?ybp=mAEK",
       "img": "https://www.youtube.com/img/desktop/yt_1200.png",
       "type": "global"
-    },
-    {
-      "id": "kyivstar.tv",
-      "name": "Kyivstar TV",
-      "category": "tv",
-      "price": 5.0,
-      "url": "https://tv.kyivstar.ua/",
-      "img": "https://tv.kyivstar.ua/static-common/img/logo.svg",
-      "type": "UA"
     }
   ]
 }
