@@ -106,6 +106,51 @@
       "url": "https://sweet.tv/cabinet/subscriptions",
       "img": "icons/Sweet.tv_logo.png",
       "type": "UA"
+    },
+    {
+      "id": "google-one",
+      "name": "Google One",
+      "category": "cloud_storage",
+      "price": 1.99,
+      "url": "https://one.google.com/storage/management",
+      "img": "https://www.gstatic.com/onegoogle/promos/controlcenter/7472ff637a11431a5e33c33c1586cfcb25c4718d0989f980e8435a4bf200013b.svg",
+      "type": "global"
+    },
+    {
+      "id": "youtube-premium",
+      "name": "YouTube Premium",
+      "category": "tv",
+      "price": 13.99,
+      "url": "https://www.youtube.com/paid_memberships",
+      "img": "https://www.youtube.com/img/promos/growth/youtube_premium_logo.png",
+      "type": "global"
+    },
+    {
+      "id": "google-workspace",
+      "name": "Google Workspace",
+      "category": "cloud_storage",
+      "price": 6.0,
+      "url": "https://admin.google.com/ac/billing/subscriptions",
+      "img": "https://www.gstatic.com/images/branding/product/1x/workspace_2020q4_48dp.png",
+      "type": "global"
+    },
+    {
+      "id": "google-cloud-platform",
+      "name": "Google Cloud Platform",
+      "category": "cloud_storage",
+      "price": 5.0,
+      "url": "https://console.cloud.google.com/billing",
+      "img": "https://www.gstatic.com/cloud/marketing/logos/gcp-logo.svg",
+      "type": "global"
+    },
+    {
+      "id": "nest-aware",
+      "name": "Nest Aware",
+      "category": "cloud_storage",
+      "price": 6.0,
+      "url": "https://store.google.com/subscriptions",
+      "img": "https://lh3.googleusercontent.com/V8ODp0_80g0H-3V_HhI1QD50Qjt-hYn5sYn-X00R7N7R1g7Xo8_R356M_n4l_M5mJc",
+      "type": "global"
     }
   ]
 }
