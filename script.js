@@ -218,30 +218,27 @@ async function sendToAi() {
     const input = document.getElementById('aiServiceInput');
     const serviceName = input.value.trim();
     
+    // 1. Перевірку на пустий рядок краще робити на самому початку
     if (!serviceName) return;
 
-    // Визначаємо поточну мову
     const lang = localStorage.getItem('lang') || 'UA';
     const info = siteData.languages[lang] || siteData.languages['UA'];
 
-    // Візуальний фідбек для кнопки (беремо текст "ai_sending")
     const btn = document.getElementById('modalBtn');
     const originalText = btn.innerText;
     btn.innerText = info.ai_sending || "⌛...";
     btn.disabled = true;
 
     try {
-        // Відправляємо запит на BRIDGE_URL
+        // 2. Відправляємо ТІЛЬКИ назву сервісу. ШІ на бекенді сам знає, що з нею робити.
+        // Режим 'no-cors' використовується для Google Apps Script, щоб уникнути помилок доступу.
         await fetch(`${BRIDGE_URL}?service=${encodeURIComponent(serviceName)}`, { mode: 'no-cors' });
         
-        // Виводимо перекладене повідомлення про успіх
         alert(info.ai_success);
-        
         input.value = "";
-        toggleModal(); 
+        toggleModal();
     } catch (e) {
         console.error(e);
-        // Виводимо перекладене повідомлення про помилку
         alert(info.ai_error);
     } finally {
         btn.innerText = originalText;
