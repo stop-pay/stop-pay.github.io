@@ -106,6 +106,15 @@
       "url": "https://tv.kyivstar.ua/profile/subscription",
       "img": "icons/default.png",
       "type": "UA"
+    },
+    {
+      "id": "megogo-subscription",
+      "name": "Megogo",
+      "category": "tv",
+      "price": 6.99,
+      "type": "UA",
+      "url": "https://www.google.com/search?q=Megogo+cancel+subscription",
+      "img": "icons/default.png"
     }
   ]
 }
