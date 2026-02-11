@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StopPay</title>
     
-    <link rel="icon" type="image/png" href="/stop_pay/favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="/stop_pay/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/stop_pay/stop_pay/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/stop_pay/stop_pay/apple-touch-icon.png">
     
     <script>
         const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', savedTheme);
     </script>
 
-    <link rel="stylesheet" href="/stop_pay/assets/css/style.css">
-    <link rel="manifest" href="/stop_pay/manifest.json">
+    <link rel="stylesheet" href="/stop_pay/stop_pay/assets/css/style.css">
+    <link rel="manifest" href="/stop_pay/stop_pay/manifest.json">
     <meta name="theme-color" content="#ff4757">
 </head>
 <body>
@@ -41,12 +41,13 @@
     </div>
 
     <h1 id="mainTitle">
-        <a href="/stop_pay/">
-            <img src="/stop_pay/Logo.png" alt="StopPay" style="height: 50px; width: auto;">
+        <a href="/stop_pay/stop_pay/">
+            <img src="/stop_pay/stop_pay/Logo.png" alt="StopPay" style="height: 50px; width: auto;">
         </a>
     </h1>
     
-    
+    <div id="dynamicContent">
+        
         <p id="mainDesc">Прямі посилання для скасування підписок</p>
         <div class="search-container">
             <span class="search-icon">🔍</span>
@@ -54,6 +55,7 @@
         </div>
         <div id="siteContent" style="width: 100%; max-width: 600px;"></div>
         
+    </div>
 
 </header>
 
@@ -90,6 +92,6 @@
     </p>
 </footer>
 
-<script src="/stop_pay/assets/js/script.js"></script>
+<script src="/stop_pay/stop_pay/assets/js/script.js"></script>
 </body>
 </html>
