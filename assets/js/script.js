@@ -10,23 +10,31 @@ async function loadData() {
     try {
         const path = window.location.pathname;
         const isRoot = path === BASE_URL + '/' || path === BASE_URL || path === '/';
-        const savedLang = localStorage.getItem('user_lang');
-    
-        console.log("Path:", path, "IsRoot:", isRoot, "SavedLang:", savedLang);
-    
+        let savedLang = localStorage.getItem('user_lang');
+
+        // 1. ВИЗНАЧАЄМО МОВУ З URL
+        let langFromUrl = null;
+        if (path.includes('/us/')) langFromUrl = 'us';
+        else if (path.includes('/ua/')) langFromUrl = 'ua';
+        else if (path.includes('/gb/')) langFromUrl = 'gb';
+
+        // 2. ЛОГІКА РЕДІРЕКТУ (Тільки якщо ми в корені)
         if (isRoot && savedLang && savedLang !== 'ua') {
-            console.log("Redirecting to:", savedLang);
-            window.location.replace(`${BASE_URL}/${savedLang}/`); // replace краще ніж href для редіректів
+            window.location.replace(`${BASE_URL}/${savedLang}/`);
             return;
         }
+
+        // 3. ЯКЩО МИ ВЖЕ В ПАПЦІ МОВИ — ОНОВЛЮЄМО ПАМ'ЯТЬ
+        // (Щоб якщо користувач переключився вручну, ми це запам'ятали)
+        if (langFromUrl) {
+            localStorage.setItem('user_lang', langFromUrl);
+            localStorage.setItem('user_region_set', 'true');
+        }
+
+        // Кінцева мова для завантаження даних
+        const langCode = langFromUrl || savedLang || 'ua';
         
-        let langCode = 'ua'; 
-        if (path.includes('/us/')) langCode = 'us';
-        else if (path.includes('/ua/')) langCode = 'ua';
-        else if (path.includes('/gb/')) langCode = 'gb';
-
         const ts = Date.now();
-
         const servRes = await fetch(`${BASE_URL}/data.json?v=${ts}`).then(r => r.json());
         const uiRes = await fetch(`${BASE_URL}/i18n/${langCode}.json?v=${ts}`).then(r => r.json());
 
@@ -38,20 +46,15 @@ async function loadData() {
         };
 
         applyTheme();
-        autoDetectRegion(); 
+        if (!savedLang) autoDetectRegion(); 
         await initDynamicMenu(); 
         fillStaticTranslations();
         
-        if (document.getElementById('siteContent')) {
-            renderSite();
-        }
-        
+        if (document.getElementById('siteContent')) renderSite();
         syncGlobalCounter();
         
     } catch (e) { 
-        console.error("КРИТИЧНА ПОМИЛКА:", e); 
-        const cont = document.getElementById('siteContent');
-        if (cont) cont.innerHTML = `<div style="text-align:center; padding:50px; color:red;">Error loading data</div>`;
+        console.error("ERROR:", e); 
     }
 }
 
