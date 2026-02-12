@@ -126,20 +126,57 @@ function handleServiceClick(serviceId) {
     window.location.href = `${BASE_URL}/${siteData.currentLang}/${serviceId}/`;
 }
 
-// --- ПОШУК ---
+// --- ПОШУК (Шукає по всьому списку незалежно від мови) ---
 function handleSearch(query) {
     const q = query.toLowerCase().trim();
-    document.querySelectorAll('.category-wrapper').forEach(wrapper => {
-        let hasVisibleCards = false;
-        wrapper.querySelectorAll('.card').forEach(card => {
-            const name = card.querySelector('.card-name').innerText.toLowerCase();
-            const visible = name.includes(q);
-            card.style.display = visible ? 'flex' : 'none';
-            if (visible) hasVisibleCards = true;
-        });
-        wrapper.style.display = hasVisibleCards ? 'block' : 'none';
-    });
+    const container = document.getElementById('siteContent');
+    if (!container || !siteData) return;
+
+    // 1. Якщо пошук порожній — просто перемальовуємо сайт (вертаємо категорії)
+    if (q === "") {
+        renderSite();
+        return;
+    }
+
+    // 2. Шукаємо серед УСІХ сервісів у data.json
+    const results = siteData.services.filter(s => 
+        s.name.toLowerCase().includes(q) || 
+        (s.id && s.id.toLowerCase().includes(q))
+    );
+
+    // 3. Очищуємо контент і виводимо результати
+    container.innerHTML = '';
+
+    if (results.length > 0) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'category-wrapper active';
+        
+        // Беремо заголовок "Результати пошуку" з i18n або ставимо дефолт
+        const searchTitle = siteData.ui.ui.search_results || "Search Results";
+
+        wrapper.innerHTML = `
+            <div class="category-header">
+                <span>${searchTitle} (${results.length})</span>
+            </div>
+            <div class="category-content" style="display: grid;">
+                ${results.map(s => `
+                    <div class="card" onclick="handleServiceClick('${s.id}')">
+                        <div class="card-icon-wrapper">
+                            <img src="${BASE_URL}/${s.img || s.icon}" onerror="this.src='${BASE_URL}/assets/icons/default.png'">
+                        </div>
+                        <div class="card-name">${s.name}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        container.appendChild(wrapper);
+    } else {
+        // Якщо нічого не знайдено
+        const noFoundText = siteData.ui.ui.search_not_found || "Nothing found 🤷‍♂️";
+        container.innerHTML = `<p style="text-align:center; padding:50px; opacity:0.5;">${noFoundText}</p>`;
+    }
 }
+
 
 // --- ЛІЧИЛЬНИК ---
 async function syncGlobalCounter() {
