@@ -90,6 +90,15 @@ function autoDetectRegion() {
     const path = window.location.pathname;
     const isRoot = path === BASE_URL + '/' || path === BASE_URL || path === '/';
     if (!isRoot) return;
+
+    // 1. ПРІОРИТЕТ: Якщо користувач раніше сам обрав мову
+    const savedLang = localStorage.getItem('user_lang');
+    if (savedLang) {
+        window.location.href = `${BASE_URL}/${savedLang}/`;
+        return;
+    }
+
+    // 2. Якщо вибору немає — вгадуємо по таймзоні
     if (localStorage.getItem('user_region_set')) return;
 
     try {
@@ -105,7 +114,6 @@ function autoDetectRegion() {
         }
     } catch (e) { console.log("Region detection failed"); }
 }
-
 // ТЕМА
 function applyTheme() {
     const savedTheme = localStorage.getItem('theme');
@@ -144,11 +152,16 @@ async function initDynamicMenu() {
             `;
             
             item.onclick = () => {
-                localStorage.setItem('user_region_set', 'true');
                 const newLang = code.toLowerCase();
+                
+                // ЗАПАМ'ЯТОВУЄМО ВИБІР
+                localStorage.setItem('user_region_set', 'true');
+                localStorage.setItem('user_lang', newLang); 
+
                 const currentPath = window.location.pathname;
                 let pathParts = currentPath.split('/');
                 const langIndex = pathParts.findIndex(part => part === siteData.currentLang);
+                
                 if (langIndex !== -1) {
                     pathParts[langIndex] = newLang;
                     window.location.href = pathParts.join('/');
