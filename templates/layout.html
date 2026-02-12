@@ -35,8 +35,6 @@
             <img src="/stop_pay/Logo.png" alt="StopPay" style="height: 50px; width: auto;">
         </a>
     </h1>
-    
-    
 </header>
 
 <main id="mainContent">
@@ -46,7 +44,7 @@
 <div class="donate-section">
     <h3 id="donateTitle"></h3>
     <p id="donateDesc"></p>
-    <a href="#" class="btn-donate" id="donateBtn" target="_blank">☕ Buy Me a Coffee</a>
+    <a href="https://buymeacoffee.com" class="btn-donate" id="donateBtn" target="_blank">☕ Buy Me a Coffee</a>
 </div>
 
 <div id="seoContent" class="seo-block"></div>
@@ -60,13 +58,17 @@
         <h3 id="modalTitle">Додати сервіс</h3>
         <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
         <input type="text" id="aiServiceInput" class="modal-input">
-        <button class="modal-btn" id="modalBtn" onclick="sendToAi()">Надіслати</button>
+        <button class="modal-btn" id="modalBtn" onclick="sendToAi()">Надіслати</button>\
     </div>
 </div>
 
-<footer style="text-align: center; padding: 40px 20px; opacity: 0.6; font-size: 0.9rem;">
-    <p><span id="footerCreated">Created by</span> <strong>PandaDream Game Studio</strong> 🐼</p>
-    <p id="footerSlogan" style="font-style: italic; font-size: 0.8rem;"></p>
+<footer>
+    <div class="footer-main">
+        <span id="footerCreated">Created by</span> 
+        <a href="https://pandadream.studio" target="_blank" class="brand-name">PandaDream Game Studio</a> 
+        <span class="panda-emoji">🐼</span>
+    </div>
+    <div id="footerSlogan" class="footer-slogan"></div>
 </footer>
 
 <script src="/stop_pay/assets/js/script.js"></script>
