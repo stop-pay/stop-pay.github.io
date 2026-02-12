@@ -10,14 +10,14 @@ async function loadData() {
     try {
         const path = window.location.pathname;
         const isRoot = path === BASE_URL + '/' || path === BASE_URL || path === '/';
-
-        // 1. ПРІОРИТЕТ: Якщо ми в корені — перевіряємо пам'ять
-        if (isRoot) {
-            const savedLang = localStorage.getItem('user_lang');
-            if (savedLang) {
-                window.location.href = `${BASE_URL}/${savedLang}/`;
-                return; 
-            }
+        const savedLang = localStorage.getItem('user_lang');
+    
+        console.log("Path:", path, "IsRoot:", isRoot, "SavedLang:", savedLang);
+    
+        if (isRoot && savedLang && savedLang !== 'ua') {
+            console.log("Redirecting to:", savedLang);
+            window.location.replace(`${BASE_URL}/${savedLang}/`); // replace краще ніж href для редіректів
+            return;
         }
         
         let langCode = 'ua'; 
