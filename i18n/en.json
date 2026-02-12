@@ -1,0 +1,33 @@
+{
+  "label": "Great Britain",
+  "short": "US",
+  "total_saved": "Total Saved:",
+  "currency_symbol": "£",
+  "currency_code": "GBP",
+  "exchange_rate": 0.73,
+  "title": "StopPay",
+  "desc": "Direct links to cancel your subscriptions",
+  "seo_text": "<h3>How to cancel a subscription?</h3><p>StopPay helps you stop automatic charges from your card. Here you will find direct links to cancel subscriptions for Apple, Google Play, Netflix, Hulu, and other services. Don't let services charge you for what you don't use.</p>",
+  "categories": {
+    "tv": "TV & Streaming",
+    "local": "US Services",
+    "phone": "Mobile Apps",
+    "cloud_storage": "Cloud Storage"
+  },
+  "ui": {
+    "search_placeholder": "Find a service...",
+    "search_results": "Search Results",
+    "search_not_found": "Nothing found 🤷‍♂️",
+    "feedback_title": "Missing a service?",
+    "feedback_desc": "Tell us the name, and we will add it.",
+    "feedback_btn": "Send",
+    "ai_success": "✅ Request accepted! AI will add the service within 1-2 minutes. Check back later.",
+    "ai_error": "❌ Sending error. Please try again later.",
+    "ai_sending": "⌛...",
+    "donate_t": "Saved money? 💸",
+    "donate_d": "Support the project with a coffee.",
+    "donate_b": "Buy Me a Coffee ☕",
+    "footer_created": "Created by PandaDream Game Studio 🐼",
+    "footer_slogan": "Small tools, big dreams."
+  }
+}
