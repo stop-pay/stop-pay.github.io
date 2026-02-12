@@ -5,13 +5,13 @@
   ],
   "services": [
     {
-      "id": "google_play",
-      "name": "Google Play",
-      "category": "phone",
-      "type": "global",
+      "id": "sweet_tv",
+      "name": "Sweet.tv",
+      "category": "tv",
+      "type": "ua",
       "official_url": "https://megogo.net",
       "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
-      "icon": "assets/icons/megogo.png"
+      "icon": "assets/icons/sweet-tv.png"
     },
     {
       "id": "megogo",
@@ -23,13 +23,13 @@
       "icon": "assets/icons/megogo.png"
     },
     {
-      "id": "sweet_tv",
-      "name": "Sweet.tv",
-      "category": "tv",
-      "type": "ua",
+      "id": "google_play",
+      "name": "Google Play",
+      "category": "phone",
+      "type": "global",
       "official_url": "https://megogo.net",
       "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
-      "icon": "assets/icons/sweet-tv.png"
+      "icon": "assets/icons/megogo.png"
     },
     {
       "id": "netflix",

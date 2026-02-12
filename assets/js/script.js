@@ -10,7 +10,6 @@ async function loadData() {
     try {
         const path = window.location.pathname;
         
-        // Визначення поточної мови/країни з URL
         let langCode = 'ua'; 
         if (path.includes('/us/')) langCode = 'us';
         else if (path.includes('/ua/')) langCode = 'ua';
@@ -18,7 +17,6 @@ async function loadData() {
 
         const ts = Date.now();
 
-        // Завантаження даних
         const servRes = await fetch(`${BASE_URL}/data.json?v=${ts}`).then(r => r.json());
         const uiRes = await fetch(`${BASE_URL}/i18n/${langCode}.json?v=${ts}`).then(r => r.json());
 
@@ -29,14 +27,12 @@ async function loadData() {
             currentLang: langCode
         };
 
-        applyTheme(); // Автовизначення теми (системна або збережена)
-        autoDetectRegion(); // Редірект по таймзоні (тільки для кореня)
+        applyTheme();
+        autoDetectRegion();
         await initDynamicMenu(); 
         
-        // Глобальне заповнення текстів інтерфейсу (працює на всіх сторінках)
         fillStaticTranslations();
         
-        // Якщо ми на головній сторінці — рендеримо список категорій
         if (document.getElementById('siteContent')) {
             renderSite();
         }
@@ -50,7 +46,7 @@ async function loadData() {
     }
 }
 
-// --- НОВА ФУНКЦІЯ: ПЕРЕКЛАД СТАТИЧНИХ ЕЛЕМЕНТІВ (ДОНАТИ ТА ІНШЕ) ---
+// ПЕРЕКЛАД СТАТИЧНИХ ЕЛЕМЕНТІВ
 function fillStaticTranslations() {
     if (!siteData || !siteData.ui) return;
     const info = siteData.ui;
@@ -60,35 +56,33 @@ function fillStaticTranslations() {
         if (el && val) el.innerText = val; 
     };
 
-    // Тексти лічильника
     safeSet('counterLabel', info.total_saved);
     
-    // Тексти донатів (тепер працюватимуть і в layout на сторінках сервісів)
+    // Нові поля футера
+    safeSet('footerCreated', info.footer_created);
+    safeSet('footerSlogan', info.footer_slogan);
+    
     if (info.ui) {
         safeSet('donateTitle', info.ui.donate_t);
         safeSet('donateDesc', info.ui.donate_d);
         safeSet('donateBtn', info.ui.donate_b);
         
-        // Тексти модалки додавання сервісу
         safeSet('modalTitle', info.ui.feedback_title);
         safeSet('modalDesc', info.ui.feedback_desc);
         const mb = document.getElementById('modalBtn');
         if (mb) mb.innerText = info.ui.feedback_btn;
 
-        // Пошук (якщо він є на сторінці)
         const si = document.getElementById('searchInput');
         if (si) si.placeholder = info.ui.search_placeholder;
     }
 
-    // Опис на головній (якщо ми там)
     safeSet('mainDesc', info.desc);
     
-    // SEO блок
     const seoEl = document.getElementById('seoContent');
     if (seoEl && info.seo_text) seoEl.innerHTML = info.seo_text;
 }
 
-// --- АВТОВИЗНАЧЕННЯ РЕГІОНУ (КРАЇНИ) ---
+// АВТОВИЗНАЧЕННЯ РЕГІОНУ
 function autoDetectRegion() {
     const path = window.location.pathname;
     const isRoot = path === BASE_URL + '/' || path === BASE_URL || path === '/';
@@ -109,7 +103,7 @@ function autoDetectRegion() {
     } catch (e) { console.log("Region detection failed"); }
 }
 
-// --- КЕРУВАННЯ ТЕМОЮ ---
+// ТЕМА
 function applyTheme() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
@@ -128,7 +122,7 @@ function toggleTheme() {
     localStorage.setItem('theme', next);
 }
 
-// --- ДИНАМІЧНЕ МЕНЮ КРАЇН ---
+// МЕНЮ КРАЇН
 async function initDynamicMenu() {
     const list = document.getElementById('dropdownList');
     if (!list || !siteData.availableLanguages) return;
@@ -171,7 +165,7 @@ async function initDynamicMenu() {
     }
 }
 
-// --- ГЛОБАЛЬНИЙ ПОШУК ---
+// ПОШУК
 function handleSearch(query) {
     const q = query.toLowerCase().trim();
     const container = document.getElementById('siteContent');
@@ -207,7 +201,7 @@ function handleSearch(query) {
     }
 }
 
-// --- РЕНДЕР КАТЕГОРІЙ ---
+// РЕНДЕР ГОЛОВНОЇ
 function renderSite() {
     const container = document.getElementById('siteContent');
     if (!container || !siteData || !siteData.ui) return;
@@ -254,7 +248,7 @@ function handleServiceClick(serviceId) {
     window.location.href = `${BASE_URL}/${siteData.currentLang}/${serviceId}/`;
 }
 
-// --- ЛІЧИЛЬНИК ---
+// ЛІЧИЛЬНИК
 async function syncGlobalCounter() {
     try {
         const res = await fetch(BRIDGE_URL);
