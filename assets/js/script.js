@@ -214,4 +214,3 @@ async function sendToAi() {
 
 // Старт
 loadData();
-                                             
