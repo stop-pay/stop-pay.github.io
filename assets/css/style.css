@@ -121,23 +121,21 @@ footer {
     font-weight: 500; 
     font-size: 1rem; 
     color: var(--text); 
+    margin-bottom: 5px;
 }
-/* Тепер це просто текст, яскраво-червоний */
 .brand-name { 
-    color: var(--accent); 
+    color: var(--accent); /* Червоний колір */
     font-weight: bold; 
 }
 .panda-emoji { 
-    filter: none !important; 
-    opacity: 1 !important; 
-    display: inline-block; 
+    display: inline-block;
+    filter: none; /* Гарантуємо, що панда не сіра */
+    opacity: 1;
 }
-/* Стиль для слогана */
 .footer-slogan { 
     font-style: italic; 
     font-size: 0.85rem; 
-    opacity: 0.6; 
-    margin-top: 8px; 
+    opacity: 0.6; /* Робимо слоган трохи світлішим для стилю */
     color: var(--text); 
 }
 
