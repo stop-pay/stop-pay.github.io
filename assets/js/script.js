@@ -11,12 +11,10 @@ async function loadData() {
         const path = window.location.pathname;
         
         // Визначення поточної мови/країни з URL
-        let langCode = 'ua'; // Дефолт
-        const urlParts = path.split('/');
-        // Шукаємо код мови в URL (наприклад, /ua/ або /us/)
+        let langCode = 'ua'; 
         if (path.includes('/us/')) langCode = 'us';
         else if (path.includes('/ua/')) langCode = 'ua';
-        else if (path.includes('/gb/')) langCode = 'gb'; // Для майбутніх країн
+        else if (path.includes('/gb/')) langCode = 'gb';
 
         const ts = Date.now();
 
@@ -31,10 +29,18 @@ async function loadData() {
             currentLang: langCode
         };
 
-        applyTheme(); // Автовизначення теми
-        autoDetectRegion(); // Перевірка редіректу по регіону (тільки для головної)
+        applyTheme(); // Автовизначення теми (системна або збережена)
+        autoDetectRegion(); // Редірект по таймзоні (тільки для кореня)
         await initDynamicMenu(); 
-        renderSite();
+        
+        // Глобальне заповнення текстів інтерфейсу (працює на всіх сторінках)
+        fillStaticTranslations();
+        
+        // Якщо ми на головній сторінці — рендеримо список категорій
+        if (document.getElementById('siteContent')) {
+            renderSite();
+        }
+        
         syncGlobalCounter();
         
     } catch (e) { 
@@ -44,44 +50,72 @@ async function loadData() {
     }
 }
 
+// --- НОВА ФУНКЦІЯ: ПЕРЕКЛАД СТАТИЧНИХ ЕЛЕМЕНТІВ (ДОНАТИ ТА ІНШЕ) ---
+function fillStaticTranslations() {
+    if (!siteData || !siteData.ui) return;
+    const info = siteData.ui;
+    
+    const safeSet = (id, val) => { 
+        const el = document.getElementById(id); 
+        if (el && val) el.innerText = val; 
+    };
+
+    // Тексти лічильника
+    safeSet('counterLabel', info.total_saved);
+    
+    // Тексти донатів (тепер працюватимуть і в layout на сторінках сервісів)
+    if (info.ui) {
+        safeSet('donateTitle', info.ui.donate_t);
+        safeSet('donateDesc', info.ui.donate_d);
+        safeSet('donateBtn', info.ui.donate_b);
+        
+        // Тексти модалки додавання сервісу
+        safeSet('modalTitle', info.ui.feedback_title);
+        safeSet('modalDesc', info.ui.feedback_desc);
+        const mb = document.getElementById('modalBtn');
+        if (mb) mb.innerText = info.ui.feedback_btn;
+
+        // Пошук (якщо він є на сторінці)
+        const si = document.getElementById('searchInput');
+        if (si) si.placeholder = info.ui.search_placeholder;
+    }
+
+    // Опис на головній (якщо ми там)
+    safeSet('mainDesc', info.desc);
+    
+    // SEO блок
+    const seoEl = document.getElementById('seoContent');
+    if (seoEl && info.seo_text) seoEl.innerHTML = info.seo_text;
+}
+
 // --- АВТОВИЗНАЧЕННЯ РЕГІОНУ (КРАЇНИ) ---
 function autoDetectRegion() {
-    // Робимо редірект тільки якщо ми в корені сайту "/" або "/stop_pay/"
     const path = window.location.pathname;
     const isRoot = path === BASE_URL + '/' || path === BASE_URL || path === '/';
-    
     if (!isRoot) return;
-
-    // Перевіряємо, чи користувач вже вручну не обирав країну раніше
     if (localStorage.getItem('user_region_set')) return;
 
     try {
         const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
         let detectedLang = 'ua';
-
         if (tz.includes('America')) detectedLang = 'us';
-        else if (tz.includes('London') || tz.includes('Europe/London')) detectedLang = 'gb';
+        else if (tz.includes('London')) detectedLang = 'gb';
         else if (tz.includes('Kyiv')) detectedLang = 'ua';
         
-        // Якщо визначена країна відрізняється від поточної (ua за замовчуванням в build.py)
         if (detectedLang !== 'ua') {
             localStorage.setItem('user_region_set', 'true');
             window.location.href = `${BASE_URL}/${detectedLang}/`;
         }
-    } catch (e) {
-        console.log("Region detection failed, using default");
-    }
+    } catch (e) { console.log("Region detection failed"); }
 }
 
-// --- КЕРУВАННЯ ТЕМОЮ (АВТОМАТИЧНО) ---
+// --- КЕРУВАННЯ ТЕМОЮ ---
 function applyTheme() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
     } else {
-        // Визначення системної теми
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        // За замовчуванням темна (якщо не світла), як і просили
         const defaultTheme = prefersDark ? 'dark' : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
         document.documentElement.setAttribute('data-theme', defaultTheme);
     }
@@ -100,11 +134,9 @@ async function initDynamicMenu() {
     if (!list || !siteData.availableLanguages) return;
     
     list.innerHTML = '';
-    
     for (const code of siteData.availableLanguages) {
         try {
             const res = await fetch(`${BASE_URL}/i18n/${code}.json`).then(r => r.json());
-            
             const item = document.createElement('div');
             item.className = 'select-item';
             item.innerHTML = `
@@ -115,13 +147,11 @@ async function initDynamicMenu() {
             `;
             
             item.onclick = () => {
-                localStorage.setItem('user_region_set', 'true'); // Помічаємо ручний вибір
+                localStorage.setItem('user_region_set', 'true');
                 const newLang = code.toLowerCase();
                 const currentPath = window.location.pathname;
-                
                 let pathParts = currentPath.split('/');
                 const langIndex = pathParts.findIndex(part => part === siteData.currentLang);
-
                 if (langIndex !== -1) {
                     pathParts[langIndex] = newLang;
                     window.location.href = pathParts.join('/');
@@ -129,7 +159,6 @@ async function initDynamicMenu() {
                     window.location.href = `${BASE_URL}/${newLang}/`;
                 }
             };
-
             list.appendChild(item);
 
             if (code === siteData.currentLang) {
@@ -138,7 +167,7 @@ async function initDynamicMenu() {
                 if (f) f.src = `${BASE_URL}/assets/icons/flags/${code.toUpperCase()}.png`;
                 if (s) s.innerText = res.short || code.toUpperCase();
             }
-        } catch (e) { console.warn(`Could not load label for ${code}`); }
+        } catch (e) { }
     }
 }
 
@@ -148,10 +177,7 @@ function handleSearch(query) {
     const container = document.getElementById('siteContent');
     if (!container || !siteData) return;
 
-    if (q === "") {
-        renderSite();
-        return;
-    }
+    if (q === "") { renderSite(); return; }
 
     const results = siteData.services.filter(s => 
         (s.name && s.name.toLowerCase().includes(q)) || 
@@ -159,16 +185,12 @@ function handleSearch(query) {
     );
 
     container.innerHTML = '';
-
     if (results.length > 0) {
         const wrapper = document.createElement('div');
         wrapper.className = 'category-wrapper active';
         const searchTitle = siteData.ui.ui?.search_results || "Search Results";
-
         wrapper.innerHTML = `
-            <div class="category-header">
-                <span>${searchTitle} (${results.length})</span>
-            </div>
+            <div class="category-header"><span>${searchTitle} (${results.length})</span></div>
             <div class="category-content" style="display: grid;">
                 ${results.map(s => `
                     <div class="card" onclick="handleServiceClick('${s.id}')">
@@ -176,10 +198,8 @@ function handleSearch(query) {
                             <img src="${BASE_URL}/${s.img || s.icon}" onerror="this.src='${BASE_URL}/assets/icons/default.png'">
                         </div>
                         <div class="card-name">${s.name}</div>
-                    </div>
-                `).join('')}
-            </div>
-        `;
+                    </div>`).join('')}
+            </div>`;
         container.appendChild(wrapper);
     } else {
         const noFoundText = siteData.ui.ui?.search_not_found || "Nothing found";
@@ -191,25 +211,9 @@ function handleSearch(query) {
 function renderSite() {
     const container = document.getElementById('siteContent');
     if (!container || !siteData || !siteData.ui) return;
-
     container.innerHTML = '';
-    const info = siteData.ui;
-    const safeSet = (id, val) => { const el = document.getElementById(id); if (el) el.innerText = val; };
-    
-    safeSet('counterLabel', info.total_saved);
-    safeSet('mainDesc', info.desc);
-    
-    if (info.ui) {
-        safeSet('donateTitle', info.ui.donate_t);
-        safeSet('donateDesc', info.ui.donate_d);
-        safeSet('donateBtn', info.ui.donate_b);
-        const si = document.getElementById('searchInput');
-        if (si) si.placeholder = info.ui.search_placeholder;
-    }
-    
-    const seoEl = document.getElementById('seoContent');
-    if (seoEl) seoEl.innerHTML = info.seo_text || '';
 
+    const info = siteData.ui;
     const groups = { 'local': [] };
     const curLang = siteData.currentLang.toLowerCase();
 
@@ -227,7 +231,6 @@ function renderSite() {
         const wrapper = document.createElement('div');
         wrapper.className = `category-wrapper ${key === 'local' ? 'active' : ''}`;
         const catTitle = (info.categories && info.categories[key]) ? info.categories[key] : key.toUpperCase();
-
         wrapper.innerHTML = `
             <div class="category-header" onclick="this.parentElement.classList.toggle('active')">
                 <span>${catTitle} (${groups[key].length})</span>
@@ -260,7 +263,7 @@ async function syncGlobalCounter() {
             totalSavedUsd = data.total_saved_usd;
             updateCounterDisplay();
         }
-    } catch (e) { console.log("Counter error"); }
+    } catch (e) { }
 }
 
 function updateCounterDisplay() {
