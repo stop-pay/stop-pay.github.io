@@ -2,6 +2,7 @@
   "id": "megogo",
   "name": "Megogo",
   "category": "tv",
+  "type": "ua",
   "official_url": "https://megogo.net",
   "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
   "icon": "assets/icons/megogo.png"
