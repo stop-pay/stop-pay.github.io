@@ -54,35 +54,51 @@ function handleServiceClick(price, serviceId) {
 // --- РЕНДЕРИНГ ---
 
 function renderSite() {
-    if (!siteData) return;
-    const lang = localStorage.getItem('lang') || 'UA';
-    const info = siteData.languages[lang] || siteData.languages['UA'];
+    if (!siteData || !siteData.ui) return;
+    
+    // В новій системі дані інтерфейсу лежать в siteData.ui
+    const info = siteData.ui;
+    const currentLang = (localStorage.getItem('lang') || 'UA').toUpperCase();
+    const currentLangLower = currentLang.toLowerCase();
     
     const container = document.getElementById('siteContent');
-    if (!container) return; // Ми на сторінці інструкції, а не на головній
+    if (!container) return; // Якщо ми на сторінці інструкції
     
     container.innerHTML = '';
 
-    // Тексти інтерфейсу
+    // 1. Оновлення текстів інтерфейсу (використовуємо секцію ui з json)
     const safeSet = (id, val) => { const el = document.getElementById(id); if (el) el.innerText = val; };
+    
     safeSet('counterLabel', info.total_saved);
     safeSet('mainDesc', info.desc);
-    safeSet('donateTitle', info.donate_t);
-    safeSet('donateDesc', info.donate_d);
-    safeSet('donateBtn', info.donate_b);
+    safeSet('donateTitle', info.ui.donate_t);
+    safeSet('donateDesc', info.ui.donate_d);
+    safeSet('donateBtn', info.ui.donate_b);
     
-    if (document.getElementById('searchInput')) document.getElementById('searchInput').placeholder = info.search_placeholder;
+    // SEO текст підставляємо в блок (якщо є на головній)
+    const seoEl = document.getElementById('seoContent');
+    if (seoEl) seoEl.innerHTML = info.seo_text || '';
+    
+    if (document.getElementById('searchInput')) {
+        document.getElementById('searchInput').placeholder = info.ui.search_placeholder;
+    }
 
     updateCounterDisplay();
 
-    // Групування за категоріями
+    // 2. Фільтрація та групування за категоріями
     const groups = { 'local': [] };
+    
     siteData.services.forEach(s => {
-        const type = s.type === lang ? 'local' : (s.category || 'other');
-        if (!groups[type]) groups[type] = [];
-        groups[type].push(s);
+        // Логіка: показуємо тільки сервіси своєї країни + GLOBAL
+        if (s.type === 'global' || s.type === currentLangLower) {
+            const type = s.type === currentLangLower ? 'local' : (s.category || 'other');
+            
+            if (!groups[type]) groups[type] = [];
+            groups[type].push(s);
+        }
     });
 
+    // Сортуємо: спочатку локальні, потім решта
     const sortedKeys = Object.keys(groups).sort((a, b) => a === 'local' ? -1 : 1);
 
     sortedKeys.forEach(key => {
@@ -90,7 +106,9 @@ function renderSite() {
 
         const wrapper = document.createElement('div');
         wrapper.className = `category-wrapper ${key === 'local' ? 'active' : ''}`;
-        const catTitle = info[`cat_${key}`] || key.toUpperCase();
+        
+        // Назва категорії береться з секції categories у файлі i18n
+        const catTitle = info.categories[key] || key.toUpperCase();
 
         wrapper.innerHTML = `
             <div class="category-header" onclick="this.parentElement.classList.toggle('active')">
@@ -99,8 +117,8 @@ function renderSite() {
             </div>
             <div class="category-content">
                 ${groups[key].map(s => `
-                    <div class="card" onclick="handleServiceClick(${s.price}, '${s.id}')">
-                        <img src="${BASE_URL}/${s.img}" alt="${s.name}" onerror="this.src='${BASE_URL}/icons/default.png'">
+                    <div class="card" onclick="handleServiceClick(${s.price || 0}, '${s.id}')">
+                        <img src="${BASE_URL}/${s.img || s.icon}" alt="${s.name}" onerror="this.src='${BASE_URL}/assets/icons/default.png'">
                         <div class="card-name">${s.name}</div>
                     </div>`).join('')}
             </div>
@@ -113,22 +131,29 @@ function renderSite() {
 
 async function loadData() {
     try {
-        // Завантажуємо дані з кореня репозиторію
-        const response = await fetch(`${BASE_URL}/data.json`);
-        siteData = await response.json();
-        
-        totalSavedUsd = parseFloat(localStorage.getItem('cachedTotalSaved')) || 0;
-        
-        applySavedSettings();
-        initCustomMenu();
-        renderSite();
+        // 1. Визначаємо країну з URL (напр. "ua" або "us")
+        const pathParts = window.location.pathname.split('/');
+        // Якщо сайт в папці /stop_pay/, то код мови буде в 3-й частині
+        const currentLang = pathParts.includes('stop_pay') ? pathParts[pathParts.indexOf('stop_pay') + 1] : pathParts[1];
+        const langCode = (currentLang || 'ua').toLowerCase();
 
-        // Оновлюємо лічильник з сервера
-        if (BRIDGE_URL) {
-            totalSavedUsd = await syncGlobalCounter(0);
-            updateCounterDisplay();
-        }
-    } catch (e) { console.error("Помилка завантаження даних:", e); }
+        // 2. Завантажуємо ТІЛЬКИ файл цієї країни
+        const response = await fetch(`${BASE_URL}/i18n/${langCode}.json`);
+        const langData = await response.json();
+        
+        // 3. Завантажуємо спільний список сервісів (data.json або services.json)
+        const servicesResponse = await fetch(`${BASE_URL}/data.json`);
+        const allData = await servicesResponse.json();
+
+        // Об'єднуємо дані для рендеру
+        siteData = {
+            ui: langData, // Тексти інтерфейсу
+            services: allData.services, // Всі сервіси
+            currentLang: langCode.toUpperCase()
+        };
+
+        renderSite();
+    } catch (e) { console.error("Error loading data:", e); }
 }
 
 function initCustomMenu() {
