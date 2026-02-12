@@ -110,19 +110,36 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 /* --- SEO --- */
 .seo-block { width: 100%; max-width: 600px; margin: 30px 0; font-size: 0.9rem; line-height: 1.6; opacity: 0.8; background: var(--card); padding: 20px; border-radius: 18px; border: 1px solid var(--border); box-sizing: border-box;}
 
-/* --- FOOTER (НОВЕ ТА ВИПРАВЛЕНЕ) --- */
+/* --- FOOTER --- */
 footer { 
     margin-top: auto; 
     padding: 40px 0; 
     text-align: center; 
     width: 100%; 
-    opacity: 1 !important; /* Прибираємо прозорість для всього блоку */
 }
-.footer-main { font-weight: 500; font-size: 1rem; color: var(--text); }
-.brand-name { color: var(--accent); text-decoration: none; font-weight: bold; }
-.brand-name:hover { text-decoration: underline; }
-.panda-emoji { filter: none !important; opacity: 1 !important; display: inline-block; }
-.footer-slogan { font-style: italic; font-size: 0.85rem; opacity: 0.6; margin-top: 8px; color: var(--text); }
+.footer-main { 
+    font-weight: 500; 
+    font-size: 1rem; 
+    color: var(--text); 
+}
+/* Тепер це просто текст, яскраво-червоний */
+.brand-name { 
+    color: var(--accent); 
+    font-weight: bold; 
+}
+.panda-emoji { 
+    filter: none !important; 
+    opacity: 1 !important; 
+    display: inline-block; 
+}
+/* Стиль для слогана */
+.footer-slogan { 
+    font-style: italic; 
+    font-size: 0.85rem; 
+    opacity: 0.6; 
+    margin-top: 8px; 
+    color: var(--text); 
+}
 
 /* --- FLOATING BUTTON (FAB) --- */
 .fab-btn {
