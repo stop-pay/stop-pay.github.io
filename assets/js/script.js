@@ -139,7 +139,7 @@ function initCustomMenu() {
         const item = document.createElement('div');
         item.className = 'select-item';
         // ЗМІНЕНО: шлях веде в assets/icons/flags/
-        item.innerHTML = `<img src="${BASE_URL}/assets/icons/flags/${code.toUpperCase()}.png" class="flag-icon"><span>${siteData.languages[code].label}</span>`;
+        item.innerHTML = `<img src="${BASE_URL}/assets/icons/flags/${code.toUpperCase()}.png" class="flag-icon">style="width: 24px; height: 16px; object-fit: cover; border-radius: 2px;"><span>${siteData.languages[code].label}</span>`;
         item.onclick = () => {
             localStorage.setItem('lang', code);
             window.location.href = `${BASE_URL}/${code.toLowerCase()}/`;
