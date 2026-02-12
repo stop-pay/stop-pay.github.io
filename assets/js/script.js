@@ -138,10 +138,10 @@ function initCustomMenu() {
     Object.keys(siteData.languages).forEach(code => {
         const item = document.createElement('div');
         item.className = 'select-item';
-        item.innerHTML = `<img src="${BASE_URL}/flags/${code}.png" class="flag-icon"><span>${siteData.languages[code].label}</span>`;
+        // ЗМІНЕНО: шлях веде в assets/icons/flags/
+        item.innerHTML = `<img src="${BASE_URL}/assets/icons/flags/${code.toUpperCase()}.png" class="flag-icon"><span>${siteData.languages[code].label}</span>`;
         item.onclick = () => {
             localStorage.setItem('lang', code);
-            // При зміні мови перекидаємо на головну цієї мови
             window.location.href = `${BASE_URL}/${code.toLowerCase()}/`;
         };
         list.appendChild(item);
@@ -152,7 +152,8 @@ function initCustomMenu() {
 function updateVisuals(code) {
     const flag = document.getElementById('currentFlag');
     const short = document.getElementById('currentShort');
-    if (flag) flag.src = `${BASE_URL}/flags/${code}.png`;
+    // ЗМІНЕНО: шлях веде в assets/icons/flags/
+    if (flag) flag.src = `${BASE_URL}/assets/icons/flags/${code.toUpperCase()}.png`;
     if (short) short.innerText = siteData.languages[code]?.short || code;
 }
 
