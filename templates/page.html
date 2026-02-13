@@ -1,20 +1,27 @@
-<div class="service-container">
-    <h2 id="serviceTitle" style="margin-top: 0; font-size: 1.8rem; color: var(--text);">{{ title }}</h2>
-    <p style="opacity: 0.8; margin-bottom: 30px; line-height: 1.5;">{{ description }}</p>
-    
+<div class="service-page">
+    <h1 class="page-title">{{ title }}</h1>
+    <p class="page-desc">{{ description }}</p>
+
     <div class="instruction-card">
         <ol class="steps-list">
             {{ steps }}
         </ol>
     </div>
 
-    <div style="margin: 35px 0; text-align: center;">
-        <a href="{{ cancel_url }}" class="btn-primary" target="_blank" rel="noopener">
-            Скасувати підписку
+    <div class="action-section">
+        <a href="{{ cancel_url }}" class="btn-cancel" target="_blank" rel="noopener noreferrer">
+            Скасувати підписку на сайті
         </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. 
+            Якщо воно не працює (сервіси іноді «ховають» ці сторінки), 
+            просто перейдіть на <a href="{{ official_url }}" target="_blank">головну сторінку</a> 
+            та скористайтеся кроками з інструкції вище.</p>
+        </div>
     </div>
 
-    <div class="seo-block">
+    <div class="seo-text">
         {{ seo_text }}
     </div>
 </div>
