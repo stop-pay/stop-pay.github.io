@@ -57,9 +57,12 @@ def build():
             with open(f'i18n/{lang}.json', 'r', encoding='utf-8') as f_lang:
                 lang_data = json.load(f_lang)
             
-            # Рендер головної сторінки мови
+            # --- ОСЬ ЦЕЙ ШМАТОК ТРЕБА ОНОВИТИ ---
+            # Рендер головної сторінки мови (наприклад, /ua/index.html)
             full_index = layout.replace('{{ content }}', index_body)
-            # ... (тут без змін)
+            with open(os.path.join(lang_dir, 'index.html'), 'w', encoding='utf-8') as f_out:
+                f_out.write(full_index)
+            # ------------------------------------
 
             # Рендер сторінок кожного сервісу
             for s in all_services:
@@ -77,7 +80,6 @@ def build():
                     steps_html = "".join([f"<li>{step}</li>" for step in steps])
 
                     # ГОТУЄМО ПІДКАЗКУ (CANCEL HINT)
-                    # Замінюємо {{ official_url }} всередині перекладу на реальне посилання
                     hint_text = lang_data.get('cancel_hint', '').replace('{{ official_url }}', s['official_url'])
 
                     pg = page_tpl.replace('{{ title }}', c['title']) \
@@ -89,7 +91,7 @@ def build():
                     
                     full_pg = layout.replace('{{ content }}', pg)
                     
-                    # Зберігаємо результат
+                    # Зберігаємо сторінку сервісу
                     s_dir = os.path.join(lang_dir, s["id"])
                     os.makedirs(s_dir, exist_ok=True)
                     with open(os.path.join(s_dir, 'index.html'), 'w', encoding='utf-8') as f_out:
