@@ -1,0 +1,44 @@
+{
+  "available_languages": [
+    "ua",
+    "us"
+  ],
+  "services": [
+    {
+      "id": "google_play",
+      "name": "Google Play",
+      "category": "phone",
+      "type": "global",
+      "official_url": "https://megogo.net",
+      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
+      "icon": "assets/icons/megogo.png"
+    },
+    {
+      "id": "megogo",
+      "name": "Megogo",
+      "category": "tv",
+      "type": "ua",
+      "official_url": "https://megogo.net",
+      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
+      "icon": "assets/icons/megogo.png"
+    },
+    {
+      "id": "sweet_tv",
+      "name": "Sweet.tv",
+      "category": "tv",
+      "type": "ua",
+      "official_url": "https://megogo.net",
+      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
+      "icon": "assets/icons/sweet-tv.png"
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "category": "tv",
+      "type": "global",
+      "official_url": "https://megogo.net",
+      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
+      "icon": "assets/icons/netflix.png"
+    }
+  ]
+}
