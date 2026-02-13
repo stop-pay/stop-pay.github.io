@@ -7,7 +7,8 @@
   "exchange_rate": 1,
   "title": "StopPay",
   "desc": "Instructions and links for canceling subscriptions",
-  "seo_text": "<h3>How to cancel a subscription?</h3><p>StopPay helps you stop automatic charges from your card. Here you will find direct links to cancel subscriptions for Apple, Google Play, Netflix, Hulu, and other services. Don't let services charge you for what you don't use.</p>",
+  "cancel_hint": "ℹ️ <b>CUCUMELON:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href=\"{{ official_url }}\" target=\"_blank\">головну сторінку</a> та скористайтеся кроками з інструкції вище.",
+  "seo_text": "<h2>ZAOZAZання грошей?</h2><p><strong>StopPay</strong> — це безкоштовний довідник, який допоможе вам <strong>скасувати підписки</strong> на популярні українські та світові сервіси. Ми зібрали прямі посилання та покрокові інструкції, щоб ви могли самостійно вимкнути автоматичне списання коштів з банківської картки.</p><p>Наш сервіс не потребує доступу до ваших фінансів чи персональних даних. Ми лише показуємо шлях: як відв'язати картку, де знайти кнопку «відмовитися від послуг» та як припинити платити за те, чим ви більше не користуєтеся.</p>",
   "categories": {
     "tv": "TV & Streaming",
     "local": "US Services",
