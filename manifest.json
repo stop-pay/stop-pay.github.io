@@ -1,7 +1,7 @@
 {
   "name": "StopPay",
   "short_name": "StopPay",
-  "description": "Інструкції для скасування підписок",
+  "description": "Stop subscriptions easily",
   "start_url": "/stop_pay/",
   "display": "standalone",
   "orientation": "portrait",
