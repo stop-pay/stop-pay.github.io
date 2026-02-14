@@ -6,12 +6,14 @@
     --border: #444; 
     --accent: #ff4757; 
     --hover: rgba(255, 71, 87, 0.1);
+    --seo-bg: #2d2d2d; /* Окремий колір для блоків тексту */
 }
 [data-theme="light"] { 
-    --bg: #f8f9fa; 
-    --card: #ffffff; 
+    --bg: #f0f2f5;    /* Світло-сірий фон замість чисто білого */
+    --card: #ffffff;  /* Картки залишаються білими для контрасту */
     --text: #2d3436; 
-    --border: #d1d1d1; 
+    --border: #dcdde1; 
+    --seo-bg: #e9ecef; /* Світло-сірий для SEO-блоку, щоб виділити білий текст */
 }
 
 body { 
@@ -116,8 +118,19 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 .donate-section { width: 100%; max-width: 600px; margin-top: 30px; padding: 25px; background: rgba(46, 213, 115, 0.05); border: 2px dashed #2ed573; border-radius: 20px; text-align: center; box-sizing: border-box; }
 .btn-donate { display: inline-block; background: #2ed573; color: white !important; padding: 12px 25px; border-radius: 12px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: 0.3s; }
 
-.seo-block, .seo-text { width: 100%; max-width: 600px; margin: 30px 0; font-size: 0.9rem; line-height: 1.6; opacity: 0.8; background: var(--card); padding: 20px; border-radius: 18px; border: 1px solid var(--border); box-sizing: border-box;}
-
+.seo-block, .seo-text { 
+    width: 100%; 
+    max-width: 600px; 
+    margin: 30px 0; 
+    font-size: 0.9rem; 
+    line-height: 1.6; 
+    opacity: 0.9; /* Трішки збільшив видимість */
+    background: var(--seo-bg); /* Використовуємо нову змінну */
+    padding: 25px; 
+    border-radius: 18px; 
+    border: 1px solid var(--border); 
+    box-sizing: border-box;
+}
 /* --- 6. МОДАЛКИ ТА ВИБІР МОВИ --- */
 .custom-select { position: relative; }
 .select-btn { background: var(--card); border: 1px solid var(--border); padding: 8px 12px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: bold;}
