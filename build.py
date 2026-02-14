@@ -95,6 +95,8 @@ def build():
 
                     # Наповнюємо шаблон сторінки сервісу
                     pg = page_tpl.replace('{{ title }}', c['title']) \
+                                 .replace('{{ price_usd }}', str(s.get('price_usd', 0))) \
+                                 .replace('{{ service_id }}', s['id']) \
                                  .replace('{{ description }}', c['description']) \
                                  .replace('{{ steps }}', steps_html) \
                                  .replace('{{ cancel_hint }}', hint_text) \
