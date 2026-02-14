@@ -57,7 +57,11 @@
     </div>
 
     <div class="action-section">
-        <a href="https://megogo.net/ua/cabinet/subscription" class="btn-cancel" target="_blank" rel="noopener noreferrer">
+        <a href="https://megogo.net/ua/cabinet/subscription" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('{{ price_usd }}', '{{ service_id }}')">
             Скасувати підписку
         </a>
         
@@ -66,9 +70,11 @@
         </div>
     </div>
 
+    {% if seo_text %}
     <div class="seo-text">
         Скасування підписки Megogo дозволяє зберегти ваші кошти, якщо ви більше не плануєте користуватися сервісом. Пам'ятайте, що доступ до контенту зазвичай зберігається до кінця вже оплаченого періоду.
     </div>
+    {% endif %}
 </div>
 
 </main>
