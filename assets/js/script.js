@@ -76,26 +76,29 @@ async function syncGlobalCounter(addUsd = 0) {
     }
 }
 
-// Функція, яка викликається при кліку на кнопку "Скасувати"
+// Функція, яка викликається при кліку на кнопку "Скасувати" або на посилання 
 async function handlePriceAdd(priceUsd, serviceId) {
-    if (!priceUsd || priceUsd <= 0) return;
+    const price = parseFloat(priceUsd);
+    if (!price || price <= 0) return;
 
-    // ЗАХИСТ: перевіряємо, чи людина вже клікала на цей сервіс у цій сесії
-    const sessionKey = `saved_${serviceId}`;
-    if (sessionStorage.getItem(sessionKey)) {
-        console.log("Вже враховано в цій сесії");
+    // Використовуємо localStorage замість sessionStorage
+    // Тепер це збережеться навіть після перезавантаження комп'ютера
+    const storageKey = `saved_forever_${serviceId}`;
+    
+    if (localStorage.getItem(storageKey)) {
+        console.log(`Сервіс ${serviceId} вже був врахований раніше.`);
         return;
     }
 
-    // 1. Оновлюємо локально для миттєвого фідбеку
-    totalSavedUsd += parseFloat(priceUsd);
+    // 1. Оновлюємо візуально (миттєво)
+    totalSavedUsd += price;
     updateCounterDisplay();
 
-    // 2. Позначаємо як "використано"
-    sessionStorage.setItem(sessionKey, "true");
+    // 2. Запам'ятовуємо назавжди (в межах цього браузера)
+    localStorage.setItem(storageKey, "true");
 
-    // 3. Відправляємо на Google Script (місток)
-    await syncGlobalCounter(priceUsd);
+    // 3. Відправляємо на бекенд
+    await syncGlobalCounter(price);
 }
 
 function updateCounterDisplay() {
