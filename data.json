@@ -5,6 +5,15 @@
   ],
   "services": [
     {
+      "id": "kyyivstar-tb",
+      "name": "Київстар ТБ",
+      "category": "tv",
+      "price_usd": 3.0,
+      "type": "ua",
+      "official_url": "https://tv.kyivstar.ua/",
+      "official_cancel_url": "https://account.kyivstar.ua/"
+    },
+    {
       "id": "megogo",
       "name": "Megogo",
       "category": "tv",
