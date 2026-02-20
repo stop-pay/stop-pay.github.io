@@ -15,15 +15,6 @@
       "icon": "assets/icons/sweet-tv.png"
     },
     {
-      "id": "megogo",
-      "name": "Megogo",
-      "category": "tv",
-      "price_usd": 7.99,
-      "type": "ua",
-      "official_url": "https://megogo.net",
-      "official_cancel_url": "https://megogo.net/pl/rules?utm_source=chatgpt.com"
-    },
-    {
       "id": "google_play",
       "name": "Google Play",
       "category": "phone",
