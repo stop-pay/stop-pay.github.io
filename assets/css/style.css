@@ -152,32 +152,41 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Трішки темніший фон для фокусу */
-    z-index: 1000; /* Переконайся, що воно вище за всі інші елементи */
-    display: none;
-    align-items: center;    /* Центрування по вертикалі */
-    justify-content: center; /* Центрування по горизонталі */
-    padding: 20px;
-    backdrop-filter: blur(5px); /* Додає ефект розмиття фону (сучасно виглядає) */
+    width: 100vw;       /* Чітко 100% ширини вікна */
+    height: 100vh;      /* Чітко 100% висоти вікна */
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2000;      /* Піднімаємо максимально високо */
+    display: none;      /* По дефолту приховано */
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    transition: opacity 0.3s ease;
 }
 
 .modal-overlay.active {
-    display: flex; /* Flexbox вмикається тільки при активності */
+    display: flex !important; /* Force flex mode */
 }
 
 .modal-content {
     background: var(--bg);
-    width: 100%;
-    max-width: 400px;
-    border-radius: 24px; /* Трішки м'якші кути */
+    width: 90%;         /* Для мобільних - майже на всю ширину */
+    max-width: 400px;   /* Для десктопа - обмеження */
+    border-radius: 24px;
     padding: 30px;
     border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    
+    /* Прибираємо будь-які зміщення */
+    margin: 0; 
     position: relative;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-    /* Видаляємо зайві марджини, якщо вони були */
-    margin: auto; 
+    
+    /* Анімація появи */
+    animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 .modal-input { width: 100%; padding: 12px; margin: 15px 0; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); box-sizing: border-box; }
 .modal-btn { width: 100%; padding: 12px; background: var(--accent); color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; }
