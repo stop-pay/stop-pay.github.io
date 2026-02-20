@@ -14,6 +14,15 @@
       "official_cancel_url": "https://account.kyivstar.ua/"
     },
     {
+      "id": "apple",
+      "name": "Apple TV+",
+      "category": "tv",
+      "price_usd": 12.99,
+      "type": "us",
+      "official_url": "https://tv.apple.com/",
+      "official_cancel_url": "https://support.apple.com/en-us/HT202039"
+    },
+    {
       "id": "megogo",
       "name": "Megogo",
       "category": "tv",
