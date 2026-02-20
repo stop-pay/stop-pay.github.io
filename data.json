@@ -15,16 +15,6 @@
       "icon": "assets/icons/sweet-tv.png"
     },
     {
-      "id": "google_play",
-      "name": "Google Play",
-      "category": "phone",
-      "price_usd": 7.99,
-      "type": "global",
-      "official_url": "https://megogo.net",
-      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
-      "icon": "assets/icons/megogo.png"
-    },
-    {
       "id": "netflix",
       "name": "Netflix",
       "category": "tv",
