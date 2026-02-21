@@ -16,12 +16,10 @@ def process_icons():
     for filename in os.listdir(SOURCE_DIR):
         file_lower = filename.lower()
         if file_lower.endswith(('.png', '.jpg', '.jpeg', '.webp', '.svg')):
+            img_path = os.path.join(SOURCE_DIR, filename) # Шлях винесено сюди для доступу всюди
             try:
-                img_path = os.path.join(SOURCE_DIR, filename)
-                
                 # Спеціальна обробка для SVG
                 if file_lower.endswith('.svg'):
-                    # Конвертуємо SVG в байтовий потік PNG
                     out = cairosvg.svg2png(url=img_path, output_width=SIZE[0], output_height=SIZE[1])
                     img = Image.open(io.BytesIO(out)).convert("RGBA")
                 else:
@@ -40,9 +38,18 @@ def process_icons():
 
                 base_name = os.path.splitext(filename)[0]
                 save_path = os.path.join(DEST_DIR, f"{base_name}.png")
+                
+                # Зберігаємо файл
                 new_img.save(save_path, "PNG", optimize=True)
                 
-                print(f"✅ Оброблено: {filename} -> {base_name}.png")
+                # ВАЖЛИВО: Закриваємо зображення перед видаленням (для стабільності на Windows)
+                img.close()
+                new_img.close()
+                
+                # Видаляємо оригінал
+                os.remove(img_path)
+                
+                print(f"✅ Оброблено та видалено оригінал: {filename} -> {base_name}.png")
             except Exception as e:
                 print(f"❌ Помилка при обробці {filename}: {e}")
 
@@ -51,4 +58,4 @@ if __name__ == "__main__":
         process_icons()
     else:
         print(f"Папка {SOURCE_DIR} не знайдена!")
-        
+                
