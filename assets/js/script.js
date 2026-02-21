@@ -121,9 +121,11 @@ function fillStaticTranslations() {
         if (el && val) el.innerText = val; 
     };
 
+    // Основні текстові блоки
     safeSet('counterLabel', info.total_saved);
     safeSet('mainDesc', info.desc);
 
+    // Блок інтерфейсу (UI)
     if (info.ui) {
         safeSet('footerCreated', info.ui.footer_created);
         safeSet('footerSlogan', info.ui.footer_slogan);
@@ -136,12 +138,23 @@ function fillStaticTranslations() {
         const mb = document.getElementById('modalBtn');
         if (mb) mb.innerText = info.ui.feedback_btn;
 
+        // Налаштування пошуку
         const si = document.getElementById('searchInput');
-        if (si) si.placeholder = info.ui.search_placeholder;
+        if (si) {
+            // Встановлюємо переклад плейсхолдера
+            si.placeholder = info.ui.search_placeholder || "Search...";
+            
+            // ПРИВ'ЯЗКА ГЛОБАЛЬНОГО ПОШУКУ
+            // Використовуємо oninput, щоб миттєво реагувати на введення
+            si.oninput = (e) => handleSearch(e.target.value);
+        }
     }
 
+    // SEO блок внизу сторінки
     const seoEl = document.getElementById('seoContent');
-    if (seoEl && info.seo_text) seoEl.innerHTML = info.seo_text;
+    if (seoEl && info.seo_text) {
+        seoEl.innerHTML = info.seo_text;
+    }
 }
 
 function renderSite() {
