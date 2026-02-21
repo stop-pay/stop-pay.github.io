@@ -5,6 +5,15 @@
   ],
   "services": [
     {
+      "id": "spotify",
+      "name": "Spotify",
+      "category": "music",
+      "price_usd": 6.99,
+      "type": "global",
+      "official_url": "spotify.com",
+      "official_cancel_url": "spotify.com/account"
+    },
+    {
       "id": "youtube",
       "name": "YouTube Premium",
       "category": "tv",
