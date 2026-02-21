@@ -294,5 +294,55 @@ async function sendToAi() {
     finally { btn.disabled = false; btn.innerText = siteData.ui.ui?.feedback_btn || "Send"; }
 }
 
+function handleSearch(query) {
+    const container = document.getElementById('siteContent');
+    if (!container || !siteData) return;
+
+    const q = query.toLowerCase().trim();
+
+    // Якщо пошук порожній — повертаємо звичайний вигляд (категорії)
+    if (q === "") {
+        renderSite();
+        return;
+    }
+
+    // Фільтруємо ВСІ сервіси, незалежно від регіону
+    const filtered = siteData.services.filter(s => 
+        s.name.toLowerCase().includes(q) || 
+        s.id.toLowerCase().includes(q)
+    );
+
+    // Очищуємо контейнер і створюємо блок результатів
+    container.innerHTML = '';
+    
+    const wrapper = document.createElement('div');
+    wrapper.className = 'category-wrapper active';
+    
+    // Заголовок для результатів пошуку (можна взяти з i18n або просто текст)
+    const searchTitle = siteData.ui.ui?.search_results || "SEARCH RESULTS";
+
+    wrapper.innerHTML = `
+        <div class="category-header">
+            <span>${searchTitle} (${filtered.length})</span>
+        </div>
+        <div class="category-content" style="display: grid;">
+            ${filtered.map(s => `
+                <div class="card" onclick="handleServiceClick('${s.id}')">
+                    <div class="card-icon-wrapper">
+                        <img src="${BASE_URL}/assets/icons/${s.id}.png" onerror="this.src='${BASE_URL}/assets/icons/default.png'">
+                    </div>
+                    <div class="card-name">${s.name}</div>
+                </div>
+            `).join('')}
+        </div>`;
+    
+    if (filtered.length === 0) {
+        container.innerHTML = `<p style="text-align:center; opacity:0.6; margin-top:20px;">${siteData.ui.ui?.no_results || 'No results found'}</p>`;
+    } else {
+        container.appendChild(wrapper);
+    }
+}
+
+
 loadData();
             
