@@ -1,9 +1,9 @@
 {
   "id": "sweet-tv",
-  "name": "Sweet TV",
+  "name": "Sweet.tv",
   "category": "tv",
   "price_usd": 5.6,
-  "type": "global",
+  "type": "ua",
   "official_url": "https://sweet.tv/",
   "official_cancel_url": "https://sweet.tv/"
 }
