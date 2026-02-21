@@ -5,6 +5,15 @@
   ],
   "services": [
     {
+      "id": "youtube",
+      "name": "YouTube Premium Individual",
+      "category": "tv",
+      "price_usd": 13.99,
+      "type": "global",
+      "official_url": "https://www.youtube.com/premium",
+      "official_cancel_url": "https://www.youtube.com/paid_memberships"
+    },
+    {
       "id": "kyyivstar-tb",
       "name": "Київстар ТБ",
       "category": "tv",
