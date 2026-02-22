@@ -1,18 +1,18 @@
 {
   "title": "How to Unsubscribe from Kyivstar TV",
-  "description": "This guide provides several methods to cancel your Kyivstar TV subscription as of February 20, 2026. Choose the method that is most convenient for you.",
+  "description": "This guide provides several methods to cancel your Kyivstar TV subscription as of February 22, 2026. Choose the method that is most convenient for you.",
   "steps": {
     "steps_1": {
-      "title": "Unsubscribe via Web Portal",
-      "description": "To cancel your Kyivstar TV subscription via the web portal:\n\n*   Go to the My Kyivstar web portal (account.kyivstar.ua).\n*   Log in using your phone number."
+      "title": "Unsubscribe via My Kyivstar Web Portal",
+      "description": "To cancel your Kyivstar TV subscription via the web portal:\n\n*   Go to the My Kyivstar web portal (account.kyivstar.ua).\n*   Log in using your phone number.\n*   In the menu, select the 'Services' section.\n*   Find 'Київстар ТБ' in the list of connected services.\n*   Click 'Manage service' or 'Disable'.\n*   Confirm the action. You will receive a notification confirming the service is deactivated."
     },
     "steps_2": {
       "title": "Unsubscribe via Phone (USSD Code)",
-      "description": "To cancel your Kyivstar TV subscription via USSD code:\n\n*   Dial *244*6# or *303*8# on your phone and press the call button.\n*   Wait for an SMS confirmation of cancellation."
+      "description": "To cancel your Kyivstar TV subscription via USSD code:\n\n*   Dial *700# on your phone and press the call button to access the service management menu.\n*   Alternatively, dial 477*760#.\n*   Follow the prompts to find and cancel your Kyivstar TV subscription.\n*   Wait for an SMS confirmation of cancellation."
     },
     "steps_3": {
       "title": "Unsubscribe via Phone (Customer Support)",
-      "description": "To cancel your Kyivstar TV subscription by contacting customer support:\n\n*   Call Customer Support at 466 (free within the Kyivstar network) or 0 800 300 466 (from other networks)."
+      "description": "To cancel your Kyivstar TV subscription by contacting customer support:\n\n*   Call Customer Support at 466 (free within the Kyivstar network) or 0 800 300 466 (from other networks).\n*   Verify your identity by providing the necessary information to the consultant.\n*   Request the cancellation of the Kyivstar TV service.\n*   The consultant will clarify the details and confirm the service deactivation."
     },
     "steps_4": {
       "title": "Unsubscribe via Google Play",
@@ -21,6 +21,10 @@
     "steps_5": {
       "title": "Unsubscribe via iOS Settings",
       "description": "To cancel your Kyivstar TV subscription via iOS Settings:\n\n*   Open the Settings app.\n*   Tap your name at the top.\n*   Select \"Subscriptions\" (or \"Media & Purchases\" if you don't see it).\n*   Find Київстар ТБ and tap \"Cancel Subscription\"."
+    },
+    "steps_6": {
+      "title": "Unsubscribe via Kyivstar TV website (if paying by card)",
+      "description": "If you pay for Kyivstar TV with a bank card, you can cancel your subscription through the Kyivstar TV website:\n\n*   Go to tv.kyivstar.ua and log in to your profile.\n*   Go to the 'My Profile' or 'Subscriptions' section.\n*   Find the active package and click 'Cancel Subscription'."
     }
   },
   "seo_text": "Cancel Kyivstar TV subscription, unsubscribe Kyivstar TV, Kyivstar TV cancellation guide, Kyivstar TV billing, Kyivstar TV manage subscription, Kyivstar TV auto-renewal, Kyivstar TV how to cancel, Kyivstar TV subscription."
