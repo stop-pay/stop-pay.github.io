@@ -41,15 +41,6 @@
       "official_cancel_url": "https://support.apple.com/en-us/HT202039"
     },
     {
-      "id": "report-error-kyyivstar-tb-nedostatno-informatsiyi-v-sektsiyi-veb",
-      "name": "[REPORT_ERROR: kyyivstar-tb] Недостатньо інформації в секції веб",
-      "category": "tv",
-      "price_usd": 0.0,
-      "type": "ua",
-      "official_url": "https://kyivstar.ua/",
-      "official_cancel_url": "https://kyivstar.ua/"
-    },
-    {
       "id": "megogo",
       "name": "Megogo",
       "category": "tv",
