@@ -35,6 +35,7 @@ jobs:
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          # Заходимо в папку фронтенду, щоб скрипт бачив структуру папок
           cd frontend
           python ../backend/translator.py
 
@@ -52,7 +53,6 @@ jobs:
         with:
           github-token: ${{ secrets.GH_TOKEN }}
           script: |
-            // Витягуємо номер Issue з опису Pull Request
             const prBody = context.payload.pull_request.body;
             const issueMatch = prBody.match(/#(\d+)/);
             if (issueMatch) {
@@ -61,7 +61,7 @@ jobs:
                 owner: "pandadreamgs",
                 repo: "stop_pay_backend",
                 issue_number: issueNumber,
-                body: "✅ **Виправлення прийнято!** Всі переклади оновлено, зміни вже на сайті."
+                body: "✅ **Виправлення прийнято!** Всі переклади оновлено автоматично."
               });
               await github.rest.issues.update({
                 owner: "pandadreamgs",
