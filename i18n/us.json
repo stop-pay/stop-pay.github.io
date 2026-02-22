@@ -13,7 +13,9 @@
     "tv": "TV & Streaming",
     "local": "US Services",
     "phone": "Mobile Apps",
-    "cloud_storage": "Cloud Storage"
+    "cloud_storage": "Cloud Storage",
+    "education" : "Освіта",
+    "music" : "Музика"
   },
     "ui": {
     "btn_cancel": "Cancel subscription",
