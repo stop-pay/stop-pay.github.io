@@ -59,15 +59,6 @@
       "official_cancel_url": "https://megogo.net/"
     },
     {
-      "id": "apple-music",
-      "name": "Apple Music",
-      "category": "music",
-      "price_usd": 10.99,
-      "type": "global",
-      "official_url": "https://www.apple.com/apple-music/",
-      "official_cancel_url": "https://support.apple.com/en-us/HT202039"
-    },
-    {
       "id": "netflix",
       "name": "Netflix",
       "category": "tv",
@@ -75,6 +66,15 @@
       "type": "global",
       "official_url": "netflix.com",
       "official_cancel_url": "https://www.netflix.com/account"
+    },
+    {
+      "id": "apple-music",
+      "name": "Apple Music",
+      "category": "music",
+      "price_usd": 10.99,
+      "type": "global",
+      "official_url": "https://www.apple.com/apple-music/",
+      "official_cancel_url": "https://support.apple.com/en-us/HT202039"
     },
     {
       "id": "sweet-tv",
