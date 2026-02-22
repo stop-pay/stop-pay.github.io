@@ -98,27 +98,50 @@ async function handleFabClick() {
 async function sendReport(type, serviceId = "") {
     const input = document.getElementById('aiServiceInput');
     const text = input.value.trim();
+    
+    // Перевірка, чи завантажені дані мови
+    if (!siteData || !siteData.ui || !siteData.ui.ui) return;
     const ui = siteData.ui.ui;
+    
     if (!text) return;
 
     const btn = document.getElementById('modalBtn');
     const originalText = btn.innerText;
+
+    // Візуальний фідбек: блокуємо кнопку
     btn.disabled = true;
     btn.innerText = ui.ai_sending || "...";
 
+    // Формуємо префікс для розрізнення типів заявок на бекенді
     const prefix = type === 'error' ? `[REPORT_ERROR: ${serviceId}] ` : `[ADD_SERVICE] `;
+    const finalMessage = prefix + text;
+
     try {
-        await fetch(`${BRIDGE_URL}?service=${encodeURIComponent(prefix + text)}`, { mode: 'no-cors' });
-        alert(ui.ai_success || "Sent!");
+        // Відправка даних на Google Script
+        await fetch(`${BRIDGE_URL}?service=${encodeURIComponent(finalMessage)}`, { 
+            mode: 'no-cors' 
+        });
+        
+        // Вибір повідомлення залежно від контексту (помилка чи новий сервіс)
+        const successMsg = type === 'error' 
+            ? (ui.report_success || "Дякуємо! Ми перевіримо цю інструкцію.") 
+            : (ui.ai_success || "Запит прийнято! Сервіс буде додано.");
+            
+        alert(successMsg);
+
+        // Очищення та закриття
         toggleModal();
         input.value = "";
     } catch (e) {
-        alert(ui.ai_error || "Error");
+        console.error("Send error:", e);
+        alert(ui.ai_error || "Помилка при відправці. Спробуйте пізніше.");
     } finally {
+        // Повертаємо кнопку в початковий стан
         btn.disabled = false;
         btn.innerText = originalText;
     }
 }
+
 
 // --- 3. ПОШУК ТА ПЕРЕКЛАДИ ---
 
