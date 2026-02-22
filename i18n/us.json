@@ -27,6 +27,7 @@
     "report_error_placeholder": "For example: not enough information in the section...",
     "feedback_btn": "Send",
     "ai_success": "✅ Request accepted! AI will add the service within a few minutes.",
+    "report_success": "✅ Thank you! We will review and fix the instructions shortly.",
     "ai_error": "❌ Sending error.",
     "ai_sending": "⌛ Sending...",
     "donate_t": "Saved some money? 💸",
