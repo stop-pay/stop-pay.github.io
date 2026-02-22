@@ -4,11 +4,11 @@
   "steps": {
     "steps_1": {
       "title": "Unsubscribe via Megogo Website",
-      "description": "To cancel your Megogo subscription via the website:\n\n*   Log in to your Megogo account on the website.\n*   Go to your profile by clicking on your avatar or profile icon.\n*   Select the 'Subscriptions' or 'Services' tab in your account settings.\n*   Find your active Megogo plan and click 'Manage' or 'Unsubscribe'.\n*   Follow the on-screen prompts to confirm the cancellation."
+      "description": "To cancel your Megogo subscription via the website:\n\n*   Log in to your Megogo account on the Megogo website.\n*   Click on your avatar or profile icon in the top right corner.\n*   Navigate to the 'Subscriptions' or 'Services' tab in your account settings.\n*   Find your active Megogo plan and click 'Manage' or 'Unsubscribe'.\n*   Confirm the cancellation. You might be offered a deal to stay, but proceed to confirm the cancellation until you see a success message."
     },
     "steps_2": {
       "title": "Unsubscribe via Google Play Store (Android)",
-      "description": "To cancel your Megogo subscription via the Google Play Store:\n\n*   Open the Google Play Store app on your Android device.\n*   Tap your profile icon.\n*   Select 'Payments & subscriptions' from the menu, then tap 'Subscriptions'.\n*   Find Megogo, tap it, and select 'Cancel subscription'.\n*   Follow the prompts to confirm."
+      "description": "To cancel your Megogo subscription via the Google Play Store:\n\n*   Open the Google Play Store app on your Android device.\n*   Tap your profile icon in the top right corner.\n*   Select 'Payments & subscriptions' from the menu, then tap 'Subscriptions'.\n*   Find Megogo in the list, tap it, and select 'Cancel subscription'.\n*   Follow the prompts to confirm."
     },
     "steps_3": {
       "title": "Unsubscribe via Apple App Store (iOS)",
