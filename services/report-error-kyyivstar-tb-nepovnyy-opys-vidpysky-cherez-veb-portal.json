@@ -1,0 +1,9 @@
+{
+  "id": "report-error-kyyivstar-tb-nepovnyy-opys-vidpysky-cherez-veb-portal",
+  "name": "Kyivstar TV",
+  "category": "tv",
+  "price_usd": 3.0,
+  "type": "ua",
+  "official_url": "https://www.kyivstar.ua/en",
+  "official_cancel_url": "https://account.kyivstar.ua"
+}
