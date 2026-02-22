@@ -1,0 +1,19 @@
+{
+  "title": "How to unsubscribe from Promova",
+  "description": "Learn how to cancel your Promova subscription, whether you signed up through their website, the Apple App Store, or Google Play Store. Follow these steps to ensure your subscription is properly cancelled and you avoid future charges.",
+  "steps": {
+    "web": {
+      "title": "Cancel Promova Subscription via Website",
+      "description": "To cancel your Promova subscription via the website:\n\n*   Log in to your Promova account on the website.\n*   Go to 'My profile' and find 'Payments & subscriptions'.\n*   Locate your subscription and click the three dots.\n*   Choose 'Cancel subscription'.\n*   Complete the questionnaire to confirm cancellation."
+    },
+    "app": {
+      "title": "Cancel Promova Subscription via Apple App Store",
+      "description": "To cancel your Promova subscription via the Apple App Store:\n\n*   Open your Apple ID account settings.\n*   Go to 'Subscriptions'.\n*   Locate the Promova subscription.\n*   Cancel the subscription."
+    },
+    "google_play": {
+      "title": "Cancel Promova Subscription via Google Play",
+      "description": "To cancel your Promova subscription via Google Play:\n\n*   Go to play.google.com.\n*   Sign in to your Google account.\n*   Locate the Promova subscription.\n*   Cancel the subscription."
+    }
+  },
+  "seo_text": "Cancel Promova subscription, Promova unsubscribe, stop Promova payments, Promova cancellation, end Promova subscription, Promova billing, manage Promova subscription, Promova App Store cancellation, Promova Google Play cancellation, Promova website cancellation."
+}

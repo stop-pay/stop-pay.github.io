@@ -1,0 +1,9 @@
+{
+  "id": "add-service-dodayte-bud-laska-servis-promova",
+  "name": "Promova",
+  "category": "software",
+  "price_usd": 9.99,
+  "type": "global",
+  "official_url": "https://promova.com",
+  "official_cancel_url": "https://promova.com"
+}
