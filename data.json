@@ -50,7 +50,7 @@
       "official_cancel_url": "https://megogo.net/"
     },
     {
-      "id": "add-service-apple-music",
+      "id": "apple-music",
       "name": "Apple Music",
       "category": "music",
       "price_usd": 10.99,
