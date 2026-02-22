@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPay</title>
+    
+    <link rel="icon" type="image/png" href="/stop_pay/assets/favicons/favicon-32x32.png" sizes="32x32">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/stop_pay/assets/favicons/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#1a1a1a">
+
+    <link rel="manifest" href="/stop_pay/manifest.json">
+
+    <link rel="stylesheet" href="/stop_pay/assets/css/style.css">
+</head>
+<body data-theme="dark">
+
+<nav>
+    <div class="custom-select" id="langSelector" translate="no">
+        <div class="select-btn" onclick="toggleMenu()">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="" id="currentFlag" class="flag-icon">
+                <span id="currentShort">UA</span>
+            </div>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="select-dropdown" id="dropdownList"></div>
+    </div>
+    <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+</nav>
+
+<header>
+    <div class="counter-container">
+        <span id="counterLabel">Saved:</span>
+        <span id="moneyCounter">0</span>
+        <span id="currency">₴</span>
+    </div>
+
+    <div id="mainTitle" style="margin-top: 20px;">
+        <a href="/stop_pay/">
+            <img src="/stop_pay/Logo.png" alt="StopPay">
+        </a>
+    </div>
+</header>
+
+<main id="mainContent">
+    <div id="isServicePage" data-service-id="report-error-kyyivstar-tb-nepovnyy-opys-vidpysky-cherez-veb-portal" style="display:none;"></div>
+
+<div class="service-page">
+    <h1 class="page-title">Як відписатися від Kyivstar TV</h1>
+    <p class="page-desc">Ось як скасувати підписку на Kyivstar TV різними способами, включаючи iOS, Android, USSD-коди та веб-портал.</p>
+
+    <div class="steps-container">
+        
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">ВІДПИСАТИСЯ ЧЕРЕЗ ВЕБ-ПОРТАЛ MY KYIVSTAR</h2>
+                                <div class="step-card-content">Щоб скасувати підписку на Kyivstar TV через веб-портал:<br><br><ul class='steps-list-inner'><li>Перейдіть на веб-портал My Kyivstar (account.kyivstar.ua).<br></li><li>Увійдіть за допомогою свого номера телефону.<br></li><li>Натисніть на вкладку «Послуги».<br></li><li>Знайдіть «Активні пакети».<br></li><li>Натисніть «Відключити» або «Деактивувати» поруч із підпискою на Kyivstar TV, яку потрібно скасувати.<br></li><li>Підтвердьте скасування за допомогою SMS, якщо буде запропоновано.</li></ul></div>
+                            </div>
+                            
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">ВІДПИСАТИСЯ ЧЕРЕЗ APP STORE (IOS)</h2>
+                                <div class="step-card-content">Щоб скасувати підписку на Kyivstar TV через App Store:<br><br><ul class='steps-list-inner'><li>Відкрийте «Параметри» на своєму iPhone.<br></li><li>Торкніться свого Apple ID, потім виберіть «Підписки», щоб скасувати через App Store.</li></ul></div>
+                            </div>
+                            
+    </div>
+
+    <div class="action-section">
+        <a href="https://account.kyivstar.ua" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('3.0', 'report-error-kyyivstar-tb-nepovnyy-opys-vidpysky-cherez-veb-portal')">
+            Скасувати підписку
+        </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://www.kyivstar.ua/en" target="_blank" onclick="handlePriceAdd('3.0', 'report-error-kyyivstar-tb-nepovnyy-opys-vidpysky-cherez-veb-portal')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+        </div>
+    </div>
+
+    <div class="seo-text">Скасувати підписку на Kyivstar TV, скасування Kyivstar TV, відписатися від Kyivstar TV, зупинити підписку на Kyivstar TV, виставлення рахунків Kyivstar TV, керувати обліковим записом Kyivstar TV</div>
+</div>
+
+</main>
+
+<div class="donate-section">
+    <h3 id="donateTitle"></h3>
+    <p id="donateDesc"></p>
+    <a href="https://buymeacoffee.com/pandadream" class="btn-donate" id="donateBtn" target="_blank">☕ Buy Me a Coffee</a>
+</div>
+
+<div id="seoContent" class="seo-block"></div>
+
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
+</div>
+
+<div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <h3 id="modalTitle">Додати сервіс</h3>
+        <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
+        <input type="text" id="aiServiceInput" class="modal-input" placeholder="Назва сервісу...">
+        <button class="modal-btn" id="modalBtn" onclick="sendToAi()">Надіслати</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-main">
+        <span id="footerCreated">Автор:</span> 
+        <span class="brand-name">PandaDream Game Studio</span> 
+        <span class="panda-emoji">🐼</span>
+    </div>
+    <div id="footerSlogan" class="footer-slogan"></div>
+</footer>
+
+<script src="/stop_pay/assets/js/script.js"></script>
+</body>
+</html>
