@@ -8,12 +8,19 @@
     --hover: rgba(255, 71, 87, 0.1);
     --seo-bg: #2d2d2d; /* Окремий колір для блоків тексту */
 }
-[data-theme="light"] { 
-    --bg: #f8f9fa;
-    --card: #ffffff; 
-    --text: #1e272e; 
-    --border: #e2e8f0; 
-    --seo-bg: #4b6584; /* Світло-сірий для SEO-блоку, щоб виділити білий текст */
+[data-theme="light"] {
+  /* Світло-сірий з легким сталевим відтінком */
+  --bg: #e9ecef; 
+  
+  /* Чистий білий з перламутровим відливом для карток */
+  --card: #fdfdfd; 
+  
+  /* Глибокий антрацит (краще читається на сріблі, ніж чистий чорний) */
+  --text: #1e272e; 
+  
+  /* Колір матового алюмінію для бордерів */
+  --border: #ced4da; 
+  --seo-bg: #fdfdfd;
 }
 
 body { 
@@ -88,6 +95,38 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 .instruction-card { background: var(--card); padding: 25px; border-radius: 20px; border: 1px solid var(--border); margin: 20px 0; }
 .steps-list { padding-left: 20px; line-height: 1.7; }
 .steps-list li { margin-bottom: 15px; color: var(--text); }
+/* Контейнер для всіх карток */
+.steps-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Відступ між картками */
+}
+
+/* Заголовок всередині картки способу */
+.step-card-title {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--accent); /* Колір акценту для привернення уваги */
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+/* Опис та списки всередині картки */
+.step-card-content {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.steps-list-inner {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.steps-list-inner li {
+    margin-bottom: 8px;
+}
 
 /* Стиль для автоматичних посилань в кроках */
 .steps-list li a {
@@ -141,9 +180,46 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 
 .flag-icon { width: 24px !important; height: 16px !important; object-fit: cover; border-radius: 2px; }
 
-.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 200; display: none; align-items: center; justify-content: center; padding: 20px; }
-.modal-overlay.active { display: flex; }
-.modal-content { background: var(--bg); width: 100%; max-width: 400px; border-radius: 20px; padding: 25px; border: 1px solid var(--border); position: relative; }
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;       /* Чітко 100% ширини вікна */
+    height: 100vh;      /* Чітко 100% висоти вікна */
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2000;      /* Піднімаємо максимально високо */
+    display: none;      /* По дефолту приховано */
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    display: flex !important; /* Force flex mode */
+}
+
+.modal-content {
+    background: var(--bg);
+    width: 90%;         /* Для мобільних - майже на всю ширину */
+    max-width: 400px;   /* Для десктопа - обмеження */
+    border-radius: 24px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    
+    /* Прибираємо будь-які зміщення */
+    margin: 0; 
+    position: relative;
+    
+    /* Анімація появи */
+    animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
 .modal-input { width: 100%; padding: 12px; margin: 15px 0; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); box-sizing: border-box; }
 .modal-btn { width: 100%; padding: 12px; background: var(--accent); color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; }
 

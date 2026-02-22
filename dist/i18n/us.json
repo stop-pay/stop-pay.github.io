@@ -15,21 +15,24 @@
     "phone": "Mobile Apps",
     "cloud_storage": "Cloud Storage"
   },
-  "ui": {
-    "btn_cancel" : "Unsubscribe",
+    "ui": {
+    "btn_cancel": "Cancel subscription",
     "search_placeholder": "Find a service...",
-    "search_results": "Search Results",
+    "search_results": "Search results",
     "search_not_found": "Nothing found 🤷‍♂️",
-    "feedback_title": "Missing a service?",
-    "feedback_desc": "Tell us the name, and we will add it.",
+    "feedback_title": "Can't find a service?",
+    "feedback_desc": "Write the name, and we'll add it.",
+    "report_error_title": "Spotted an error?",
+    "report_error_desc": "Describe what exactly isn't working in the instructions for",
+    "report_error_placeholder": "For example: not enough information in the section...",
     "feedback_btn": "Send",
-    "ai_success": "✅ Request accepted! AI will add the service within 1-2 minutes. Check back later.",
-    "ai_error": "❌ Sending error. Please try again later.",
-    "ai_sending": "⌛...",
-    "donate_t": "Saved money? 💸",
-    "donate_d": "Support the project with a coffee.",
+    "ai_success": "✅ Request accepted! AI will add the service within a few minutes.",
+    "ai_error": "❌ Sending error.",
+    "ai_sending": "⌛ Sending...",
+    "donate_t": "Saved some money? 💸",
+    "donate_d": "Support the project with a cup of coffee.",
     "donate_b": "Buy Me a Coffee ☕",
-    "footer_created": "Created by:",
+    "footer_created": "Author:",
     "footer_slogan": "Small tools, big dreams"
   }
 }

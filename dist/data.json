@@ -5,34 +5,49 @@
   ],
   "services": [
     {
-      "id": "google_play",
-      "name": "Google Play",
-      "category": "phone",
-      "price_usd": 7.99,
+      "id": "spotify",
+      "name": "Spotify",
+      "category": "music",
+      "price_usd": 6.99,
       "type": "global",
-      "official_url": "https://megogo.net",
-      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
-      "icon": "assets/icons/megogo.png"
+      "official_url": "spotify.com",
+      "official_cancel_url": "spotify.com/account"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Premium",
+      "category": "tv",
+      "price_usd": 13.99,
+      "type": "global",
+      "official_url": "https://www.youtube.com/premium",
+      "official_cancel_url": "https://www.youtube.com/paid_memberships"
+    },
+    {
+      "id": "kyyivstar-tb",
+      "name": "Київстар ТБ",
+      "category": "tv",
+      "price_usd": 3.0,
+      "type": "ua",
+      "official_url": "https://tv.kyivstar.ua/",
+      "official_cancel_url": "https://account.kyivstar.ua/"
+    },
+    {
+      "id": "apple",
+      "name": "Apple TV+",
+      "category": "tv",
+      "price_usd": 12.99,
+      "type": "global",
+      "official_url": "https://tv.apple.com/",
+      "official_cancel_url": "https://support.apple.com/en-us/HT202039"
     },
     {
       "id": "megogo",
       "name": "Megogo",
       "category": "tv",
-      "price_usd": 7.99,
+      "price_usd": 5.75,
       "type": "ua",
-      "official_url": "https://megogo.net",
-      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
-      "icon": "assets/icons/megogo.png"
-    },
-    {
-      "id": "sweet_tv",
-      "name": "Sweet.tv",
-      "category": "tv",
-      "price_usd": 7.99,
-      "type": "ua",
-      "official_url": "https://megogo.net",
-      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
-      "icon": "assets/icons/sweet-tv.png"
+      "official_url": "https://megogo.net/",
+      "official_cancel_url": "https://megogo.net/"
     },
     {
       "id": "netflix",
@@ -40,9 +55,17 @@
       "category": "tv",
       "price_usd": 7.99,
       "type": "global",
-      "official_url": "https://megogo.net",
-      "official_cancel_url": "https://megogo.net/ua/cabinet/subscription",
-      "icon": "assets/icons/netflix.png"
+      "official_url": "netflix.com",
+      "official_cancel_url": "https://www.netflix.com/account"
+    },
+    {
+      "id": "sweet-tv",
+      "name": "Sweet.tv",
+      "category": "tv",
+      "price_usd": 5.6,
+      "type": "ua",
+      "official_url": "https://sweet.tv/",
+      "official_cancel_url": "https://sweet.tv/"
     }
   ]
 }

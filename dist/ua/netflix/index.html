@@ -46,18 +46,23 @@
 </header>
 
 <main id="mainContent">
-    <div class="service-page">
-    <h1 class="page-title">Як відписатися від Netflix: покрокова інструкція</h1>
-    <p class="page-desc">Дізнайтеся, як швидко скасувати підписку Megogo та зупинити списання коштів з картки.</p>
+    <div id="isServicePage" data-service-id="netflix" style="display:none;"></div>
 
-    <div class="instruction-card">
-        <ol class="steps-list">
-            <li>Відкрийте сайт <a href="https://megogo.net" target="_blank" rel="noopener" onclick="handlePriceAdd('7.99', 'netflix')">megogo.net</a> та увійдіть у свій профіль.</li><li>Натисніть на іконку профілю у правому верхньому куті.</li><li>Перейдіть у розділ 'Передплати' (Subscriptions).</li><li>Знайдіть активну передплату та натисніть кнопку 'Керувати'.</li><li>Оберіть пункт 'Відключити автоматичне подовження' або 'Скасувати передплату'.</li><li>Підтвердіть дію у вікні, що з'явиться.</li>
-        </ol>
+<div class="service-page">
+    <h1 class="page-title">Як скасувати підписку на Netflix</h1>
+    <p class="page-desc">Ось як скасувати підписку на Netflix. Після скасування ви все ще можете користуватися Netflix до кінця поточного розрахункового періоду. Станом на лютий 2026 року ціни на місячні плани Netflix такі: Стандартний з рекламою: $7,99, Стандартний: $17,99, Преміум: $24,99.</p>
+
+    <div class="steps-container">
+        
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">СКАСУВАТИ ПІДПИСКУ НА NETFLIX ЧЕРЕЗ ВЕБ-БРАУЗЕР</h2>
+                                <div class="step-card-content">Щоб скасувати підписку на Netflix через веб-браузер, виконайте наступні дії:<br><br><ul class='steps-list-inner'><li>Перейдіть на сторінку свого облікового запису, перейшовши на netflix.com/account у веб-браузері.<br></li><li>Увійдіть, якщо буде запропоновано.<br></li><li>Клацніть спадне меню у верхньому правому куті поруч із назвою вашого профілю та натисніть «Обліковий запис».<br></li><li>Натисніть «Членство та виставлення рахунків».<br></li><li>Натисніть «Скасувати членство».<br></li><li>Натисніть «Завершити скасування», щоб підтвердити.</li></ul></div>
+                            </div>
+                            
     </div>
 
     <div class="action-section">
-        <a href="https://megogo.net/ua/cabinet/subscription" 
+        <a href="https://www.netflix.com/account" 
            class="btn-cancel" 
            target="_blank" 
            rel="noopener noreferrer"
@@ -66,11 +71,11 @@
         </a>
         
         <div class="link-hint">
-            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://megogo.net" target="_blank" onclick="handlePriceAdd('7.99', 'netflix')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="netflix.com" target="_blank" onclick="handlePriceAdd('7.99', 'netflix')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
         </div>
     </div>
 
-    <div class="seo-text">Скасування підписки Megogo дозволяє зберегти ваші кошти, якщо ви більше не плануєте користуватися сервісом. Пам'ятайте, що доступ до контенту зазвичай зберігається до кінця вже оплаченого періоду.</div>
+    <div class="seo-text">Скасувати підписку на Netflix, відписатися від Netflix, виставлення рахунків Netflix, скасування облікового запису Netflix</div>
 </div>
 
 </main>
@@ -83,8 +88,8 @@
 
 <div id="seoContent" class="seo-block"></div>
 
-<div class="fab-btn" onclick="toggleModal()">
-    <span class="fab-icon">+</span>
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
 </div>
 
 <div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">

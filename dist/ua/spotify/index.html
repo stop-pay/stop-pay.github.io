@@ -46,31 +46,36 @@
 </header>
 
 <main id="mainContent">
-    <div class="service-page">
-    <h1 class="page-title">Як відписатися від Sweet.tv: покрокова інструкція</h1>
-    <p class="page-desc">Дізнайтеся, як швидко скасувати підписку Megogo та зупинити списання коштів з картки.</p>
+    <div id="isServicePage" data-service-id="spotify" style="display:none;"></div>
 
-    <div class="instruction-card">
-        <ol class="steps-list">
-            <li>Відкрийте сайт <a href="https://megogo.net" target="_blank" rel="noopener" onclick="handlePriceAdd('7.99', 'sweet_tv')">megogo.net</a> та увійдіть у свій профіль.</li><li>Натисніть на іконку профілю у правому верхньому куті.</li><li>Перейдіть у розділ 'Передплати' (Subscriptions).</li><li>Знайдіть активну передплату та натисніть кнопку 'Керувати'.</li><li>Оберіть пункт 'Відключити автоматичне подовження' або 'Скасувати передплату'.</li><li>Підтвердіть дію у вікні, що з'явиться.</li>
-        </ol>
+<div class="service-page">
+    <h1 class="page-title">Як скасувати Spotify Premium</h1>
+    <p class="page-desc">Дізнайтеся, як скасувати підписку Spotify Premium через веб-сайт Spotify, додаток Spotify, Google Play Store або iOS App Store. Продовжуйте насолоджуватися перевагами Premium до наступної дати виставлення рахунку.</p>
+
+    <div class="steps-container">
+        
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">СКАСУВАТИ SPOTIFY PREMIUM ЧЕРЕЗ ВЕБ-САЙТ</h2>
+                                <div class="step-card-content">Ось як скасувати підписку Spotify Premium через веб-сайт:<br><br><ul class='steps-list-inner'><li>Перейдіть на spotify.com і увійдіть у свій обліковий запис.<br></li><li>Натисніть на значок свого профілю у верхньому правому куті та виберіть "Обліковий запис".<br></li><li>Прокрутіть вниз до розділу "Ваш план" або знайдіть кнопку "Керувати підпискою".<br></li><li>Натисніть "Змінити план".<br></li><li>Виберіть "Скасувати Premium" або опцію "Spotify Free".<br></li><li>Підтвердьте скасування.</li></ul></div>
+                            </div>
+                            
     </div>
 
     <div class="action-section">
-        <a href="https://megogo.net/ua/cabinet/subscription" 
+        <a href="spotify.com/account" 
            class="btn-cancel" 
            target="_blank" 
            rel="noopener noreferrer"
-           onclick="handlePriceAdd('7.99', 'sweet_tv')">
+           onclick="handlePriceAdd('6.99', 'spotify')">
             Скасувати підписку
         </a>
         
         <div class="link-hint">
-            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://megogo.net" target="_blank" onclick="handlePriceAdd('7.99', 'sweet_tv')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="spotify.com" target="_blank" onclick="handlePriceAdd('6.99', 'spotify')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
         </div>
     </div>
 
-    <div class="seo-text">Скасування підписки Megogo дозволяє зберегти ваші кошти, якщо ви більше не плануєте користуватися сервісом. Пам'ятайте, що доступ до контенту зазвичай зберігається до кінця вже оплаченого періоду.</div>
+    <div class="seo-text">Скасувати підписку Spotify Premium. Кроки для скасування Spotify на веб-сайті, у додатку, Google Play, iOS. Знизити Spotify до безкоштовного. Зупинити платежі Spotify.</div>
 </div>
 
 </main>
@@ -83,8 +88,8 @@
 
 <div id="seoContent" class="seo-block"></div>
 
-<div class="fab-btn" onclick="toggleModal()">
-    <span class="fab-icon">+</span>
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
 </div>
 
 <div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
