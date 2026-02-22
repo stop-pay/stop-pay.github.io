@@ -4,7 +4,19 @@
   "steps": {
     "web": {
       "title": "Cancel Spotify Premium via Website",
-      "description": "Here's how to cancel your Spotify Premium subscription through the website:\n\n*   Go to spotify.com and log in to your account.\n*   Click on your profile icon in the top right corner and select \"Account\".\n*   Scroll down to the \"Your Plan\" section or find the \"Manage Subscription\" button.\n*   Click \"Change Plan\".\n*   Select \"Cancel Premium\" or the \"Spotify Free\" option.\n*   Confirm your cancellation."
+      "description": "Here's how to cancel your Spotify Premium subscription through the website:\n\n*   Go to spotify.com and log in to your account.\n*   Go to your Account Overview page.\n*   Scroll down to the \"Your Plan\" section or find the \"Manage Subscription\" button.\n*   Click \"Change Plan\".\n*   Select \"Cancel Premium\" or the \"Spotify Free\" option.\n*   Confirm your cancellation."
+    },
+    "app": {
+      "title": "Cancel Spotify Premium via App",
+      "description": "Here's how to cancel your Spotify Premium subscription through the Spotify app:\n\n*   Open the Spotify app and log in to your account.\n*   Tap the “Home” icon.\n*   Tap the gear (settings) icon.\n*   Scroll down until you find the “Account” option.\n*   Find the “Your Plan” section.\n*   Select the “Change Plan” option and find the “Spotify Free” option."
+    },
+    "ios": {
+      "title": "Cancel Spotify Premium via iOS App Store",
+      "description": "Here's how to cancel your Spotify Premium subscription through the iOS App Store:\n\n*   Open the “Settings” app on your iPhone or iPad.\n*   Tap on your name at the top of the screen.\n*   Select “Subscriptions”.\n*   Find and tap on your Spotify subscription.\n*   Tap “Cancel Subscription” and confirm your cancellation."
+    },
+    "google_play": {
+      "title": "Cancel Spotify Premium via Google Play Store",
+      "description": "Here's how to cancel your Spotify Premium subscription through the Google Play Store:\n\n*   Open the Google Play Store on your Android device.\n*   Tap on your profile icon in the top right corner.\n*   Select “Payments & subscriptions”.\n*   Tap on “Subscriptions” and find Spotify in the list.\n*   Tap “Cancel subscription” and follow the prompts to confirm."
     }
   },
   "seo_text": "Cancel Spotify Premium subscription. Steps to cancel Spotify on website, app, Google Play, iOS. Downgrade Spotify to free. Stop Spotify payments."
