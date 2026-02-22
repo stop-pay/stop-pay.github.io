@@ -4,7 +4,7 @@
   "steps": {
     "steps_1": {
       "title": "Unsubscribe via My Kyivstar Web Portal",
-      "description": "To cancel your Kyivstar TV subscription via the web portal:\n\n*   Go to the My Kyivstar web portal (account.kyivstar.ua).\n*   Log in using your phone number.\n*   In the menu, select the 'Services' section.\n*   Find 'Київстар ТБ' in the list of connected services.\n*   Click 'Manage service' or 'Disable'.\n*   Confirm the action. You will receive a notification confirming the service is deactivated."
+      "description": "To cancel your Kyivstar TV subscription via the web portal:\n\n*   Go to the My Kyivstar web portal (account.kyivstar.ua).\n*   Log in using your phone number.\n*   In the menu, select the 'Services' section.\n*   Find 'Kyivstar TV' in the list of connected services.\n*   Click 'Manage service' or 'Disable'.\n*   Confirm the action. You will receive a notification confirming the service is deactivated."
     },
     "steps_2": {
       "title": "Unsubscribe via Phone (USSD Code)",
