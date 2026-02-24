@@ -15,11 +15,8 @@ async function loadData() {
         const path = window.location.pathname;
         const isRoot = path === BASE_URL + '/' || path === BASE_URL || path === '/';
         let savedLang = localStorage.getItem('user_lang');
-
-        let langFromUrl = null;
-        if (path.includes('/us/')) langFromUrl = 'us';
-        else if (path.includes('/ua/')) langFromUrl = 'ua';
-        else if (path.includes('/gb/')) langFromUrl = 'gb';
+        const langMatch = path.match(/\/(us|ua|gb|pl|de|fr)\//);
+        let langFromUrl = langMatch ? langMatch[1] : null;
 
         if (isRoot && savedLang && savedLang !== 'ua') {
             window.location.replace(`${BASE_URL}/${savedLang}/`);
@@ -152,9 +149,14 @@ function handleSearch(query) {
 
     if (q === "") { renderSite(); return; }
 
-    const filtered = siteData.services.filter(s => 
-        s.name.toLowerCase().includes(q) || s.id.toLowerCase().includes(q)
-    );
+    const filtered = siteData.services.filter(s => {
+        const name = s.name.toLowerCase();
+        const id = s.id.toLowerCase();
+        // Беремо наші нові аліаси з data.json
+        const alias = (s.search_alias || "").toLowerCase(); 
+        
+        return name.includes(q) || id.includes(q) || alias.includes(q);
+    });
 
     container.innerHTML = '';
     const wrapper = document.createElement('div');
