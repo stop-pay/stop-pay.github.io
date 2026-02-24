@@ -23,9 +23,27 @@ def build():
             if s_file.endswith('.json'):
                 with open(os.path.join('services', s_file), 'r', encoding='utf-8') as f:
                     try:
-                        all_services.append(json.load(f))
+                        service_data = json.load(f)
+                        sid = service_data['id']
+                        
+                        aliases = []
+                        for lang in available_langs:
+                            content_path = f'content/{lang}/{sid}.json'
+                            if os.path.exists(content_path):
+                                with open(content_path, 'r', encoding='utf-8') as f_c:
+                                    try:
+                                        c_json = json.load(f_c)
+                                        t_name = c_json.get('translated_name', '').strip()
+                                        if t_name:
+                                            aliases.append(t_name)
+                                    except:
+                                        continue
+                        
+                        service_data['search_alias'] = ", ".join(list(set(aliases)))
+                        all_services.append(service_data)
+                        
                     except Exception as e:
-                        print(f"Помилка у файлі {s_file}: {e}")
+                        print(f"Помилка у файлі метаданих {s_file}: {e}")
 
     # 4. СТВОРЕННЯ data.json
     with open('dist/data.json', 'w', encoding='utf-8') as f:
