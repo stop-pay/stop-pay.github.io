@@ -1,0 +1,16 @@
+{
+  "title": "How to unsubscribe from Microsoft 365",
+  "translated_name": "microsoft 365",
+  "description": "Learn how to cancel your Microsoft 365 subscription and manage your account. Follow these steps to ensure a smooth cancellation process and understand the implications of ending your subscription.",
+  "steps": {
+    "steps_1": {
+      "title": "Cancel Microsoft 365 Subscription via Website",
+      "description": "To cancel your Microsoft 365 subscription via the website, follow these steps:\n\n*   Go to the Microsoft Subscriptions page at account.microsoft.com/services/ and sign in to the Microsoft account you used to purchase the subscription.\n*   Find your Microsoft 365 subscription.\n*   Select \"Manage\".\n*   On the next page, select \"Cancel\" (or it might say \"Upgrade or Cancel,\" depending on your subscription type).\n*   Follow the instructions to cancel your subscription.\n*   Note that cancellations are effective immediately, even if you're billed monthly or annually.\n*   Be aware that canceling your subscription will result in a loss of access to Microsoft applications and data stored in Outlook or OneDrive."
+    },
+    "steps_2": {
+      "title": "Cancel Microsoft 365 Subscription via Third-Party Provider",
+      "description": "If you purchased your subscription through a third-party provider, follow these steps:\n\n*   Check the cancellation policy of the third-party provider."
+    }
+  },
+  "seo_text": "Cancel Microsoft 365 subscription, unsubscribe from Microsoft 365, Microsoft 365 cancellation, manage Microsoft 365 account, end Microsoft 365 subscription, Microsoft 365 billing, Microsoft 365 refund"
+}

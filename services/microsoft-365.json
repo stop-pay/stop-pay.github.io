@@ -1,0 +1,9 @@
+{
+  "id": "microsoft-365",
+  "name": "Microsoft 365",
+  "category": "software",
+  "price_usd": 9.99,
+  "type": "global",
+  "official_url": "https://www.microsoft.com/en-us/microsoft-365",
+  "official_cancel_url": "https://account.microsoft.com/services/"
+}
