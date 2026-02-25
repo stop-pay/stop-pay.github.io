@@ -5,6 +5,16 @@
   ],
   "services": [
     {
+      "id": "zoom",
+      "name": "Zoom",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://zoom.us",
+      "official_cancel_url": "https://zoom.us",
+      "search_alias": "Zoom, zoom"
+    },
+    {
       "id": "perplexity-ai",
       "name": "Perplexity AI",
       "category": "ai",
@@ -22,7 +32,7 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "spotify premium, спотіфай преміум"
+      "search_alias": "спотіфай преміум, spotify premium"
     },
     {
       "id": "youtube",
@@ -52,7 +62,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "київстар ТБ, kyivstar tv"
+      "search_alias": "kyivstar tv, київстар ТБ"
     },
     {
       "id": "claude",
@@ -72,7 +82,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "apple tv+, епл ТБ"
+      "search_alias": "епл ТБ, apple tv+"
     },
     {
       "id": "megogo",
@@ -82,7 +92,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "megogo, мегого"
+      "search_alias": "мегого, megogo"
     },
     {
       "id": "promova",
@@ -142,7 +152,7 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/",
-      "search_alias": "світ ТБ, sweet.tv"
+      "search_alias": "sweet.tv, світ ТБ"
     }
   ]
 }
