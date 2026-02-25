@@ -12,7 +12,7 @@
       "type": "global",
       "official_url": "https://zoom.us",
       "official_cancel_url": "https://zoom.us",
-      "search_alias": "zoom, Zoom"
+      "search_alias": "Zoom, zoom"
     },
     {
       "id": "notion",
@@ -72,7 +72,7 @@
       "type": "global",
       "official_url": "https://www.youtube.com/premium",
       "official_cancel_url": "https://www.youtube.com/paid_memberships",
-      "search_alias": "youtube premium, ютуб преміум"
+      "search_alias": "ютуб преміум, youtube premium"
     },
     {
       "id": "coursera",
@@ -92,7 +92,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "київстар ТБ, kyivstar tv"
+      "search_alias": "kyivstar tv, київстар ТБ"
     },
     {
       "id": "claude",
@@ -152,7 +152,7 @@
       "type": "global",
       "official_url": "netflix.com",
       "official_cancel_url": "https://www.netflix.com/account",
-      "search_alias": "netflix, нетфлікс"
+      "search_alias": "нетфлікс, netflix"
     },
     {
       "id": "adobe-firefly",
@@ -192,7 +192,7 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/",
-      "search_alias": "світ ТБ, sweet.tv"
+      "search_alias": "sweet.tv, світ ТБ"
     }
   ]
 }
