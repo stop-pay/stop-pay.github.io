@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Super Duolingo",
+  "translated_name": "super duolingo",
+  "description": "You can cancel your Super Duolingo subscription at any time. Depending on how you subscribed (web, Google Play Store, or Apple App Store), the cancellation steps will vary. Canceling the subscription will not delete your Duolingo account, and you will retain access until the end of your current billing cycle.",
+  "steps": {
+    "web": {
+      "title": "Cancel Duolingo Plus Subscription via Web",
+      "description": "To cancel your Duolingo Plus subscription via the web:\n\n*   Sign in to your Duolingo account via a web browser.\n*   Click on your username in the top-right corner and select Settings.\n*   Go to Super Duolingo settings.\n*   Choose Cancel Subscription and confirm the changes."
+    },
+    "google_play": {
+      "title": "Cancel Duolingo Plus Subscription via Google Play Store",
+      "description": "To cancel your Duolingo Plus subscription via the Google Play Store:\n\n*   Open the Google Play Store app.\n*   Tap on the Menu (three horizontal lines) or your profile icon.\n*   Select Subscriptions and Services or Payments & Subscriptions.\n*   Find your Super Duolingo subscription and tap on Manage or Subscriptions.\n*   Choose Cancel Subscription and follow the prompts to confirm."
+    },
+    "ios": {
+      "title": "Cancel Duolingo Plus Subscription via iOS",
+      "description": "To cancel your Duolingo Plus subscription via iOS:\n\n*   Open the Settings app on your iOS device.\n*   Tap on your name at the top of the screen.\n*   Tap on Subscriptions and find your Super Duolingo subscription.\n*   Choose to Cancel Subscription and confirm any changes."
+    }
+  },
+  "seo_text": "Cancel Super Duolingo subscription, unsubscribe from Duolingo Plus, stop Duolingo payments, Duolingo cancellation steps, manage Duolingo subscription"
+}

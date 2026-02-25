@@ -1,0 +1,9 @@
+{
+  "id": "duolingo-plus",
+  "name": "Duolingo Plus",
+  "category": "education",
+  "price_usd": 12.99,
+  "type": "global",
+  "official_url": "https://www.duolingo.com/",
+  "official_cancel_url": "https://support.duolingo.com/hc/en-us/articles/115004068123-How-do-I-cancel-my-Duolingo-Plus-subscription"
+}
