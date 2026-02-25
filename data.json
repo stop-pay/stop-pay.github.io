@@ -12,7 +12,7 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "spotify premium, спотіфай преміум"
+      "search_alias": "спотіфай преміум, spotify premium"
     },
     {
       "id": "youtube",
@@ -32,7 +32,17 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "київстар ТБ, kyivstar tv"
+      "search_alias": "kyivstar tv, київстар ТБ"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://www.anthropic.com/",
+      "official_cancel_url": null,
+      "search_alias": "Claude"
     },
     {
       "id": "apple",
@@ -42,7 +52,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "епл ТБ, apple tv+"
+      "search_alias": "apple tv+, епл ТБ"
     },
     {
       "id": "megogo",
@@ -52,7 +62,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "megogo, мегого"
+      "search_alias": "мегого, megogo"
     },
     {
       "id": "promova",
