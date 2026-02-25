@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPay</title>
+    
+    <link rel="icon" type="image/png" href="/stop_pay/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="/stop_pay/assets/favicons/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="manifest" href="/stop_pay/manifest.json">
+    <link rel="stylesheet" href="/stop_pay/assets/css/style.css">
+</head>
+
+<body data-theme="dark">
+
+<!-- 🔥 ГОЛОВНИЙ КОНТЕЙНЕР -->
+<div class="main-wrapper">
+
+    <nav>
+        <div class="custom-select" id="langSelector" translate="no">
+            <div class="select-btn" onclick="toggleMenu()">
+                <div style="display: flex; align-items: stretch; gap: 8px;">
+                    <img src="" id="currentFlag" class="flag-icon">
+                    <span id="currentShort">UA</span>
+                </div>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="select-dropdown" id="dropdownList"></div>
+        </div>
+        <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+    </nav>
+
+    <header>
+        <div class="counter-container">
+            <span id="counterLabel">Saved:</span>
+            <span id="moneyCounter">0</span>
+            <span id="currency">₴</span>
+        </div>
+
+        <div id="mainTitle">
+            <a href="/stop_pay/">
+                <img src="/stop_pay/Logo.png" alt="StopPay">
+            </a>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <div id="isServicePage" data-service-id="elestio-prometheus" style="display:none;"></div>
+
+<div class="service-page">
+    <h1 class="page-title">Як скасувати підписку на Prometheus Plus</h1>
+    <p class="page-desc">На жаль, "Prometheus Plus" недостатньо конкретний запит, оскільки існує декілька сервісів Prometheus. Будь ласка, уточніть, який саме сервіс "Prometheus Plus" вас цікавить (наприклад, Elestio Prometheus, Prometheus Group, Google Cloud Managed Service for Prometheus, Amazon Managed Service for Prometheus), щоб я міг надати більш конкретну інформацію.</p>
+
+    <div class="steps-container">
+        <div class="instruction-card"><h2 class="step-card-title">СКАСУВАННЯ ЧЕРЕЗ ВЕБ-ПЛАТФОРМУ</h2><div class="step-card-content">Щоб скасувати підписку на Elestio Prometheus через веб-платформу, виконайте наступні дії:<br><br><ul class='steps-list-inner'><li>Визначте конкретний сервіс "Prometheus Plus", на який ви підписані (наприклад, Elestio Prometheus, Prometheus Group, Google Cloud Managed Service for Prometheus, Amazon Managed Service for Prometheus).<br></li><li>Перейдіть на веб-сайт або платформу сервісу, де ви керуєте своїм обліковим записом.<br></li><li>Увійдіть у свій обліковий запис, використовуючи свої облікові дані.<br></li><li>Перейдіть до налаштувань облікового запису або розділу керування підписками.<br></li><li>Знайдіть опцію скасування або відмови від підписки на сервіс Prometheus Plus.<br></li><li>Дотримуйтесь інструкцій на екрані, щоб підтвердити скасування.<br></li><li>Перевірте наявність електронного листа з підтвердженням або сповіщення, щоб переконатися, що скасування пройшло успішно.</li></ul></div></div>
+    </div>
+
+    <div class="action-section">
+        <a href="https://elest.io/" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('16.0', 'elestio-prometheus')">
+            Скасувати підписку
+        </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://elest.io/" target="_blank" onclick="handlePriceAdd('16.0', 'elestio-prometheus')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+        </div>
+    </div>
+
+    
+                    <div class="seo-text" style="text-align: center; margin-top: 40px; border-top: 1px solid var(--border); padding-top: 20px;">
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text); opacity: 0.9;">Ми постійно перевіряємо актуальність наших інструкцій, щоб ви могли швидко та без зайвих зусиль скасувати непотрібні підписки. Якщо ви помітили неточність або сервіс змінив інтерфейс — натисніть на кнопку <b>«?»</b>. Ваше зауваження допоможе нам стати кращими!</p>
+                        <div style="opacity: 0.5; font-size: 0.8rem; margin-top: 15px;">Дата останнього оновлення: 25.02.2026</div>
+                    </div>
+                    
+</div>
+
+    </main>
+
+    <div class="donate-section">
+        <h3 id="donateTitle"></h3>
+        <p id="donateDesc"></p>
+        <a href="https://buymeacoffee.com/pandadream" 
+           class="btn-donate" 
+           id="donateBtn" 
+           target="_blank">
+           ☕ Buy Me a Coffee
+        </a>
+    </div>
+
+    <div id="seoContent" class="seo-block"></div>
+
+    <footer>
+        <div class="footer-main">
+            <span id="footerCreated">Автор:</span> 
+            <span class="brand-name">PandaDream Game Studio</span> 
+            <span class="panda-emoji">🐼</span>
+        </div>
+        <div id="footerSlogan" class="footer-slogan"></div>
+    </footer>
+
+</div>
+<!-- 🔥 КІНЕЦЬ main-wrapper -->
+
+
+<!-- ❗ FAB І МОДАЛКА ЗАЛИШАЮТЬСЯ ПОЗА WRAPPER -->
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
+</div>
+
+<div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <h3 id="modalTitle">Додати сервіс</h3>
+        <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
+        <input type="text" 
+               id="aiServiceInput" 
+               class="modal-input" 
+               placeholder="Назва сервісу...">
+        <button class="modal-btn" 
+                id="modalBtn" 
+                onclick="sendToAi()">
+                Надіслати
+        </button>
+    </div>
+</div>
+
+<script src="/stop_pay/assets/js/script.js"></script>
+
+</body>
+</html>

@@ -113,6 +113,15 @@
       "official_cancel_url": "https://www.masterclass.com"
     },
     {
+      "id": "elestio-prometheus",
+      "name": "Elestio Prometheus",
+      "category": "software",
+      "price_usd": 16.0,
+      "type": "global",
+      "official_url": "https://elest.io/",
+      "official_cancel_url": "https://elest.io/"
+    },
+    {
       "id": "spotify",
       "name": "Spotify",
       "category": "music",
@@ -165,6 +174,15 @@
       "type": "global",
       "official_url": "https://store.ubi.com/ubisoftplus",
       "official_cancel_url": "https://store.ubi.com/us/ubisoftplus/subscription"
+    },
+    {
+      "id": "omegatv",
+      "name": "OmegaTV",
+      "category": "tv",
+      "price_usd": 19.99,
+      "type": "global",
+      "official_url": "https://my-omega-tv.xyz",
+      "official_cancel_url": "https://my-omega-tv.xyz"
     },
     {
       "id": "microsoft-365",
