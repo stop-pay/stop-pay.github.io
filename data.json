@@ -52,7 +52,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "megogo, мегого"
+      "search_alias": "мегого, megogo"
     },
     {
       "id": "promova",
@@ -92,7 +92,7 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/",
-      "search_alias": "світ ТБ, sweet.tv"
+      "search_alias": "sweet.tv, світ ТБ"
     }
   ]
 }
