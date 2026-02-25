@@ -1,16 +1,16 @@
 {
-  "title": "Як скасувати підписку на Midjourney",
+  "title": "How to unsubscribe from Midjourney",
   "translated_name": "midjourney",
-  "description": "Ви можете скасувати свою підписку на Midjourney у будь-який час через їхній вебсайт. Ваше скасування набуде чинності в кінці поточного платіжного циклу, і ви збережете доступ до цього часу. Відшкодування за скасування посеред підписки не надаються, за винятком випадків, коли ви використали менше 20 хвилин GPU з моменту останнього платежу.",
+  "description": "You can cancel your Midjourney subscription at any time through their website. Your cancellation will be effective at the end of your current billing cycle, and you'll retain access until then. No refunds are given for mid-subscription cancellations, except if you've used less than 20 GPU minutes since your last payment.",
   "steps": {
     "web": {
-      "title": "Скасуйте підписку на Midjourney через вебсайт",
-      "description": "Щоб скасувати підписку на Midjourney через вебсайт:\n\n*   Перейдіть на вебсайт Midjourney: midjourney.com/auth/signin/ та увійдіть за допомогою своїх облікових даних Discord.\n*   Знайдіть опцію \"Manage Subscription\" (Керувати підпискою) на лівій бічній панелі.\n*   Натисніть кнопку \"Cancel Plan\" (Скасувати план) на сторінці \"Manage Subscription\".\n*   Підтвердьте скасування у спливаючому вікні."
+      "title": "Cancel Midjourney Subscription via Website",
+      "description": "To cancel your Midjourney subscription via the website:\n\n*   Go to the Midjourney website: midjourney.com/auth/signin/ and sign in with your Discord credentials.\n*   Find the \"Manage Subscription\" option on the left-hand sidebar.\n*   Click the \"Cancel Plan\" button on the \"Manage Subscription\" page.\n*   Confirm your cancellation in the pop-up window."
     },
     "discord": {
-      "title": "Скасуйте підписку на Midjourney через Discord",
-      "description": "Щоб скасувати підписку на Midjourney через Discord:\n\n*   Введіть `/subscribe` на сервері Midjourney Discord.\n*   Перейдіть за посиланням, наданим ботом.\n*   Натисніть кнопку \"Cancel Plan\" (Скасувати план) на сторінці \"Manage Subscription\".\n*   Підтвердьте скасування у спливаючому вікні."
+      "title": "Cancel Midjourney Subscription via Discord",
+      "description": "To cancel your Midjourney subscription via Discord:\n\n*   Type `/subscribe` in the Midjourney Discord server.\n*   Click the link provided by the bot.\n*   Click the \"Cancel Plan\" button on the \"Manage Subscription\" page.\n*   Confirm your cancellation in the pop-up window."
     }
   },
-  "seo_text": "Скасувати підписку Midjourney, відписатися від Midjourney, зупинити платежі Midjourney, завершити членство в Midjourney."
+  "seo_text": "Cancel Midjourney subscription, Midjourney unsubscribe, stop Midjourney payments, end Midjourney membership."
 }
