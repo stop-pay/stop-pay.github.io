@@ -12,7 +12,7 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "спотіфай преміум, spotify premium"
+      "search_alias": "spotify premium, спотіфай преміум"
     },
     {
       "id": "youtube",
@@ -42,7 +42,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "apple tv+, епл ТБ"
+      "search_alias": "епл ТБ, apple tv+"
     },
     {
       "id": "megogo",
@@ -52,7 +52,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "мегого, megogo"
+      "search_alias": "megogo, мегого"
     },
     {
       "id": "promova",
@@ -72,17 +72,7 @@
       "type": "global",
       "official_url": "netflix.com",
       "official_cancel_url": "https://www.netflix.com/account",
-      "search_alias": "нетфлікс, netflix"
-    },
-    {
-      "id": "apple-music",
-      "name": "Apple Music",
-      "category": "music",
-      "price_usd": 10.99,
-      "type": "global",
-      "official_url": "https://www.apple.com/apple-music/",
-      "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": ""
+      "search_alias": "netflix, нетфлікс"
     },
     {
       "id": "sweet-tv",
