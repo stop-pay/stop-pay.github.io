@@ -1,0 +1,18 @@
+{
+  "title": "How to unsubscribe from EA Play",
+  "translated_name": "ea play",
+  "description": "Learn how to cancel your EA Play subscription on PC, PlayStation, and Xbox. Follow these steps to manage your membership and avoid future charges.",
+  "steps": {
+    "steps_1": {
+      "method": "Web",
+      "title": "Cancel EA Play Subscription via EA Account",
+      "description": "To cancel your EA Play subscription through the EA website, follow these steps:\n\n*   Go to your EA Account and sign in.\n*   Select the \"Subscriptions and Memberships\" tab.\n*   In the \"Your membership\" section, select \"Cancel membership\".\n*   Select \"Cancel membership\" on the new browser page."
+    },
+    "steps_2": {
+      "method": "Xbox",
+      "title": "Cancel EA Play Subscription via Xbox",
+      "description": "To cancel your EA Play subscription through your Xbox console, follow these steps:\n\n*   Press the Xbox button on your controller to open the guide.\n*   Go to Profile & system > Settings > Account > Subscriptions.\n*   Find EA Play in the list and select it.\n*   Choose \"Cancel Subscription\"."
+    }
+  },
+  "seo_text": "Cancel EA Play subscription, unsubscribe from EA Play, manage EA Play membership, stop EA Play payments, EA Play cancellation guide, EA Play subscription termination."
+}
