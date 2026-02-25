@@ -1,0 +1,9 @@
+{
+  "id": "yakaboo",
+  "name": "Yakaboo",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "ua",
+  "official_url": "https://yakaboo.ua/",
+  "official_cancel_url": "https://yakaboo.ua/"
+}
