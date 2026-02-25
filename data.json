@@ -122,6 +122,15 @@
       "official_cancel_url": "https://support.duolingo.com/hc/en-us/articles/115004068123-How-do-I-cancel-my-Duolingo-Plus-subscription"
     },
     {
+      "id": "ubisoft",
+      "name": "Ubisoft+",
+      "category": "gaming",
+      "price_usd": 17.99,
+      "type": "global",
+      "official_url": "https://store.ubi.com/ubisoftplus",
+      "official_cancel_url": "https://store.ubi.com/us/ubisoftplus/subscription"
+    },
+    {
       "id": "microsoft-365",
       "name": "Microsoft 365",
       "category": "software",
