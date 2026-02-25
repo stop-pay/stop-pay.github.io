@@ -32,7 +32,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "київстар ТБ, kyivstar tv"
+      "search_alias": "kyivstar tv, київстар ТБ"
     },
     {
       "id": "claude",
@@ -52,7 +52,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "apple tv+, епл ТБ"
+      "search_alias": "епл ТБ, apple tv+"
     },
     {
       "id": "megogo",
@@ -72,7 +72,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "promova, промова"
+      "search_alias": "промова, promova"
     },
     {
       "id": "netflix",
