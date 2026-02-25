@@ -132,7 +132,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "промова, promova"
+      "search_alias": "promova, промова"
     },
     {
       "id": "netflix",
@@ -142,7 +142,7 @@
       "type": "global",
       "official_url": "netflix.com",
       "official_cancel_url": "https://www.netflix.com/account",
-      "search_alias": "нетфлікс, netflix"
+      "search_alias": "netflix, нетфлікс"
     },
     {
       "id": "adobe-firefly",
