@@ -86,15 +86,16 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 1200px
 .category-header { padding: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
 
 /* ТУТ ГОЛОВНА ПРАВКА */
-.category-content { 
+.category-content {
     display: none;
     padding: 20px;
-    display: grid;
     gap: 15px;
     border-top: 1px solid var(--border);
+}
 
-    /* 🔥 Магія адаптивності */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+/* активний стан */
+.category-wrapper.active .category-content {
+    display: grid;
 }
 
 /* Прибираємо старий медіа-запит, який міг все псувати, і робимо універсально */
@@ -280,3 +281,30 @@ footer { margin-top: auto; padding: 40px 0; text-align: center; width: 100%; }
         grid-template-columns: repeat(10, 1fr);
     }
              }
+/* 📱 Телефон */
+@media (max-width: 480px) {
+    .category-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 📱 Телефон альбом / маленький планшет */
+@media (min-width: 481px) and (max-width: 768px) {
+    .category-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 📲 Планшет */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .category-content {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* 💻 Десктоп */
+@media (min-width: 1201px) {
+    .category-content {
+        grid-template-columns: repeat(10, 1fr);
+    }
+          }
