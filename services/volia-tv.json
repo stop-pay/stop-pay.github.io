@@ -2,7 +2,7 @@
   "id": "volia-tv",
   "name": "Volia TV",
   "category": "tv",
-  "price_usd": 0.0,
+  "price_usd": 2.30,
   "type": "ua",
   "official_url": "https://volia.com/",
   "official_cancel_url": ""
