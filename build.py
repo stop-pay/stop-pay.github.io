@@ -2,17 +2,27 @@ import json
 import os
 import shutil
 import re
+import subprocess
 from datetime import datetime
 
 # Назва твого репозиторію на GitHub
 BASE_PATH = "/stop_pay"
 
-def get_file_mtime(filepath):
-    """Отримує дату останньої зміни файлу"""
-    if os.path.exists(filepath):
-        t = os.path.getmtime(filepath)
-        return datetime.fromtimestamp(t)
-    return datetime.now()
+def get_git_mtime(filepath):
+    """Отримує дату останнього комміту для конкретного файлу через Git"""
+    try:
+        # Команда отримує дату останнього комміту у форматі ISO
+        result = subprocess.check_output(
+            ['git', 'log', '-1', '--format=%ai', filepath],
+            stderr=subprocess.STDOUT
+        ).decode('utf-8').strip()
+        
+        if result:
+            # Парсимо дату (наприклад, 2024-02-22 14:30:00 +0200)
+            return datetime.strptime(result[:10], '%Y-%m-%d')
+    except Exception:
+        pass
+    return datetime.now() # Fallback, якщо Git не доступний
 
 def build():
     # 1. Очищення та створення структури
@@ -33,12 +43,13 @@ def build():
                 with open(s_path, 'r', encoding='utf-8') as f:
                     try:
                         service_data = json.load(f)
-                        service_data['_mtime'] = get_file_mtime(s_path) # Зберігаємо об'єкт дати
+                        # Отримуємо дату комміту для файлу сервісу
+                        service_data['_mtime'] = get_git_mtime(s_path)
                         all_services.append(service_data)
                     except Exception as e:
                         print(f"Помилка у файлі метаданих {s_file}: {e}")
 
-    # 4. СТВОРЕННЯ data.json (видаляємо тимчасові об'єкти дат перед записом)
+    # 4. СТВОРЕННЯ data.json
     services_for_json = []
     for s in all_services:
         s_copy = s.copy()
@@ -59,6 +70,8 @@ def build():
     for file in ['Logo.png', 'manifest.json']:
         if os.path.exists(file):
             shutil.copy(file, f'dist/{file}')
+    if os.path.exists('assets/favicons/favicon-32x32.png'):
+        shutil.copy('assets/favicons/favicon-32x32.png', 'dist/favicon.png')
     
     with open('dist/.nojekyll', 'w') as f: pass
 
@@ -77,20 +90,18 @@ def build():
                 ui = lang_data.get('ui', {})
                 last_update_label = ui.get('last_update', 'Last update:')
 
-            # Рендер головної сторінки мови
             full_index = layout.replace('{{ content }}', index_body)
             with open(os.path.join(lang_dir, 'index.html'), 'w', encoding='utf-8') as f_out:
                 f_out.write(full_index)
 
-            # Рендер сторінок сервісів
             for s in all_services:
                 content_path = f'content/{lang}/{s["id"]}.json'
                 if os.path.exists(content_path):
                     with open(content_path, 'r', encoding='utf-8') as f_in:
                         c = json.load(f_in)
                     
-                    # Визначаємо найсвіжішу дату
-                    content_mtime = get_file_mtime(content_path)
+                    # ПОРІВНЯННЯ ДАТ КОММІТІВ
+                    content_mtime = get_git_mtime(content_path)
                     service_mtime = s.get('_mtime', content_mtime)
                     final_date = max(content_mtime, service_mtime).strftime('%d.%m.%Y')
                     
@@ -110,7 +121,7 @@ def build():
                                 li_items = "".join([f"<li>{it.strip()}</li>" for it in items[1:] if it.strip()])
                                 formatted_desc = f"{items[0]}<ul class='steps-list-inner'>{li_items}</ul>"
                             steps_html += f'<div class="instruction-card"><h2 class="step-card-title">{step_title}</h2><div class="step-card-content">{formatted_desc}</div></div>'
-                    
+
                     # --- URL ТА ХІНТИ ---
                     cancel_link = s.get('official_cancel_url') or s.get('official_url', '#')
                     hint_text = lang_data.get('cancel_hint', '') or ""
@@ -119,9 +130,7 @@ def build():
                     
                     # --- SEO ТА ДАТА ---
                     seo_content = c.get('seo_text', '') or ""
-                    # Додаємо дату оновлення в блок SEO або створюємо окремий маленький блок
                     update_html = f'<div style="text-align: center; opacity: 0.5; font-size: 0.8rem; margin-top: 20px;">{last_update_label} {final_date}</div>'
-                    
                     seo_html = f'<div class="seo-text">{seo_content}{update_html}</div>'
 
                     pg = page_tpl.replace('{{ title }}', str(c.get('title') or sid)) \
@@ -134,7 +143,6 @@ def build():
                                  .replace('{{ cancel_url }}', str(cancel_link)) \
                                  .replace('{{ seo_text }}', seo_html)
                     
-                    # Очистка залишків Jinja-подібних тегів
                     pg = re.sub(r'\{% if seo_text %\}.*?\{% endif %}', seo_html, pg, flags=re.DOTALL)
 
                     full_pg = layout.replace('{{ content }}', pg)
@@ -152,4 +160,4 @@ def build():
 
 if __name__ == "__main__":
     build()
-    
+                    
