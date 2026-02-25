@@ -203,6 +203,15 @@
       "official_cancel_url": "https://www.twitch.tv/subscriptions?tab=turbo"
     },
     {
+      "id": "patreon",
+      "name": "Patreon",
+      "category": "software",
+      "price_usd": 1.0,
+      "type": "global",
+      "official_url": "https://www.patreon.com/",
+      "official_cancel_url": "https://www.patreon.com/pledges"
+    },
+    {
       "id": "netflix",
       "name": "Netflix",
       "category": "tv",
