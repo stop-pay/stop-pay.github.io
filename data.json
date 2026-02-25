@@ -22,7 +22,7 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "спотіфай преміум, spotify premium"
+      "search_alias": "spotify premium, спотіфай преміум"
     },
     {
       "id": "youtube",
@@ -33,6 +33,16 @@
       "official_url": "https://www.youtube.com/premium",
       "official_cancel_url": "https://www.youtube.com/paid_memberships",
       "search_alias": "ютуб преміум, youtube premium"
+    },
+    {
+      "id": "coursera",
+      "name": "Coursera",
+      "category": "education",
+      "price_usd": 59.0,
+      "type": "global",
+      "official_url": "https://www.coursera.org/",
+      "official_cancel_url": "https://www.coursera.org/",
+      "search_alias": "coursera"
     },
     {
       "id": "kyyivstar-tb",
@@ -52,7 +62,7 @@
       "type": "global",
       "official_url": "https://www.anthropic.com/",
       "official_cancel_url": null,
-      "search_alias": "claude, клауд"
+      "search_alias": "клауд, claude"
     },
     {
       "id": "apple",
@@ -62,7 +72,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "епл ТБ, apple tv+"
+      "search_alias": "apple tv+, епл ТБ"
     },
     {
       "id": "megogo",
@@ -72,7 +82,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "мегого, megogo"
+      "search_alias": "megogo, мегого"
     },
     {
       "id": "promova",
@@ -82,7 +92,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "promova, промова"
+      "search_alias": "промова, promova"
     },
     {
       "id": "netflix",
@@ -92,7 +102,7 @@
       "type": "global",
       "official_url": "netflix.com",
       "official_cancel_url": "https://www.netflix.com/account",
-      "search_alias": "netflix, нетфлікс"
+      "search_alias": "нетфлікс, netflix"
     },
     {
       "id": "adobe-firefly",
@@ -132,7 +142,7 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/",
-      "search_alias": "sweet.tv, світ ТБ"
+      "search_alias": "світ ТБ, sweet.tv"
     }
   ]
 }
