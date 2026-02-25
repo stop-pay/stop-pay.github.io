@@ -86,6 +86,15 @@
       "official_cancel_url": "https://www.coursera.org/"
     },
     {
+      "id": "youtv-ua",
+      "name": "YouTV.ua",
+      "category": "tv",
+      "price_usd": 2.3,
+      "type": "ua",
+      "official_url": "https://youtv.ua",
+      "official_cancel_url": "https://youtv.ua"
+    },
+    {
       "id": "masterclass",
       "name": "MasterClass",
       "category": "software",
