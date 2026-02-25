@@ -1,9 +1,0 @@
-{
-  "id": "hedera-hbar",
-  "name": "Hedera (HBAR)",
-  "category": "software",
-  "price_usd": 0.0001,
-  "type": "global",
-  "official_url": "https://hedera.com/",
-  "official_cancel_url": null
-}
