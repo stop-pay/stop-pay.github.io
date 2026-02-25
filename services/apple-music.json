@@ -1,9 +1,0 @@
-{
-  "id": "apple-music",
-  "name": "Apple Music",
-  "category": "music",
-  "price_usd": 10.99,
-  "type": "global",
-  "official_url": "https://www.apple.com/apple-music/",
-  "official_cancel_url": "https://support.apple.com/en-us/HT202039"
-}
