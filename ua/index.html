@@ -46,14 +46,18 @@
 </header>
 
 <main id="mainContent">
-    <p id="mainDesc" style="opacity: 0.8; margin-bottom: 25px; text-align: center; max-width: 600px;"></p>
+    <p id="mainDesc" style="opacity: 0.8; margin-bottom: 25px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;"></p>
 
-<div class="search-container">
-    <span class="search-icon">🔍</span>
-    <input type="search" id="searchInput" class="search-input" oninput="handleSearch(this.value)">
+<div class="main-wrapper" style="width: 100%; max-width: 1200px; display: flex; flex-direction: column; align-items: center;">
+    
+    <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="searchInput" class="search-input" oninput="handleSearch(this.value)">
+    </div>
+
+    <div id="siteContent" style="width: 100%;"></div>
+    
 </div>
-
-<div id="siteContent" style="width: 100%; max-width: 600px;"></div>
 
 </main>
 
