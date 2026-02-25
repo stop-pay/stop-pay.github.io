@@ -1,0 +1,16 @@
+{
+  "title": "How to unsubscribe from Notion",
+  "translated_name": "notion",
+  "description": "To cancel your Notion subscription, follow these steps. Remember that your subscription will automatically renew until you cancel it, and you'll retain access to paid features until the end of your current billing cycle.",
+  "steps": {
+    "steps_1": {
+      "title": "Cancel Notion Subscription via Web",
+      "description": "To cancel your Notion subscription via the web:\n\n*   Log into your Notion account on a desktop computer (web).\n*   Click on \"Settings & Members\" in the left sidebar. If you don't see this option, you may not be an admin.\n*   Navigate to the \"Upgrade\" or \"Billing\" tab in the sidebar within the settings window.\n*   Click \"Change plan\" or \"Cancel plan\".\n*   Select the Free Plan to stop the billing cycle.\n*   Confirm the downgrade or cancellation when prompted.\n*   Click \"Update plan\" to finalize the cancellation.\n*   Verify that your subscription has been canceled by checking the Subscription section to ensure that your plan status now reflects the cancellation."
+    },
+    "steps_2": {
+      "title": "Cancel Notion Subscription via App",
+      "description": "To cancel your Notion subscription via the app:\n\n*   Log into your Notion account on a desktop computer (app).\n*   Click on \"Settings & Members\" in the left sidebar. If you don't see this option, you may not be an admin.\n*   Navigate to the \"Upgrade\" or \"Billing\" tab in the sidebar within the settings window.\n*   Click \"Change plan\" or \"Cancel plan\".\n*   Select the Free Plan to stop the billing cycle.\n*   Confirm the downgrade or cancellation when prompted.\n*   Click \"Update plan\" to finalize the cancellation.\n*   Verify that your subscription has been canceled by checking the Subscription section to ensure that your plan status now reflects the cancellation."
+    }
+  },
+  "seo_text": "Learn how to easily cancel your Notion subscription. Follow our step-by-step guide to manage your Notion plan and avoid unwanted charges. Cancel Notion subscription, Notion billing, downgrade Notion plan."
+}
