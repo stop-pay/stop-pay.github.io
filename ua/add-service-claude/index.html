@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPay</title>
+    
+    <link rel="icon" type="image/png" href="/stop_pay/assets/favicons/favicon-32x32.png" sizes="32x32">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/stop_pay/assets/favicons/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#1a1a1a">
+
+    <link rel="manifest" href="/stop_pay/manifest.json">
+
+    <link rel="stylesheet" href="/stop_pay/assets/css/style.css">
+</head>
+<body data-theme="dark">
+
+<nav>
+    <div class="custom-select" id="langSelector" translate="no">
+        <div class="select-btn" onclick="toggleMenu()">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="" id="currentFlag" class="flag-icon">
+                <span id="currentShort">UA</span>
+            </div>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="select-dropdown" id="dropdownList"></div>
+    </div>
+    <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+</nav>
+
+<header>
+    <div class="counter-container">
+        <span id="counterLabel">Saved:</span>
+        <span id="moneyCounter">0</span>
+        <span id="currency">₴</span>
+    </div>
+
+    <div id="mainTitle" style="margin-top: 20px;">
+        <a href="/stop_pay/">
+            <img src="/stop_pay/Logo.png" alt="StopPay">
+        </a>
+    </div>
+</header>
+
+<main id="mainContent">
+    <div id="isServicePage" data-service-id="add-service-claude" style="display:none;"></div>
+
+<div class="service-page">
+    <h1 class="page-title">Як скасувати підписку на Claude</h1>
+    <p class="page-desc">Ось як скасувати підписку на Claude. Скасування набуває чинності в кінці поточного розрахункового періоду. Щоб уникнути стягнення плати за наступний розрахунковий період, скасуйте підписку принаймні за 24 години до наступної дати виставлення рахунку. Claude AI зазвичай не пропонує пропорційне відшкодування за скасовані підписки.</p>
+
+    <div class="steps-container">
+        
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">СКАСУВАТИ ПІДПИСКУ ЧЕРЕЗ ВЕБСАЙТ CLAUDE AI</h2>
+                                <div class="step-card-content">Щоб скасувати підписку на Claude AI через вебсайт:<br><br><ul class='steps-list-inner'><li>Перейдіть на вебсайт Claude AI: Відкрийте claude.ai та увійдіть у свій обліковий запис.<br></li><li>Перейдіть до налаштувань облікового запису: Знайдіть значок свого профілю або ім'я, зазвичай у нижньому лівому або верхньому правому куті. Натисніть на нього та перейдіть до "Налаштувань" або "Підписки".<br></li><li>Керуйте підпискою: Знайдіть розділ під назвою "Підписка" або "Рахунки".<br></li><li>Скасуйте підписку: Натисніть кнопку "Скасувати" або "Керувати" поруч із вашим активним планом. Дотримуйтесь інструкцій, щоб підтвердити скасування.<br></li><li>Підтвердження: Після скасування ви повинні отримати електронний лист із підтвердженням. Перевірте папки зі спамом або рекламними акціями, якщо ви його не бачите.<br></li><li>Якщо ви використовуєте Claude або Claude Desktop: Увійдіть у свій обліковий запис у веб-браузері або відкрийте програму для настільних комп'ютерів. Натисніть на свої ініціали або ім'я в нижньому лівому куті та виберіть "Налаштування" в меню. Перейдіть до Налаштування > Рахунки та натисніть кнопку "Скасувати".</li></ul></div>
+                            </div>
+                            
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">СКАСУВАННЯ ПІДПИСКИ ЧЕРЕЗ ДОДАТОК CLAUDE ДЛЯ ANDROID</h2>
+                                <div class="step-card-content">Щоб скасувати підписку на Claude AI через додаток для Android:<br><br><ul class='steps-list-inner'><li>Якщо ви використовуєте Claude для Android: Натисніть на свої ініціали у верхньому правому куті Claude для Android, а потім натисніть "Рахунки" в параметрах меню. Виберіть "Керувати підпискою" та дотримуйтесь інструкцій для скасування.<br></li><li>Крім того, якщо ви вже видалили програму зі свого пристрою Android: Дотримуйтесь цих інструкцій із Play Store, щоб скасувати підписку: Скасування, призупинення або зміна підписки в Google Play.</li></ul></div>
+                            </div>
+                            
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">СКАСУВАННЯ ПІДПИСКИ ЧЕРЕЗ ДОДАТОК CLAUDE ДЛЯ IOS</h2>
+                                <div class="step-card-content">Щоб скасувати підписку на Claude AI через додаток для iOS:<br><br><ul class='steps-list-inner'><li>Якщо ви використовуєте Claude для iOS: Натисніть на свої ініціали у верхньому правому куті Claude для iOS, а потім натисніть "Рахунки" в параметрах меню. Виберіть "Керувати підпискою" та дотримуйтесь інструкцій для скасування.<br></li><li>Крім того, якщо ви вже видалили програму зі свого пристрою iOS: Дотримуйтесь цих інструкцій із App Store, щоб скасувати підписку: Якщо ви хочете скасувати підписку від Apple.</li></ul></div>
+                            </div>
+                            
+    </div>
+
+    <div class="action-section">
+        <a href="https://claude.ai" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('0.0', 'add-service-claude')">
+            Скасувати підписку
+        </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://claude.ai" target="_blank" onclick="handlePriceAdd('0.0', 'add-service-claude')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+        </div>
+    </div>
+
+    <div class="seo-text">Скасувати підписку Claude, скасування Claude, скасувати підписку на Claude AI, рахунки Claude, Claude Pro, Claude Max, Claude Team, Claude Enterprise</div>
+</div>
+
+</main>
+
+<div class="donate-section">
+    <h3 id="donateTitle"></h3>
+    <p id="donateDesc"></p>
+    <a href="https://buymeacoffee.com/pandadream" class="btn-donate" id="donateBtn" target="_blank">☕ Buy Me a Coffee</a>
+</div>
+
+<div id="seoContent" class="seo-block"></div>
+
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
+</div>
+
+<div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <h3 id="modalTitle">Додати сервіс</h3>
+        <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
+        <input type="text" id="aiServiceInput" class="modal-input" placeholder="Назва сервісу...">
+        <button class="modal-btn" id="modalBtn" onclick="sendToAi()">Надіслати</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-main">
+        <span id="footerCreated">Автор:</span> 
+        <span class="brand-name">PandaDream Game Studio</span> 
+        <span class="panda-emoji">🐼</span>
+    </div>
+    <div id="footerSlogan" class="footer-slogan"></div>
+</footer>
+
+<script src="/stop_pay/assets/js/script.js"></script>
+</body>
+</html>
