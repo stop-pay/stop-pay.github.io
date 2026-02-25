@@ -5,15 +5,6 @@
   ],
   "services": [
     {
-      "id": "zoom",
-      "name": "Zoom",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "global",
-      "official_url": "https://zoom.us",
-      "official_cancel_url": "https://zoom.us"
-    },
-    {
       "id": "notion",
       "name": "Notion",
       "category": "software",
@@ -21,105 +12,6 @@
       "type": "global",
       "official_url": "https://www.notion.so/",
       "official_cancel_url": "https://www.notion.so/"
-    },
-    {
-      "id": "perplexity-ai",
-      "name": "Perplexity AI",
-      "category": "ai",
-      "price_usd": 0.0,
-      "type": "global",
-      "official_url": "https://www.perplexity.ai",
-      "official_cancel_url": "https://www.perplexity.ai"
-    },
-    {
-      "id": "spotify",
-      "name": "Spotify",
-      "category": "music",
-      "price_usd": 6.99,
-      "type": "global",
-      "official_url": "spotify.com",
-      "official_cancel_url": "spotify.com/account"
-    },
-    {
-      "id": "masterclass",
-      "name": "MasterClass",
-      "category": "software",
-      "price_usd": 120.0,
-      "type": "global",
-      "official_url": "https://www.masterclass.com",
-      "official_cancel_url": "https://www.masterclass.com"
-    },
-    {
-      "id": "nintendo-switch-online",
-      "name": "Nintendo Switch Online",
-      "category": "gaming",
-      "price_usd": 3.99,
-      "type": "global",
-      "official_url": "https://www.nintendo.com/switch/online/",
-      "official_cancel_url": "https://accounts.nintendo.com"
-    },
-    {
-      "id": "youtube",
-      "name": "YouTube Premium",
-      "category": "tv",
-      "price_usd": 13.99,
-      "type": "global",
-      "official_url": "https://www.youtube.com/premium",
-      "official_cancel_url": "https://www.youtube.com/paid_memberships"
-    },
-    {
-      "id": "coursera",
-      "name": "Coursera",
-      "category": "education",
-      "price_usd": 59.0,
-      "type": "global",
-      "official_url": "https://www.coursera.org/",
-      "official_cancel_url": "https://www.coursera.org/"
-    },
-    {
-      "id": "kyyivstar-tb",
-      "name": "Київстар ТБ",
-      "category": "tv",
-      "price_usd": 3.0,
-      "type": "ua",
-      "official_url": "https://tv.kyivstar.ua/",
-      "official_cancel_url": "https://account.kyivstar.ua/"
-    },
-    {
-      "id": "claude",
-      "name": "Claude",
-      "category": "ai",
-      "price_usd": 0.0,
-      "type": "global",
-      "official_url": "https://www.anthropic.com/",
-      "official_cancel_url": null
-    },
-    {
-      "id": "grammarly",
-      "name": "Grammarly",
-      "category": "software",
-      "price_usd": 30.0,
-      "type": "global",
-      "official_url": "https://www.grammarly.com",
-      "official_cancel_url": "https://account.grammarly.com"
-    },
-    {
-      "id": "apple",
-      "name": "Apple TV+",
-      "category": "tv",
-      "price_usd": 12.99,
-      "type": "global",
-      "official_url": "https://tv.apple.com/",
-      "official_cancel_url": "https://support.apple.com/en-us/HT202039"
-    },
-    {
-      "id": "megogo",
-      "name": "Megogo",
-      "category": "tv",
-      "price_usd": 5.75,
-      "type": "ua",
-      "official_url": "https://megogo.net/",
-      "official_cancel_url": "https://megogo.net/"
     },
     {
       "id": "promova",
@@ -131,31 +23,49 @@
       "official_cancel_url": "https://promova.com"
     },
     {
-      "id": "netflix",
-      "name": "Netflix",
+      "id": "kyyivstar-tb",
+      "name": "Київстар ТБ",
       "category": "tv",
-      "price_usd": 7.99,
-      "type": "global",
-      "official_url": "netflix.com",
-      "official_cancel_url": "https://www.netflix.com/account"
+      "price_usd": 3.0,
+      "type": "ua",
+      "official_url": "https://tv.kyivstar.ua/",
+      "official_cancel_url": "https://account.kyivstar.ua/"
     },
     {
-      "id": "adobe-firefly",
-      "name": "Adobe Firefly",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "global",
-      "official_url": "https://www.adobe.com/",
-      "official_cancel_url": "https://account.adobe.com/plans"
+      "id": "megogo",
+      "name": "Megogo",
+      "category": "tv",
+      "price_usd": 5.75,
+      "type": "ua",
+      "official_url": "https://megogo.net/",
+      "official_cancel_url": "https://megogo.net/"
     },
     {
-      "id": "duolingo-plus",
-      "name": "Duolingo Plus",
+      "id": "coursera",
+      "name": "Coursera",
       "category": "education",
-      "price_usd": 12.99,
+      "price_usd": 59.0,
       "type": "global",
-      "official_url": "https://www.duolingo.com/",
-      "official_cancel_url": "https://support.duolingo.com/hc/en-us/articles/115004068123-How-do-I-cancel-my-Duolingo-Plus-subscription"
+      "official_url": "https://www.coursera.org/",
+      "official_cancel_url": "https://www.coursera.org/"
+    },
+    {
+      "id": "masterclass",
+      "name": "MasterClass",
+      "category": "software",
+      "price_usd": 120.0,
+      "type": "global",
+      "official_url": "https://www.masterclass.com",
+      "official_cancel_url": "https://www.masterclass.com"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "category": "music",
+      "price_usd": 6.99,
+      "type": "global",
+      "official_url": "spotify.com",
+      "official_cancel_url": "spotify.com/account"
     },
     {
       "id": "midjourney",
@@ -167,6 +77,51 @@
       "official_cancel_url": "https://www.midjourney.com/auth/signin/"
     },
     {
+      "id": "apple",
+      "name": "Apple TV+",
+      "category": "tv",
+      "price_usd": 12.99,
+      "type": "global",
+      "official_url": "https://tv.apple.com/",
+      "official_cancel_url": "https://support.apple.com/en-us/HT202039"
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://zoom.us",
+      "official_cancel_url": "https://zoom.us"
+    },
+    {
+      "id": "duolingo-plus",
+      "name": "Duolingo Plus",
+      "category": "education",
+      "price_usd": 12.99,
+      "type": "global",
+      "official_url": "https://www.duolingo.com/",
+      "official_cancel_url": "https://support.duolingo.com/hc/en-us/articles/115004068123-How-do-I-cancel-my-Duolingo-Plus-subscription"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Premium",
+      "category": "tv",
+      "price_usd": 13.99,
+      "type": "global",
+      "official_url": "https://www.youtube.com/premium",
+      "official_cancel_url": "https://www.youtube.com/paid_memberships"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "category": "ai",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://www.anthropic.com/",
+      "official_cancel_url": null
+    },
+    {
       "id": "sweet-tv",
       "name": "Sweet.tv",
       "category": "tv",
@@ -174,6 +129,51 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/"
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "category": "tv",
+      "price_usd": 7.99,
+      "type": "global",
+      "official_url": "netflix.com",
+      "official_cancel_url": "https://www.netflix.com/account"
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "category": "software",
+      "price_usd": 30.0,
+      "type": "global",
+      "official_url": "https://www.grammarly.com",
+      "official_cancel_url": "https://account.grammarly.com"
+    },
+    {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://www.adobe.com/",
+      "official_cancel_url": "https://account.adobe.com/plans"
+    },
+    {
+      "id": "nintendo-switch-online",
+      "name": "Nintendo Switch Online",
+      "category": "gaming",
+      "price_usd": 3.99,
+      "type": "global",
+      "official_url": "https://www.nintendo.com/switch/online/",
+      "official_cancel_url": "https://accounts.nintendo.com"
+    },
+    {
+      "id": "perplexity-ai",
+      "name": "Perplexity AI",
+      "category": "ai",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://www.perplexity.ai",
+      "official_cancel_url": "https://www.perplexity.ai"
     }
   ]
 }
