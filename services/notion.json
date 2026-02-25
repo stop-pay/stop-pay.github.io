@@ -2,7 +2,7 @@
   "id": "notion",
   "name": "Notion",
   "category": "software",
-  "price_usd": 0.0,
+  "price_usd": 10.0,
   "type": "global",
   "official_url": "https://www.notion.so/",
   "official_cancel_url": "https://www.notion.so/"
