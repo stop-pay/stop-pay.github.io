@@ -2,7 +2,7 @@
   "id": "claude",
   "name": "Claude",
   "category": "ai",
-  "price_usd": 0.0,
+  "price_usd": 20.0,
   "type": "global",
   "official_url": "https://www.anthropic.com/",
   "official_cancel_url": null
