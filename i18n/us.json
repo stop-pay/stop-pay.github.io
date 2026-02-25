@@ -14,9 +14,10 @@
     "local": "US Services",
     "phone": "Mobile Apps",
     "cloud_storage": "Cloud Storage",
-    "education" : "Освіта",
-    "music" : "Музика",
-    "ai" : "AI"
+    "education" : "education",
+    "music" : "music",
+    "ai" : "AI",
+    "sowftware" : "software"
   },
     "ui": {
     "btn_cancel": "Cancel subscription",
