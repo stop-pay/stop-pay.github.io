@@ -1,0 +1,9 @@
+{
+  "id": "discord-nitro",
+  "name": "Discord Nitro",
+  "category": "gaming",
+  "price_usd": 9.99,
+  "type": "global",
+  "official_url": "https://discord.com/",
+  "official_cancel_url": "https://support.discord.com/hc/en-us/articles/115000435108-Discord-Nitro-Classic"
+}
