@@ -2,9 +2,17 @@ import json
 import os
 import shutil
 import re
+from datetime import datetime
 
 # Назва твого репозиторію на GitHub
 BASE_PATH = "/stop_pay"
+
+def get_file_mtime(filepath):
+    """Отримує дату останньої зміни файлу"""
+    if os.path.exists(filepath):
+        t = os.path.getmtime(filepath)
+        return datetime.fromtimestamp(t)
+    return datetime.now()
 
 def build():
     # 1. Очищення та створення структури
@@ -21,35 +29,26 @@ def build():
     if os.path.exists('services'):
         for s_file in os.listdir('services'):
             if s_file.endswith('.json'):
-                with open(os.path.join('services', s_file), 'r', encoding='utf-8') as f:
+                s_path = os.path.join('services', s_file)
+                with open(s_path, 'r', encoding='utf-8') as f:
                     try:
                         service_data = json.load(f)
-                        sid = service_data['id']
-                        
-                        aliases = []
-                        for lang in available_langs:
-                            content_path = f'content/{lang}/{sid}.json'
-                            if os.path.exists(content_path):
-                                with open(content_path, 'r', encoding='utf-8') as f_c:
-                                    try:
-                                        c_json = json.load(f_c)
-                                        t_name = c_json.get('translated_name', '').strip()
-                                        if t_name:
-                                            aliases.append(t_name)
-                                    except:
-                                        continue
-                        
-                        service_data['search_alias'] = ", ".join(list(set(aliases)))
+                        service_data['_mtime'] = get_file_mtime(s_path) # Зберігаємо об'єкт дати
                         all_services.append(service_data)
-                        
                     except Exception as e:
                         print(f"Помилка у файлі метаданих {s_file}: {e}")
 
-    # 4. СТВОРЕННЯ data.json
+    # 4. СТВОРЕННЯ data.json (видаляємо тимчасові об'єкти дат перед записом)
+    services_for_json = []
+    for s in all_services:
+        s_copy = s.copy()
+        if '_mtime' in s_copy: del s_copy['_mtime']
+        services_for_json.append(s_copy)
+
     with open('dist/data.json', 'w', encoding='utf-8') as f:
         json.dump({
             "available_languages": available_langs,
-            "services": all_services
+            "services": services_for_json
         }, f, ensure_ascii=False, indent=2)
 
     # 5. КОПІЮВАННЯ АСЕТІВ
@@ -60,12 +59,8 @@ def build():
     for file in ['Logo.png', 'manifest.json']:
         if os.path.exists(file):
             shutil.copy(file, f'dist/{file}')
-    if os.path.exists('assets/favicons/favicon-32x32.png'):
-        shutil.copy('assets/favicons/favicon-32x32.png', 'dist/favicon.png')
     
-    # Створюємо .nojekyll для правильного деплою
-    with open('dist/.nojekyll', 'w') as f:
-        pass
+    with open('dist/.nojekyll', 'w') as f: pass
 
     # 6. ГЕНЕРАЦІЯ HTML СТОРІНОК
     try:
@@ -79,6 +74,8 @@ def build():
             
             with open(f'i18n/{lang}.json', 'r', encoding='utf-8') as f_lang:
                 lang_data = json.load(f_lang)
+                ui = lang_data.get('ui', {})
+                last_update_label = ui.get('last_update', 'Last update:')
 
             # Рендер головної сторінки мови
             full_index = layout.replace('{{ content }}', index_body)
@@ -92,66 +89,56 @@ def build():
                     with open(content_path, 'r', encoding='utf-8') as f_in:
                         c = json.load(f_in)
                     
+                    # Визначаємо найсвіжішу дату
+                    content_mtime = get_file_mtime(content_path)
+                    service_mtime = s.get('_mtime', content_mtime)
+                    final_date = max(content_mtime, service_mtime).strftime('%d.%m.%Y')
+                    
                     price = str(s.get('price_usd', 0))
                     sid = s['id']
 
-                    # --- НОВА ЛОГІКА ОБРОБКИ КРОКІВ (КАРТКИ) ---
+                    # --- КРОКИ ---
                     steps_data = c.get('steps', {})
                     steps_html = ""
-
                     if isinstance(steps_data, dict):
                         for key, data in steps_data.items():
                             step_title = (data.get('title') or "").upper()
                             step_desc = data.get('description') or ""
-                            
                             formatted_desc = step_desc.replace('\n', '<br>')
                             if '*' in formatted_desc:
                                 items = formatted_desc.split('*')
-                                main_text = items[0]
-                                li_items = "".join([f"<li>{item.strip()}</li>" for item in items[1:] if item.strip()])
-                                formatted_desc = f"{main_text}<ul class='steps-list-inner'>{li_items}</ul>"
-
-                            steps_html += f'''
-                            <div class="instruction-card">
-                                <h2 class="step-card-title">{step_title}</h2>
-                                <div class="step-card-content">{formatted_desc}</div>
-                            </div>
-                            '''
-                    elif isinstance(steps_data, list):
-                        li_items = "".join([f"<li>{str(step)}</li>" for step in steps_data])
-                        steps_html = f'<div class="instruction-card"><ul class="steps-list">{li_items}</ul></div>'
-
-                    # --- РЕШТА ОБРОБКИ (БЕЗПЕЧНА) ---
-                    # Логіка Fallback для URL скасування
-                    cancel_link = s.get('official_cancel_url')
-                    if not cancel_link:
-                        cancel_link = s.get('official_url', '#')
-
+                                li_items = "".join([f"<li>{it.strip()}</li>" for it in items[1:] if it.strip()])
+                                formatted_desc = f"{items[0]}<ul class='steps-list-inner'>{li_items}</ul>"
+                            steps_html += f'<div class="instruction-card"><h2 class="step-card-title">{step_title}</h2><div class="step-card-content">{formatted_desc}</div></div>'
+                    
+                    # --- URL ТА ХІНТИ ---
+                    cancel_link = s.get('official_cancel_url') or s.get('official_url', '#')
                     hint_text = lang_data.get('cancel_hint', '') or ""
                     hint_text = hint_text.replace('{{ official_url }}', str(s.get("official_url", "#")))
                     hint_text = hint_text.replace('target="_blank"', f'target="_blank" onclick="handlePriceAdd(\'{price}\', \'{sid}\')"')
                     
+                    # --- SEO ТА ДАТА ---
                     seo_content = c.get('seo_text', '') or ""
-                    seo_html = f'<div class="seo-text">{seo_content}</div>' if seo_content else ''
+                    # Додаємо дату оновлення в блок SEO або створюємо окремий маленький блок
+                    update_html = f'<div style="text-align: center; opacity: 0.5; font-size: 0.8rem; margin-top: 20px;">{last_update_label} {final_date}</div>'
+                    
+                    seo_html = f'<div class="seo-text">{seo_content}{update_html}</div>'
 
-                    pg_title = c.get('title') or s.get('id') or "Service"
-                    pg_desc = c.get('desc') or c.get('description') or ""
-
-                    pg = page_tpl.replace('{{ title }}', str(pg_title)) \
-                                 .replace('{{ price_usd }}', str(price)) \
-                                 .replace('{{ service_id }}', str(sid)) \
-                                 .replace('{{ description }}', str(pg_desc)) \
+                    pg = page_tpl.replace('{{ title }}', str(c.get('title') or sid)) \
+                                 .replace('{{ price_usd }}', price) \
+                                 .replace('{{ service_id }}', sid) \
+                                 .replace('{{ description }}', str(c.get('desc') or c.get('description') or "")) \
                                  .replace('{{ steps }}', steps_html) \
                                  .replace('{{ cancel_hint }}', str(hint_text)) \
-                                 .replace('{{ btn_cancel_text }}', lang_data.get('ui', {}).get('btn_cancel', 'Cancel')) \
-                                 .replace('{{ cancel_url }}', str(cancel_link))
+                                 .replace('{{ btn_cancel_text }}', ui.get('btn_cancel', 'Cancel')) \
+                                 .replace('{{ cancel_url }}', str(cancel_link)) \
+                                 .replace('{{ seo_text }}', seo_html)
                     
+                    # Очистка залишків Jinja-подібних тегів
                     pg = re.sub(r'\{% if seo_text %\}.*?\{% endif %}', seo_html, pg, flags=re.DOTALL)
-                    pg = pg.replace('{{ seo_text }}', seo_html)
 
                     full_pg = layout.replace('{{ content }}', pg)
-                    
-                    s_dir = os.path.join(lang_dir, s["id"])
+                    s_dir = os.path.join(lang_dir, sid)
                     os.makedirs(s_dir, exist_ok=True)
                     with open(os.path.join(s_dir, 'index.html'), 'w', encoding='utf-8') as f_out:
                         f_out.write(full_pg)
@@ -165,4 +152,4 @@ def build():
 
 if __name__ == "__main__":
     build()
-                        
+    
