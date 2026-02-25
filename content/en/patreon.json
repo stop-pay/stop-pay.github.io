@@ -1,0 +1,24 @@
+{
+  "title": "How to unsubscribe from Patreon",
+  "translated_name": "patreon",
+  "description": "Patreon allows creators to get paid for their work by providing tools to run a subscription content service. You can cancel your Patreon membership either through the website or the mobile app.",
+  "steps": {
+    "web": {
+      "title": "Cancel Patreon Membership via Website",
+      "description": "* Go to the Patreon website and log in to your account.\n* Click on your profile photo and select \"Settings\".\n* Click on the \"Memberships\" tab.\n* Locate the creator you wish to cancel your membership with and click \"View details\" or \"Edit\".\n* Select \"Cancel your payment\" and confirm the cancellation."
+    },
+    "app": {
+      "title": "Cancel Patreon Membership via Mobile App",
+      "description": "* Open the Patreon app and switch to your member profile.\n* Find the creator at the top of the home screen and tap on the desired creator.\n* Tap the three dots in the upper-right corner and select \"Your membership\".\n* Choose \"Edit membership,\" then tap \"Cancel membership\".\n* Scroll down and confirm the cancellation.\n* Manage your free membership option and tap \"Save and Continue\"."
+    },
+    "google_play": {
+      "title": "Cancel Patreon Membership via Google Play Store",
+      "description": "* Open the Google Play Store.\n* Tap your profile icon.\n* Select 'Payments & subscriptions,' then 'Subscriptions.'\n* Cancel your Patreon subscription."
+    },
+    "apple_app_store": {
+      "title": "Cancel Patreon Membership via Apple App Store",
+      "description": "* Open the Settings app.\n* Tap your name.\n* Select 'Subscriptions.'\n* Cancel your Patreon subscription."
+    }
+  },
+  "seo_text": "Cancel Patreon subscription, unsubscribe from Patreon, end Patreon membership, Patreon cancellation steps, stop Patreon payments."
+}
