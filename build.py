@@ -62,6 +62,12 @@ def build():
             shutil.copy(file, f'dist/{file}')
     if os.path.exists('assets/favicons/favicon-32x32.png'):
         shutil.copy('assets/favicons/favicon-32x32.png', 'dist/favicon.png')
+    if os.path.exists('.nojekyll'):
+        shutil.copy('.nojekyll', 'dist/.nojekyll')
+    else:
+        # Або просто створюй його на льоту, якщо файлу немає в корені
+        with open('dist/.nojekyll', 'w') as f:
+            pass
 
     # 6. ГЕНЕРАЦІЯ HTML СТОРІНОК
     try:
