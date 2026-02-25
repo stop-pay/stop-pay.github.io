@@ -32,7 +32,17 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "спотіфай преміум, spotify premium"
+      "search_alias": "spotify premium, спотіфай преміум"
+    },
+    {
+      "id": "nintendo-switch-online",
+      "name": "Nintendo Switch Online",
+      "category": "gaming",
+      "price_usd": 3.99,
+      "type": "global",
+      "official_url": "https://www.nintendo.com/switch/online/",
+      "official_cancel_url": "https://accounts.nintendo.com",
+      "search_alias": "nintendo switch online"
     },
     {
       "id": "youtube",
@@ -62,7 +72,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "kyivstar tv, київстар ТБ"
+      "search_alias": "київстар ТБ, kyivstar tv"
     },
     {
       "id": "claude",
@@ -102,7 +112,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "промова, promova"
+      "search_alias": "promova, промова"
     },
     {
       "id": "netflix",
