@@ -15,7 +15,8 @@
     "phone": "Mobile Apps",
     "cloud_storage": "Cloud Storage",
     "education" : "Освіта",
-    "music" : "Музика"
+    "music" : "Музика",
+    "ai" : "AI"
   },
     "ui": {
     "btn_cancel": "Cancel subscription",

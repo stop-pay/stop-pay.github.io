@@ -22,7 +22,7 @@
       "type": "global",
       "official_url": "https://www.youtube.com/premium",
       "official_cancel_url": "https://www.youtube.com/paid_memberships",
-      "search_alias": "ютуб преміум, youtube premium"
+      "search_alias": "youtube premium, ютуб преміум"
     },
     {
       "id": "kyyivstar-tb",
@@ -62,7 +62,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "megogo, мегого"
+      "search_alias": "мегого, megogo"
     },
     {
       "id": "promova",
@@ -72,7 +72,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "promova, промова"
+      "search_alias": "промова, promova"
     },
     {
       "id": "netflix",
@@ -92,7 +92,7 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/",
-      "search_alias": "sweet.tv, світ ТБ"
+      "search_alias": "світ ТБ, sweet.tv"
     }
   ]
 }
