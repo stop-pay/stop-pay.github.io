@@ -59,6 +59,15 @@
       "official_cancel_url": "https://megogo.net/"
     },
     {
+      "id": "audible",
+      "name": "Audible",
+      "category": "music",
+      "price_usd": 7.95,
+      "type": "global",
+      "official_url": "https://www.audible.com/",
+      "official_cancel_url": "https://www.audible.com/account/cancel"
+    },
+    {
       "id": "coursera",
       "name": "Coursera",
       "category": "education",
