@@ -12,7 +12,7 @@
       "type": "global",
       "official_url": "https://zoom.us",
       "official_cancel_url": "https://zoom.us",
-      "search_alias": "Zoom, zoom"
+      "search_alias": "zoom, Zoom"
     },
     {
       "id": "perplexity-ai",
@@ -32,7 +32,7 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "spotify premium, спотіфай преміум"
+      "search_alias": "спотіфай преміум, spotify premium"
     },
     {
       "id": "masterclass",
@@ -62,7 +62,7 @@
       "type": "global",
       "official_url": "https://www.youtube.com/premium",
       "official_cancel_url": "https://www.youtube.com/paid_memberships",
-      "search_alias": "youtube premium, ютуб преміум"
+      "search_alias": "ютуб преміум, youtube premium"
     },
     {
       "id": "coursera",
@@ -92,7 +92,7 @@
       "type": "global",
       "official_url": "https://www.anthropic.com/",
       "official_cancel_url": null,
-      "search_alias": "claude, клауд"
+      "search_alias": "клауд, claude"
     },
     {
       "id": "apple",
@@ -102,7 +102,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "apple tv+, епл ТБ"
+      "search_alias": "епл ТБ, apple tv+"
     },
     {
       "id": "megogo",
