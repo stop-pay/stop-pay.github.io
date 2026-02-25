@@ -42,7 +42,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "київстар ТБ, kyivstar tv"
+      "search_alias": "kyivstar tv, київстар ТБ"
     },
     {
       "id": "claude",
@@ -52,7 +52,7 @@
       "type": "global",
       "official_url": "https://www.anthropic.com/",
       "official_cancel_url": null,
-      "search_alias": "claude, клауд"
+      "search_alias": "клауд, claude"
     },
     {
       "id": "apple",
@@ -95,6 +95,16 @@
       "search_alias": "нетфлікс, netflix"
     },
     {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://www.adobe.com/",
+      "official_cancel_url": "https://account.adobe.com/plans",
+      "search_alias": "adobe firefly"
+    },
+    {
       "id": "midjourney",
       "name": "Midjourney",
       "category": "ai",
@@ -112,7 +122,7 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/",
-      "search_alias": "світ ТБ, sweet.tv"
+      "search_alias": "sweet.tv, світ ТБ"
     }
   ]
 }
