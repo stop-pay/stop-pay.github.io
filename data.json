@@ -149,6 +149,15 @@
       "official_cancel_url": "https://account.microsoft.com/services/"
     },
     {
+      "id": "ea-play",
+      "name": "EA Play",
+      "category": "gaming",
+      "price_usd": 5.99,
+      "type": "global",
+      "official_url": "https://www.ea.com/ea-play",
+      "official_cancel_url": "https://www.ea.com/help/ea-play/manage-your-ea-play-membership/"
+    },
+    {
       "id": "google-one",
       "name": "Google One",
       "category": "software",
