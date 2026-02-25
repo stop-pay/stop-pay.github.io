@@ -68,6 +68,15 @@
       "official_cancel_url": "https://www.youtube.com/paid_memberships"
     },
     {
+      "id": "google-one",
+      "name": "Google One",
+      "category": "software",
+      "price_usd": 1.99,
+      "type": "global",
+      "official_url": "one.google.com",
+      "official_cancel_url": "one.google.com/settings"
+    },
+    {
       "id": "coursera",
       "name": "Coursera",
       "category": "education",
