@@ -1,0 +1,9 @@
+{
+  "id": "nintendo-switch-online",
+  "name": "Nintendo Switch Online",
+  "category": "gaming",
+  "price_usd": 3.99,
+  "type": "global",
+  "official_url": "https://www.nintendo.com/switch/online/",
+  "official_cancel_url": "https://accounts.nintendo.com"
+}

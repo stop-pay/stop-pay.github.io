@@ -1,0 +1,18 @@
+{
+  "title": "How to unsubscribe from Nintendo Switch Online",
+  "translated_name": "nintendo switch online",
+  "description": "You can cancel your Nintendo Switch Online subscription either through your Nintendo Switch console or via a web browser. Canceling the subscription will stop future payments, but you can continue to use the service until the end of your current billing cycle. Remember that Nintendo may delete your Save Data Cloud backups after 180 days of cancellation.",
+  "steps": {
+    "steps_1": {
+      "method": "Web",
+      "title": "Turn Off Automatic Renewal via Nintendo Account Website",
+      "description": "To turn off automatic renewal via the Nintendo Account website:\n\n*   Go to the official Nintendo Accounts website: accounts.nintendo.com.\n*   Log in to your account.\n*   Select \"Shop Menu\" in the left menu.\n*   Scroll down and click \"Nintendo Switch Online\".\n*   Select the \"Subscriptions\" tab.\n*   Click \"Turn Off Automatic Renewal\".\n*   Confirm your decision."
+    },
+    "steps_2": {
+      "method": "Nintendo Switch",
+      "title": "Turn Off Automatic Renewal via Nintendo eShop on Switch",
+      "description": "To turn off automatic renewal via the Nintendo eShop on your Switch:\n\n*   Launch the Nintendo eShop from the Switch's main menu.\n*   Select the account that has the active NSO subscription.\n*   Click on your user icon in the upper right corner to go to your Account Information screen.\n*   Scroll down to \"Nintendo Switch Online\".\n*   Select \"Turn Off Automatic Renewal\".\n*   Confirm your choice."
+    }
+  },
+  "seo_text": "Learn how to cancel your Nintendo Switch Online subscription. Follow these simple steps to turn off automatic renewal and avoid future charges. Manage your NSO subscription through your Nintendo Switch console or online via the Nintendo Accounts website."
+}
