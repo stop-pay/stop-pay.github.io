@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPay</title>
+    
+    <link rel="icon" type="image/png" href="/stop_pay/assets/favicons/favicon-32x32.png" sizes="32x32">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/stop_pay/assets/favicons/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#1a1a1a">
+
+    <link rel="manifest" href="/stop_pay/manifest.json">
+
+    <link rel="stylesheet" href="/stop_pay/assets/css/style.css">
+</head>
+<body data-theme="dark">
+
+<nav>
+    <div class="custom-select" id="langSelector" translate="no">
+        <div class="select-btn" onclick="toggleMenu()">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="" id="currentFlag" class="flag-icon">
+                <span id="currentShort">UA</span>
+            </div>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="select-dropdown" id="dropdownList"></div>
+    </div>
+    <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+</nav>
+
+<header>
+    <div class="counter-container">
+        <span id="counterLabel">Saved:</span>
+        <span id="moneyCounter">0</span>
+        <span id="currency">₴</span>
+    </div>
+
+    <div id="mainTitle" style="margin-top: 20px;">
+        <a href="/stop_pay/">
+            <img src="/stop_pay/Logo.png" alt="StopPay">
+        </a>
+    </div>
+</header>
+
+<main id="mainContent">
+    <div id="isServicePage" data-service-id="midjourney" style="display:none;"></div>
+
+<div class="service-page">
+    <h1 class="page-title">Як скасувати підписку на Midjourney</h1>
+    <p class="page-desc">Ви можете скасувати свою підписку на Midjourney у будь-який час через їхній вебсайт. Ваше скасування набуде чинності в кінці поточного платіжного циклу, і ви збережете доступ до цього часу. Відшкодування за скасування посеред підписки не надаються, за винятком випадків, коли ви використали менше 20 хвилин GPU з моменту останнього платежу.</p>
+
+    <div class="steps-container">
+        
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">СКАСУЙТЕ ПІДПИСКУ НА MIDJOURNEY ЧЕРЕЗ ВЕБСАЙТ</h2>
+                                <div class="step-card-content">Щоб скасувати підписку на Midjourney через вебсайт:<br><br><ul class='steps-list-inner'><li>Перейдіть на вебсайт Midjourney: midjourney.com/auth/signin/ та увійдіть за допомогою своїх облікових даних Discord.<br></li><li>Знайдіть опцію "Manage Subscription" (Керувати підпискою) на лівій бічній панелі.<br></li><li>Натисніть кнопку "Cancel Plan" (Скасувати план) на сторінці "Manage Subscription".<br></li><li>Підтвердьте скасування у спливаючому вікні.</li></ul></div>
+                            </div>
+                            
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">СКАСУЙТЕ ПІДПИСКУ НА MIDJOURNEY ЧЕРЕЗ DISCORD</h2>
+                                <div class="step-card-content">Щоб скасувати підписку на Midjourney через Discord:<br><br><ul class='steps-list-inner'><li>Введіть `/subscribe` на сервері Midjourney Discord.<br></li><li>Перейдіть за посиланням, наданим ботом.<br></li><li>Натисніть кнопку "Cancel Plan" (Скасувати план) на сторінці "Manage Subscription".<br></li><li>Підтвердьте скасування у спливаючому вікні.</li></ul></div>
+                            </div>
+                            
+    </div>
+
+    <div class="action-section">
+        <a href="https://www.midjourney.com/auth/signin/" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('10.0', 'midjourney')">
+            Скасувати підписку
+        </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://www.midjourney.com/" target="_blank" onclick="handlePriceAdd('10.0', 'midjourney')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+        </div>
+    </div>
+
+    <div class="seo-text">Скасувати підписку Midjourney, Midjourney скасувати підписку, зупинити платежі Midjourney, завершити членство Midjourney.</div>
+</div>
+
+</main>
+
+<div class="donate-section">
+    <h3 id="donateTitle"></h3>
+    <p id="donateDesc"></p>
+    <a href="https://buymeacoffee.com/pandadream" class="btn-donate" id="donateBtn" target="_blank">☕ Buy Me a Coffee</a>
+</div>
+
+<div id="seoContent" class="seo-block"></div>
+
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
+</div>
+
+<div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <h3 id="modalTitle">Додати сервіс</h3>
+        <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
+        <input type="text" id="aiServiceInput" class="modal-input" placeholder="Назва сервісу...">
+        <button class="modal-btn" id="modalBtn" onclick="sendToAi()">Надіслати</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-main">
+        <span id="footerCreated">Автор:</span> 
+        <span class="brand-name">PandaDream Game Studio</span> 
+        <span class="panda-emoji">🐼</span>
+    </div>
+    <div id="footerSlogan" class="footer-slogan"></div>
+</footer>
+
+<script src="/stop_pay/assets/js/script.js"></script>
+</body>
+</html>

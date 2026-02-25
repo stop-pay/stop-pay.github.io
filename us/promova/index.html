@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPay</title>
+    
+    <link rel="icon" type="image/png" href="/stop_pay/assets/favicons/favicon-32x32.png" sizes="32x32">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/stop_pay/assets/favicons/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#1a1a1a">
+
+    <link rel="manifest" href="/stop_pay/manifest.json">
+
+    <link rel="stylesheet" href="/stop_pay/assets/css/style.css">
+</head>
+<body data-theme="dark">
+
+<nav>
+    <div class="custom-select" id="langSelector" translate="no">
+        <div class="select-btn" onclick="toggleMenu()">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="" id="currentFlag" class="flag-icon">
+                <span id="currentShort">UA</span>
+            </div>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="select-dropdown" id="dropdownList"></div>
+    </div>
+    <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+</nav>
+
+<header>
+    <div class="counter-container">
+        <span id="counterLabel">Saved:</span>
+        <span id="moneyCounter">0</span>
+        <span id="currency">₴</span>
+    </div>
+
+    <div id="mainTitle" style="margin-top: 20px;">
+        <a href="/stop_pay/">
+            <img src="/stop_pay/Logo.png" alt="StopPay">
+        </a>
+    </div>
+</header>
+
+<main id="mainContent">
+    <div id="isServicePage" data-service-id="promova" style="display:none;"></div>
+
+<div class="service-page">
+    <h1 class="page-title">How to unsubscribe from Promova</h1>
+    <p class="page-desc">Learn how to cancel your Promova subscription, whether you signed up through their website, the Apple App Store, or Google Play Store. Follow these steps to ensure your subscription is properly cancelled and you avoid future charges.</p>
+
+    <div class="steps-container">
+        
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">CANCEL PROMOVA SUBSCRIPTION VIA WEBSITE</h2>
+                                <div class="step-card-content">To cancel your Promova subscription via the website:<br><br><ul class='steps-list-inner'><li>Log in to your Promova account on the website.<br></li><li>Go to 'My profile' and find 'Payments & subscriptions'.<br></li><li>Locate your subscription and click the three dots.<br></li><li>Choose 'Cancel subscription'.<br></li><li>Complete the questionnaire to confirm cancellation.</li></ul></div>
+                            </div>
+                            
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">CANCEL PROMOVA SUBSCRIPTION VIA APPLE APP STORE</h2>
+                                <div class="step-card-content">To cancel your Promova subscription via the Apple App Store:<br><br><ul class='steps-list-inner'><li>Open your Apple ID account settings.<br></li><li>Go to 'Subscriptions'.<br></li><li>Locate the Promova subscription.<br></li><li>Cancel the subscription.</li></ul></div>
+                            </div>
+                            
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">CANCEL PROMOVA SUBSCRIPTION VIA GOOGLE PLAY</h2>
+                                <div class="step-card-content">To cancel your Promova subscription via Google Play:<br><br><ul class='steps-list-inner'><li>Go to play.google.com.<br></li><li>Sign in to your Google account.<br></li><li>Locate the Promova subscription.<br></li><li>Cancel the subscription.</li></ul></div>
+                            </div>
+                            
+    </div>
+
+    <div class="action-section">
+        <a href="https://promova.com" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('9.99', 'promova')">
+            Cancel subscription
+        </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>CUCUMELON:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://promova.com" target="_blank" onclick="handlePriceAdd('9.99', 'promova')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+        </div>
+    </div>
+
+    <div class="seo-text">Cancel Promova subscription, Promova unsubscribe, stop Promova payments, Promova cancellation, end Promova subscription, Promova billing, manage Promova subscription, Promova App Store cancellation, Promova Google Play cancellation, Promova website cancellation.</div>
+</div>
+
+</main>
+
+<div class="donate-section">
+    <h3 id="donateTitle"></h3>
+    <p id="donateDesc"></p>
+    <a href="https://buymeacoffee.com/pandadream" class="btn-donate" id="donateBtn" target="_blank">☕ Buy Me a Coffee</a>
+</div>
+
+<div id="seoContent" class="seo-block"></div>
+
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
+</div>
+
+<div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <h3 id="modalTitle">Додати сервіс</h3>
+        <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
+        <input type="text" id="aiServiceInput" class="modal-input" placeholder="Назва сервісу...">
+        <button class="modal-btn" id="modalBtn" onclick="sendToAi()">Надіслати</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-main">
+        <span id="footerCreated">Автор:</span> 
+        <span class="brand-name">PandaDream Game Studio</span> 
+        <span class="panda-emoji">🐼</span>
+    </div>
+    <div id="footerSlogan" class="footer-slogan"></div>
+</footer>
+
+<script src="/stop_pay/assets/js/script.js"></script>
+</body>
+</html>
