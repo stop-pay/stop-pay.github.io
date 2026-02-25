@@ -322,7 +322,7 @@ footer { margin-top: auto; padding: 40px 0; text-align: center; width: 100%; }
 }
 
 /* 💻 Десктоп */
-@media (min-width: 800px) {
+@media (min-width: 769px) {
     .category-content {
         grid-template-columns: repeat(10, 1fr);
     }
