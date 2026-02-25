@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # <--- Тепер це тут, на самому початку
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -28,3 +30,4 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
+          
