@@ -2,7 +2,7 @@
   "id": "perplexity-ai",
   "name": "Perplexity AI",
   "category": "ai",
-  "price_usd": 0.0,
+  "price_usd": 20.0,
   "type": "global",
   "official_url": "https://www.perplexity.ai",
   "official_cancel_url": "https://www.perplexity.ai"
