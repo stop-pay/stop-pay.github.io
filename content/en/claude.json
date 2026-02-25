@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Claude",
+  "translated_name": "claude",
+  "description": "Here's how to cancel your Claude subscription, depending on where you signed up.",
+  "steps": {
+    "web": {
+      "title": "Cancel Subscription via Web Browser",
+      "description": "To cancel your Claude subscription via a web browser:\n\n*   Log in to your Claude account on a web browser or open the desktop app.\n*   Click on your initials or name in the lower-left corner and select “Settings” from the menu.\n*   Navigate to Settings > Billing and click the “Cancel” button.\n*   Provide a reason for cancellation and confirm."
+    },
+    "android_app": {
+      "title": "Cancel Subscription via Android App",
+      "description": "To cancel your Claude subscription via the Android app:\n\n*   Click on your initials in the top right corner of the Claude app for Android, and then click “Billing” from the menu options.\n*   Select “Manage subscription” and follow the prompts for cancellation.\n*   If you've already removed the app, follow the Google Play Store instructions to unsubscribe: Cancel, pause, or change a subscription on Google Play."
+    },
+    "ios_app": {
+      "title": "Cancel Subscription via iOS App",
+      "description": "To cancel your Claude subscription via the iOS app:\n\n*   Click on your initials in the top right corner of Claude for iOS, and then click “Billing” from the menu options.\n*   Select “Manage subscription” and follow the prompts for cancellation.\n*   If you want to cancel a subscription from Apple, follow the App Store instructions to unsubscribe: If you want to cancel a subscription from Apple."
+    }
+  },
+  "seo_text": "Cancel Claude subscription, Claude cancellation, unsubscribe from Claude AI, Claude billing, Claude Pro, Claude Max, Claude Team, Claude Enterprise"
+}
