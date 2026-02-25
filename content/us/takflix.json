@@ -1,0 +1,16 @@
+{
+  "title": "How to unsubscribe from Takflix",
+  "translated_name": "takflix",
+  "description": "Takflix offers individual movie tickets and Tovarystvo memberships. To cancel your Takflix account, follow these steps:",
+  "steps": {
+    "steps_1": {
+      "title": "Delete Account via Takflix Platform",
+      "description": "* Go to the \"My Cinema\" section on the Takflix platform.\n* Select \"Settings\".\n* Edit your personal profile data or change your password.\n* Click \"Block profile\" to delete your account."
+    },
+    "steps_2": {
+      "title": "Cancel Google Play Subscription",
+      "description": "* To manage a Google Play subscription, follow the next steps.\n* On your Android device, go to subscriptions in Google Play.\n* Select the Takflix subscription you want to cancel.\n* Tap cancel subscription and follow the instructions."
+    }
+  },
+  "seo_text": "Learn how to cancel your Takflix subscription. Follow our simple guide to unsubscribe from Takflix and manage your membership."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "takflix",
+  "name": "Takflix",
+  "category": "tv",
+  "price_usd": 3.1,
+  "type": "ua",
+  "official_url": "https://takflix.com/",
+  "official_cancel_url": "https://support.google.com/googleplay/answer/7018481"
+}
