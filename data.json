@@ -158,6 +158,15 @@
       "official_cancel_url": "https://www.ea.com/help/ea-play/manage-your-ea-play-membership/"
     },
     {
+      "id": "takflix",
+      "name": "Takflix",
+      "category": "tv",
+      "price_usd": 3.1,
+      "type": "ua",
+      "official_url": "https://takflix.com/",
+      "official_cancel_url": "https://support.google.com/googleplay/answer/7018481"
+    },
+    {
       "id": "google-one",
       "name": "Google One",
       "category": "software",
