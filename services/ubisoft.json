@@ -1,0 +1,9 @@
+{
+  "id": "ubisoft",
+  "name": "Ubisoft+",
+  "category": "gaming",
+  "price_usd": 17.99,
+  "type": "global",
+  "official_url": "https://store.ubi.com/ubisoftplus",
+  "official_cancel_url": "https://store.ubi.com/us/ubisoftplus/subscription"
+}
