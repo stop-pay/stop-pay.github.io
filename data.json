@@ -176,6 +176,15 @@
       "official_cancel_url": "https://sweet.tv/"
     },
     {
+      "id": "twitch-turbo",
+      "name": "Twitch Turbo",
+      "category": "gaming",
+      "price_usd": 11.99,
+      "type": "global",
+      "official_url": "https://www.twitch.tv/turbo",
+      "official_cancel_url": "https://www.twitch.tv/subscriptions?tab=turbo"
+    },
+    {
       "id": "netflix",
       "name": "Netflix",
       "category": "tv",
