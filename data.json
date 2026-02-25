@@ -5,6 +5,16 @@
   ],
   "services": [
     {
+      "id": "perplexity-ai",
+      "name": "Perplexity AI",
+      "category": "ai",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://www.perplexity.ai",
+      "official_cancel_url": "https://www.perplexity.ai",
+      "search_alias": "perplexity ai"
+    },
+    {
       "id": "spotify",
       "name": "Spotify",
       "category": "music",
@@ -32,7 +42,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "kyivstar tv, київстар ТБ"
+      "search_alias": "київстар ТБ, kyivstar tv"
     },
     {
       "id": "claude",
@@ -42,7 +52,7 @@
       "type": "global",
       "official_url": "https://www.anthropic.com/",
       "official_cancel_url": null,
-      "search_alias": "клауд, claude"
+      "search_alias": "claude, клауд"
     },
     {
       "id": "apple",
