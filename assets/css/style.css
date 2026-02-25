@@ -92,7 +92,7 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 1200px
 .card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
 /* --- 4. СТОРІНКА СЕРВІСУ (ІНСТРУКЦІЯ) --- */
-.service-container, .service-page { width: 100%; max-width: 1200px; text-align: left; }
+.service-container, .service-page { width: 100%; max-width: 800px; text-align: left; }
 .page-title { margin-top: 0; font-size: 1.8rem; color: var(--text); }
 .page-desc { opacity: 0.8; margin-bottom: 30px; line-height: 1.5; }
 
@@ -158,12 +158,12 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 1200px
 .link-hint a { color: #4da6ff; text-decoration: underline; }
 
 /* --- 5. ДОНАТ ТА SEO --- */
-.donate-section { width: 100%; max-width: 1200px; margin-top: 30px; padding: 25px; background: rgba(46, 213, 115, 0.05); border: 2px dashed #2ed573; border-radius: 20px; text-align: center; box-sizing: border-box; }
+.donate-section { width: 100%; max-width: 800px; margin-top: 30px; padding: 25px; background: rgba(46, 213, 115, 0.05); border: 2px dashed #2ed573; border-radius: 20px; text-align: center; box-sizing: border-box; }
 .btn-donate { display: inline-block; background: #2ed573; color: white !important; padding: 12px 25px; border-radius: 12px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: 0.3s; }
 
 .seo-block, .seo-text { 
     width: 100%; 
-    max-width: 1200px; 
+    max-width: 800px; 
     margin: 30px 0; 
     font-size: 0.9rem; 
     line-height: 1.6; 
