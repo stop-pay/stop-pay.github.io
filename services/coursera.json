@@ -1,0 +1,9 @@
+{
+  "id": "coursera",
+  "name": "Coursera",
+  "category": "education",
+  "price_usd": 59.0,
+  "type": "global",
+  "official_url": "https://www.coursera.org/",
+  "official_cancel_url": "https://www.coursera.org/"
+}
