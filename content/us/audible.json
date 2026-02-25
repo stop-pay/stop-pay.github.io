@@ -1,0 +1,16 @@
+{
+  "title": "How to unsubscribe from Audible",
+  "translated_name": "audible",
+  "description": "You can cancel your Audible membership on the Audible website. If you subscribed through the App Store or Google Play Store, you must cancel directly through those services.",
+  "steps": {
+    "steps_1": {
+      "title": "Cancel Audible Membership via Web Browser",
+      "description": "To cancel your Audible membership via a web browser, follow these steps:\n\n*   Go to the Audible website in a browser and sign in with your Amazon account.\n*   Select your username from the top navigation.\n*   Select \"Account Details\".\n*   Select \"Cancel membership\".\n*   Confirm by selecting \"Continue to cancel\" until you see the confirmation page.\n*   Select your reason for cancellation and click \"Submit\"."
+    },
+    "steps_2": {
+      "title": "Cancel Audible Membership via Mobile Web",
+      "description": "To cancel your Audible membership via the mobile web, follow these steps:\n\n*   On mobile web, select the main menu (hamburger button), then your name, then \"View membership details\", then \"Cancel membership\".\n*   Scroll to the bottom of the next page and select \"Continue cancelling\", then \"Cancel anyway\".\n*   Select your reason for cancellation and click \"Submit\"."
+    }
+  },
+  "seo_text": "Cancel Audible subscription. Steps to cancel Audible membership. How to stop paying for Audible. End Audible subscription."
+}
