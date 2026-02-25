@@ -12,7 +12,7 @@
       "type": "global",
       "official_url": "https://zoom.us",
       "official_cancel_url": "https://zoom.us",
-      "search_alias": "zoom, Zoom"
+      "search_alias": "Zoom, zoom"
     },
     {
       "id": "perplexity-ai",
@@ -92,7 +92,7 @@
       "type": "global",
       "official_url": "https://www.anthropic.com/",
       "official_cancel_url": null,
-      "search_alias": "клауд, claude"
+      "search_alias": "claude, клауд"
     },
     {
       "id": "grammarly",
@@ -132,7 +132,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "promova, промова"
+      "search_alias": "промова, promova"
     },
     {
       "id": "netflix",
