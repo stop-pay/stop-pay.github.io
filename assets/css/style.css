@@ -1,1 +1,500 @@
-/* FIX ширини */ *, *::before, *::after { box-sizing: border-box; } /* --- 1. ЗМІННІ ТА БАЗА --- */ :root { --bg: #1a1a1a; --card: #2d2d2d; --text: #f8f9fa; --border: #444; --accent: #ff4757; --hover: rgba(255, 71, 87, 0.1); --seo-bg: #2d2d2d; /* Окремий колір для блоків тексту */ } [data-theme="light"] { /* Світло-сірий з легким сталевим відтінком */ --bg: #e9ecef; /* Чистий білий з перламутровим відливом для карток */ --card: #fdfdfd; /* Глибокий антрацит (краще читається на сріблі, ніж чистий чорний) */ --text: #1e272e; /* Колір матового алюмінію для бордерів */ --border: #ced4da; --seo-bg: #fdfdfd; } body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; /* ⬅️ було 20px — прибрали */ display: flex; flex-direction: column; align-items: center; /* ⬅️ було stretch — змінили */ transition: background 0.3s; min-height: 100vh; } .main-wrapper { width: 100%; max-width: 800px; /* 🔥 тепер все максимум 800 */ padding: 20px; margin: 0 auto; } /* --- 2. НАВІГАЦІЯ ТА ШАПКА --- */ nav { width: 100%; max-width: 1200px; margin: 0 auto 20px auto; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative; z-index: 10; } header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 1200px; margin: 0 auto 20px auto; } #mainTitle img { display: block; margin: 0 auto; max-width: 200px; transition: transform 0.3s ease; } /* Лічильник заощаджень */ .counter-container { background: var(--accent); color: white; padding: 8px 20px; border-radius: 50px; font-weight: bold; margin: 0 auto 20px auto; font-size: 0.9rem; box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4); display: inline-flex; align-items: center; gap: 8px; } /* --- 3. ПОШУК ТА КАТЕГОРІЇ --- */ .search-container { width: 100%; max-width: 600px; /* Пошук залишаємо акуратним, не на весь екран */ margin-bottom: 30px; position: relative; } .search-input { width: 100%; padding: 14px 15px 14px 45px; border-radius: 15px; border: 1px solid var(--border); background: var(--card); color: var(--text); font-size: 16px; outline: none; box-sizing: border-box; transition: 0.2s; } .search-input:focus { border-color: var(--accent); } .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); opacity: 0.5; } .category-wrapper { margin-bottom: 15px; border: 1px solid var(--border); border-radius: 18px; overflow: hidden; background: var(--card); width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; } .category-header { padding: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; } /* ТУТ ГОЛОВНА ПРАВКА */ .category-content { display: none; padding: 20px; gap: 15px; border-top: 1px solid var(--border); } /* активний стан */ .category-wrapper.active .category-content { display: grid; } /* Прибираємо старий медіа-запит, який міг все псувати, і робимо універсально */ .category-wrapper.active .category-content { display: grid !important; } .category-wrapper.active .arrow-cat { transform: rotate(180deg); } .card { background: var(--bg); padding: 15px 5px; /* Зменшили бокові відступи всередині картки */ border-radius: 15px; text-align: center; text-decoration: none; color: inherit; border: 1px solid var(--border); transition: 0.2s; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100px; /* Додаємо стабільну висоту */ } .card-icon-wrapper img { width: 48px; height: 48px; object-fit: contain; margin-bottom: 10px; } .card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); } /* --- 4. СТОРІНКА СЕРВІСУ (ІНСТРУКЦІЯ) --- */ .service-container, .service-page { width: 100%; max-width: 800px; text-align: left; } .page-title { margin-top: 0; font-size: 1.8rem; color: var(--text); } .page-desc { opacity: 0.8; margin-bottom: 30px; line-height: 1.5; } .instruction-card { background: var(--card); padding: 25px; border-radius: 20px; border: 1px solid var(--border); margin: 20px 0; } .steps-list { padding-left: 20px; line-height: 1.7; } .steps-list li { margin-bottom: 15px; color: var(--text); } /* Контейнер для всіх карток */ .steps-container { width: 100%; display: flex; flex-direction: column; gap: 20px; /* Відступ між картками */ } /* Заголовок всередині картки способу */ .step-card-title { font-size: 1.1rem; margin-top: 0; margin-bottom: 15px; color: var(--accent); /* Колір акценту для привернення уваги */ border-bottom: 1px solid var(--border); padding-bottom: 10px; } /* Опис та списки всередині картки */ .step-card-content { line-height: 1.6; font-size: 0.95rem; } .steps-list-inner { padding-left: 20px; margin-top: 10px; } .steps-list-inner li { margin-bottom: 8px; } /* Стиль для автоматичних посилань в кроках */ .steps-list li a { color: #4da6ff; text-decoration: none; font-weight: 500; border-bottom: 1px dashed #4da6ff; } .steps-list li a:hover { border-bottom-style: solid; } /* Блок дій (Кнопка + Порада) */ .action-section { text-align: center; margin: 40px 0; } .btn-cancel, .btn-primary { display: inline-block; background: var(--accent); color: white !important; padding: 16px 35px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3); } .btn-cancel:hover, .btn-primary:hover { background: #ff3333; transform: translateY(-2px); } .link-hint { margin-top: 20px; padding: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 10px; font-size: 14px; line-height: 1.5; max-width: 500px; margin-left: auto; margin-right: auto; border-left: 4px solid #ffcc00; } .link-hint a { color: #4da6ff; text-decoration: underline; } /* --- 5. ДОНАТ ТА SEO --- */ .donate-section { width: 100%; max-width: 800px; margin-top: 30px; padding: 25px; background: rgba(46, 213, 115, 0.05); border: 2px dashed #2ed573; border-radius: 20px; text-align: center; box-sizing: border-box; } .btn-donate { display: inline-block; background: #2ed573; color: white !important; padding: 12px 25px; border-radius: 12px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: 0.3s; } .seo-block, .seo-text { width: 100%; max-width: 800px; margin: 30px 0; font-size: 0.9rem; line-height: 1.6; opacity: 0.9; /* Трішки збільшив видимість */ background: var(--seo-bg); /* Використовуємо нову змінну */ padding: 25px; border-radius: 18px; border: 1px solid var(--border); box-sizing: border-box; } /* --- 6. МОДАЛКИ ТА ВИБІР МОВИ --- */ .custom-select { position: relative; } .select-btn { background: var(--card); border: 1px solid var(--border); padding: 8px 12px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: bold;} .select-dropdown { position: absolute; top: 115%; left: 0; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 5px; width: 160px; display: none; flex-direction: column; z-index: 100; box-shadow: 0 5px 20px rgba(0,0,0,0.2); } .select-dropdown.active { display: flex; } .select-item { padding: 10px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 10px; } .select-item:hover { background: var(--hover); } .flag-icon { width: 24px !important; height: 16px !important; object-fit: cover; border-radius: 2px; } .modal-overlay { position: fixed; top: 0; left: 0; width: 100vw; /* Чітко 100% ширини вікна */ height: 100vh; /* Чітко 100% висоти вікна */ background: rgba(0, 0, 0, 0.75); z-index: 2000; /* Піднімаємо максимально високо */ display: none; /* По дефолту приховано */ align-items: center; justify-content: center; backdrop-filter: blur(8px); transition: opacity 0.3s ease; } .modal-overlay.active { display: flex !important; /* Force flex mode */ } .modal-content { background: var(--bg); width: 90%; /* Для мобільних - майже на всю ширину */ max-width: 400px; /* Для десктопа - обмеження */ border-radius: 24px; padding: 30px; border: 1px solid var(--border); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); /* Прибираємо будь-які зміщення */ margin: 0; position: relative; /* Анімація появи */ animation: modalAppear 0.3s ease-out; } @keyframes modalAppear { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } } .modal-input { width: 100%; padding: 12px; margin: 15px 0; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); box-sizing: border-box; } .modal-btn { width: 100%; padding: 12px; background: var(--accent); color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; } /* --- 7. FOOTER ТА FAB --- */ footer { margin-top: auto; padding: 40px 0; text-align: center; width: 100%; } .footer-main { font-weight: 500; font-size: 1rem; color: var(--text); margin-bottom: 5px; } .brand-name { color: var(--accent); font-weight: bold; } .footer-slogan { font-style: italic; font-size: 0.85rem; opacity: 0.6; } .fab-btn { position: fixed; bottom: 25px; right: 25px; width: 56px; height: 56px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; cursor: pointer; box-shadow: 0 5px 20px rgba(255, 71, 87, 0.4); z-index: 100; transition: 0.3s; } .btn-tool { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 12px; cursor: pointer; font-size: 18px; } @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } .category-content { display: none; padding: 20px; gap: 15px; border-top: 1px solid var(--border); grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); } /* 🔥 Центруємо всі основні блоки */ .search-container, .service-container, .service-page, .seo-block, .seo-text, .donate-section { margin-left: auto; margin-right: auto; }
+/* --- 0. RESET & BASE --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #1a1a1a;
+    --card: #2d2d2d;
+    --text: #f8f9fa;
+    --border: #444;
+    --accent: #ff4757;
+    --hover: rgba(255, 71, 87, 0.1);
+    --seo-bg: #2d2d2d;
+}
+
+[data-theme="light"] {
+    --bg: #e9ecef;
+    --card: #fdfdfd;
+    --text: #1e272e;
+    --border: #ced4da;
+    --seo-bg: #fdfdfd;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.3s;
+    min-height: 100vh;
+}
+
+/* --- 1. LAYOUT WRAPPERS --- */
+.main-wrapper {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+
+/* --- 2. COMPONENTS --- */
+#mainTitle img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.counter-container {
+    background: var(--accent);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 0 auto 20px auto;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Search */
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.search-input:focus {
+    border-color: var(--accent);
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+/* Categories & Cards */
+.category-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--card);
+}
+
+.category-header {
+    padding: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.category-content {
+    display: none;
+    padding: 20px;
+    gap: 15px;
+    border-top: 1px solid var(--border);
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+}
+
+.category-wrapper.active .category-content {
+    display: grid !important;
+    animation: fadeIn 0.3s ease;
+}
+
+.category-wrapper.active .arrow-cat {
+    transform: rotate(180deg);
+}
+
+.card {
+    background: var(--bg);
+    padding: 15px 5px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--border);
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.card-icon-wrapper img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* --- 3. SERVICE PAGE & INSTRUCTIONS --- */
+.service-container, 
+.service-page {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-title {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: var(--text);
+}
+
+.page-desc {
+    opacity: 0.8;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.instruction-card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    margin: 20px 0;
+}
+
+.steps-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step-card-title {
+    font-size: 1.1rem;
+    margin: 0 0 15px 0;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.steps-list {
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+.steps-list li {
+    margin-bottom: 15px;
+}
+
+.steps-list li a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dashed #4da6ff;
+}
+
+.steps-list li a:hover {
+    border-bottom-style: solid;
+}
+
+/* Actions */
+.action-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-primary, 
+.btn-cancel {
+    display: inline-block;
+    background: var(--accent);
+    color: white !important;
+    padding: 16px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
+
+.btn-primary:hover, 
+.btn-cancel:hover {
+    background: #ff3333;
+    transform: translateY(-2px);
+}
+
+.link-hint {
+    margin: 20px auto 0 auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 500px;
+    border-left: 4px solid #ffcc00;
+}
+
+/* --- 4. DONATE & SEO --- */
+.donate-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(46, 213, 115, 0.05);
+    border: 2px dashed #2ed573;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn-donate {
+    display: inline-block;
+    background: #2ed573;
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.seo-block, 
+.seo-text {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    background: var(--seo-bg);
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+}
+
+/* --- 5. MODALS & LANGUAGE --- */
+.custom-select {
+    position: relative;
+}
+
+.select-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.select-dropdown {
+    position: absolute;
+    top: 115%;
+    left: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 5px;
+    width: 160px;
+    display: none;
+    flex-direction: column;
+    z-index: 100;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.select-dropdown.active {
+    display: flex;
+}
+
+.select-item {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.select-item:hover {
+    background: var(--hover);
+}
+
+.flag-icon {
+    width: 24px !important;
+    height: 16px !important;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    display: flex !important;
+}
+
+.modal-content {
+    background: var(--bg);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 24px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+}
+
+.modal-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- 6. FOOTER & FAB --- */
+footer {
+    margin-top: auto;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-main {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.brand-name {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.footer-slogan {
+    font-style: italic;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+.fab-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 56px;
+    height: 56px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(255, 71, 87, 0.4);
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.btn-tool {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
