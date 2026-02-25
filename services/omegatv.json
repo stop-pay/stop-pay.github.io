@@ -1,0 +1,9 @@
+{
+  "id": "omegatv",
+  "name": "OmegaTV",
+  "category": "tv",
+  "price_usd": 19.99,
+  "type": "global",
+  "official_url": "https://my-omega-tv.xyz",
+  "official_cancel_url": "https://my-omega-tv.xyz"
+}

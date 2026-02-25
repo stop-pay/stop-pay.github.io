@@ -1,0 +1,32 @@
+{
+  "title": "How to unsubscribe from OmegaTV",
+  "translated_name": "omegatv",
+  "description": "Learn how to cancel your OmegaTV subscription through the website, mobile app, third-party platforms, or email. Remember that cancellation is effective at the end of your current billing period, and you must cancel at least 24 hours before the next billing cycle to avoid charges.",
+  "steps": {
+    "web": {
+      "title": "Cancel via Website",
+      "description": "To cancel your OmegaTV subscription via the website:\n\n*   Log into your MYOMEGATV account on the MYOMEGATV website.\n*   Follow the instructions on your account page to cancel your membership."
+    },
+    "app": {
+      "title": "Cancel via Mobile App",
+      "description": "To cancel your OmegaTV subscription via the mobile app:\n\n*   Alternatively, cancel your membership in the settings of the mobile application."
+    },
+    "third_party": {
+      "title": "Cancel via Third-Party Subscription",
+      "description": "*   If subscribed through a third party, manage billing through that platform."
+    },
+    "email": {
+      "title": "Cancel via Email",
+      "description": "*   To cancel via email, send a request to admin@my-omega-tv.xyz."
+    },
+    "google_play": {
+      "title": "Cancel via Google Play Store",
+      "description": "To cancel your OmegaTV subscription via the Google Play Store:\n\n*   Launch the Google Play Store app.\n*   Go to Menu -> My Account -> Payments & Subscriptions.\n*   Select the OmegaTV subscription and follow the instructions to cancel."
+    },
+    "app_store": {
+      "title": "Cancel via Apple App Store",
+      "description": "To cancel your OmegaTV subscription via the Apple App Store:\n\n*   Launch the App Store.\n*   Tap the account icon in the upper right corner.\n*   Tap Subscriptions, and select the OmegaTV subscription you'd like to cancel."
+    }
+  },
+  "seo_text": "Cancel OmegaTV subscription, OmegaTV cancellation, unsubscribe OmegaTV, cancel MYOMEGATV, OmegaTV refund, stop OmegaTV subscription, end OmegaTV membership"
+}
