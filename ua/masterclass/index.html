@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPay</title>
+    
+    <link rel="icon" type="image/png" href="/stop_pay/assets/favicons/favicon-32x32.png" sizes="32x32">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/stop_pay/assets/favicons/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#1a1a1a">
+
+    <link rel="manifest" href="/stop_pay/manifest.json">
+
+    <link rel="stylesheet" href="/stop_pay/assets/css/style.css">
+</head>
+<body data-theme="dark">
+
+<nav>
+    <div class="custom-select" id="langSelector" translate="no">
+        <div class="select-btn" onclick="toggleMenu()">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="" id="currentFlag" class="flag-icon">
+                <span id="currentShort">UA</span>
+            </div>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="select-dropdown" id="dropdownList"></div>
+    </div>
+    <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+</nav>
+
+<header>
+    <div class="counter-container">
+        <span id="counterLabel">Saved:</span>
+        <span id="moneyCounter">0</span>
+        <span id="currency">₴</span>
+    </div>
+
+    <div id="mainTitle" style="margin-top: 20px;">
+        <a href="/stop_pay/">
+            <img src="/stop_pay/Logo.png" alt="StopPay">
+        </a>
+    </div>
+</header>
+
+<main id="mainContent">
+    <div id="isServicePage" data-service-id="masterclass" style="display:none;"></div>
+
+<div class="service-page">
+    <h1 class="page-title">Як скасувати підписку на MasterClass</h1>
+    <p class="page-desc">Підписки на MasterClass оплачуються щорічно. Щоб скасувати підписку на MasterClass, вам потрібно зробити це через їхній веб-сайт. Ви не можете скасувати підписку через мобільний додаток. Якщо ви підписалися через третю сторону, як-от iOS App Store, Google Play або Verizon +play, вам потрібно буде скасувати підписку безпосередньо через них.</p>
+
+    <div class="steps-container">
+        
+                            <div class="instruction-card">
+                                <h2 class="step-card-title">СКАСУЙТЕ ЧЛЕНСТВО В MASTERCLASS ЧЕРЕЗ ВЕБ-САЙТ</h2>
+                                <div class="step-card-content">Щоб скасувати членство в MasterClass через веб-сайт, виконайте такі дії:<br><br><ul class='steps-list-inner'><li>Перейдіть на сайт www.masterclass.com і увійдіть у свій обліковий запис.<br></li><li>Натисніть на значок свого профілю або ініціали у верхньому правому куті.<br></li><li>Виберіть "Налаштування" у випадаючому меню.<br></li><li>У розділі "Налаштування облікового запису" знайдіть розділ "Членство" та натисніть "Скасувати членство".<br></li><li>Виберіть "Скасувати зараз", щоб підтвердити та завершити скасування.<br></li><li>Перевірте свою електронну пошту, щоб отримати підтвердження скасування.</li></ul></div>
+                            </div>
+                            
+    </div>
+
+    <div class="action-section">
+        <a href="https://www.masterclass.com" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('120.0', 'masterclass')">
+            Скасувати підписку
+        </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://www.masterclass.com" target="_blank" onclick="handlePriceAdd('120.0', 'masterclass')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+        </div>
+    </div>
+
+    <div class="seo-text">Скасувати підписку MasterClass. Кроки для скасування MasterClass. Як зупинити підписку MasterClass. Інструкції зі скасування MasterClass. Відписатися від MasterClass.</div>
+</div>
+
+</main>
+
+<div class="donate-section">
+    <h3 id="donateTitle"></h3>
+    <p id="donateDesc"></p>
+    <a href="https://buymeacoffee.com/pandadream" class="btn-donate" id="donateBtn" target="_blank">☕ Buy Me a Coffee</a>
+</div>
+
+<div id="seoContent" class="seo-block"></div>
+
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
+</div>
+
+<div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <h3 id="modalTitle">Додати сервіс</h3>
+        <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
+        <input type="text" id="aiServiceInput" class="modal-input" placeholder="Назва сервісу...">
+        <button class="modal-btn" id="modalBtn" onclick="sendToAi()">Надіслати</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-main">
+        <span id="footerCreated">Автор:</span> 
+        <span class="brand-name">PandaDream Game Studio</span> 
+        <span class="panda-emoji">🐼</span>
+    </div>
+    <div id="footerSlogan" class="footer-slogan"></div>
+</footer>
+
+<script src="/stop_pay/assets/js/script.js"></script>
+</body>
+</html>
