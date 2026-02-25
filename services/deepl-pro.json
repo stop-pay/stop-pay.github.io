@@ -1,0 +1,9 @@
+{
+  "id": "deepl-pro",
+  "name": "DeepL Pro",
+  "category": "software",
+  "price_usd": 8.74,
+  "type": "global",
+  "official_url": "https://www.deepl.com/pro",
+  "official_cancel_url": "https://www.deepl.com/pro"
+}
