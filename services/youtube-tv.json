@@ -1,0 +1,9 @@
+{
+  "id": "youtube-tv",
+  "name": "YouTube TV",
+  "category": "tv",
+  "price_usd": 82.99,
+  "type": "global",
+  "official_url": "https://tv.youtube.com",
+  "official_cancel_url": "https://tv.youtube.com"
+}
