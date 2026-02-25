@@ -1,0 +1,9 @@
+{
+  "id": "masterclass",
+  "name": "MasterClass",
+  "category": "software",
+  "price_usd": 120.0,
+  "type": "global",
+  "official_url": "https://www.masterclass.com",
+  "official_cancel_url": "https://www.masterclass.com"
+}
