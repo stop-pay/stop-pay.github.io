@@ -1,0 +1,9 @@
+{
+  "id": "linkedin-premium-career",
+  "name": "LinkedIn Premium Career",
+  "category": "software",
+  "price_usd": 29.99,
+  "type": "global",
+  "official_url": "https://www.linkedin.com/premium/career",
+  "official_cancel_url": "https://www.linkedin.com/settings/subscriptions"
+}

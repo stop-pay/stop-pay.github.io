@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from LinkedIn Premium",
+  "translated_name": "linkedin premium",
+  "description": "You can cancel your LinkedIn Premium subscription through the LinkedIn website, mobile browser, or through the Apple App Store or Google Play Store if you subscribed through those platforms. Note that you cannot cancel from the LinkedIn mobile app.",
+  "steps": {
+    "web": {
+      "title": "Cancel LinkedIn Premium via Website",
+      "description": "To cancel your LinkedIn Premium subscription via the website:\n\n*   Log into your LinkedIn account on a web browser (desktop or mobile).\n*   Click your profile picture in the top right corner.\n*   Select \"Settings & Privacy\" from the dropdown menu.\n*   Navigate to the \"Subscriptions & Payments\" or \"Account Preferences\" section.\n*   Click \"Manage Premium Account\" or \"Manage Subscription\".\n*   Look for the \"Cancel Subscription\" option and click it.\n*   Follow the on-screen instructions to confirm the cancellation. You may be asked to provide a reason for canceling."
+    },
+    "ios": {
+      "title": "Cancel LinkedIn Premium on iPhone",
+      "description": "To cancel your LinkedIn Premium subscription on an iPhone:\n\n*   Go to your device's settings.\n*   Tap Subscriptions.\n*   Select LinkedIn Premium to cancel."
+    },
+    "android": {
+      "title": "Cancel LinkedIn Premium on Android",
+      "description": "To cancel your LinkedIn Premium subscription on an Android device:\n\n*   Open the Google Play Store.\n*   Tap your profile icon.\n*   Select Payments & Subscriptions, then Subscriptions.\n*   Choose LinkedIn Premium to cancel."
+    }
+  },
+  "seo_text": "Cancel your LinkedIn Premium subscription easily by following these steps. Learn how to unsubscribe from LinkedIn Premium through the website, mobile browser, Apple App Store, or Google Play Store."
+}
