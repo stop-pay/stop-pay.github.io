@@ -1,0 +1,9 @@
+{
+  "id": "adobe-firefly",
+  "name": "Adobe Firefly",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "global",
+  "official_url": "https://www.adobe.com/",
+  "official_cancel_url": "https://account.adobe.com/plans"
+}
