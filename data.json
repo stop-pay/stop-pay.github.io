@@ -12,7 +12,7 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "спотіфай преміум, spotify premium"
+      "search_alias": "spotify premium, спотіфай преміум"
     },
     {
       "id": "youtube",
@@ -22,7 +22,7 @@
       "type": "global",
       "official_url": "https://www.youtube.com/premium",
       "official_cancel_url": "https://www.youtube.com/paid_memberships",
-      "search_alias": "youtube premium, ютуб преміум"
+      "search_alias": "ютуб преміум, youtube premium"
     },
     {
       "id": "kyyivstar-tb",
@@ -32,7 +32,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "kyivstar tv, київстар ТБ"
+      "search_alias": "київстар ТБ, kyivstar tv"
     },
     {
       "id": "claude",
@@ -42,7 +42,7 @@
       "type": "global",
       "official_url": "https://www.anthropic.com/",
       "official_cancel_url": null,
-      "search_alias": "claude, клауд"
+      "search_alias": "клауд, claude"
     },
     {
       "id": "apple",
@@ -52,7 +52,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "apple tv+, епл ТБ"
+      "search_alias": "епл ТБ, apple tv+"
     },
     {
       "id": "megogo",
@@ -62,7 +62,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "мегого, megogo"
+      "search_alias": "megogo, мегого"
     },
     {
       "id": "promova",
@@ -72,7 +72,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "промова, promova"
+      "search_alias": "promova, промова"
     },
     {
       "id": "netflix",
@@ -92,7 +92,7 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/",
-      "search_alias": "світ ТБ, sweet.tv"
+      "search_alias": "sweet.tv, світ ТБ"
     }
   ]
 }
