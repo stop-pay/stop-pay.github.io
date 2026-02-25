@@ -95,6 +95,16 @@
       "search_alias": "клауд, claude"
     },
     {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "category": "software",
+      "price_usd": 30.0,
+      "type": "global",
+      "official_url": "https://www.grammarly.com",
+      "official_cancel_url": "https://account.grammarly.com",
+      "search_alias": "grammarly"
+    },
+    {
       "id": "apple",
       "name": "Apple TV+",
       "category": "tv",
@@ -102,7 +112,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "епл ТБ, apple tv+"
+      "search_alias": "apple tv+, епл ТБ"
     },
     {
       "id": "megogo",
@@ -112,7 +122,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "megogo, мегого"
+      "search_alias": "мегого, megogo"
     },
     {
       "id": "promova",
