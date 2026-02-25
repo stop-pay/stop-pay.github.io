@@ -1,0 +1,9 @@
+{
+  "id": "midjourney",
+  "name": "Midjourney",
+  "category": "ai",
+  "price_usd": 10.0,
+  "type": "global",
+  "official_url": "https://www.midjourney.com/",
+  "official_cancel_url": "https://www.midjourney.com/auth/signin/"
+}
