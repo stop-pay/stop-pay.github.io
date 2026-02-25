@@ -308,21 +308,21 @@ footer { margin-top: auto; padding: 40px 0; text-align: center; width: 100%; }
 }
 
 /* 📱 Телефон альбом / маленький планшет */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 800px) {
     .category-content {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 /* 📲 Планшет */
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 800px) {
     .category-content {
         grid-template-columns: repeat(6, 1fr);
     }
 }
 
 /* 💻 Десктоп */
-@media (min-width: 1201px) {
+@media (min-width: 800px) {
     .category-content {
         grid-template-columns: repeat(10, 1fr);
     }
