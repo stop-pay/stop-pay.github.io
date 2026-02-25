@@ -63,7 +63,12 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 1200px
 }
 
 /* --- 3. ПОШУК ТА КАТЕГОРІЇ --- */
-.search-container { width: 100%; max-width: 1200px; margin-bottom: 30px; position: relative; }
+.search-container { 
+    width: 100%; 
+    max-width: 600px; /* Пошук залишаємо акуратним, не на весь екран */
+    margin-bottom: 30px; 
+    position: relative; 
+}
 .search-input { 
     width: 100%; padding: 14px 15px 14px 45px; 
     border-radius: 15px; border: 1px solid var(--border); 
@@ -73,20 +78,29 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 1200px
 .search-input:focus { border-color: var(--accent); }
 .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); opacity: 0.5; }
 
-.category-wrapper { margin-bottom: 15px; border: 1px solid var(--border); border-radius: 18px; overflow: hidden; background: var(--card); width: 100%; max-width: 1200px;}
-.category-header { padding: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
-.category-content { display: none; padding: 15px; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; border-top: 1px solid var(--border); }
-@media (min-width: 500px) {
-    .category-content { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
-    .card { padding: 15px 10px; }
+.category-wrapper { 
+    margin-bottom: 15px; border: 1px solid var(--border); 
+    border-radius: 18px; overflow: hidden; background: var(--card); 
+    width: 100%; max-width: 1200px; /* Це дозволить блоку розширятися */
 }
-.category-wrapper.active .category-content { display: grid; }
+.category-header { padding: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
+
+/* ТУТ ГОЛОВНА ПРАВКА */
+.category-content { 
+    display: none; padding: 20px; 
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Збільшили мінімальну ширину картки */
+    gap: 15px; border-top: 1px solid var(--border); 
+}
+
+/* Прибираємо старий медіа-запит, який міг все псувати, і робимо універсально */
+.category-wrapper.active .category-content { display: grid !important; }
 .category-wrapper.active .arrow-cat { transform: rotate(180deg); }
 
 .card { 
-    background: var(--bg); padding: 20px; border-radius: 15px; 
+    background: var(--bg); padding: 20px 10px; border-radius: 15px; 
     text-align: center; text-decoration: none; color: inherit; 
     border: 1px solid var(--border); transition: 0.2s; cursor: pointer;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
 }
 .card-icon-wrapper img { width: 48px; height: 48px; object-fit: contain; margin-bottom: 10px; }
 .card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
