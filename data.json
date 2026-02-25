@@ -12,7 +12,7 @@
       "type": "global",
       "official_url": "https://zoom.us",
       "official_cancel_url": "https://zoom.us",
-      "search_alias": "zoom, Zoom"
+      "search_alias": "Zoom, zoom"
     },
     {
       "id": "notion",
@@ -42,7 +42,7 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "спотіфай преміум, spotify premium"
+      "search_alias": "spotify premium, спотіфай преміум"
     },
     {
       "id": "masterclass",
@@ -92,7 +92,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "kyivstar tv, київстар ТБ"
+      "search_alias": "київстар ТБ, kyivstar tv"
     },
     {
       "id": "claude",
@@ -102,7 +102,7 @@
       "type": "global",
       "official_url": "https://www.anthropic.com/",
       "official_cancel_url": null,
-      "search_alias": "клауд, claude"
+      "search_alias": "claude, клауд"
     },
     {
       "id": "grammarly",
@@ -132,7 +132,7 @@
       "type": "ua",
       "official_url": "https://megogo.net/",
       "official_cancel_url": "https://megogo.net/",
-      "search_alias": "megogo, мегого"
+      "search_alias": "мегого, megogo"
     },
     {
       "id": "promova",
@@ -142,7 +142,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "promova, промова"
+      "search_alias": "промова, promova"
     },
     {
       "id": "netflix",
@@ -192,7 +192,7 @@
       "type": "ua",
       "official_url": "https://sweet.tv/",
       "official_cancel_url": "https://sweet.tv/",
-      "search_alias": "світ ТБ, sweet.tv"
+      "search_alias": "sweet.tv, світ ТБ"
     }
   ]
 }
