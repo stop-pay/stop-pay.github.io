@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Google One",
+  "translated_name": "google one",
+  "description": "You can cancel your Google One membership through the Google One app or website. Follow these steps to cancel your subscription and manage your storage plan.",
+  "steps": {
+    "web": {
+      "title": "Cancel Google One Subscription via Web",
+      "description": "To cancel your Google One subscription via the web:\n\n*   Go to one.google.com/settings.\n*   Tap or click on Settings.\n*   Tap or click on Cancel membership.\n*   Confirm by tapping or clicking Cancel membership.\n*   To downgrade to basic Google One storage plans (100 GB, 200 GB), go to https://one.google.com/changestorageplan.\n*   To delete your plan from your Google Account, go to https://myaccount.google.com/deleteservices."
+    },
+    "app": {
+      "title": "Cancel Google One Subscription via App",
+      "description": "To cancel your Google One subscription via the app:\n\n*   Open the Google One app.\n*   Tap on Settings.\n*   Tap on Cancel membership.\n*   Confirm by tapping Cancel membership."
+    },
+    "ios": {
+      "title": "Cancel Google One Subscription via App Store (iOS)",
+      "description": "To cancel your Google One subscription through the App Store:\n\n*   Open the App Store app.\n*   Tap your name.\n*   Tap Subscriptions.\n*   Tap Google One.\n*   Tap Cancel Subscription."
+    }
+  },
+  "seo_text": "Learn how to cancel your Google One subscription. Follow our step-by-step guide to easily cancel your Google One membership through the app, website, or App Store. Manage your Google One storage plan and subscription settings."
+}
