@@ -87,9 +87,12 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 1200px
 
 /* ТУТ ГОЛОВНА ПРАВКА */
 .category-content { 
-    display: none; padding: 20px; 
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Збільшили мінімальну ширину картки */
-    gap: 15px; border-top: 1px solid var(--border); 
+    display: none; 
+    padding: 15px; /* Зменшили внутрішній відступ контейнера */
+    /* Змінюємо 140px на 120px — це дозволить втиснути більше карток */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+    gap: 12px; 
+    border-top: 1px solid var(--border); 
 }
 
 /* Прибираємо старий медіа-запит, який міг все псувати, і робимо універсально */
@@ -97,10 +100,20 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 1200px
 .category-wrapper.active .arrow-cat { transform: rotate(180deg); }
 
 .card { 
-    background: var(--bg); padding: 20px 10px; border-radius: 15px; 
-    text-align: center; text-decoration: none; color: inherit; 
-    border: 1px solid var(--border); transition: 0.2s; cursor: pointer;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: var(--bg); 
+    padding: 15px 5px; /* Зменшили бокові відступи всередині картки */
+    border-radius: 15px; 
+    text-align: center; 
+    text-decoration: none; 
+    color: inherit; 
+    border: 1px solid var(--border); 
+    transition: 0.2s; 
+    cursor: pointer;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    min-height: 100px; /* Додаємо стабільну висоту */
 }
 .card-icon-wrapper img { width: 48px; height: 48px; object-fit: contain; margin-bottom: 10px; }
 .card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
