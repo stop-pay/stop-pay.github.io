@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Grammarly",
+  "translated_name": "grammarly",
+  "description": "Here's how to cancel your Grammarly subscription, depending on how you subscribed (website, Google Play Store, or Apple App Store). Cancelling stops automatic renewal, but you'll have access to paid features until the end of your current subscription period. To avoid being charged, cancel at least one day before your renewal date.",
+  "steps": {
+    "web": {
+      "title": "Cancel Grammarly Subscription via Website",
+      "description": "To cancel your Grammarly subscription via the website:\n\n*   Go to account.grammarly.com and log in to your Grammarly account.\n*   Click on \"Account\" (profile icon or settings gear).\n*   Select \"Subscription\".\n*   Scroll to the bottom of the page and click \"Cancel Subscription\".\n*   Confirm by clicking \"Continue\".\n*   Choose a reason for cancellation and click \"Cancel Subscription\" again."
+    },
+    "android_app": {
+      "title": "Cancel Grammarly Subscription via Google Play Store",
+      "description": "To cancel your Grammarly subscription via the Google Play Store:\n\n*   Open the Google Play Store app.\n*   Tap your profile icon.\n*   Go to \"Payments & subscriptions\" and then \"Subscriptions\".\n*   Select Grammarly.\n*   Tap \"Cancel Subscription\" and confirm."
+    },
+    "ios_app": {
+      "title": "Cancel Grammarly Subscription via iOS App Store",
+      "description": "To cancel your Grammarly subscription via the iOS App Store:\n\n*   Open the Settings app on your iPhone or iPad.\n*   Tap your name at the top of the Settings menu.\n*   Tap \"Subscriptions\".\n*   Find Grammarly in the list and tap \"Cancel Subscription\".\n*   Confirm."
+    }
+  },
+  "seo_text": "Learn how to easily cancel your Grammarly subscription. Follow our step-by-step guide for unsubscribing from Grammarly through their website, Google Play Store, or Apple App Store. Stop automatic renewals and manage your Grammarly subscription effectively."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "grammarly",
+  "name": "Grammarly",
+  "category": "software",
+  "price_usd": 30.0,
+  "type": "global",
+  "official_url": "https://www.grammarly.com",
+  "official_cancel_url": "https://account.grammarly.com"
+}

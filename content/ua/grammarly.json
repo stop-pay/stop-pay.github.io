@@ -1,0 +1,23 @@
+{
+  "title": "Як скасувати підписку на Grammarly",
+  "translated_name": "grammarly",
+  "description": "Ось як скасувати підписку на Grammarly, залежно від способу оформлення підписки (вебсайт, Google Play Store або Apple App Store). Скасування зупиняє автоматичне поновлення, але у вас буде доступ до платних функцій до кінця поточного періоду підписки. Щоб уникнути стягнення плати, скасуйте підписку принаймні за один день до дати поновлення.",
+  "steps": {
+    "web": {
+      "title": "Скасування підписки Grammarly через вебсайт",
+      "description": "Щоб скасувати підписку Grammarly через вебсайт:\n\n*   Перейдіть на account.grammarly.com і увійдіть у свій обліковий запис Grammarly.\n*   Натисніть на \"Account\" (значок профілю або значок налаштувань).\n*   Виберіть \"Subscription\".\n*   Прокрутіть сторінку вниз і натисніть \"Cancel Subscription\".\n*   Підтвердьте, натиснувши \"Continue\".\n*   Виберіть причину скасування та знову натисніть \"Cancel Subscription\".",
+      "title_for_guide": "Скасувати через вебсайт"
+    },
+    "android_app": {
+      "title": "Скасування підписки Grammarly через Google Play Store",
+      "description": "Щоб скасувати підписку Grammarly через Google Play Store:\n\n*   Відкрийте програму Google Play Store.\n*   Торкніться значка свого профілю.\n*   Перейдіть до \"Payments & subscriptions\", а потім до \"Subscriptions\".\n*   Виберіть Grammarly.\n*   Торкніться \"Cancel Subscription\" і підтвердьте.",
+      "title_for_guide": "Скасувати через Google Play Store"
+    },
+    "ios_app": {
+      "title": "Скасування підписки Grammarly через iOS App Store",
+      "description": "Щоб скасувати підписку Grammarly через iOS App Store:\n\n*   Відкрийте програму Settings на своєму iPhone або iPad.\n*   Торкніться свого імені у верхній частині меню Settings.\n*   Торкніться \"Subscriptions\".\n*   Знайдіть Grammarly у списку та торкніться \"Cancel Subscription\".\n*   Підтвердьте.",
+      "title_for_guide": "Скасувати через iOS App Store"
+    }
+  },
+  "seo_text": "Дізнайтеся, як легко скасувати підписку на Grammarly. Дотримуйтесь нашого покрокового посібника, щоб скасувати підписку на Grammarly через їх вебсайт, Google Play Store або Apple App Store. Зупиніть автоматичне поновлення та ефективно керуйте своєю підпискою Grammarly."
+}
