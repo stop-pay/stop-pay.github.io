@@ -12,7 +12,7 @@
       "type": "global",
       "official_url": "https://zoom.us",
       "official_cancel_url": "https://zoom.us",
-      "search_alias": "Zoom, zoom"
+      "search_alias": "zoom, Zoom"
     },
     {
       "id": "notion",
@@ -72,7 +72,7 @@
       "type": "global",
       "official_url": "https://www.youtube.com/premium",
       "official_cancel_url": "https://www.youtube.com/paid_memberships",
-      "search_alias": "ютуб преміум, youtube premium"
+      "search_alias": "youtube premium, ютуб преміум"
     },
     {
       "id": "coursera",
@@ -92,7 +92,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "київстар ТБ, kyivstar tv"
+      "search_alias": "kyivstar tv, київстар ТБ"
     },
     {
       "id": "claude",
@@ -122,7 +122,7 @@
       "type": "global",
       "official_url": "https://tv.apple.com/",
       "official_cancel_url": "https://support.apple.com/en-us/HT202039",
-      "search_alias": "apple tv+, епл ТБ"
+      "search_alias": "епл ТБ, apple tv+"
     },
     {
       "id": "megogo",
@@ -152,7 +152,7 @@
       "type": "global",
       "official_url": "netflix.com",
       "official_cancel_url": "https://www.netflix.com/account",
-      "search_alias": "нетфлікс, netflix"
+      "search_alias": "netflix, нетфлікс"
     },
     {
       "id": "adobe-firefly",
