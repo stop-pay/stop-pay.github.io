@@ -1,0 +1,9 @@
+{
+  "id": "elestio-prometheus",
+  "name": "Elestio Prometheus",
+  "category": "software",
+  "price_usd": 16.0,
+  "type": "global",
+  "official_url": "https://elest.io/",
+  "official_cancel_url": "https://elest.io/"
+}

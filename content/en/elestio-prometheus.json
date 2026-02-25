@@ -1,0 +1,12 @@
+{
+  "title": "How to unsubscribe from Prometheus Plus",
+  "translated_name": "prometheus plus",
+  "description": "Unfortunately, \"Prometheus Plus\" is not specific enough, as multiple Prometheus services exist. Please clarify which \"Prometheus Plus\" service you're interested in (e.g., Elestio Prometheus, Prometheus Group, Google Cloud Managed Service for Prometheus, Amazon Managed Service for Prometheus) so I can provide more specific details.",
+  "steps": {
+    "steps_1": {
+      "title": "Unsubscribe via Web Platform",
+      "description": "To cancel your Elestio Prometheus subscription via the web platform, follow these steps:\n\n*   Identify the specific \"Prometheus Plus\" service you are subscribed to (e.g., Elestio Prometheus, Prometheus Group, Google Cloud Managed Service for Prometheus, Amazon Managed Service for Prometheus).\n*   Go to the service's website or platform where you manage your account.\n*   Log in to your account using your credentials.\n*   Navigate to the account settings or subscription management section.\n*   Find the option to cancel or unsubscribe from the Prometheus Plus service.\n*   Follow the on-screen instructions to confirm the cancellation.\n*   Check for a confirmation email or notification to ensure the cancellation was successful."
+    }
+  },
+  "seo_text": "Learn how to cancel your Prometheus Plus subscription. This guide provides general steps for unsubscribing from various Prometheus services. Find out how to manage your subscription and prevent future charges."
+}
