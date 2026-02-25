@@ -2,7 +2,7 @@
   "id": "zoom",
   "name": "Zoom",
   "category": "software",
-  "price_usd": 0.0,
+  "price_usd": 13.33,
   "type": "global",
   "official_url": "https://zoom.us",
   "official_cancel_url": "https://zoom.us"
