@@ -62,7 +62,7 @@
       "type": "global",
       "official_url": "https://www.youtube.com/premium",
       "official_cancel_url": "https://www.youtube.com/paid_memberships",
-      "search_alias": "youtube premium, ютуб преміум"
+      "search_alias": "ютуб преміум, youtube premium"
     },
     {
       "id": "coursera",
@@ -92,7 +92,7 @@
       "type": "global",
       "official_url": "https://www.anthropic.com/",
       "official_cancel_url": null,
-      "search_alias": "клауд, claude"
+      "search_alias": "claude, клауд"
     },
     {
       "id": "apple",
@@ -122,7 +122,7 @@
       "type": "global",
       "official_url": "https://promova.com",
       "official_cancel_url": "https://promova.com",
-      "search_alias": "промова, promova"
+      "search_alias": "promova, промова"
     },
     {
       "id": "netflix",
@@ -132,7 +132,7 @@
       "type": "global",
       "official_url": "netflix.com",
       "official_cancel_url": "https://www.netflix.com/account",
-      "search_alias": "netflix, нетфлікс"
+      "search_alias": "нетфлікс, netflix"
     },
     {
       "id": "adobe-firefly",
