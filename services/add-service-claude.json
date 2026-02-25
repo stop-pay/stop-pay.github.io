@@ -1,0 +1,9 @@
+{
+  "id": "add-service-claude",
+  "name": "Claude",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "global",
+  "official_url": "https://claude.ai",
+  "official_cancel_url": "https://claude.ai"
+}
