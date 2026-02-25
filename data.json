@@ -42,7 +42,7 @@
       "type": "global",
       "official_url": "spotify.com",
       "official_cancel_url": "spotify.com/account",
-      "search_alias": "спотіфай преміум, spotify premium"
+      "search_alias": "spotify premium, спотіфай преміум"
     },
     {
       "id": "masterclass",
@@ -72,7 +72,7 @@
       "type": "global",
       "official_url": "https://www.youtube.com/premium",
       "official_cancel_url": "https://www.youtube.com/paid_memberships",
-      "search_alias": "youtube premium, ютуб преміум"
+      "search_alias": "ютуб преміум, youtube premium"
     },
     {
       "id": "coursera",
@@ -92,7 +92,7 @@
       "type": "ua",
       "official_url": "https://tv.kyivstar.ua/",
       "official_cancel_url": "https://account.kyivstar.ua/",
-      "search_alias": "kyivstar tv, київстар ТБ"
+      "search_alias": "київстар ТБ, kyivstar tv"
     },
     {
       "id": "claude",
