@@ -31,7 +31,7 @@ body {
     padding: 20px; 
     display: flex; 
     flex-direction: column; 
-    align-items: center; 
+    align-items: stretch; 
     transition: background 0.3s; 
     min-height: 100vh;
 }
