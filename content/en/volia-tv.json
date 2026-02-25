@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Volia TV",
+  "translated_name": "volia tv",
+  "description": "Volia TV is a subscription-based streaming service from Ukraine, available across Europe. You can manage your subscription through your Volia account or by contacting customer support.",
+  "steps": {
+    "web": {
+      "title": "Cancel Volia TV Subscription via Website",
+      "description": "To cancel your Volia TV subscription via the website, follow these steps:\n\n*   Go to the Volia TV website.\n*   Log in to your account.\n*   Look for a 'Manage Subscription' or 'Billing' section.\n*   Find the option to cancel your subscription.\n*   Follow the on-screen instructions to confirm the cancellation.\n*   Contact Volia's customer support if you need further assistance."
+    },
+    "app": {
+      "title": "Cancel Volia TV Subscription via Mobile App",
+      "description": "To cancel your Volia TV subscription via the mobile app, follow these steps:\n\n*   Open the 'My Volia' mobile app to manage your subscription."
+    },
+    "phone": {
+      "title": "Cancel Volia TV Subscription via Phone",
+      "description": "To cancel your Volia TV subscription via phone, follow these steps:\n\n*   Contact Volia's customer support if you need further assistance."
+    }
+  },
+  "seo_text": "Learn how to cancel your Volia TV subscription. Follow these simple steps to unsubscribe from Volia TV and manage your streaming service account."
+}
