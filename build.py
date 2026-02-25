@@ -62,12 +62,10 @@ def build():
             shutil.copy(file, f'dist/{file}')
     if os.path.exists('assets/favicons/favicon-32x32.png'):
         shutil.copy('assets/favicons/favicon-32x32.png', 'dist/favicon.png')
-    if os.path.exists('.nojekyll'):
-        shutil.copy('.nojekyll', 'dist/.nojekyll')
-    else:
-        # Або просто створюй його на льоту, якщо файлу немає в корені
-        with open('dist/.nojekyll', 'w') as f:
-            pass
+    
+    # Створюємо .nojekyll для правильного деплою
+    with open('dist/.nojekyll', 'w') as f:
+        pass
 
     # 6. ГЕНЕРАЦІЯ HTML СТОРІНОК
     try:
@@ -101,13 +99,11 @@ def build():
                     steps_data = c.get('steps', {})
                     steps_html = ""
 
-                    # Якщо steps - це словник (новий формат)
                     if isinstance(steps_data, dict):
                         for key, data in steps_data.items():
-                            step_title = data.get('title', '').upper()
-                            step_desc = data.get('description', '')
+                            step_title = (data.get('title') or "").upper()
+                            step_desc = data.get('description') or ""
                             
-                            # Форматування тексту
                             formatted_desc = step_desc.replace('\n', '<br>')
                             if '*' in formatted_desc:
                                 items = formatted_desc.split('*')
@@ -121,27 +117,34 @@ def build():
                                 <div class="step-card-content">{formatted_desc}</div>
                             </div>
                             '''
-                    # Якщо раптом старий формат (масив) - для зворотної сумісності
                     elif isinstance(steps_data, list):
-                        li_items = "".join([f"<li>{step}</li>" for step in steps_data])
+                        li_items = "".join([f"<li>{str(step)}</li>" for step in steps_data])
                         steps_html = f'<div class="instruction-card"><ul class="steps-list">{li_items}</ul></div>'
 
-                    # --- РЕШТА ОБРОБКИ ---
-                    hint_text = lang_data.get('cancel_hint', '')
-                    hint_text = hint_text.replace('{{ official_url }}', s["official_url"])
+                    # --- РЕШТА ОБРОБКИ (БЕЗПЕЧНА) ---
+                    # Логіка Fallback для URL скасування
+                    cancel_link = s.get('official_cancel_url')
+                    if not cancel_link:
+                        cancel_link = s.get('official_url', '#')
+
+                    hint_text = lang_data.get('cancel_hint', '') or ""
+                    hint_text = hint_text.replace('{{ official_url }}', str(s.get("official_url", "#")))
                     hint_text = hint_text.replace('target="_blank"', f'target="_blank" onclick="handlePriceAdd(\'{price}\', \'{sid}\')"')
                     
-                    seo_content = c.get('seo_text', '')
+                    seo_content = c.get('seo_text', '') or ""
                     seo_html = f'<div class="seo-text">{seo_content}</div>' if seo_content else ''
 
-                    pg = page_tpl.replace('{{ title }}', c.get('title', '')) \
-                                 .replace('{{ price_usd }}', price) \
-                                 .replace('{{ service_id }}', sid) \
-                                 .replace('{{ description }}', c.get('desc', c.get('description', ''))) \
+                    pg_title = c.get('title') or s.get('id') or "Service"
+                    pg_desc = c.get('desc') or c.get('description') or ""
+
+                    pg = page_tpl.replace('{{ title }}', str(pg_title)) \
+                                 .replace('{{ price_usd }}', str(price)) \
+                                 .replace('{{ service_id }}', str(sid)) \
+                                 .replace('{{ description }}', str(pg_desc)) \
                                  .replace('{{ steps }}', steps_html) \
-                                 .replace('{{ cancel_hint }}', hint_text) \
+                                 .replace('{{ cancel_hint }}', str(hint_text)) \
                                  .replace('{{ btn_cancel_text }}', lang_data.get('ui', {}).get('btn_cancel', 'Cancel')) \
-                                 .replace('{{ cancel_url }}', s['official_cancel_url'])
+                                 .replace('{{ cancel_url }}', str(cancel_link))
                     
                     pg = re.sub(r'\{% if seo_text %\}.*?\{% endif %}', seo_html, pg, flags=re.DOTALL)
                     pg = pg.replace('{{ seo_text }}', seo_html)
@@ -162,3 +165,4 @@ def build():
 
 if __name__ == "__main__":
     build()
+                        
