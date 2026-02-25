@@ -37,8 +37,8 @@ body {
 }
 
 /* --- 2. НАВІГАЦІЯ ТА ШАПКА --- */
-nav { width: 100%; max-width: 600px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative; z-index: 10; }
-header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px; }
+nav { width: 100%; max-width: 800px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative; z-index: 10; }
+header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 800px; }
 
 #mainTitle img {
     display: block;
@@ -63,7 +63,7 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 }
 
 /* --- 3. ПОШУК ТА КАТЕГОРІЇ --- */
-.search-container { width: 100%; max-width: 600px; margin-bottom: 30px; position: relative; }
+.search-container { width: 100%; max-width: 800px; margin-bottom: 30px; position: relative; }
 .search-input { 
     width: 100%; padding: 14px 15px 14px 45px; 
     border-radius: 15px; border: 1px solid var(--border); 
@@ -73,10 +73,11 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 .search-input:focus { border-color: var(--accent); }
 .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); opacity: 0.5; }
 
-.category-wrapper { margin-bottom: 15px; border: 1px solid var(--border); border-radius: 18px; overflow: hidden; background: var(--card); width: 100%; max-width: 600px;}
+.category-wrapper { margin-bottom: 15px; border: 1px solid var(--border); border-radius: 18px; overflow: hidden; background: var(--card); width: 100%; max-width: 800px;}
 .category-header { padding: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
 .category-content { display: none; padding: 15px; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; border-top: 1px solid var(--border); }
 @media (min-width: 500px) {
+    .category-header { font-size: 14px; }
     .category-content { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
     .card { padding: 15px 10px; }
 }
@@ -92,7 +93,7 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 .card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
 /* --- 4. СТОРІНКА СЕРВІСУ (ІНСТРУКЦІЯ) --- */
-.service-container, .service-page { width: 100%; max-width: 600px; text-align: left; }
+.service-container, .service-page { width: 100%; max-width: 800px; text-align: left; }
 .page-title { margin-top: 0; font-size: 1.8rem; color: var(--text); }
 .page-desc { opacity: 0.8; margin-bottom: 30px; line-height: 1.5; }
 
@@ -121,6 +122,7 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 .step-card-content {
     line-height: 1.6;
     font-size: 0.95rem;
+    max-width: 650px;
 }
 
 .steps-list-inner {
@@ -158,12 +160,12 @@ header { text-align: center; margin-bottom: 20px; width: 100%; max-width: 600px;
 .link-hint a { color: #4da6ff; text-decoration: underline; }
 
 /* --- 5. ДОНАТ ТА SEO --- */
-.donate-section { width: 100%; max-width: 600px; margin-top: 30px; padding: 25px; background: rgba(46, 213, 115, 0.05); border: 2px dashed #2ed573; border-radius: 20px; text-align: center; box-sizing: border-box; }
+.donate-section { width: 100%; max-width: 800px; margin-top: 30px; padding: 25px; background: rgba(46, 213, 115, 0.05); border: 2px dashed #2ed573; border-radius: 20px; text-align: center; box-sizing: border-box; }
 .btn-donate { display: inline-block; background: #2ed573; color: white !important; padding: 12px 25px; border-radius: 12px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: 0.3s; }
 
 .seo-block, .seo-text { 
     width: 100%; 
-    max-width: 600px; 
+    max-width: 800px; 
     margin: 30px 0; 
     font-size: 0.9rem; 
     line-height: 1.6; 
