@@ -365,6 +365,15 @@
       "official_cancel_url": "https://account.adobe.com/plans"
     },
     {
+      "id": "glovo-prime",
+      "name": "Glovo Prime",
+      "category": "software",
+      "price_usd": 6.49,
+      "type": "global",
+      "official_url": "https://glovoapp.com",
+      "official_cancel_url": "https://glovoapp.com"
+    },
+    {
       "id": "nintendo-switch-online",
       "name": "Nintendo Switch Online",
       "category": "gaming",
