@@ -42,6 +42,15 @@
       "official_cancel_url": "https://www.audible.com/account/cancel"
     },
     {
+      "id": "autopay-auto-loan",
+      "name": "AUTOPAY Autopay",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://autopay.com/",
+      "official_cancel_url": "https://support.autopay.com/"
+    },
+    {
       "id": "bolt-food-bolt-plus",
       "name": "Bolt Food (Bolt Plus)",
       "category": "software",
