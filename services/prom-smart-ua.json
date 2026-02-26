@@ -1,0 +1,9 @@
+{
+  "id": "prom-smart-ua",
+  "name": "[ADD_SERVICE] Prom Smart UA",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "ua",
+  "official_url": "https://prom.ua/",
+  "official_cancel_url": "https://prom.ua/"
+}
