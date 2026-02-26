@@ -1,0 +1,9 @@
+{
+  "id": "skyshowtime-poland",
+  "name": "SkyShowtime (Poland)",
+  "category": "tv",
+  "price_usd": 6.19,
+  "type": "pl",
+  "official_url": "https://www.skyshowtime.com",
+  "official_cancel_url": "https://www.skyshowtime.com"
+}
