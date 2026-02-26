@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPay</title>
+    
+    <link rel="icon" type="image/png" href="/stop_pay/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="/stop_pay/assets/favicons/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="manifest" href="/stop_pay/manifest.json">
+    <link rel="stylesheet" href="/stop_pay/assets/css/style.css">
+</head>
+
+<body data-theme="dark">
+
+<!-- 🔥 ГОЛОВНИЙ КОНТЕЙНЕР -->
+<div class="main-wrapper">
+
+    <nav>
+        <div class="custom-select" id="langSelector" translate="no">
+            <div class="select-btn" onclick="toggleMenu()">
+                <div style="display: flex; align-items: stretch; gap: 8px;">
+                    <img src="" id="currentFlag" class="flag-icon">
+                    <span id="currentShort">UA</span>
+                </div>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="select-dropdown" id="dropdownList"></div>
+        </div>
+        <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+    </nav>
+
+    <header>
+        <div class="counter-container">
+            <span id="counterLabel">Saved:</span>
+            <span id="moneyCounter">0</span>
+            <span id="currency">₴</span>
+        </div>
+
+        <div id="mainTitle">
+            <a href="/stop_pay/">
+                <img src="/stop_pay/Logo.png" alt="StopPay">
+            </a>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <div id="isServicePage" data-service-id="prom-smart-ua" style="display:none;"></div>
+
+<div class="service-page">
+    <h1 class="page-title">How to unsubscribe from Prom Smart UA</h1>
+    <p class="page-desc">To cancel your Prom Smart UA subscription, you'll need to manage it through the platform where you initially subscribed. This could be directly through Prom.ua, PromptSmart, the Shopify App store, or Proom AI. The steps will vary depending on the specific service and your subscription method.</p>
+
+    <div class="steps-container">
+        <div class="instruction-card"><h2 class="step-card-title">UNSUBSCRIBE VIA WEBSITE</h2><div class="step-card-content">To cancel your 'Prom Smart UA' subscription via the website:<br><br><ul class='steps-list-inner'><li>Go to the website for the 'Prom Smart UA' service you are using (Prom.ua, PromptSmart, or Proom AI).<br></li><li>Log in to your account.<br></li><li>Navigate to your account settings or profile.<br></li><li>Look for a 'Subscription' or 'Billing' section.<br></li><li>Find your active 'Prom Smart UA' subscription.<br></li><li>Click on 'Cancel Subscription' or a similar option.<br></li><li>Follow the on-screen instructions to confirm the cancellation.</li></ul></div></div><div class="instruction-card"><h2 class="step-card-title">UNSUBSCRIBE VIA SHOPIFY APP</h2><div class="step-card-content">To cancel your 'Prom Smart UA' subscription via the Shopify App:<br><br><ul class='steps-list-inner'><li>Go to the Shopify App for the 'Prom Smart UA' service.<br></li><li>Log in to your account.<br></li><li>Navigate to your account settings or profile.<br></li><li>Look for a 'Subscription' or 'Billing' section.<br></li><li>Find your active 'Prom Smart UA' subscription.<br></li><li>Click on 'Cancel Subscription' or a similar option.<br></li><li>Follow the on-screen instructions to confirm the cancellation.</li></ul></div></div>
+    </div>
+
+    <div class="action-section">
+        <a href="https://prom.ua/" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('0.0', 'prom-smart-ua')">
+            Cancel Subscription
+        </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>Tip:</b> This is a direct link to the subscription management page. If it doesn't work (some services tend to hide these pages), simply go to the <a href="https://prom.ua/" target="_blank" onclick="handlePriceAdd('0.0', 'prom-smart-ua')">homepage</a> and follow the steps in the guide above.</p>
+        </div>
+    </div>
+
+    
+                    <div class="seo-text" style="text-align: center; margin-top: 40px; border-top: 1px solid var(--border); padding-top: 20px;">
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text); opacity: 0.9;">We constantly monitor the relevance of our guides to ensure you can cancel unwanted subscriptions quickly and easily. If you notice any discrepancy or a service has changed its interface, please click the <b>"?"</b> button. Your feedback helps us keep the information accurate!</p>
+                        <div style="opacity: 0.5; font-size: 0.8rem; margin-top: 15px;">Last update: 26.02.2026</div>
+                    </div>
+                    
+</div>
+
+    </main>
+
+    <div class="donate-section">
+        <h3 id="donateTitle"></h3>
+        <p id="donateDesc"></p>
+        <a href="https://buymeacoffee.com/pandadream" 
+           class="btn-donate" 
+           id="donateBtn" 
+           target="_blank">
+           ☕ Buy Me a Coffee
+        </a>
+    </div>
+
+    <div id="seoContent" class="seo-block"></div>
+
+    <footer>
+        <div class="footer-main">
+            <span id="footerCreated">Автор:</span> 
+            <span class="brand-name">PandaDream Game Studio</span> 
+            <span class="panda-emoji">🐼</span>
+        </div>
+        <div id="footerSlogan" class="footer-slogan"></div>
+    </footer>
+
+</div>
+<!-- 🔥 КІНЕЦЬ main-wrapper -->
+
+
+<!-- ❗ FAB І МОДАЛКА ЗАЛИШАЮТЬСЯ ПОЗА WRAPPER -->
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
+</div>
+
+<div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <h3 id="modalTitle">Додати сервіс</h3>
+        <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
+        <input type="text" 
+               id="aiServiceInput" 
+               class="modal-input" 
+               placeholder="Назва сервісу...">
+        <button class="modal-btn" 
+                id="modalBtn" 
+                onclick="sendToAi()">
+                Надіслати
+        </button>
+    </div>
+</div>
+
+<script src="/stop_pay/assets/js/script.js"></script>
+
+</body>
+</html>
