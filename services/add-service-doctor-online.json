@@ -1,0 +1,9 @@
+{
+  "id": "add-service-doctor-online",
+  "name": "[ADD_SERVICE] Doctor Online",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "global",
+  "official_url": "https://www.example.com",
+  "official_cancel_url": "https://www.example.com/cancel"
+}
