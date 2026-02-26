@@ -59,6 +59,15 @@
       "official_cancel_url": "Not directly stated"
     },
     {
+      "id": "opendatabot",
+      "name": "Opendatabot",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://opendatabot.ua",
+      "official_cancel_url": null
+    },
+    {
       "id": "promova",
       "name": "Promova",
       "category": "education",
