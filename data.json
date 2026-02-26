@@ -213,6 +213,15 @@
       "official_cancel_url": "https://inpost.pl/"
     },
     {
+      "id": "jakdojade-premium",
+      "name": "Jakdojade Premium",
+      "category": "software",
+      "price_usd": 0.49,
+      "type": "pl",
+      "official_url": "https://jakdojade.pl/",
+      "official_cancel_url": "https://jakdojade.pl/"
+    },
+    {
       "id": "kyyivstar-tb",
       "name": "Київстар ТБ",
       "category": "tv",
