@@ -1,0 +1,20 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Legimi",
+  "translated_name": "legimi",
+  "description": "Legimi to polska usługa subskrypcji ebooków i audiobooków. Możesz anulować subskrypcję Legimi w dowolnym momencie za pośrednictwem ich strony internetowej, aplikacji lub operatora komórkowego (jeśli dotyczy).",
+  "steps": {
+    "web": {
+      "title": "Anulowanie subskrypcji Legimi przez stronę internetową",
+      "description": "Aby anulować subskrypcję Legimi przez stronę internetową:\n\n*   Przejdź na stronę internetową Legimi.\n*   Zaloguj się na swoje konto Legimi.\n*   Przejdź do ustawień konta.\n*   Znajdź sekcję 'Subskrypcja' lub 'Rozliczenia'.\n*   Kliknij 'Anuluj subskrypcję' lub podobną opcję.\n*   Potwierdź prośbę o anulowanie.\n*   Sprawdź, czy otrzymałeś e-mail lub wiadomość potwierdzającą od Legimi."
+    },
+    "app": {
+      "title": "Anulowanie subskrypcji Legimi przez aplikację",
+      "description": "Aby anulować subskrypcję Legimi przez aplikację:\n\n*   Otwórz aplikację Legimi.\n*   Zaloguj się na swoje konto Legimi.\n*   Przejdź do ustawień konta.\n*   Znajdź sekcję 'Subskrypcja' lub 'Rozliczenia'.\n*   Kliknij 'Anuluj subskrypcję' lub podobną opcję.\n*   Potwierdź prośbę o anulowanie.\n*   Sprawdź, czy otrzymałeś e-mail lub wiadomość potwierdzającą od Legimi."
+    },
+    "sms": {
+      "title": "Anulowanie subskrypcji Legimi przez SMS",
+      "description": "Aby anulować subskrypcję Legimi przez SMS:\n\n*   Jeśli subskrybujesz usługę za pośrednictwem operatora komórkowego (Play lub T-Mobile), wyślij odpowiedni SMS anulujący (np. STOP na numer 220 dla ebooków Play)."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Legimi, rezygnacja z Legimi, zatrzymaj Legimi, przewodnik po anulowaniu Legimi, zakończ członkostwo Legimi"
+}

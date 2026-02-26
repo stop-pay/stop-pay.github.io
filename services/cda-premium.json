@@ -1,0 +1,9 @@
+{
+  "id": "cda-premium",
+  "name": "CDA Premium",
+  "category": "tv",
+  "price_usd": 7.11,
+  "type": "pl",
+  "official_url": "https://cda.pl",
+  "official_cancel_url": "https://cda.pl"
+}
