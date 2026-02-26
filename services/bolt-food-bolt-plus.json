@@ -1,0 +1,9 @@
+{
+  "id": "bolt-food-bolt-plus",
+  "name": "Bolt Food (Bolt Plus)",
+  "category": "software",
+  "price_usd": 4.99,
+  "type": "global",
+  "official_url": "https://bolt.eu/",
+  "official_cancel_url": "https://bolt.eu/"
+}
