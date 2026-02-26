@@ -1,0 +1,9 @@
+{
+  "id": "work-ua",
+  "name": "Work.ua",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "ua",
+  "official_url": "https://www.work.ua",
+  "official_cancel_url": ""
+}
