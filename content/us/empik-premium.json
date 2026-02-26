@@ -1,0 +1,24 @@
+{
+  "title": "How to unsubscribe from Empik Premium",
+  "translated_name": "empik premium",
+  "description": "Learn how to cancel your Empik Premium subscription. You can cancel via email, phone, contact form, or in person if purchased in-store.",
+  "steps": {
+    "web": {
+      "title": "Unsubscribe via Website",
+      "description": "To cancel your Empik Premium subscription via the website:\n\n*   Go to the Empik website.\n*   Use the contact form on the Empik portal to submit a cancellation request."
+    },
+    "email": {
+      "title": "Unsubscribe via Email",
+      "description": "To cancel your Empik Premium subscription via email:\n\n*   Send an email to obsluga.klienta@empik.com requesting cancellation."
+    },
+    "phone": {
+      "title": "Unsubscribe via Phone",
+      "description": "To cancel your Empik Premium subscription via phone:\n\n*   Call the customer service line at +48 22 462 72 50."
+    },
+    "in_person": {
+      "title": "Unsubscribe In-Person",
+      "description": "To cancel your Empik Premium subscription in person:\n\n*   If you purchased Empik Premium in an Empik store, go to any Empik store.\n*   Request a refund at the store."
+    }
+  },
+  "seo_text": "Cancel your Empik Premium subscription quickly and easily. Follow our guide to unsubscribe via email, phone, online form, or in-store."
+}

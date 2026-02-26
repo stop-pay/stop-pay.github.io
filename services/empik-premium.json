@@ -1,0 +1,9 @@
+{
+  "id": "empik-premium",
+  "name": "Empik (Empik Premium)",
+  "category": "software",
+  "price_usd": 9.84,
+  "type": "pl",
+  "official_url": "https://www.empik.com",
+  "official_cancel_url": "https://www.empik.com"
+}
