@@ -60,6 +60,15 @@
       "official_cancel_url": "https://pomoc.canalplus.com/en/faq/how-do-i-cancel-my-canal-subscription"
     },
     {
+      "id": "cda-premium",
+      "name": "CDA Premium",
+      "category": "tv",
+      "price_usd": 7.11,
+      "type": "pl",
+      "official_url": "https://cda.pl",
+      "official_cancel_url": "https://cda.pl"
+    },
+    {
       "id": "claude",
       "name": "Claude",
       "category": "ai",
