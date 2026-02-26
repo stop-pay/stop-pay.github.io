@@ -1,0 +1,9 @@
+{
+  "id": "youcontrol",
+  "name": "YouControl",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "ua",
+  "official_url": "https://youcontrol.com.ua/",
+  "official_cancel_url": "https://youcontrol.com.ua/"
+}
