@@ -1,0 +1,9 @@
+{
+  "id": "forbes-ukraine",
+  "name": "Forbes Ukraine",
+  "category": "news",
+  "price_usd": 7.8,
+  "type": "ua",
+  "official_url": "https://forbes.ua",
+  "official_cancel_url": "https://www.forbes.com/cancel-subscription/"
+}
