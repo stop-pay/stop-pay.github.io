@@ -465,6 +465,15 @@
       "official_cancel_url": "https://play.google.com/store/account/subscriptions"
     },
     {
+      "id": "pyszne-pl",
+      "name": "Pyszne.pl",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "pl",
+      "official_url": "https://www.pyszne.pl",
+      "official_cancel_url": "https://www.pyszne.pl"
+    },
+    {
       "id": "skvot",
       "name": "Skvot",
       "category": "software",
