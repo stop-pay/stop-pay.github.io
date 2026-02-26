@@ -51,6 +51,15 @@
       "official_cancel_url": "https://bolt.eu/"
     },
     {
+      "id": "canal-plus-online-poland",
+      "name": "Canal+ Online (Poland)",
+      "category": "tv",
+      "price_usd": 4.37,
+      "type": "pl",
+      "official_url": "https://www.canalplus.com/",
+      "official_cancel_url": "https://pomoc.canalplus.com/en/faq/how-do-i-cancel-my-canal-subscription"
+    },
+    {
       "id": "claude",
       "name": "Claude",
       "category": "ai",
