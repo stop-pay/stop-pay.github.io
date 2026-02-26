@@ -51,6 +51,15 @@
       "official_cancel_url": "https://support.autopay.com/"
     },
     {
+      "id": "badoo",
+      "name": "Badoo",
+      "category": "software",
+      "price_usd": 9.99,
+      "type": "global",
+      "official_url": "badoo.com",
+      "official_cancel_url": "badoo.com"
+    },
+    {
       "id": "bolt-food-bolt-plus",
       "name": "Bolt Food (Bolt Plus)",
       "category": "software",
