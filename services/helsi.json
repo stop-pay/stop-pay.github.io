@@ -1,0 +1,9 @@
+{
+  "id": "helsi",
+  "name": "Helsi+",
+  "category": "software",
+  "price_usd": 1.99,
+  "type": "ua",
+  "official_url": "https://helsi.me/",
+  "official_cancel_url": "mailto:ecom@shophelsi.com"
+}
