@@ -1,0 +1,9 @@
+{
+  "id": "new-voice",
+  "name": "New Voice Immigration Assistance Services",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "global",
+  "official_url": "https://new-voice.org",
+  "official_cancel_url": "https://new-voice.org"
+}
