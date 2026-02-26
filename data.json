@@ -14,6 +14,15 @@
       "official_cancel_url": "https://www.linkedin.com/settings/subscriptions"
     },
     {
+      "id": "magisterium-projector",
+      "name": "Magisterium AI Projector",
+      "category": "software",
+      "price_usd": 3.99,
+      "type": "global",
+      "official_url": null,
+      "official_cancel_url": null
+    },
+    {
       "id": "volia-tv",
       "name": "Volia TV",
       "category": "tv",
