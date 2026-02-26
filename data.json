@@ -320,6 +320,15 @@
       "official_cancel_url": "https://www.deepl.com/pro"
     },
     {
+      "id": "ukrainer",
+      "name": "[ADD_SERVICE] Ukrainer",
+      "category": "tv",
+      "price_usd": 5.0,
+      "type": "global",
+      "official_url": "https://ukrainer.net/en/",
+      "official_cancel_url": "https://www.buymeacoffee.com/"
+    },
+    {
       "id": "grammarly",
       "name": "Grammarly",
       "category": "software",
