@@ -6,7 +6,7 @@ import subprocess
 from datetime import datetime
 
 # Назва твого репозиторію на GitHub
-BASE_PATH = "/stop_pay"
+BASE_PATH = ""
 
 def get_git_mtime(filepath):
     """Отримує дату останнього комміту для конкретного файлу через Git"""
