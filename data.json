@@ -345,6 +345,15 @@
       "type": "global",
       "official_url": "https://www.perplexity.ai",
       "official_cancel_url": "https://www.perplexity.ai"
+    },
+    {
+      "id": "preply",
+      "name": "Preply",
+      "category": "education",
+      "price_usd": 15.0,
+      "type": "global",
+      "official_url": "https://preply.com",
+      "official_cancel_url": "https://preply.com"
     }
   ]
 }
