@@ -77,12 +77,14 @@ def build():
     with open('dist/.nojekyll', 'w') as f: pass
 
     # Генерація HTML
+    # 6. Генерація HTML
     try:
         layout = open('templates/layout.html', 'r', encoding='utf-8').read()
         index_body = open('templates/index_body.html', 'r', encoding='utf-8').read()
         page_tpl = open('templates/page.html', 'r', encoding='utf-8').read()
         
         for lang in available_langs:
+            print(f"--- Обробка мови: {lang.upper()} ---")
             lang_dir = os.path.join('dist', lang)
             os.makedirs(lang_dir, exist_ok=True)
             
@@ -93,7 +95,6 @@ def build():
             info_text = ui.get('last_update_info', '')
             date_label = ui.get('last_update', 'Last update:')
 
-            # Головна сторінка мови
             full_index = layout.replace('{{ content }}', index_body)
             with open(os.path.join(lang_dir, 'index.html'), 'w', encoding='utf-8') as f_out:
                 f_out.write(full_index)
@@ -105,10 +106,9 @@ def build():
                 
                 if os.path.exists(content_path):
                     c = smart_load_json(content_path)
-                    if not isinstance(c, dict): continue
-
-                    if lang == 'pl':
-                        print(f"BUILDING PL: {sid}")
+                    if not isinstance(c, dict):
+                        # Це повідомлення виведеться автоматично через smart_load_json
+                        continue
                     
                     c_mtime = get_git_mtime(content_path)
                     s_mtime = s.get('_mtime', c_mtime)
@@ -161,10 +161,14 @@ def build():
                     os.makedirs(s_dir, exist_ok=True)
                     with open(os.path.join(s_dir, 'index.html'), 'w', encoding='utf-8') as f_out:
                         f_out.write(full_pg)
+                else:
+                    # Повідомляємо лише якщо важливий файл (наприклад, Netflix) відсутній в якійсь мові
+                    if sid == 'netflix':
+                        print(f"  -> [Info]: Netflix відсутній у мові {lang}")
 
     except Exception as e:
         print(f"Глобальна помилка: {e}")
-
+        
     with open('dist/index.html', 'w', encoding='utf-8') as f:
         f.write(f'''<!DOCTYPE html><html><head><script>(function(){{var savedLang=localStorage.getItem('user_lang');var root="{BASE_PATH}";if(savedLang&&savedLang!=='ua'){{window.location.replace(root+'/'+savedLang+'/');}}else{{window.location.replace(root+'/ua/');}}}})();</script></head><body></body></html>''')
 
