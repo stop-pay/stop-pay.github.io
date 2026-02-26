@@ -1,0 +1,9 @@
+{
+  "id": "vchasno",
+  "name": "Вчасно",
+  "category": "software",
+  "price_usd": 0.0,
+  "type": "ua",
+  "official_url": "https://vchasno.ua/",
+  "official_cancel_url": "https://vchasno.ua/"
+}
