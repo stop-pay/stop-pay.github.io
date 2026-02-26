@@ -267,6 +267,15 @@
       "official_cancel_url": "https://www.linkedin.com/settings/subscriptions"
     },
     {
+      "id": "maczfit",
+      "name": "Maczfit",
+      "category": "software",
+      "price_usd": 115.0,
+      "type": "pl",
+      "official_url": "www.maczfit.pl",
+      "official_cancel_url": "www.maczfit.pl"
+    },
+    {
       "id": "magisterium-projector",
       "name": "Magisterium AI Projector",
       "category": "software",
