@@ -1,0 +1,9 @@
+{
+  "id": "naurok",
+  "name": "Naurok",
+  "category": "education",
+  "price_usd": 0.0,
+  "type": "ua",
+  "official_url": "https://naurok.ua",
+  "official_cancel_url": null
+}
