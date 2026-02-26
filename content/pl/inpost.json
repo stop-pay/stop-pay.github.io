@@ -1,0 +1,20 @@
+{
+  "title": "Jak zrezygnować z subskrypcji InPost",
+  "translated_name": "inpost",
+  "description": "Dowiedz się, jak anulować subskrypcję InPost. Postępuj zgodnie z poniższymi krokami, aby skutecznie zarządzać subskrypcją InPost i anulować przesyłki.",
+  "steps": {
+    "steps_1": {
+      "title": "Anuluj subskrypcję przez stronę internetową",
+      "description": "Aby anulować subskrypcję InPost przez stronę internetową:\n\n*   Przejdź na stronę internetową InPost.\n*   Zaloguj się na swoje konto InPost.\n*   Przejdź do sekcji 'Subskrypcja' lub 'Ustawienia konta'.\n*   Znajdź opcję 'Anuluj subskrypcję'.\n*   Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby zakończyć proces anulowania."
+    },
+    "steps_2": {
+      "title": "Anuluj przesyłkę przez stronę internetową",
+      "description": "Aby anulować przesyłkę przez stronę internetową InPost:\n\n*   Wypełnij formularz zgłoszeniowy na stronie internetowej InPost.\n*   Wybierz 'Wycofanie z przesyłki InPost Direct' jako powód anulowania."
+    },
+    "steps_3": {
+      "title": "Wycofaj zgodę przez e-mail",
+      "description": "Aby wycofać zgodę na otrzymywanie informacji od InPost:\n\n*   Wyślij prośbę na adres dane_osobowe@inpost.pl."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję InPost, przewodnik po anulowaniu InPost, zrezygnuj z subskrypcji InPost, anuluj przesyłkę InPost, zarządzanie subskrypcją InPost."
+}

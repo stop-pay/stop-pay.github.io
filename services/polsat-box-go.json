@@ -1,0 +1,9 @@
+{
+  "id": "polsat-box-go",
+  "name": "Polsat Box Go",
+  "category": "tv",
+  "price_usd": 8.0,
+  "type": "pl",
+  "official_url": "https://polsatboxgo.pl",
+  "official_cancel_url": "https://polsatboxgo.pl"
+}
