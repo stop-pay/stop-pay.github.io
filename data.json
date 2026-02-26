@@ -257,6 +257,15 @@
       "official_cancel_url": null
     },
     {
+      "id": "the-village-ukraina",
+      "name": "The Village Україна",
+      "category": "news",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://www.the-village.com.ua/",
+      "official_cancel_url": "https://www.the-village.com.ua/"
+    },
+    {
       "id": "naurok",
       "name": "Naurok",
       "category": "education",
