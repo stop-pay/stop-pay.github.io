@@ -154,6 +154,11 @@ def build():
     with open('dist/index.html', 'w', encoding='utf-8') as f:
         f.write(f'''<!DOCTYPE html><html><head><script>(function(){{var savedLang=localStorage.getItem('user_lang');var root="{BASE_PATH}";if(savedLang&&savedLang!=='ua'){{window.location.replace(root+'/'+savedLang+'/');}}else{{window.location.replace(root+'/ua/');}}}})();</script></head><body></body></html>''')
 
+    # 8. CNAME (Додаємо цей блок тут)
+    with open('dist/CNAME', 'w', encoding='utf-8') as f:
+        f.write('stop-pay.js.org')
+    print("Файл CNAME створено: stop-pay.js.org")
+    
 if __name__ == "__main__":
     build()
         
