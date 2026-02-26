@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from InPost",
+  "translated_name": "inpost",
+  "description": "Learn how to cancel your InPost subscription. Follow these steps to manage your InPost subscription and shipment cancellations effectively.",
+  "steps": {
+    "steps_1": {
+      "title": "Cancel Subscription via Website",
+      "description": "To cancel your InPost subscription via the website:\n\n*   Go to the InPost website.\n*   Log in to your InPost account.\n*   Navigate to the 'Subscription' or 'Account Settings' section.\n*   Find the 'Cancel Subscription' option.\n*   Follow the on-screen instructions to complete the cancellation process."
+    },
+    "steps_2": {
+      "title": "Cancel Shipment via Website",
+      "description": "To cancel a shipment via the InPost website:\n\n*   Fill out a request form on the InPost website.\n*   Select 'Withdrawal from an InPost Direct shipment' as the reason for cancellation."
+    },
+    "steps_3": {
+      "title": "Withdraw Consent via Email",
+      "description": "To withdraw consent for receiving information from InPost:\n\n*   Send the request to dane_osobowe@inpost.pl."
+    }
+  },
+  "seo_text": "Cancel InPost subscription, InPost cancellation guide, unsubscribe from InPost, cancel InPost shipment, InPost subscription management."
+}

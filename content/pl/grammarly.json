@@ -1,0 +1,20 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Grammarly",
+  "translated_name": "grammarly",
+  "description": "Oto jak anulować subskrypcję Grammarly, w zależności od sposobu subskrypcji (strona internetowa, Sklep Google Play lub Apple App Store). Anulowanie wstrzymuje automatyczne odnawianie, ale będziesz mieć dostęp do płatnych funkcji do końca bieżącego okresu subskrypcji. Aby uniknąć opłat, anuluj subskrypcję co najmniej jeden dzień przed datą odnowienia.",
+  "steps": {
+    "web": {
+      "title": "Anulowanie subskrypcji Grammarly przez stronę internetową",
+      "description": "Aby anulować subskrypcję Grammarly przez stronę internetową:\n\n*   Przejdź do account.grammarly.com i zaloguj się na swoje konto Grammarly.\n*   Kliknij „Konto” (ikona profilu lub ikona ustawień).\n*   Wybierz „Subskrypcja”.\n*   Przewiń na dół strony i kliknij „Anuluj subskrypcję”.\n*   Potwierdź, klikając „Kontynuuj”.\n*   Wybierz powód anulowania i ponownie kliknij „Anuluj subskrypcję”."
+    },
+    "android_app": {
+      "title": "Anulowanie subskrypcji Grammarly przez Sklep Google Play",
+      "description": "Aby anulować subskrypcję Grammarly przez Sklep Google Play:\n\n*   Otwórz aplikację Sklep Google Play.\n*   Kliknij ikonę swojego profilu.\n*   Przejdź do „Płatności i subskrypcje”, a następnie „Subskrypcje”.\n*   Wybierz Grammarly.\n*   Kliknij „Anuluj subskrypcję” i potwierdź."
+    },
+    "ios_app": {
+      "title": "Anulowanie subskrypcji Grammarly przez iOS App Store",
+      "description": "Aby anulować subskrypcję Grammarly przez iOS App Store:\n\n*   Otwórz aplikację Ustawienia na swoim iPhonie lub iPadzie.\n*   Kliknij swoje imię i nazwisko u góry menu Ustawień.\n*   Kliknij „Subskrypcje”.\n*   Znajdź Grammarly na liście i kliknij „Anuluj subskrypcję”.\n*   Potwierdź."
+    }
+  },
+  "seo_text": "Dowiedz się, jak łatwo anulować subskrypcję Grammarly. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zrezygnować z subskrypcji Grammarly za pośrednictwem ich strony internetowej, Sklepu Google Play lub Apple App Store. Zatrzymaj automatyczne odnawianie i skutecznie zarządzaj subskrypcją Grammarly."
+}

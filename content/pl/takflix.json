@@ -1,0 +1,16 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Takflix",
+  "translated_name": "takflix",
+  "description": "Takflix oferuje indywidualne bilety na filmy i członkostwo w Towarystwie. Aby anulować konto Takflix, wykonaj następujące kroki:",
+  "steps": {
+    "steps_1": {
+      "title": "Usuń konto za pośrednictwem platformy Takflix",
+      "description": "* Przejdź do sekcji „Moje kino” na platformie Takflix.\n* Wybierz „Ustawienia”.\n* Edytuj swoje dane osobowe lub zmień hasło.\n* Kliknij „Zablokuj profil”, aby usunąć swoje konto."
+    },
+    "steps_2": {
+      "title": "Anuluj subskrypcję Google Play",
+      "description": "* Aby zarządzać subskrypcją Google Play, wykonaj następujące kroki.\n* Na urządzeniu z Androidem przejdź do subskrypcji w Google Play.\n* Wybierz subskrypcję Takflix, którą chcesz anulować.\n* Kliknij „Anuluj subskrypcję” i postępuj zgodnie z instrukcjami."
+    }
+  },
+  "seo_text": "Dowiedz się, jak anulować subskrypcję Takflix. Postępuj zgodnie z naszym prostym przewodnikiem, aby zrezygnować z subskrypcji Takflix i zarządzać swoim członkostwem."
+}

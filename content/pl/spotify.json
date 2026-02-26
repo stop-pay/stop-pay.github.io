@@ -1,0 +1,24 @@
+{
+  "title": "Jak anulować subskrypcję Spotify Premium",
+  "translated_name": "spotify premium",
+  "description": "Dowiedz się, jak anulować subskrypcję Spotify Premium za pośrednictwem strony internetowej Spotify, aplikacji Spotify, Sklepu Google Play lub App Store iOS. Korzystaj z zalet Premium do następnej daty rozliczeniowej.",
+  "steps": {
+    "web": {
+      "title": "Anuluj Spotify Premium przez stronę internetową",
+      "description": "Oto jak anulować subskrypcję Spotify Premium przez stronę internetową:\n\n*   Przejdź na stronę spotify.com i zaloguj się na swoje konto.\n*   Przejdź do strony Przegląd konta.\n*   Przewiń w dół do sekcji „Twój plan” lub znajdź przycisk „Zarządzaj subskrypcją”.\n*   Kliknij „Zmień plan”.\n*   Wybierz „Anuluj Premium” lub opcję „Spotify Free”.\n*   Potwierdź anulowanie."
+    },
+    "app": {
+      "title": "Anuluj Spotify Premium przez aplikację",
+      "description": "Oto jak anulować subskrypcję Spotify Premium przez aplikację Spotify:\n\n*   Otwórz aplikację Spotify i zaloguj się na swoje konto.\n*   Dotknij ikony „Strona główna”.\n*   Dotknij ikony koła zębatego (ustawienia).\n*   Przewiń w dół, aż znajdziesz opcję „Konto”.\n*   Znajdź sekcję „Twój plan”.\n*   Wybierz opcję „Zmień plan” i znajdź opcję „Spotify Free”."
+    },
+    "ios": {
+      "title": "Anuluj Spotify Premium przez App Store iOS",
+      "description": "Oto jak anulować subskrypcję Spotify Premium przez App Store iOS:\n\n*   Otwórz aplikację „Ustawienia” na swoim iPhonie lub iPadzie.\n*   Dotknij swojego imienia i nazwiska u góry ekranu.\n*   Wybierz „Subskrypcje”.\n*   Znajdź i dotknij subskrypcji Spotify.\n*   Dotknij „Anuluj subskrypcję” i potwierdź anulowanie."
+    },
+    "google_play": {
+      "title": "Anuluj Spotify Premium przez Sklep Google Play",
+      "description": "Oto jak anulować subskrypcję Spotify Premium przez Sklep Google Play:\n\n*   Otwórz Sklep Google Play na swoim urządzeniu z Androidem.\n*   Dotknij ikony swojego profilu w prawym górnym rogu.\n*   Wybierz „Płatności i subskrypcje”.\n*   Dotknij „Subskrypcje” i znajdź Spotify na liście.\n*   Dotknij „Anuluj subskrypcję” i postępuj zgodnie z instrukcjami, aby potwierdzić."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Spotify Premium. Kroki, aby anulować Spotify na stronie internetowej, w aplikacji, Google Play, iOS. Zmień Spotify na wersję darmową. Zatrzymaj płatności Spotify."
+}

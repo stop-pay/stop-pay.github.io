@@ -1,0 +1,20 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Claude",
+  "translated_name": "claude",
+  "description": "Oto jak anulować subskrypcję Claude, w zależności od tego, gdzie się zarejestrowałeś.",
+  "steps": {
+    "web": {
+      "title": "Anuluj subskrypcję przez przeglądarkę internetową",
+      "description": "Aby anulować subskrypcję Claude przez przeglądarkę internetową:\n\n*   Zaloguj się na swoje konto Claude w przeglądarce internetowej lub otwórz aplikację na komputer.\n*   Kliknij swoje inicjały lub imię i nazwisko w lewym dolnym rogu i wybierz „Ustawienia” z menu.\n*   Przejdź do Ustawienia > Rozliczenia i kliknij przycisk „Anuluj”.\n*   Podaj powód anulowania i potwierdź."
+    },
+    "android_app": {
+      "title": "Anuluj subskrypcję przez aplikację Android",
+      "description": "Aby anulować subskrypcję Claude przez aplikację Android:\n\n*   Kliknij swoje inicjały w prawym górnym rogu aplikacji Claude dla Androida, a następnie kliknij „Rozliczenia” w opcjach menu.\n*   Wybierz „Zarządzaj subskrypcją” i postępuj zgodnie z instrukcjami anulowania.\n*   Jeśli aplikacja została już usunięta, postępuj zgodnie z instrukcjami Sklepu Google Play, aby zrezygnować z subskrypcji: Anuluj, wstrzymaj lub zmień subskrypcję w Google Play."
+    },
+    "ios_app": {
+      "title": "Anuluj subskrypcję przez aplikację iOS",
+      "description": "Aby anulować subskrypcję Claude przez aplikację iOS:\n\n*   Kliknij swoje inicjały w prawym górnym rogu Claude dla iOS, a następnie kliknij „Rozliczenia” w opcjach menu.\n*   Wybierz „Zarządzaj subskrypcją” i postępuj zgodnie z instrukcjami anulowania.\n*   Jeśli chcesz anulować subskrypcję z Apple, postępuj zgodnie z instrukcjami App Store, aby zrezygnować z subskrypcji: Jeśli chcesz anulować subskrypcję z Apple."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Claude, anulowanie Claude, zrezygnuj z Claude AI, rozliczenia Claude, Claude Pro, Claude Max, Claude Team, Claude Enterprise"
+}

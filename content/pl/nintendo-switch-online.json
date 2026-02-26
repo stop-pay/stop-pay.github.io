@@ -1,0 +1,18 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Nintendo Switch Online",
+  "translated_name": "nintendo switch online",
+  "description": "Możesz anulować subskrypcję Nintendo Switch Online za pośrednictwem konsoli Nintendo Switch lub przeglądarki internetowej. Anulowanie subskrypcji wstrzyma przyszłe płatności, ale możesz nadal korzystać z usługi do końca bieżącego cyklu rozliczeniowego. Pamiętaj, że Nintendo może usunąć kopie zapasowe danych Save Data Cloud po 180 dniach od anulowania.",
+  "steps": {
+    "steps_1": {
+      "method": "Web",
+      "title": "Wyłącz automatyczne odnawianie za pośrednictwem strony internetowej konta Nintendo",
+      "description": "Aby wyłączyć automatyczne odnawianie za pośrednictwem strony internetowej konta Nintendo:\n\n*   Przejdź na oficjalną stronę kont Nintendo: accounts.nintendo.com.\n*   Zaloguj się na swoje konto.\n*   Wybierz \"Menu sklepu\" w lewym menu.\n*   Przewiń w dół i kliknij \"Nintendo Switch Online\".\n*   Wybierz zakładkę \"Subskrypcje\".\n*   Kliknij \"Wyłącz automatyczne odnawianie\".\n*   Potwierdź swoją decyzję."
+    },
+    "steps_2": {
+      "method": "Nintendo Switch",
+      "title": "Wyłącz automatyczne odnawianie za pośrednictwem Nintendo eShop na Switch",
+      "description": "Aby wyłączyć automatyczne odnawianie za pośrednictwem Nintendo eShop na Switch:\n\n*   Uruchom Nintendo eShop z menu głównego Switch.\n*   Wybierz konto, które ma aktywną subskrypcję NSO.\n*   Kliknij ikonę użytkownika w prawym górnym rogu, aby przejść do ekranu Informacje o koncie.\n*   Przewiń w dół do \"Nintendo Switch Online\".\n*   Wybierz \"Wyłącz automatyczne odnawianie\".\n*   Potwierdź swój wybór."
+    }
+  },
+  "seo_text": "Dowiedz się, jak anulować subskrypcję Nintendo Switch Online. Wykonaj te proste kroki, aby wyłączyć automatyczne odnawianie i uniknąć przyszłych opłat. Zarządzaj subskrypcją NSO za pośrednictwem konsoli Nintendo Switch lub online za pośrednictwem strony internetowej kont Nintendo."
+}

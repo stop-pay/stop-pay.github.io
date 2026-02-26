@@ -1,0 +1,24 @@
+{
+  "title": "Jak zrezygnować z subskrypcji YouTube Premium",
+  "translated_name": "youtube premium",
+  "description": "Możesz anulować subskrypcję YouTube Premium za pośrednictwem strony internetowej lub aplikacji YouTube, albo przez Google Play lub Apple App Store, w zależności od tego, jak się zarejestrowałeś. Wykonaj następujące kroki, aby anulować subskrypcję.",
+  "steps": {
+    "web": {
+      "title": "Anuluj subskrypcję YouTube Premium przez stronę internetową",
+      "description": "Aby anulować subskrypcję YouTube Premium przez stronę internetową:\n\n*   Przejdź na stronę youtube.com/paid_memberships.\n*   Kliknij 'Zarządzaj członkostwem'.\n*   Kliknij 'Dezaktywuj', a następnie 'Kontynuuj anulowanie'.\n*   Wybierz powód anulowania i kliknij 'Dalej'.\n*   Potwierdź, klikając 'Tak, anuluj'."
+    },
+    "app": {
+      "title": "Anuluj subskrypcję YouTube Premium przez aplikację Android",
+      "description": "Aby anulować subskrypcję YouTube Premium przez aplikację Android:\n\n*   Uruchom aplikację YouTube na swoim urządzeniu z Androidem.\n*   Stuknij ikonę swojego profilu w prawym górnym rogu.\n*   Wybierz 'Zakupy i subskrypcje'.\n*   Stuknij subskrypcję, którą chcesz anulować, czyli 'YouTube Premium'.\n*   Stuknij 'Anuluj subskrypcję', a następnie 'Kontynuuj'.\n*   Podaj powód anulowania.\n*   Potwierdź, stukając 'Anuluj Premium'."
+    },
+    "ios": {
+      "title": "Anuluj subskrypcję YouTube Premium przez Apple App Store",
+      "description": "Aby anulować subskrypcję YouTube Premium przez Apple App Store:\n\n*   Otwórz aplikację Ustawienia na swoim urządzeniu z iOS.\n*   Stuknij swoje Apple ID na górze.\n*   Wybierz 'Subskrypcje'.\n*   Stuknij 'YouTube Premium'.\n*   Stuknij 'Anuluj subskrypcję'."
+    },
+    "google_play": {
+      "title": "Anuluj subskrypcję YouTube Premium przez Google Play",
+      "description": "Aby anulować subskrypcję YouTube Premium przez Google Play:\n\n*   Otwórz aplikację Sklep Google Play.\n*   Stuknij ikonę swojego profilu w prawym górnym rogu.\n*   Wybierz 'Płatności i subskrypcje'.\n*   Stuknij 'Subskrypcje'.\n*   Stuknij 'YouTube Premium'.\n*   Stuknij 'Anuluj subskrypcję'.\n*   Wybierz powód i stuknij 'Kontynuuj'.\n*   Stuknij 'Anuluj subskrypcję', aby potwierdzić."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję YouTube Premium. Kroki, aby zrezygnować z subskrypcji YouTube Premium na stronie internetowej, w aplikacji Android, Google Play i Apple App Store."
+}

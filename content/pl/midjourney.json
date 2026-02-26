@@ -1,0 +1,16 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Midjourney",
+  "translated_name": "midjourney",
+  "description": "Możesz anulować subskrypcję Midjourney w dowolnym momencie za pośrednictwem ich strony internetowej. Anulowanie zacznie obowiązywać z końcem bieżącego cyklu rozliczeniowego i do tego czasu zachowasz dostęp. Nie są przyznawane żadne zwroty za anulowanie w trakcie subskrypcji, z wyjątkiem sytuacji, gdy zużyłeś mniej niż 20 minut GPU od ostatniej płatności.",
+  "steps": {
+    "web": {
+      "title": "Anuluj subskrypcję Midjourney przez stronę internetową",
+      "description": "Aby anulować subskrypcję Midjourney przez stronę internetową:\n\n*   Przejdź na stronę Midjourney: midjourney.com/auth/signin/ i zaloguj się za pomocą swoich danych uwierzytelniających Discord.\n*   Znajdź opcję \"Zarządzaj subskrypcją\" na lewym pasku bocznym.\n*   Kliknij przycisk \"Anuluj plan\" na stronie \"Zarządzaj subskrypcją\".\n*   Potwierdź anulowanie w wyskakującym okienku."
+    },
+    "discord": {
+      "title": "Anuluj subskrypcję Midjourney przez Discord",
+      "description": "Aby anulować subskrypcję Midjourney przez Discord:\n\n*   Wpisz `/subscribe` na serwerze Midjourney Discord.\n*   Kliknij link podany przez bota.\n*   Kliknij przycisk \"Anuluj plan\" na stronie \"Zarządzaj subskrypcją\".\n*   Potwierdź anulowanie w wyskakującym okienku."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Midjourney, zrezygnuj z Midjourney, zatrzymaj płatności Midjourney, zakończ członkostwo Midjourney."
+}

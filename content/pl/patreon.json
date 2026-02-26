@@ -1,0 +1,24 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Patreon",
+  "translated_name": "patreon",
+  "description": "Patreon umożliwia twórcom otrzymywanie wynagrodzenia za swoją pracę, udostępniając narzędzia do prowadzenia usługi subskrypcji treści. Możesz anulować swoje członkostwo Patreon za pośrednictwem strony internetowej lub aplikacji mobilnej.",
+  "steps": {
+    "web": {
+      "title": "Anulowanie członkostwa Patreon przez stronę internetową",
+      "description": "* Przejdź na stronę Patreon i zaloguj się na swoje konto.\n* Kliknij swoje zdjęcie profilowe i wybierz \"Ustawienia\".\n* Kliknij zakładkę \"Członkostwa\".\n* Znajdź twórcę, u którego chcesz anulować członkostwo, i kliknij \"Wyświetl szczegóły\" lub \"Edytuj\".\n* Wybierz \"Anuluj płatność\" i potwierdź anulowanie."
+    },
+    "app": {
+      "title": "Anulowanie członkostwa Patreon przez aplikację mobilną",
+      "description": "* Otwórz aplikację Patreon i przełącz się na swój profil członkowski.\n* Znajdź twórcę u góry ekranu głównego i dotknij wybranego twórcę.\n* Dotknij trzech kropek w prawym górnym rogu i wybierz \"Twoje członkostwo\".\n* Wybierz \"Edytuj członkostwo\", a następnie dotknij \"Anuluj członkostwo\".\n* Przewiń w dół i potwierdź anulowanie.\n* Zarządzaj opcją bezpłatnego członkostwa i dotknij \"Zapisz i kontynuuj\"."
+    },
+    "google_play": {
+      "title": "Anulowanie członkostwa Patreon przez Sklep Google Play",
+      "description": "* Otwórz Sklep Google Play.\n* Dotknij ikonę swojego profilu.\n* Wybierz \"Płatności i subskrypcje\", a następnie \"Subskrypcje\".\n* Anuluj subskrypcję Patreon."
+    },
+    "apple_app_store": {
+      "title": "Anulowanie członkostwa Patreon przez Apple App Store",
+      "description": "* Otwórz aplikację Ustawienia.\n* Dotknij swoje imię i nazwisko.\n* Wybierz \"Subskrypcje\".\n* Anuluj subskrypcję Patreon."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Patreon, zrezygnuj z subskrypcji Patreon, zakończ członkostwo Patreon, kroki anulowania Patreon, zatrzymaj płatności Patreon."
+}

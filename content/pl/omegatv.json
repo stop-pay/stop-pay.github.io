@@ -1,0 +1,32 @@
+{
+  "title": "Jak zrezygnować z subskrypcji OmegaTV",
+  "translated_name": "omegatv",
+  "description": "Dowiedz się, jak anulować subskrypcję OmegaTV za pośrednictwem strony internetowej, aplikacji mobilnej, platform zewnętrznych lub poczty e-mail. Pamiętaj, że anulowanie jest skuteczne na koniec bieżącego okresu rozliczeniowego i musisz anulować subskrypcję co najmniej 24 godziny przed następnym cyklem rozliczeniowym, aby uniknąć opłat.",
+  "steps": {
+    "web": {
+      "title": "Anuluj przez stronę internetową",
+      "description": "Aby anulować subskrypcję OmegaTV przez stronę internetową:\n\n*   Zaloguj się na swoje konto MYOMEGATV na stronie MYOMEGATV.\n*   Postępuj zgodnie z instrukcjami na stronie swojego konta, aby anulować członkostwo."
+    },
+    "app": {
+      "title": "Anuluj przez aplikację mobilną",
+      "description": "Aby anulować subskrypcję OmegaTV przez aplikację mobilną:\n\n*   Alternatywnie, anuluj swoje członkostwo w ustawieniach aplikacji mobilnej."
+    },
+    "third_party": {
+      "title": "Anuluj przez subskrypcję zewnętrzną",
+      "description": "*   Jeśli subskrybujesz za pośrednictwem strony trzeciej, zarządzaj rozliczeniami za pośrednictwem tej platformy."
+    },
+    "email": {
+      "title": "Anuluj przez e-mail",
+      "description": "*   Aby anulować subskrypcję przez e-mail, wyślij prośbę na adres admin@my-omega-tv.xyz."
+    },
+    "google_play": {
+      "title": "Anuluj przez Sklep Google Play",
+      "description": "Aby anulować subskrypcję OmegaTV przez Sklep Google Play:\n\n*   Uruchom aplikację Sklep Google Play.\n*   Przejdź do Menu -> Moje konto -> Płatności i subskrypcje.\n*   Wybierz subskrypcję OmegaTV i postępuj zgodnie z instrukcjami, aby anulować."
+    },
+    "app_store": {
+      "title": "Anuluj przez Apple App Store",
+      "description": "Aby anulować subskrypcję OmegaTV przez Apple App Store:\n\n*   Uruchom App Store.\n*   Stuknij ikonę konta w prawym górnym rogu.\n*   Stuknij Subskrypcje i wybierz subskrypcję OmegaTV, którą chcesz anulować."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję OmegaTV, anulowanie OmegaTV, zrezygnuj z OmegaTV, anuluj MYOMEGATV, zwrot pieniędzy OmegaTV, zatrzymaj subskrypcję OmegaTV, zakończ członkostwo OmegaTV"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Prometheus Plus",
+  "translated_name": "prometheus plus",
+  "description": "Niestety, \"Prometheus Plus\" jest zbyt mało konkretne, ponieważ istnieje wiele usług Prometheus. Proszę sprecyzować, którą usługą \"Prometheus Plus\" jesteś zainteresowany (np. Elestio Prometheus, Prometheus Group, Google Cloud Managed Service for Prometheus, Amazon Managed Service for Prometheus), abym mógł podać bardziej szczegółowe informacje.",
+  "steps": {
+    "steps_1": {
+      "title": "Rezygnacja przez platformę internetową",
+      "description": "Aby anulować subskrypcję Elestio Prometheus za pośrednictwem platformy internetowej, wykonaj następujące kroki:\n\n*   Zidentyfikuj konkretną usługę \"Prometheus Plus\", na którą masz subskrypcję (np. Elestio Prometheus, Prometheus Group, Google Cloud Managed Service for Prometheus, Amazon Managed Service for Prometheus).\n*   Przejdź do strony internetowej lub platformy usługi, na której zarządzasz swoim kontem.\n*   Zaloguj się na swoje konto, używając swoich danych uwierzytelniających.\n*   Przejdź do ustawień konta lub sekcji zarządzania subskrypcjami.\n*   Znajdź opcję anulowania lub rezygnacji z usługi Prometheus Plus.\n*   Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby potwierdzić anulowanie.\n*   Sprawdź, czy otrzymałeś wiadomość e-mail z potwierdzeniem lub powiadomienie, aby upewnić się, że anulowanie zakończyło się pomyślnie."
+    }
+  },
+  "seo_text": "Dowiedz się, jak anulować subskrypcję Prometheus Plus. Ten przewodnik zawiera ogólne kroki rezygnacji z różnych usług Prometheus. Dowiedz się, jak zarządzać subskrypcją i zapobiegać przyszłym opłatom."
+}

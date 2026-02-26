@@ -1,0 +1,20 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Skvot",
+  "translated_name": "skvot",
+  "description": "Możesz anulować subskrypcję Skvot za pośrednictwem Google Play Store, Apple App Store lub bezpośrednio przez stronę internetową Skvot, w zależności od tego, gdzie pierwotnie zasubskrybowałeś.",
+  "steps": {
+    "web": {
+      "title": "Anuluj subskrypcję przez stronę internetową Skvot",
+      "description": "Aby anulować subskrypcję Skvot przez stronę internetową:\n\n*   Przejdź na stronę internetową Skvot.\n*   Zaloguj się na swoje konto.\n*   Przejdź do menu ustawień, które zwykle znajduje się po kliknięciu awatara.\n*   Kliknij \"Zarządzaj subskrypcją\" w ustawieniach rozliczeń i subskrypcji.\n*   Kliknij opcję \"Anuluj subskrypcję\".\n*   Potwierdź anulowanie."
+    },
+    "google_play": {
+      "title": "Anuluj subskrypcję przez Google Play Store",
+      "description": "Aby anulować subskrypcję Skvot przez Google Play Store:\n\n*   Otwórz Google Play Store.\n*   Kliknij ikonę profilu w prawym górnym rogu.\n*   Przejdź do \"Płatności i subskrypcje\", a następnie wybierz \"Subskrypcje\".\n*   Wybierz subskrypcję Skvot, którą chcesz anulować.\n*   Kliknij \"Anuluj subskrypcję\".\n*   Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby potwierdzić anulowanie."
+    },
+    "ios": {
+      "title": "Anuluj subskrypcję przez ustawienia iOS",
+      "description": "Aby anulować subskrypcję Skvot przez ustawienia iOS:\n\n*   Otwórz aplikację Ustawienia.\n*   Kliknij swoje imię i nazwisko.\n*   Kliknij \"Subskrypcje\".\n*   Kliknij subskrypcję Skvot, którą chcesz anulować.\n*   Kliknij \"Anuluj subskrypcję\"."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Skvot, przewodnik po anulowaniu Skvot, zrezygnuj z subskrypcji Skvot, zakończ członkostwo Skvot, rozliczenia Skvot, zatrzymaj płatności Skvot"
+}

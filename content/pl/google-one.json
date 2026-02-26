@@ -1,0 +1,23 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Google One",
+  "translated_name": "google one",
+  "description": "Możesz anulować członkostwo Google One za pomocą aplikacji lub strony internetowej Google One. Wykonaj następujące kroki, aby anulować subskrypcję i zarządzać planem taryfowym.",
+  "steps": {
+    "web": {
+      "title": "Anulowanie subskrypcji Google One przez stronę internetową",
+      "description": "Aby anulować subskrypcję Google One przez stronę internetową:\n\n*   Przejdź do one.google.com/settings.\n*   Kliknij Ustawienia.\n*   Kliknij Anuluj subskrypcję.\n*   Potwierdź, klikając Anuluj subskrypcję.\n*   Aby przejść na niższy plan taryfowy Google One (100 GB, 200 GB), przejdź do https://one.google.com/changestorageplan.\n*   Aby usunąć plan z konta Google, przejdź do https://myaccount.google.com/deleteservices.",
+      "steps": null
+    },
+    "app": {
+      "title": "Anulowanie subskrypcji Google One przez aplikację",
+      "description": "Aby anulować subskrypcję Google One przez aplikację:\n\n*   Otwórz aplikację Google One.\n*   Kliknij Ustawienia.\n*   Kliknij Anuluj subskrypcję.\n*   Potwierdź, klikając Anuluj subskrypcję.",
+      "steps": null
+    },
+    "ios": {
+      "title": "Anulowanie subskrypcji Google One przez App Store (iOS)",
+      "description": "Aby anulować subskrypcję Google One przez App Store:\n\n*   Otwórz aplikację App Store.\n*   Kliknij swoje imię i nazwisko.\n*   Kliknij Subskrypcje.\n*   Kliknij Google One.\n*   Kliknij Anuluj subskrypcję.",
+      "steps": null
+    }
+  },
+  "seo_text": "Dowiedz się, jak anulować subskrypcję Google One. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby łatwo anulować członkostwo Google One za pośrednictwem aplikacji, strony internetowej lub App Store. Zarządzaj planem taryfowym Google One i ustawieniami subskrypcji."
+}

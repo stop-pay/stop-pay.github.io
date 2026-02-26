@@ -1,0 +1,20 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Promova",
+  "translated_name": "promova",
+  "description": "Dowiedz się, jak anulować subskrypcję Promova, niezależnie od tego, czy zarejestrowałeś się za pośrednictwem ich strony internetowej, Apple App Store czy Google Play Store. Wykonaj te kroki, aby upewnić się, że subskrypcja została prawidłowo anulowana i uniknąć przyszłych opłat.",
+  "steps": {
+    "web": {
+      "title": "Anulowanie subskrypcji Promova przez stronę internetową",
+      "description": "Aby anulować subskrypcję Promova przez stronę internetową:\n\n*   Zaloguj się na swoje konto Promova na stronie internetowej.\n*   Przejdź do 'Mój profil' i znajdź 'Płatności i subskrypcje'.\n*   Znajdź swoją subskrypcję i kliknij trzy kropki.\n*   Wybierz 'Anuluj subskrypcję'.\n*   Wypełnij ankietę, aby potwierdzić anulowanie."
+    },
+    "app": {
+      "title": "Anulowanie subskrypcji Promova przez Apple App Store",
+      "description": "Aby anulować subskrypcję Promova przez Apple App Store:\n\n*   Otwórz ustawienia konta Apple ID.\n*   Przejdź do 'Subskrypcje'.\n*   Znajdź subskrypcję Promova.\n*   Anuluj subskrypcję."
+    },
+    "google_play": {
+      "title": "Anulowanie subskrypcji Promova przez Google Play",
+      "description": "Aby anulować subskrypcję Promova przez Google Play:\n\n*   Przejdź do play.google.com.\n*   Zaloguj się na swoje konto Google.\n*   Znajdź subskrypcję Promova.\n*   Anuluj subskrypcję."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Promova, rezygnacja z Promova, zatrzymaj płatności Promova, anulowanie Promova, zakończ subskrypcję Promova, rozliczenia Promova, zarządzaj subskrypcją Promova, anulowanie Promova App Store, anulowanie Promova Google Play, anulowanie Promova na stronie internetowej."
+}

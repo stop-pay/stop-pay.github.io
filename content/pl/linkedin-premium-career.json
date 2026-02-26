@@ -1,0 +1,20 @@
+{
+  "title": "Jak zrezygnować z subskrypcji LinkedIn Premium",
+  "translated_name": "linkedin premium",
+  "description": "Możesz anulować subskrypcję LinkedIn Premium za pośrednictwem strony internetowej LinkedIn, przeglądarki mobilnej lub za pośrednictwem Apple App Store lub Google Play Store, jeśli subskrypcja została wykupiona za pośrednictwem tych platform. Pamiętaj, że nie możesz anulować subskrypcji z poziomu aplikacji mobilnej LinkedIn.",
+  "steps": {
+    "web": {
+      "title": "Anuluj subskrypcję LinkedIn Premium przez stronę internetową",
+      "description": "Aby anulować subskrypcję LinkedIn Premium przez stronę internetową:\n\n*   Zaloguj się na swoje konto LinkedIn w przeglądarce internetowej (na komputerze lub urządzeniu mobilnym).\n*   Kliknij swoje zdjęcie profilowe w prawym górnym rogu.\n*   Wybierz \"Ustawienia i prywatność\" z menu rozwijanego.\n*   Przejdź do sekcji \"Subskrypcje i płatności\" lub \"Preferencje konta\".\n*   Kliknij \"Zarządzaj kontem Premium\" lub \"Zarządzaj subskrypcją\".\n*   Znajdź opcję \"Anuluj subskrypcję\" i kliknij ją.\n*   Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby potwierdzić anulowanie. Możesz zostać poproszony o podanie powodu anulowania."
+    },
+    "ios": {
+      "title": "Anuluj subskrypcję LinkedIn Premium na iPhonie",
+      "description": "Aby anulować subskrypcję LinkedIn Premium na iPhonie:\n\n*   Przejdź do ustawień urządzenia.\n*   Stuknij w Subskrypcje.\n*   Wybierz LinkedIn Premium, aby anulować."
+    },
+    "android": {
+      "title": "Anuluj subskrypcję LinkedIn Premium na Androidzie",
+      "description": "Aby anulować subskrypcję LinkedIn Premium na urządzeniu z systemem Android:\n\n*   Otwórz Sklep Google Play.\n*   Stuknij ikonę swojego profilu.\n*   Wybierz Płatności i subskrypcje, a następnie Subskrypcje.\n*   Wybierz LinkedIn Premium, aby anulować."
+    }
+  },
+  "seo_text": "Z łatwością anuluj subskrypcję LinkedIn Premium, wykonując te kroki. Dowiedz się, jak zrezygnować z subskrypcji LinkedIn Premium za pośrednictwem strony internetowej, przeglądarki mobilnej, Apple App Store lub Google Play Store."
+}

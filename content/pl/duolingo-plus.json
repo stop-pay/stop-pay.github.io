@@ -1,0 +1,20 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Super Duolingo",
+  "translated_name": "super duolingo",
+  "description": "Możesz zrezygnować z subskrypcji Super Duolingo w dowolnym momencie. W zależności od sposobu subskrypcji (strona internetowa, Sklep Google Play lub Apple App Store), kroki anulowania będą się różnić. Anulowanie subskrypcji nie spowoduje usunięcia konta Duolingo, a zachowasz dostęp do końca bieżącego cyklu rozliczeniowego.",
+  "steps": {
+    "web": {
+      "title": "Anulowanie subskrypcji Duolingo Plus przez stronę internetową",
+      "description": "Aby anulować subskrypcję Duolingo Plus przez stronę internetową:\n\n*   Zaloguj się na swoje konto Duolingo przez przeglądarkę internetową.\n*   Kliknij swoją nazwę użytkownika w prawym górnym rogu i wybierz Ustawienia.\n*   Przejdź do ustawień Super Duolingo.\n*   Wybierz Anuluj subskrypcję i potwierdź zmiany."
+    },
+    "google_play": {
+      "title": "Anulowanie subskrypcji Duolingo Plus przez Sklep Google Play",
+      "description": "Aby anulować subskrypcję Duolingo Plus przez Sklep Google Play:\n\n*   Otwórz aplikację Sklep Google Play.\n*   Dotknij Menu (trzy poziome linie) lub ikonę swojego profilu.\n*   Wybierz Subskrypcje i usługi lub Płatności i subskrypcje.\n*   Znajdź swoją subskrypcję Super Duolingo i dotknij Zarządzaj lub Subskrypcje.\n*   Wybierz Anuluj subskrypcję i postępuj zgodnie z instrukcjami, aby potwierdzić."
+    },
+    "ios": {
+      "title": "Anulowanie subskrypcji Duolingo Plus przez iOS",
+      "description": "Aby anulować subskrypcję Duolingo Plus przez iOS:\n\n*   Otwórz aplikację Ustawienia na swoim urządzeniu iOS.\n*   Dotknij swoje imię i nazwisko u góry ekranu.\n*   Dotknij Subskrypcje i znajdź swoją subskrypcję Super Duolingo.\n*   Wybierz Anuluj subskrypcję i potwierdź wszelkie zmiany."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Super Duolingo, zrezygnuj z subskrypcji Duolingo Plus, zatrzymaj płatności Duolingo, kroki anulowania Duolingo, zarządzaj subskrypcją Duolingo"
+}
