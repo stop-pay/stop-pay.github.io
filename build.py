@@ -5,12 +5,10 @@ import re
 import subprocess
 from datetime import datetime
 
-# Для чистого URL (stop-pay.github.io) залишаємо порожнім
 BASE_PATH = "" 
 
 def get_git_mtime(filepath):
     try:
-        # Важливо: використовуємо -- за шляхом, щоб уникнути конфліктів назв
         result = subprocess.check_output(
             ['git', 'log', '-1', '--format=%ai', '--', filepath],
             stderr=subprocess.STDOUT
@@ -21,49 +19,53 @@ def get_git_mtime(filepath):
         pass
     return datetime.now()
 
+def smart_load_json(filepath):
+    """Спроба завантажити JSON з автоматичним виправленням масивів [ ] у об'єкти { }"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            
+        # Якщо ШІ обгорнув контент у список [ {...} ]
+        if isinstance(data, list) and len(data) > 0:
+            print(f"  -> [Самолікування]: Файл {filepath} виправлено з масиву на об'єкт.")
+            return data[0]
+        return data
+    except Exception as e:
+        print(f"  -> [Помилка]: Не вдалося прочитати {filepath}: {e}")
+        return None
+
 def build():
-    print(f"Початок збірки. Поточна робоча директорія: {os.getcwd()}")
+    print(f"Початок збірки. Директорія: {os.getcwd()}")
     
-    # 1. Очищення
     if os.path.exists('dist'):
         shutil.rmtree('dist')
     os.makedirs('dist', exist_ok=True)
 
-    # 2. Пошук мов
     available_langs = [f.replace('.json', '') for f in os.listdir('i18n') if f.endswith('.json')]
     print(f"Знайдено мови: {available_langs}")
 
-    # 3. Збір метаданих сервісів
+    # Збір метаданих сервісів
     all_services = []
     if os.path.exists('services'):
         service_files = sorted([f for f in os.listdir('services') if f.endswith('.json')])
-        print(f"Знайдено файлів у services/: {len(service_files)}")
         for s_file in service_files:
             s_path = os.path.join('services', s_file)
-            with open(s_path, 'r', encoding='utf-8') as f:
-                try:
-                    service_data = json.load(f)
-                    # ПЕРЕВІРКА: чи є завантажене значення словником
-                    if not isinstance(service_data, dict):
-                        print(f"!!! КРИТИЧНА ПОМИЛКА: Файл {s_file} замість об'єкта містить список!")
-                        continue
-                        
-                    service_data['_mtime'] = get_git_mtime(s_path)
-                    all_services.append(service_data)
-                except Exception as e:
-                    print(f"Помилка парсингу {s_file}: {e}")
+            data = smart_load_json(s_path)
+            if isinstance(data, dict) and 'id' in data:
+                data['_mtime'] = get_git_mtime(s_path)
+                all_services.append(data)
 
-    # 4. data.json (БЕЗПЕЧНА ВЕРСІЯ)
+    # data.json
     services_for_json = []
     for s in all_services:
-        if isinstance(s, dict):
-            s_copy = s.copy()
-            s_copy.pop('_mtime', None)
-            services_for_json.append(s_copy)
+        s_copy = s.copy()
+        s_copy.pop('_mtime', None)
+        services_for_json.append(s_copy)
     
     with open('dist/data.json', 'w', encoding='utf-8') as f:
         json.dump({"available_languages": available_langs, "services": services_for_json}, f, ensure_ascii=False, indent=2)
-    # 5. Асети
+
+    # Асети
     if os.path.exists('assets'):
         shutil.copytree('assets', 'dist/assets', dirs_exist_ok=True)
     if os.path.exists('i18n'):
@@ -74,7 +76,7 @@ def build():
         shutil.copy('assets/favicons/favicon-32x32.png', 'dist/favicon.png')
     with open('dist/.nojekyll', 'w') as f: pass
 
-    # 6. Генерація HTML
+    # Генерація HTML
     try:
         layout = open('templates/layout.html', 'r', encoding='utf-8').read()
         index_body = open('templates/index_body.html', 'r', encoding='utf-8').read()
@@ -84,29 +86,29 @@ def build():
             lang_dir = os.path.join('dist', lang)
             os.makedirs(lang_dir, exist_ok=True)
             
-            with open(f'i18n/{lang}.json', 'r', encoding='utf-8') as f_lang:
-                lang_data = json.load(f_lang)
-                ui = lang_data.get('ui', {})
-                info_text = ui.get('last_update_info', '')
-                date_label = ui.get('last_update', 'Last update:')
+            lang_conf = smart_load_json(f'i18n/{lang}.json')
+            if not lang_conf: continue
+            
+            ui = lang_conf.get('ui', {})
+            info_text = ui.get('last_update_info', '')
+            date_label = ui.get('last_update', 'Last update:')
 
-            # Index page per lang
+            # Головна сторінка мови
             full_index = layout.replace('{{ content }}', index_body)
             with open(os.path.join(lang_dir, 'index.html'), 'w', encoding='utf-8') as f_out:
                 f_out.write(full_index)
 
-            # Service pages
+            # Сторінки сервісів
             for s in all_services:
                 sid = s['id']
                 content_path = f'content/{lang}/{sid}.json'
                 
                 if os.path.exists(content_path):
-                    # ЛОГ ДЛЯ ПЕРЕВІРКИ
+                    c = smart_load_json(content_path)
+                    if not isinstance(c, dict): continue
+
                     if lang == 'pl':
-                        print(f"BUILDING PL: {sid} (found at {content_path})")
-                        
-                    with open(content_path, 'r', encoding='utf-8') as f_in:
-                        c = json.load(f_in)
+                        print(f"BUILDING PL: {sid}")
                     
                     c_mtime = get_git_mtime(content_path)
                     s_mtime = s.get('_mtime', c_mtime)
@@ -114,13 +116,10 @@ def build():
                     
                     price = str(s.get('price_usd', 0))
 
-                    # Steps parsing
-                    # --- БЕЗПЕЧНА ОБРОБКА КРОКІВ ---
+                    # Обробка кроків
                     steps_data = c.get('steps', {})
                     steps_html = ""
-                    
                     if isinstance(steps_data, dict):
-                        # Якщо кроки - це об'єкт (картки)
                         for key, data in steps_data.items():
                             if isinstance(data, dict):
                                 t = (data.get('title') or "").upper()
@@ -130,14 +129,12 @@ def build():
                                     li = "".join([f"<li>{p.strip()}</li>" for p in parts[1:] if p.strip()])
                                     d = f"{parts[0]}<ul class='steps-list-inner'>{li}</ul>"
                                 steps_html += f'<div class="instruction-card"><h2 class="step-card-title">{t}</h2><div class="step-card-content">{d}</div></div>'
-                    
                     elif isinstance(steps_data, list):
-                        # Якщо кроки - це просто список (fallback)
                         li_items = "".join([f"<li>{str(item)}</li>" for item in steps_data])
                         steps_html = f'<div class="instruction-card"><ul class="steps-list-inner">{li_items}</ul></div>'
 
                     cancel_link = s.get('official_cancel_url') or s.get('official_url', '#')
-                    hint = (lang_data.get('cancel_hint', '') or "").replace('{{ official_url }}', str(s.get("official_url", "#")))
+                    hint = (lang_conf.get('cancel_hint', '') or "").replace('{{ official_url }}', str(s.get("official_url", "#")))
                     hint = hint.replace('target="_blank"', f'target="_blank" onclick="handlePriceAdd(\'{price}\', \'{sid}\')"')
                     
                     info_html = f'''
@@ -164,16 +161,11 @@ def build():
                     os.makedirs(s_dir, exist_ok=True)
                     with open(os.path.join(s_dir, 'index.html'), 'w', encoding='utf-8') as f_out:
                         f_out.write(full_pg)
-                else:
-                    if lang == 'pl' and sid == 'netflix':
-                        print(f"WARNING: File {content_path} NOT FOUND for PL Netflix")
 
     except Exception as e:
         print(f"Глобальна помилка: {e}")
 
-    # Root redirect
     with open('dist/index.html', 'w', encoding='utf-8') as f:
-        # Для кореневого домену шлях порожній, тому root за замовчуванням "/"
         f.write(f'''<!DOCTYPE html><html><head><script>(function(){{var savedLang=localStorage.getItem('user_lang');var root="{BASE_PATH}";if(savedLang&&savedLang!=='ua'){{window.location.replace(root+'/'+savedLang+'/');}}else{{window.location.replace(root+'/ua/');}}}})();</script></head><body></body></html>''')
 
     print("Збірка завершена!")
