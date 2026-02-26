@@ -1,9 +1,7 @@
 let siteData = null;
 let totalSavedUsd = 0;
 
-const isGithub = window.location.hostname.includes('github.io');
-const isSubfolder = window.location.hostname.includes('github.io') && window.location.pathname.startsWith('/stop_pay');
-const BASE_URL = isSubfolder ? '/stop_pay' : ''; 
+const BASE_URL = '';
 const BRIDGE_URL = "https://script.google.com/macros/s/AKfycbywfH00K-KVqfhkPQwWy4P2Knaa0hS1KP1TD6zDfn2K9Bd31Td1pPRxGRj5t1Xt7j1voQ/exec"; 
 
 // --- 1. ІНІЦІАЛІЗАЦІЯ ПРИ ЗАВАНТАЖЕННІ ---
