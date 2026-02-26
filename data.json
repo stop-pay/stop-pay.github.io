@@ -194,6 +194,15 @@
       "official_cancel_url": "https://my-omega-tv.xyz"
     },
     {
+      "id": "the-village-2019-american",
+      "name": "The Village (2019 - American)",
+      "category": "tv",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://www.nbc.com/",
+      "official_cancel_url": "https://www.peacocktv.com/help/article/how-do-i-cancel-my-peacock-subscription"
+    },
+    {
       "id": "microsoft-365",
       "name": "Microsoft 365",
       "category": "software",
