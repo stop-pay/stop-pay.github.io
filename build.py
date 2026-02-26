@@ -36,26 +36,33 @@ def build():
     # 3. Збір метаданих сервісів
     all_services = []
     if os.path.exists('services'):
-        service_files = [f for f in os.listdir('services') if f.endswith('.json')]
+        service_files = sorted([f for f in os.listdir('services') if f.endswith('.json')])
         print(f"Знайдено файлів у services/: {len(service_files)}")
         for s_file in service_files:
             s_path = os.path.join('services', s_file)
             with open(s_path, 'r', encoding='utf-8') as f:
                 try:
                     service_data = json.load(f)
+                    # ПЕРЕВІРКА: чи є завантажене значення словником
+                    if not isinstance(service_data, dict):
+                        print(f"!!! КРИТИЧНА ПОМИЛКА: Файл {s_file} замість об'єкта містить список!")
+                        continue
+                        
                     service_data['_mtime'] = get_git_mtime(s_path)
                     all_services.append(service_data)
                 except Exception as e:
-                    print(f"Помилка в {s_file}: {e}")
+                    print(f"Помилка парсингу {s_file}: {e}")
 
-    # 4. data.json
-    services_for_json = [dict(s, _mtime=None) for s in all_services]
-    # Видаляємо допоміжне поле
-    for s in services_for_json: s.pop('_mtime', None)
+    # 4. data.json (БЕЗПЕЧНА ВЕРСІЯ)
+    services_for_json = []
+    for s in all_services:
+        if isinstance(s, dict):
+            s_copy = s.copy()
+            s_copy.pop('_mtime', None)
+            services_for_json.append(s_copy)
     
     with open('dist/data.json', 'w', encoding='utf-8') as f:
         json.dump({"available_languages": available_langs, "services": services_for_json}, f, ensure_ascii=False, indent=2)
-
     # 5. Асети
     if os.path.exists('assets'):
         shutil.copytree('assets', 'dist/assets', dirs_exist_ok=True)
