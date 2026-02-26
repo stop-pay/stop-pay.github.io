@@ -240,7 +240,7 @@
     },
     {
       "id": "prom-smart-ua",
-      "name": "[ADD_SERVICE] Prom Smart UA",
+      "name": "Prom Smart UA",
       "category": "software",
       "price_usd": 0.0,
       "type": "ua",
