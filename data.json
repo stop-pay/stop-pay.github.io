@@ -354,6 +354,15 @@
       "type": "global",
       "official_url": "https://preply.com",
       "official_cancel_url": "https://preply.com"
+    },
+    {
+      "id": "vseosvita",
+      "name": "Vseosvita",
+      "category": "education",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://vseosvita.ua",
+      "official_cancel_url": "https://play.google.com/"
     }
   ]
 }
