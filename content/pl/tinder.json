@@ -1,0 +1,24 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Tinder",
+  "translated_name": "tinder",
+  "description": "Anulowanie subskrypcji Tinder zależy od sposobu, w jaki została ona wykupiona (iOS, Android przez Google Play, Android przez bezpośrednią kartę kredytową lub Tinder.com). Pamiętaj, że usunięcie aplikacji nie anuluje subskrypcji. Musisz anulować subskrypcję odpowiednią metodą, aby uniknąć przyszłych opłat.",
+  "steps": {
+    "web": {
+      "title": "Anulowanie subskrypcji Tinder przez stronę internetową",
+      "description": "Aby anulować subskrypcję Tinder przez stronę internetową:\n\n*   Przejdź na Tinder.com i zaloguj się na swoje konto.\n*   Kliknij ikonę swojego profilu.\n*   Wybierz Zarządzaj kontem lub Zarządzaj kontem płatności/Subskrypcją.\n*   Kliknij Anuluj subskrypcję lub ustaw Automatyczne odnawianie na wyłączone. Potwierdź swój wybór, jeśli zostaniesz o to poproszony."
+    },
+    "ios": {
+      "title": "Anulowanie subskrypcji Tinder przez iPhone",
+      "description": "Aby anulować subskrypcję Tinder przez iPhone:\n\n*   Otwórz aplikację Ustawienia na swoim iPhonie.\n*   Kliknij swoje imię i nazwisko u góry, a następnie kliknij Subskrypcje (lub 'Media i zakupy').\n*   Znajdź i wybierz swoją subskrypcję Tinder, a następnie kliknij Anuluj subskrypcję. Potwierdź, jeśli to konieczne."
+    },
+    "android_google_play": {
+      "title": "Anulowanie subskrypcji Tinder przez Sklep Google Play",
+      "description": "Aby anulować subskrypcję Tinder przez Sklep Google Play:\n\n*   Otwórz aplikację Sklep Google Play.\n*   Kliknij ikonę swojego profilu w prawym górnym rogu.\n*   Przejdź do Płatności i subskrypcje > Subskrypcje.\n*   Wybierz subskrypcję Tinder, a następnie kliknij Anuluj subskrypcję i postępuj zgodnie z instrukcjami."
+    },
+    "android_direct": {
+      "title": "Anulowanie subskrypcji Tinder przez aplikację Tinder (Android - Subskrypcja bezpośrednia)",
+      "description": "Aby anulować subskrypcję Tinder bezpośrednio przez aplikację Tinder na urządzeniu z systemem Android:\n\n*   Otwórz aplikację Tinder na swoim urządzeniu z systemem Android.\n*   Kliknij ikonę swojego profilu.\n*   Wybierz Zarządzaj kontem płatności.\n*   Znajdź subskrypcję, którą chcesz anulować, i kliknij Anuluj subskrypcję."
+    }
+  },
+  "seo_text": "Dowiedz się, jak anulować subskrypcję Tinder na iOS, Android lub przez stronę internetową. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zarządzać płatnościami Tinder i uniknąć niechcianych opłat. Pamiętaj, że odinstalowanie aplikacji nie spowoduje anulowania subskrypcji."
+}
