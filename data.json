@@ -194,6 +194,15 @@
       "official_cancel_url": "https://store.ubi.com/us/ubisoftplus/subscription"
     },
     {
+      "id": "promptsmart",
+      "name": "PromptSmart",
+      "category": "software",
+      "price_usd": 9.99,
+      "type": "global",
+      "official_url": "https://promptsmart.com",
+      "official_cancel_url": "https://play.google.com/store/account/subscriptions"
+    },
+    {
       "id": "edera",
       "name": "Ukrainian EdTech Studio EdEra",
       "category": "education",
