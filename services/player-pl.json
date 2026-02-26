@@ -1,0 +1,9 @@
+{
+  "id": "player-pl",
+  "name": "Player.pl",
+  "category": "tv",
+  "price_usd": 4.0,
+  "type": "pl",
+  "official_url": "https://player.pl",
+  "official_cancel_url": "https://player.pl"
+}
