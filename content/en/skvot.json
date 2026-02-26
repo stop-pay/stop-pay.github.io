@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Skvot",
+  "translated_name": "skvot",
+  "description": "You can cancel your Skvot subscription through the Google Play Store, Apple App Store, or directly through the Skvot website, depending on where you originally subscribed.",
+  "steps": {
+    "web": {
+      "title": "Cancel Subscription via Skvot Website",
+      "description": "To cancel your Skvot subscription via the website:\n\n*   Go to the Skvot website.\n*   Log in to your account.\n*   Navigate to the settings menu, usually found by clicking on your avatar.\n*   Click on \"Manage Subscription\" within the billing and subscription settings.\n*   Click the \"Cancel subscription\" option.\n*   Confirm your cancellation."
+    },
+    "google_play": {
+      "title": "Cancel Subscription via Google Play Store",
+      "description": "To cancel your Skvot subscription via the Google Play Store:\n\n*   Open the Google Play Store.\n*   Tap your profile icon in the top right corner.\n*   Go to \"Payments & subscriptions\" and then select \"Subscriptions\".\n*   Choose the Skvot subscription you want to cancel.\n*   Tap \"Cancel subscription\".\n*   Follow any on-screen instructions to confirm the cancellation."
+    },
+    "ios": {
+      "title": "Cancel Subscription via iOS Settings",
+      "description": "To cancel your Skvot subscription via iOS Settings:\n\n*   Open the Settings app.\n*   Tap your name.\n*   Tap \"Subscriptions\".\n*   Tap the Skvot subscription you wish to cancel.\n*   Tap \"Cancel Subscription\"."
+    }
+  },
+  "seo_text": "Cancel Skvot subscription, Skvot cancellation guide, unsubscribe from Skvot, end Skvot membership, Skvot billing, stop Skvot payments"
+}
