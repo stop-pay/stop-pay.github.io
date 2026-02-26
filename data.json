@@ -60,6 +60,15 @@
       "official_cancel_url": "mailto:ecom@shophelsi.com"
     },
     {
+      "id": "inpost",
+      "name": "InPost",
+      "category": "software",
+      "price_usd": 37.5,
+      "type": "pl",
+      "official_url": "https://inpost.pl/",
+      "official_cancel_url": "https://inpost.pl/"
+    },
+    {
       "id": "history-by-mail",
       "name": "History by Mail",
       "category": "software",
