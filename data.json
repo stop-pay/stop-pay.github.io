@@ -176,6 +176,15 @@
       "official_cancel_url": "https://store.ubi.com/us/ubisoftplus/subscription"
     },
     {
+      "id": "edera",
+      "name": "Ukrainian EdTech Studio EdEra",
+      "category": "education",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://edera.dev",
+      "official_cancel_url": "https://edera.dev"
+    },
+    {
       "id": "omegatv",
       "name": "OmegaTV",
       "category": "tv",
