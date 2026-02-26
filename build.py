@@ -108,17 +108,26 @@ def build():
                     price = str(s.get('price_usd', 0))
 
                     # Steps parsing
+                    # --- БЕЗПЕЧНА ОБРОБКА КРОКІВ ---
                     steps_data = c.get('steps', {})
                     steps_html = ""
+                    
                     if isinstance(steps_data, dict):
+                        # Якщо кроки - це об'єкт (картки)
                         for key, data in steps_data.items():
-                            t = (data.get('title') or "").upper()
-                            d = data.get('description', '').replace('\n', '<br>')
-                            if '*' in d:
-                                parts = d.split('*')
-                                li = "".join([f"<li>{p.strip()}</li>" for p in parts[1:] if p.strip()])
-                                d = f"{parts[0]}<ul class='steps-list-inner'>{li}</ul>"
-                            steps_html += f'<div class="instruction-card"><h2 class="step-card-title">{t}</h2><div class="step-card-content">{d}</div></div>'
+                            if isinstance(data, dict):
+                                t = (data.get('title') or "").upper()
+                                d = data.get('description', '').replace('\n', '<br>')
+                                if '*' in d:
+                                    parts = d.split('*')
+                                    li = "".join([f"<li>{p.strip()}</li>" for p in parts[1:] if p.strip()])
+                                    d = f"{parts[0]}<ul class='steps-list-inner'>{li}</ul>"
+                                steps_html += f'<div class="instruction-card"><h2 class="step-card-title">{t}</h2><div class="step-card-content">{d}</div></div>'
+                    
+                    elif isinstance(steps_data, list):
+                        # Якщо кроки - це просто список (fallback)
+                        li_items = "".join([f"<li>{str(item)}</li>" for item in steps_data])
+                        steps_html = f'<div class="instruction-card"><ul class="steps-list-inner">{li_items}</ul></div>'
 
                     cancel_link = s.get('official_cancel_url') or s.get('official_url', '#')
                     hint = (lang_data.get('cancel_hint', '') or "").replace('{{ official_url }}', str(s.get("official_url", "#")))
