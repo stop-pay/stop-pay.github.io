@@ -6,6 +6,213 @@
   ],
   "services": [
     {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "category": "software",
+      "price_usd": 11.99,
+      "type": "global",
+      "official_url": "https://www.adobe.com/",
+      "official_cancel_url": "https://account.adobe.com/plans"
+    },
+    {
+      "id": "allegro-smart",
+      "name": "Allegro (Allegro Smart!)",
+      "category": "software",
+      "price_usd": 4.94,
+      "type": "pl",
+      "official_url": "https://allegro.pl",
+      "official_cancel_url": "https://na.allegro.pl/smart-formularz-kontaktowy"
+    },
+    {
+      "id": "apple",
+      "name": "Apple TV+",
+      "category": "tv",
+      "price_usd": 12.99,
+      "type": "global",
+      "official_url": "https://tv.apple.com/",
+      "official_cancel_url": "https://support.apple.com/en-us/HT202039"
+    },
+    {
+      "id": "audible",
+      "name": "Audible",
+      "category": "music",
+      "price_usd": 7.95,
+      "type": "global",
+      "official_url": "https://www.audible.com/",
+      "official_cancel_url": "https://www.audible.com/account/cancel"
+    },
+    {
+      "id": "bolt-food-bolt-plus",
+      "name": "Bolt Food (Bolt Plus)",
+      "category": "software",
+      "price_usd": 4.99,
+      "type": "global",
+      "official_url": "https://bolt.eu/",
+      "official_cancel_url": "https://bolt.eu/"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "category": "ai",
+      "price_usd": 20.0,
+      "type": "global",
+      "official_url": "https://www.anthropic.com/",
+      "official_cancel_url": null
+    },
+    {
+      "id": "coursera",
+      "name": "Coursera",
+      "category": "education",
+      "price_usd": 59.0,
+      "type": "global",
+      "official_url": "https://www.coursera.org/",
+      "official_cancel_url": "https://www.coursera.org/"
+    },
+    {
+      "id": "deepl-pro",
+      "name": "DeepL Pro",
+      "category": "software",
+      "price_usd": 8.74,
+      "type": "global",
+      "official_url": "https://www.deepl.com/pro",
+      "official_cancel_url": "https://www.deepl.com/pro"
+    },
+    {
+      "id": "discord-nitro",
+      "name": "Discord Nitro",
+      "category": "gaming",
+      "price_usd": 9.99,
+      "type": "global",
+      "official_url": "https://discord.com/",
+      "official_cancel_url": "https://support.discord.com/hc/en-us/articles/115000435108-Discord-Nitro-Classic"
+    },
+    {
+      "id": "duolingo-plus",
+      "name": "Duolingo Plus",
+      "category": "education",
+      "price_usd": 12.99,
+      "type": "global",
+      "official_url": "https://www.duolingo.com/",
+      "official_cancel_url": "https://support.duolingo.com/hc/en-us/articles/115004068123-How-do-I-cancel-my-Duolingo-Plus-subscription"
+    },
+    {
+      "id": "ea-play",
+      "name": "EA Play",
+      "category": "gaming",
+      "price_usd": 5.99,
+      "type": "global",
+      "official_url": "https://www.ea.com/ea-play",
+      "official_cancel_url": "https://www.ea.com/help/ea-play/manage-your-ea-play-membership/"
+    },
+    {
+      "id": "edera",
+      "name": "Ukrainian EdTech Studio EdEra",
+      "category": "education",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://edera.dev",
+      "official_cancel_url": "https://edera.dev"
+    },
+    {
+      "id": "elestio-prometheus",
+      "name": "Elestio Prometheus",
+      "category": "software",
+      "price_usd": 16.0,
+      "type": "global",
+      "official_url": "https://elest.io/",
+      "official_cancel_url": "https://elest.io/"
+    },
+    {
+      "id": "empik-premium",
+      "name": "Empik (Empik Premium)",
+      "category": "software",
+      "price_usd": 9.84,
+      "type": "pl",
+      "official_url": "https://www.empik.com",
+      "official_cancel_url": "https://www.empik.com"
+    },
+    {
+      "id": "forbes-ukraine",
+      "name": "Forbes Ukraine",
+      "category": "news",
+      "price_usd": 7.8,
+      "type": "ua",
+      "official_url": "https://forbes.ua",
+      "official_cancel_url": "https://www.forbes.com/cancel-subscription/"
+    },
+    {
+      "id": "glovo-prime",
+      "name": "Glovo Prime",
+      "category": "software",
+      "price_usd": 6.49,
+      "type": "global",
+      "official_url": "https://glovoapp.com",
+      "official_cancel_url": "https://glovoapp.com"
+    },
+    {
+      "id": "google-one",
+      "name": "Google One",
+      "category": "software",
+      "price_usd": 1.99,
+      "type": "global",
+      "official_url": "one.google.com",
+      "official_cancel_url": "one.google.com/settings"
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "category": "software",
+      "price_usd": 30.0,
+      "type": "global",
+      "official_url": "https://www.grammarly.com",
+      "official_cancel_url": "https://account.grammarly.com"
+    },
+    {
+      "id": "helsi",
+      "name": "Helsi+",
+      "category": "software",
+      "price_usd": 1.99,
+      "type": "ua",
+      "official_url": "https://helsi.me/",
+      "official_cancel_url": "mailto:ecom@shophelsi.com"
+    },
+    {
+      "id": "history-by-mail",
+      "name": "History by Mail",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "Not directly stated",
+      "official_cancel_url": "Not directly stated"
+    },
+    {
+      "id": "inpost",
+      "name": "InPost",
+      "category": "software",
+      "price_usd": 37.5,
+      "type": "pl",
+      "official_url": "https://inpost.pl/",
+      "official_cancel_url": "https://inpost.pl/"
+    },
+    {
+      "id": "kyyivstar-tb",
+      "name": "Київстар ТБ",
+      "category": "tv",
+      "price_usd": 3.0,
+      "type": "ua",
+      "official_url": "https://tv.kyivstar.ua/",
+      "official_cancel_url": "https://account.kyivstar.ua/"
+    },
+    {
+      "id": "liki24",
+      "name": "Liki24 (Liki24+)",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://liki24.com/",
+      "official_cancel_url": "https://liki24.com/"
+    },
+    {
       "id": "linkedin-premium-career",
       "name": "LinkedIn Premium Career",
       "category": "software",
@@ -24,150 +231,6 @@
       "official_cancel_url": null
     },
     {
-      "id": "volia-tv",
-      "name": "Volia TV",
-      "category": "tv",
-      "price_usd": 2.3,
-      "type": "ua",
-      "official_url": "https://volia.com/",
-      "official_cancel_url": ""
-    },
-    {
-      "id": "youtube-tv",
-      "name": "YouTube TV",
-      "category": "tv",
-      "price_usd": 82.99,
-      "type": "global",
-      "official_url": "https://tv.youtube.com",
-      "official_cancel_url": "https://tv.youtube.com"
-    },
-    {
-      "id": "notion",
-      "name": "Notion",
-      "category": "software",
-      "price_usd": 10.0,
-      "type": "global",
-      "official_url": "https://www.notion.so/",
-      "official_cancel_url": "https://www.notion.so/"
-    },
-    {
-      "id": "helsi",
-      "name": "Helsi+",
-      "category": "software",
-      "price_usd": 1.99,
-      "type": "ua",
-      "official_url": "https://helsi.me/",
-      "official_cancel_url": "mailto:ecom@shophelsi.com"
-    },
-    {
-      "id": "inpost",
-      "name": "InPost",
-      "category": "software",
-      "price_usd": 37.5,
-      "type": "pl",
-      "official_url": "https://inpost.pl/",
-      "official_cancel_url": "https://inpost.pl/"
-    },
-    {
-      "id": "history-by-mail",
-      "name": "History by Mail",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "global",
-      "official_url": "Not directly stated",
-      "official_cancel_url": "Not directly stated"
-    },
-    {
-      "id": "opendatabot",
-      "name": "Opendatabot",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "ua",
-      "official_url": "https://opendatabot.ua",
-      "official_cancel_url": null
-    },
-    {
-      "id": "skvot",
-      "name": "Skvot",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "global",
-      "official_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzvThiZIWxQOl05MXrVe6Q8I6vlg3Rk9WKDoleM71hoJ5IuYuhiV0lIiw-1VhfdFlmvj61lRYnLBsTrVSFeS8oKWV11zvboB_i9bEcm6C56xFeqss3Tbq6HLSuf3dYWw==",
-      "official_cancel_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzvThiZIWxQOl05MXrVe6Q8I6vlg3Rk9WKDoleM71hoJ5IuYuhiV0lIiw-1VhfdFlmvj61lRYnLBsTrVSFeS8oKWV11zvboB_i9bEcm6C56xFeqss3Tbq6HLSuf3dYWw=="
-    },
-    {
-      "id": "promova",
-      "name": "Promova",
-      "category": "education",
-      "price_usd": 9.99,
-      "type": "global",
-      "official_url": "https://promova.com",
-      "official_cancel_url": "https://promova.com"
-    },
-    {
-      "id": "discord-nitro",
-      "name": "Discord Nitro",
-      "category": "gaming",
-      "price_usd": 9.99,
-      "type": "global",
-      "official_url": "https://discord.com/",
-      "official_cancel_url": "https://support.discord.com/hc/en-us/articles/115000435108-Discord-Nitro-Classic"
-    },
-    {
-      "id": "kyyivstar-tb",
-      "name": "Київстар ТБ",
-      "category": "tv",
-      "price_usd": 3.0,
-      "type": "ua",
-      "official_url": "https://tv.kyivstar.ua/",
-      "official_cancel_url": "https://account.kyivstar.ua/"
-    },
-    {
-      "id": "megogo",
-      "name": "Megogo",
-      "category": "tv",
-      "price_usd": 5.75,
-      "type": "ua",
-      "official_url": "https://megogo.net/",
-      "official_cancel_url": "https://megogo.net/"
-    },
-    {
-      "id": "audible",
-      "name": "Audible",
-      "category": "music",
-      "price_usd": 7.95,
-      "type": "global",
-      "official_url": "https://www.audible.com/",
-      "official_cancel_url": "https://www.audible.com/account/cancel"
-    },
-    {
-      "id": "projector-library",
-      "name": "[ADD_SERVICE] Projector Library",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "global",
-      "official_url": null,
-      "official_cancel_url": null
-    },
-    {
-      "id": "coursera",
-      "name": "Coursera",
-      "category": "education",
-      "price_usd": 59.0,
-      "type": "global",
-      "official_url": "https://www.coursera.org/",
-      "official_cancel_url": "https://www.coursera.org/"
-    },
-    {
-      "id": "youtv-ua",
-      "name": "YouTV.ua",
-      "category": "tv",
-      "price_usd": 2.3,
-      "type": "ua",
-      "official_url": "https://youtv.ua",
-      "official_cancel_url": "https://youtv.ua"
-    },
-    {
       "id": "masterclass",
       "name": "MasterClass",
       "category": "software",
@@ -175,177 +238,6 @@
       "type": "global",
       "official_url": "https://www.masterclass.com",
       "official_cancel_url": "https://www.masterclass.com"
-    },
-    {
-      "id": "elestio-prometheus",
-      "name": "Elestio Prometheus",
-      "category": "software",
-      "price_usd": 16.0,
-      "type": "global",
-      "official_url": "https://elest.io/",
-      "official_cancel_url": "https://elest.io/"
-    },
-    {
-      "id": "spotify",
-      "name": "Spotify",
-      "category": "music",
-      "price_usd": 6.99,
-      "type": "global",
-      "official_url": "spotify.com",
-      "official_cancel_url": "spotify.com/account"
-    },
-    {
-      "id": "bolt-food-bolt-plus",
-      "name": "Bolt Food (Bolt Plus)",
-      "category": "software",
-      "price_usd": 4.99,
-      "type": "global",
-      "official_url": "https://bolt.eu/",
-      "official_cancel_url": "https://bolt.eu/"
-    },
-    {
-      "id": "youcontrol",
-      "name": "YouControl",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "ua",
-      "official_url": "https://youcontrol.com.ua/",
-      "official_cancel_url": "https://youcontrol.com.ua/"
-    },
-    {
-      "id": "allegro-smart",
-      "name": "Allegro (Allegro Smart!)",
-      "category": "software",
-      "price_usd": 4.94,
-      "type": "pl",
-      "official_url": "https://allegro.pl",
-      "official_cancel_url": "https://na.allegro.pl/smart-formularz-kontaktowy"
-    },
-    {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "category": "ai",
-      "price_usd": 10.0,
-      "type": "global",
-      "official_url": "https://www.midjourney.com/",
-      "official_cancel_url": "https://www.midjourney.com/auth/signin/"
-    },
-    {
-      "id": "liki24",
-      "name": "Liki24 (Liki24+)",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "ua",
-      "official_url": "https://liki24.com/",
-      "official_cancel_url": "https://liki24.com/"
-    },
-    {
-      "id": "apple",
-      "name": "Apple TV+",
-      "category": "tv",
-      "price_usd": 12.99,
-      "type": "global",
-      "official_url": "https://tv.apple.com/",
-      "official_cancel_url": "https://support.apple.com/en-us/HT202039"
-    },
-    {
-      "id": "zoom",
-      "name": "Zoom",
-      "category": "software",
-      "price_usd": 13.33,
-      "type": "global",
-      "official_url": "https://zoom.us",
-      "official_cancel_url": "https://zoom.us"
-    },
-    {
-      "id": "duolingo-plus",
-      "name": "Duolingo Plus",
-      "category": "education",
-      "price_usd": 12.99,
-      "type": "global",
-      "official_url": "https://www.duolingo.com/",
-      "official_cancel_url": "https://support.duolingo.com/hc/en-us/articles/115004068123-How-do-I-cancel-my-Duolingo-Plus-subscription"
-    },
-    {
-      "id": "ubisoft",
-      "name": "Ubisoft+",
-      "category": "gaming",
-      "price_usd": 17.99,
-      "type": "global",
-      "official_url": "https://store.ubi.com/ubisoftplus",
-      "official_cancel_url": "https://store.ubi.com/us/ubisoftplus/subscription"
-    },
-    {
-      "id": "promptsmart",
-      "name": "PromptSmart",
-      "category": "software",
-      "price_usd": 9.99,
-      "type": "global",
-      "official_url": "https://promptsmart.com",
-      "official_cancel_url": "https://play.google.com/store/account/subscriptions"
-    },
-    {
-      "id": "edera",
-      "name": "Ukrainian EdTech Studio EdEra",
-      "category": "education",
-      "price_usd": 0.0,
-      "type": "ua",
-      "official_url": "https://edera.dev",
-      "official_cancel_url": "https://edera.dev"
-    },
-    {
-      "id": "omegatv",
-      "name": "OmegaTV",
-      "category": "tv",
-      "price_usd": 19.99,
-      "type": "global",
-      "official_url": "https://my-omega-tv.xyz",
-      "official_cancel_url": "https://my-omega-tv.xyz"
-    },
-    {
-      "id": "microsoft-365",
-      "name": "Microsoft 365",
-      "category": "software",
-      "price_usd": 9.99,
-      "type": "global",
-      "official_url": "https://www.microsoft.com/en-us/microsoft-365",
-      "official_cancel_url": "https://account.microsoft.com/services/"
-    },
-    {
-      "id": "prom-smart-ua",
-      "name": "Prom Smart UA",
-      "category": "software",
-      "price_usd": 0.0,
-      "type": "ua",
-      "official_url": "https://prom.ua/",
-      "official_cancel_url": "https://prom.ua/"
-    },
-    {
-      "id": "ea-play",
-      "name": "EA Play",
-      "category": "gaming",
-      "price_usd": 5.99,
-      "type": "global",
-      "official_url": "https://www.ea.com/ea-play",
-      "official_cancel_url": "https://www.ea.com/help/ea-play/manage-your-ea-play-membership/"
-    },
-    {
-      "id": "takflix",
-      "name": "Takflix",
-      "category": "tv",
-      "price_usd": 3.1,
-      "type": "ua",
-      "official_url": "https://takflix.com/",
-      "official_cancel_url": "https://support.google.com/googleplay/answer/7018481"
-    },
-    {
-      "id": "google-one",
-      "name": "Google One",
-      "category": "software",
-      "price_usd": 1.99,
-      "type": "global",
-      "official_url": "one.google.com",
-      "official_cancel_url": "one.google.com/settings"
     },
     {
       "id": "medium-membership",
@@ -357,40 +249,31 @@
       "official_cancel_url": "https://medium.com"
     },
     {
-      "id": "youtube",
-      "name": "YouTube Premium",
+      "id": "megogo",
+      "name": "Megogo",
       "category": "tv",
-      "price_usd": 13.99,
-      "type": "global",
-      "official_url": "https://www.youtube.com/premium",
-      "official_cancel_url": "https://www.youtube.com/paid_memberships"
-    },
-    {
-      "id": "claude",
-      "name": "Claude",
-      "category": "ai",
-      "price_usd": 20.0,
-      "type": "global",
-      "official_url": "https://www.anthropic.com/",
-      "official_cancel_url": null
-    },
-    {
-      "id": "the-village-ukraina",
-      "name": "The Village Україна",
-      "category": "news",
-      "price_usd": 0.0,
+      "price_usd": 5.75,
       "type": "ua",
-      "official_url": "https://www.the-village.com.ua/",
-      "official_cancel_url": "https://www.the-village.com.ua/"
+      "official_url": "https://megogo.net/",
+      "official_cancel_url": "https://megogo.net/"
     },
     {
-      "id": "vchasno",
-      "name": "Вчасно",
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
       "category": "software",
-      "price_usd": 0.0,
-      "type": "ua",
-      "official_url": "https://vchasno.ua/",
-      "official_cancel_url": "https://vchasno.ua/"
+      "price_usd": 9.99,
+      "type": "global",
+      "official_url": "https://www.microsoft.com/en-us/microsoft-365",
+      "official_cancel_url": "https://account.microsoft.com/services/"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "category": "ai",
+      "price_usd": 10.0,
+      "type": "global",
+      "official_url": "https://www.midjourney.com/",
+      "official_cancel_url": "https://www.midjourney.com/auth/signin/"
     },
     {
       "id": "naurok",
@@ -402,60 +285,6 @@
       "official_cancel_url": null
     },
     {
-      "id": "empik-premium",
-      "name": "Empik (Empik Premium)",
-      "category": "software",
-      "price_usd": 9.84,
-      "type": "pl",
-      "official_url": "https://www.empik.com",
-      "official_cancel_url": "https://www.empik.com"
-    },
-    {
-      "id": "sweet-tv",
-      "name": "Sweet.tv",
-      "category": "tv",
-      "price_usd": 5.6,
-      "type": "ua",
-      "official_url": "https://sweet.tv/",
-      "official_cancel_url": "https://sweet.tv/"
-    },
-    {
-      "id": "forbes-ukraine",
-      "name": "Forbes Ukraine",
-      "category": "news",
-      "price_usd": 7.8,
-      "type": "ua",
-      "official_url": "https://forbes.ua",
-      "official_cancel_url": "https://www.forbes.com/cancel-subscription/"
-    },
-    {
-      "id": "twitch-turbo",
-      "name": "Twitch Turbo",
-      "category": "gaming",
-      "price_usd": 11.99,
-      "type": "global",
-      "official_url": "https://www.twitch.tv/turbo",
-      "official_cancel_url": "https://www.twitch.tv/subscriptions?tab=turbo"
-    },
-    {
-      "id": "patreon",
-      "name": "Patreon",
-      "category": "software",
-      "price_usd": 1.0,
-      "type": "global",
-      "official_url": "https://www.patreon.com/",
-      "official_cancel_url": "https://www.patreon.com/pledges"
-    },
-    {
-      "id": "yakaboo",
-      "name": "Yakaboo",
-      "category": "software",
-      "price_usd": 3.0,
-      "type": "ua",
-      "official_url": "https://yakaboo.ua/",
-      "official_cancel_url": "https://yakaboo.ua/"
-    },
-    {
       "id": "netflix",
       "name": "Netflix",
       "category": "tv",
@@ -463,15 +292,6 @@
       "type": "global",
       "official_url": "netflix.com",
       "official_cancel_url": "https://www.netflix.com/account"
-    },
-    {
-      "id": "deepl-pro",
-      "name": "DeepL Pro",
-      "category": "software",
-      "price_usd": 8.74,
-      "type": "global",
-      "official_url": "https://www.deepl.com/pro",
-      "official_cancel_url": "https://www.deepl.com/pro"
     },
     {
       "id": "new-voice",
@@ -483,42 +303,6 @@
       "official_cancel_url": "https://new-voice.org"
     },
     {
-      "id": "ukrainer",
-      "name": "Ukrainer",
-      "category": "tv",
-      "price_usd": 5.0,
-      "type": "global",
-      "official_url": "https://ukrainer.net/en/",
-      "official_cancel_url": "https://www.buymeacoffee.com/"
-    },
-    {
-      "id": "grammarly",
-      "name": "Grammarly",
-      "category": "software",
-      "price_usd": 30.0,
-      "type": "global",
-      "official_url": "https://www.grammarly.com",
-      "official_cancel_url": "https://account.grammarly.com"
-    },
-    {
-      "id": "adobe-firefly",
-      "name": "Adobe Firefly",
-      "category": "software",
-      "price_usd": 11.99,
-      "type": "global",
-      "official_url": "https://www.adobe.com/",
-      "official_cancel_url": "https://account.adobe.com/plans"
-    },
-    {
-      "id": "glovo-prime",
-      "name": "Glovo Prime",
-      "category": "software",
-      "price_usd": 6.49,
-      "type": "global",
-      "official_url": "https://glovoapp.com",
-      "official_cancel_url": "https://glovoapp.com"
-    },
-    {
       "id": "nintendo-switch-online",
       "name": "Nintendo Switch Online",
       "category": "gaming",
@@ -526,6 +310,42 @@
       "type": "global",
       "official_url": "https://www.nintendo.com/switch/online/",
       "official_cancel_url": "https://accounts.nintendo.com"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "category": "software",
+      "price_usd": 10.0,
+      "type": "global",
+      "official_url": "https://www.notion.so/",
+      "official_cancel_url": "https://www.notion.so/"
+    },
+    {
+      "id": "omegatv",
+      "name": "OmegaTV",
+      "category": "tv",
+      "price_usd": 19.99,
+      "type": "global",
+      "official_url": "https://my-omega-tv.xyz",
+      "official_cancel_url": "https://my-omega-tv.xyz"
+    },
+    {
+      "id": "opendatabot",
+      "name": "Opendatabot",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://opendatabot.ua",
+      "official_cancel_url": null
+    },
+    {
+      "id": "patreon",
+      "name": "Patreon",
+      "category": "software",
+      "price_usd": 1.0,
+      "type": "global",
+      "official_url": "https://www.patreon.com/",
+      "official_cancel_url": "https://www.patreon.com/pledges"
     },
     {
       "id": "perplexity-ai",
@@ -546,6 +366,132 @@
       "official_cancel_url": "https://preply.com"
     },
     {
+      "id": "projector-library",
+      "name": "[ADD_SERVICE] Projector Library",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": null,
+      "official_cancel_url": null
+    },
+    {
+      "id": "prom-smart-ua",
+      "name": "Prom Smart UA",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://prom.ua/",
+      "official_cancel_url": "https://prom.ua/"
+    },
+    {
+      "id": "promova",
+      "name": "Promova",
+      "category": "education",
+      "price_usd": 9.99,
+      "type": "global",
+      "official_url": "https://promova.com",
+      "official_cancel_url": "https://promova.com"
+    },
+    {
+      "id": "promptsmart",
+      "name": "PromptSmart",
+      "category": "software",
+      "price_usd": 9.99,
+      "type": "global",
+      "official_url": "https://promptsmart.com",
+      "official_cancel_url": "https://play.google.com/store/account/subscriptions"
+    },
+    {
+      "id": "skvot",
+      "name": "Skvot",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzvThiZIWxQOl05MXrVe6Q8I6vlg3Rk9WKDoleM71hoJ5IuYuhiV0lIiw-1VhfdFlmvj61lRYnLBsTrVSFeS8oKWV11zvboB_i9bEcm6C56xFeqss3Tbq6HLSuf3dYWw==",
+      "official_cancel_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzvThiZIWxQOl05MXrVe6Q8I6vlg3Rk9WKDoleM71hoJ5IuYuhiV0lIiw-1VhfdFlmvj61lRYnLBsTrVSFeS8oKWV11zvboB_i9bEcm6C56xFeqss3Tbq6HLSuf3dYWw=="
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "category": "music",
+      "price_usd": 6.99,
+      "type": "global",
+      "official_url": "spotify.com",
+      "official_cancel_url": "spotify.com/account"
+    },
+    {
+      "id": "sweet-tv",
+      "name": "Sweet.tv",
+      "category": "tv",
+      "price_usd": 5.6,
+      "type": "ua",
+      "official_url": "https://sweet.tv/",
+      "official_cancel_url": "https://sweet.tv/"
+    },
+    {
+      "id": "takflix",
+      "name": "Takflix",
+      "category": "tv",
+      "price_usd": 3.1,
+      "type": "ua",
+      "official_url": "https://takflix.com/",
+      "official_cancel_url": "https://support.google.com/googleplay/answer/7018481"
+    },
+    {
+      "id": "the-village-ukraina",
+      "name": "The Village Україна",
+      "category": "news",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://www.the-village.com.ua/",
+      "official_cancel_url": "https://www.the-village.com.ua/"
+    },
+    {
+      "id": "twitch-turbo",
+      "name": "Twitch Turbo",
+      "category": "gaming",
+      "price_usd": 11.99,
+      "type": "global",
+      "official_url": "https://www.twitch.tv/turbo",
+      "official_cancel_url": "https://www.twitch.tv/subscriptions?tab=turbo"
+    },
+    {
+      "id": "ubisoft",
+      "name": "Ubisoft+",
+      "category": "gaming",
+      "price_usd": 17.99,
+      "type": "global",
+      "official_url": "https://store.ubi.com/ubisoftplus",
+      "official_cancel_url": "https://store.ubi.com/us/ubisoftplus/subscription"
+    },
+    {
+      "id": "ukrainer",
+      "name": "Ukrainer",
+      "category": "tv",
+      "price_usd": 5.0,
+      "type": "global",
+      "official_url": "https://ukrainer.net/en/",
+      "official_cancel_url": "https://www.buymeacoffee.com/"
+    },
+    {
+      "id": "vchasno",
+      "name": "Вчасно",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://vchasno.ua/",
+      "official_cancel_url": "https://vchasno.ua/"
+    },
+    {
+      "id": "volia-tv",
+      "name": "Volia TV",
+      "category": "tv",
+      "price_usd": 2.3,
+      "type": "ua",
+      "official_url": "https://volia.com/",
+      "official_cancel_url": ""
+    },
+    {
       "id": "vseosvita",
       "name": "Vseosvita",
       "category": "education",
@@ -562,6 +508,60 @@
       "type": "ua",
       "official_url": "https://www.work.ua",
       "official_cancel_url": ""
+    },
+    {
+      "id": "yakaboo",
+      "name": "Yakaboo",
+      "category": "software",
+      "price_usd": 3.0,
+      "type": "ua",
+      "official_url": "https://yakaboo.ua/",
+      "official_cancel_url": "https://yakaboo.ua/"
+    },
+    {
+      "id": "youcontrol",
+      "name": "YouControl",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "ua",
+      "official_url": "https://youcontrol.com.ua/",
+      "official_cancel_url": "https://youcontrol.com.ua/"
+    },
+    {
+      "id": "youtube-tv",
+      "name": "YouTube TV",
+      "category": "tv",
+      "price_usd": 82.99,
+      "type": "global",
+      "official_url": "https://tv.youtube.com",
+      "official_cancel_url": "https://tv.youtube.com"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Premium",
+      "category": "tv",
+      "price_usd": 13.99,
+      "type": "global",
+      "official_url": "https://www.youtube.com/premium",
+      "official_cancel_url": "https://www.youtube.com/paid_memberships"
+    },
+    {
+      "id": "youtv-ua",
+      "name": "YouTV.ua",
+      "category": "tv",
+      "price_usd": 2.3,
+      "type": "ua",
+      "official_url": "https://youtv.ua",
+      "official_cancel_url": "https://youtv.ua"
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "category": "software",
+      "price_usd": 13.33,
+      "type": "global",
+      "official_url": "https://zoom.us",
+      "official_cancel_url": "https://zoom.us"
     }
   ]
 }
