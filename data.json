@@ -465,6 +465,15 @@
       "official_cancel_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzvThiZIWxQOl05MXrVe6Q8I6vlg3Rk9WKDoleM71hoJ5IuYuhiV0lIiw-1VhfdFlmvj61lRYnLBsTrVSFeS8oKWV11zvboB_i9bEcm6C56xFeqss3Tbq6HLSuf3dYWw=="
     },
     {
+      "id": "skyshowtime-poland",
+      "name": "SkyShowtime (Poland)",
+      "category": "tv",
+      "price_usd": 6.19,
+      "type": "pl",
+      "official_url": "https://www.skyshowtime.com",
+      "official_cancel_url": "https://www.skyshowtime.com"
+    },
+    {
       "id": "spotify",
       "name": "Spotify",
       "category": "music",
