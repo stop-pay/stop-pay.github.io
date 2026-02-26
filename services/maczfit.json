@@ -1,0 +1,9 @@
+{
+  "id": "maczfit",
+  "name": "Maczfit",
+  "category": "software",
+  "price_usd": 115.0,
+  "type": "pl",
+  "official_url": "www.maczfit.pl",
+  "official_cancel_url": "www.maczfit.pl"
+}
