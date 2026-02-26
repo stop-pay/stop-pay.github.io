@@ -68,6 +68,15 @@
       "official_cancel_url": null
     },
     {
+      "id": "skvot",
+      "name": "Skvot",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzvThiZIWxQOl05MXrVe6Q8I6vlg3Rk9WKDoleM71hoJ5IuYuhiV0lIiw-1VhfdFlmvj61lRYnLBsTrVSFeS8oKWV11zvboB_i9bEcm6C56xFeqss3Tbq6HLSuf3dYWw==",
+      "official_cancel_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzvThiZIWxQOl05MXrVe6Q8I6vlg3Rk9WKDoleM71hoJ5IuYuhiV0lIiw-1VhfdFlmvj61lRYnLBsTrVSFeS8oKWV11zvboB_i9bEcm6C56xFeqss3Tbq6HLSuf3dYWw=="
+    },
+    {
       "id": "promova",
       "name": "Promova",
       "category": "education",
