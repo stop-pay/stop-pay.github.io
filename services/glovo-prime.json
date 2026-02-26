@@ -1,0 +1,9 @@
+{
+  "id": "glovo-prime",
+  "name": "Glovo Prime",
+  "category": "software",
+  "price_usd": 6.49,
+  "type": "global",
+  "official_url": "https://glovoapp.com",
+  "official_cancel_url": "https://glovoapp.com"
+}
