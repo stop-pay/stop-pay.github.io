@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Legimi",
+  "translated_name": "legimi",
+  "description": "Legimi is a Polish ebook and audiobook subscription service. You can cancel your Legimi subscription at any time through their website, app, or mobile operator (if applicable).",
+  "steps": {
+    "web": {
+      "title": "Cancel Legimi Subscription via Website",
+      "description": "To cancel your Legimi subscription through the website:\n\n*   Go to the Legimi website.\n*   Log in to your Legimi account.\n*   Navigate to your account settings.\n*   Find the 'Subscription' or 'Billing' section.\n*   Click on 'Cancel Subscription' or a similar option.\n*   Confirm your cancellation request.\n*   Check for a confirmation email or message from Legimi."
+    },
+    "app": {
+      "title": "Cancel Legimi Subscription via App",
+      "description": "To cancel your Legimi subscription through the app:\n\n*   Open the Legimi app.\n*   Log in to your Legimi account.\n*   Navigate to your account settings.\n*   Find the 'Subscription' or 'Billing' section.\n*   Click on 'Cancel Subscription' or a similar option.\n*   Confirm your cancellation request.\n*   Check for a confirmation email or message from Legimi."
+    },
+    "sms": {
+      "title": "Cancel Legimi Subscription via SMS",
+      "description": "To cancel your Legimi subscription via SMS:\n\n*   If subscribed via a mobile operator (Play or T-Mobile), send the appropriate cancellation SMS (e.g., STOP to 220 for Play ebooks)."
+    }
+  },
+  "seo_text": "Cancel Legimi subscription, Legimi unsubscribe, stop Legimi, Legimi cancellation guide, end Legimi membership"
+}
