@@ -1,0 +1,9 @@
+{
+  "id": "viaplay-poland",
+  "name": "Viaplay (Poland)",
+  "category": "tv",
+  "price_usd": 3.75,
+  "type": "pl",
+  "official_url": "https://viaplay.com",
+  "official_cancel_url": "https://viaplay.com"
+}
