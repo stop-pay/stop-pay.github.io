@@ -1,0 +1,16 @@
+{
+  "title": "How to unsubscribe from Preply",
+  "translated_name": "preply",
+  "description": "Preply uses a subscription model where you pay for lessons every 28 days. You can cancel your Preply subscription at any time to stop recurring payments. After canceling, you can still use any lessons you've already paid for.",
+  "steps": {
+    "steps_1": {
+      "title": "Cancel Subscription via Website",
+      "description": "* Go to Subscription Settings on the Preply website.\n* Find the tutor whose plan you want to update.\n* Click the three dots (•••) next to their name.\n* Click \"Cancel subscription\" and follow the on-screen steps."
+    },
+    "steps_2": {
+      "title": "Cancel Subscription via App",
+      "description": "* Tap your profile icon in the Preply app.\n* Go to \"More Settings\" and select that section.\n* Swipe left and select \"Subscription\" in the top bar.\n* Tap the Three Dots (⋮) to open the options menu.\n* Select \"Cancel Subscription\" and follow the on-screen steps."
+    }
+  },
+  "seo_text": "Learn how to easily cancel your Preply subscription. Follow our step-by-step guide to stop recurring payments and manage your Preply account effectively. Ensure you cancel before your next renewal date to avoid being charged. Use our guide for both web and app cancellation methods."
+}
