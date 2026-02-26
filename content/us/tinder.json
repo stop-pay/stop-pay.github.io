@@ -1,0 +1,24 @@
+{
+  "title": "How to unsubscribe from Tinder",
+  "translated_name": "tinder",
+  "description": "Canceling your Tinder subscription depends on how you subscribed (iOS, Android via Google Play, Android via direct credit card, or Tinder.com). Remember that deleting the app does not cancel your subscription. You must cancel through the appropriate method to avoid future charges.",
+  "steps": {
+    "web": {
+      "title": "Cancel Tinder Subscription via Website",
+      "description": "To cancel your Tinder subscription via the web:\n\n*   Go to Tinder.com and log in to your account.\n*   Tap your profile icon.\n*   Select Manage Account or Manage Payment Account/Subscription.\n*   Click Cancel Subscription or set Auto-Renew to off. Confirm your choice if prompted."
+    },
+    "ios": {
+      "title": "Cancel Tinder Subscription via iPhone",
+      "description": "To cancel your Tinder subscription via your iPhone:\n\n*   Open the Settings app on your iPhone.\n*   Tap on your name at the top, then tap Subscriptions (or 'Media & Purchases').\n*   Find and select your Tinder subscription, then tap Cancel Subscription. Confirm if needed."
+    },
+    "android_google_play": {
+      "title": "Cancel Tinder Subscription via Google Play Store",
+      "description": "To cancel your Tinder subscription via the Google Play Store:\n\n*   Open the Google Play Store app.\n*   Tap your profile icon in the top right corner.\n*   Go to Payments & Subscriptions > Subscriptions.\n*   Select the Tinder subscription, then tap Cancel Subscription and follow the prompts."
+    },
+    "android_direct": {
+      "title": "Cancel Tinder Subscription via Tinder App (Android - Direct Subscription)",
+      "description": "To cancel your Tinder subscription directly through the Tinder app on your Android device:\n\n*   Open the Tinder app on your Android device.\n*   Tap your profile icon.\n*   Select Manage Payment Account.\n*   Find the subscription you want to cancel and tap Cancel Subscription."
+    }
+  },
+  "seo_text": "Learn how to cancel your Tinder subscription on iOS, Android, or the web. Follow our step-by-step guide to manage your Tinder payments and avoid unwanted charges. Remember that uninstalling the app will not cancel your subscription."
+}

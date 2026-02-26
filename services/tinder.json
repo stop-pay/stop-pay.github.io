@@ -1,0 +1,9 @@
+{
+  "id": "tinder",
+  "name": "Tinder",
+  "category": "software",
+  "price_usd": 24.99,
+  "type": "global",
+  "official_url": "https://tinder.com",
+  "official_cancel_url": "https://tinder.com"
+}
