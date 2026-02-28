@@ -298,16 +298,26 @@ header {
     text-align: center;
 }
 
+/* Оновлена кнопка донату */
 .btn-donate {
     display: inline-block;
-    background: #2ed573;
-    color: white !important;
-    padding: 12px 25px;
-    border-radius: 12px;
+    background: #00ff88 !important; /* Твій фірмовий зелений */
+    color: #000000 !important;      /* Чорний текст для контрасту */
+    padding: 12px 28px;
+    border-radius: 20px;            /* Робимо її більш округлою */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 800;
     margin-top: 15px;
     transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Зелене світіння */
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.btn-donate:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1); /* Стає яскравішою */
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
 }
 
 .seo-block, 
