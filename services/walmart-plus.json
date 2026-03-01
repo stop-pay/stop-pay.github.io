@@ -1,0 +1,9 @@
+{
+  "id": "walmart-plus",
+  "name": "[ADD_SERVICE] Walmart+",
+  "category": "tv",
+  "price_usd": 12.95,
+  "type": "global",
+  "official_url": "https://www.walmart.com",
+  "official_cancel_url": "https://www.walmart.com"
+}
