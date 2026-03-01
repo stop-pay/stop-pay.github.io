@@ -276,6 +276,15 @@
       "official_cancel_url": "https://inpost.pl/"
     },
     {
+      "id": "instacart-plus",
+      "name": "Instacart+",
+      "category": "software",
+      "price_usd": 9.99,
+      "type": "global",
+      "official_url": "https://www.instacart.com",
+      "official_cancel_url": "https://www.instacart.com/plus"
+    },
+    {
       "id": "jakdojade-premium",
       "name": "Jakdojade Premium",
       "category": "software",
