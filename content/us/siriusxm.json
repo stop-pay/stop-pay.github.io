@@ -1,0 +1,24 @@
+{
+  "title": "How to unsubscribe from SiriusXM",
+  "translated_name": "siriusxm",
+  "description": "SiriusXM subscriptions can be cancelled online, by phone, or through third-party app stores, depending on where you initiated your subscription. To avoid charges, cancel at least 24 hours before your renewal date. Note that audio subscriptions are non-refundable as of March 15, 2024.",
+  "steps": {
+    "web": {
+      "title": "Cancel SiriusXM Subscription via Website",
+      "description": "To cancel your SiriusXM subscription via the website:\n\n*   Go to the SiriusXM website.\n*   Log in to your account.\n*   Navigate to the 'Manage My Account' section.\n*   Follow the cancellation instructions provided on the website.\n*   Confirm your cancellation to avoid future charges."
+    },
+    "phone": {
+      "title": "Cancel SiriusXM Subscription via Phone",
+      "description": "To cancel your SiriusXM subscription via phone:\n\n*   Call 1-888-539-7474 to speak with a representative.\n*   Confirm your cancellation to avoid future charges."
+    },
+    "app_store": {
+      "title": "Cancel SiriusXM Subscription via App Store",
+      "description": "To cancel your SiriusXM subscription through the App Store:\n\n*   Open the Settings app.\n*   Tap your name.\n*   Tap Subscriptions.\n*   Select SiriusXM.\n*   Tap Cancel Subscription."
+    },
+    "google_play": {
+      "title": "Cancel SiriusXM Subscription via Google Play",
+      "description": "To cancel your SiriusXM subscription through Google Play:\n\n*   Open the Google Play Store app.\n*   Tap your profile icon.\n*   Tap Payments & subscriptions.\n*   Tap Subscriptions.\n*   Select SiriusXM.\n*   Tap Cancel subscription."
+    }
+  },
+  "seo_text": "Cancel your SiriusXM subscription online or by phone. Follow our guide to avoid renewal charges. Learn how to cancel SiriusXM subscriptions purchased through the App Store or Google Play."
+}
