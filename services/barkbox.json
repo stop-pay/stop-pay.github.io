@@ -1,0 +1,9 @@
+{
+  "id": "barkbox",
+  "name": "[ADD_SERVICE] BarkBox",
+  "category": "software",
+  "price_usd": 14.99,
+  "type": "global",
+  "official_url": "https://barkbox.com",
+  "official_cancel_url": "https://barkbox.com"
+}
