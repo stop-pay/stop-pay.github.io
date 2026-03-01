@@ -312,6 +312,15 @@
       "official_cancel_url": "https://www.masterclass.com"
     },
     {
+      "id": "max",
+      "name": "[ADD_SERVICE] Max (колишній HBO Max)",
+      "category": "tv",
+      "price_usd": 10.99,
+      "type": "global",
+      "official_url": "https://www.hbomax.com",
+      "official_cancel_url": "https://www.hbomax.com"
+    },
+    {
       "id": "medium-membership",
       "name": "Medium Membership",
       "category": "software",
