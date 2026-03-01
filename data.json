@@ -547,7 +547,7 @@
     },
     {
       "id": "peloton-app",
-      "name": "[ADD_SERVICE] Peloton App",
+      "name": "Peloton",
       "category": "software",
       "price_usd": 15.99,
       "type": "global",
