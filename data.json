@@ -636,6 +636,15 @@
       "official_cancel_url": "https://support.google.com/googleplay/answer/7018481"
     },
     {
+      "id": "target-360",
+      "name": "Target 360",
+      "category": "software",
+      "price_usd": 4.99,
+      "type": "global",
+      "official_url": "https://www.target.com/circle/360",
+      "official_cancel_url": "https://www.target.com/"
+    },
+    {
       "id": "the-village-ukraina",
       "name": "The Village Україна",
       "category": "news",
