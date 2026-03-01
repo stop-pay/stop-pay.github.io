@@ -96,6 +96,15 @@
       "official_cancel_url": "https://cda.pl"
     },
     {
+      "id": "chewy-autoship",
+      "name": "Chewy (Autoship)",
+      "category": "software",
+      "price_usd": 0.0,
+      "type": "global",
+      "official_url": "chewy.com",
+      "official_cancel_url": "chewy.com"
+    },
+    {
       "id": "claude",
       "name": "Claude",
       "category": "ai",
