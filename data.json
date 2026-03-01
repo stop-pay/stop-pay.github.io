@@ -213,6 +213,15 @@
       "official_cancel_url": "https://account.grammarly.com"
     },
     {
+      "id": "hellofresh",
+      "name": "HelloFresh (US)",
+      "category": "software",
+      "price_usd": 9.0,
+      "type": "us",
+      "official_url": "https://www.hellofresh.com/",
+      "official_cancel_url": "https://www.hellofresh.com/"
+    },
+    {
       "id": "helsi",
       "name": "Helsi+",
       "category": "software",
