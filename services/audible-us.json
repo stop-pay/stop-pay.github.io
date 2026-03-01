@@ -1,0 +1,9 @@
+{
+  "id": "audible-us",
+  "name": "Audible (US)",
+  "category": "music",
+  "price_usd": 7.95,
+  "type": "us",
+  "official_url": "www.audible.com",
+  "official_cancel_url": "www.audible.com"
+}
