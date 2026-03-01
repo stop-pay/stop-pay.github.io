@@ -537,6 +537,15 @@
       "official_cancel_url": "www.peacocktv.com"
     },
     {
+      "id": "peloton-app",
+      "name": "[ADD_SERVICE] Peloton App",
+      "category": "software",
+      "price_usd": 15.99,
+      "type": "global",
+      "official_url": null,
+      "official_cancel_url": null
+    },
+    {
       "id": "perplexity-ai",
       "name": "Perplexity AI",
       "category": "ai",
