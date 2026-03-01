@@ -1,0 +1,9 @@
+{
+  "id": "paramount",
+  "name": "Paramount+",
+  "category": "tv",
+  "price_usd": 8.99,
+  "type": "global",
+  "official_url": "https://www.paramountplus.com",
+  "official_cancel_url": "https://www.paramountplus.com"
+}

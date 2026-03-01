@@ -1,0 +1,24 @@
+{
+  "title": "Jak zrezygnować z subskrypcji Peacock",
+  "translated_name": "peacock",
+  "description": "Możesz anulować subskrypcję Peacock online za pośrednictwem ich strony internetowej lub za pośrednictwem zewnętrznego dostawcy (np. Apple, Amazon, Roku, Xfinity). Anulowanie subskrypcji wstrzyma przyszłe płatności. Zachowasz dostęp do końca bieżącego cyklu rozliczeniowego.",
+  "steps": {
+    "web": {
+      "title": "Anuluj subskrypcję Peacock przez stronę internetową",
+      "description": "Aby anulować subskrypcję Peacock przez ich stronę internetową:\n\n*   Przejdź do peacocktv.com i zaloguj się na swoje konto.\n*   Wybierz ikonę swojego profilu w prawym górnym rogu.\n*   Kliknij Konto.\n*   Przejdź do Plany i płatności i wybierz Zmień lub anuluj plan.\n*   Wybierz Anuluj plan i potwierdź anulowanie."
+    },
+    "app_ios": {
+      "title": "Anuluj subskrypcję Peacock przez Apple/iOS",
+      "description": "Aby anulować subskrypcję Peacock przez Apple/iOS:\n\n*   Przejdź do Ustawienia > [Twoje imię i nazwisko] > Subskrypcje."
+    },
+    "app_amazon": {
+      "title": "Anuluj subskrypcję Peacock przez Amazon/Fire TV",
+      "description": "Aby anulować subskrypcję Peacock przez Amazon/Fire TV:\n\n*   Przejdź do Aplikacje > Appstore > Subskrypcje."
+    },
+    "app_roku": {
+      "title": "Anuluj subskrypcję Peacock przez Roku",
+      "description": "Aby anulować subskrypcję Peacock przez Roku:\n\n*   Przejdź do ekranu głównego.\n*   Wybierz kanał Peacock.\n*   Naciśnij przycisk * na pilocie.\n*   Wybierz Zarządzaj subskrypcją.\n*   Wyłącz automatyczne odnawianie."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję Peacock, wstrzymaj płatności Peacock, przewodnik po anulowaniu Peacock, zrezygnuj z subskrypcji Peacock TV, zarządzanie subskrypcją Peacock."
+}
