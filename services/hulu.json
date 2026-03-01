@@ -1,0 +1,9 @@
+{
+  "id": "hulu",
+  "name": "Hulu",
+  "category": "tv",
+  "price_usd": 11.99,
+  "type": "global",
+  "official_url": "https://www.hulu.com/",
+  "official_cancel_url": "https://help.hulu.com/"
+}
