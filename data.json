@@ -168,6 +168,15 @@
       "official_cancel_url": "https://www.empik.com"
     },
     {
+      "id": "espn",
+      "name": "[ADD_SERVICE] ESPN+",
+      "category": "tv",
+      "price_usd": 12.99,
+      "type": "global",
+      "official_url": "https://www.espn.com/",
+      "official_cancel_url": "https://www.espn.com/"
+    },
+    {
       "id": "forbes-ukraine",
       "name": "Forbes Ukraine",
       "category": "news",
