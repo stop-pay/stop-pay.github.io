@@ -69,6 +69,15 @@
       "official_cancel_url": "https://barkbox.com"
     },
     {
+      "id": "birchbox",
+      "name": "Birchbox",
+      "category": "software",
+      "price_usd": 10.0,
+      "type": "global",
+      "official_url": "birchbox.com",
+      "official_cancel_url": "birchbox.com"
+    },
+    {
       "id": "blue-apron",
       "name": "Blue Apron",
       "category": "software",
