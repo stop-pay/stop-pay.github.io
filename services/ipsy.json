@@ -1,0 +1,9 @@
+{
+  "id": "ipsy",
+  "name": "Ipsy",
+  "category": "software",
+  "price_usd": 14.0,
+  "type": "global",
+  "official_url": "https://www.ipsy.com/",
+  "official_cancel_url": "https://www.ipsy.com/"
+}

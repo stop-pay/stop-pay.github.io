@@ -1,0 +1,23 @@
+{
+  "title": "Jak zrezygnować z subskrypcji aplikacji Peloton",
+  "translated_name": "aplikacja peloton",
+  "description": "Dowiedz się, jak anulować subskrypcję aplikacji Peloton za pośrednictwem strony internetowej, sklepów z aplikacjami lub podłączonych urządzeń. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zarządzać swoim członkostwem i uniknąć niechcianych opłat.",
+  "steps": {
+    "web": {
+      "title": "Anuluj członkostwo Peloton przez stronę internetową",
+      "description": "Aby anulować członkostwo Peloton przez stronę internetową:\n\n*   Przejdź na stronę internetową Peloton i zaloguj się na swoje konto.\n*   Przejdź do 'Moje konto', a następnie 'Subskrypcje'. Alternatywnie przejdź do Konto > Członkostwo lub odwiedź stronę swojego członkostwa.\n*   Kliknij 'Zarządzaj członkostwem'.\n*   Wybierz opcję anulowania lub zawieszenia członkostwa.\n*   Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby potwierdzić anulowanie.\n*   Sprawdź swoją skrzynkę e-mail (w tym folder spam) w celu uzyskania wiadomości e-mail z potwierdzeniem.",
+      "steps": null
+    },
+    "app_ios": {
+      "title": "Anuluj członkostwo Peloton przez Apple App Store (iOS)",
+      "description": "Aby anulować członkostwo Peloton przez Apple App Store (iOS):\n\n*   Otwórz aplikację Ustawienia.\n*   Stuknij swoje imię i nazwisko.\n*   Stuknij 'Subskrypcje'.\n*   Wybierz 'Peloton'.\n*   Stuknij 'Anuluj subskrypcję'.",
+      "steps": null
+    },
+    "app_android": {
+      "title": "Anuluj członkostwo Peloton przez Google Play Store (Android)",
+      "description": "Aby anulować członkostwo Peloton przez Google Play Store (Android):\n\n*   Otwórz aplikację Google Play Store.\n*   Stuknij ikonę swojego profilu.\n*   Stuknij 'Płatności i subskrypcje' > 'Subskrypcje'.\n*   Wybierz 'Peloton'.\n*   Stuknij 'Anuluj subskrypcję'.",
+      "steps": null
+    }
+  },
+  "seo_text": "Anuluj subskrypcję aplikacji Peloton, zrezygnuj z Peloton, anulowanie aplikacji Peloton, zarządzaj członkostwem Peloton, anuluj Peloton online, zwrot kosztów subskrypcji Peloton, anulowanie bezpłatnego okresu próbnego Peloton, opłaty za subskrypcję Peloton, poziomy subskrypcji aplikacji Peloton, anuluj Peloton na iPhonie, anuluj Peloton na Androidzie."
+}
