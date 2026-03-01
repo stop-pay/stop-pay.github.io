@@ -420,6 +420,15 @@
       "official_cancel_url": "https://www.patreon.com/pledges"
     },
     {
+      "id": "peacock",
+      "name": "Peacock",
+      "category": "tv",
+      "price_usd": 7.99,
+      "type": "global",
+      "official_url": "www.peacocktv.com",
+      "official_cancel_url": "www.peacocktv.com"
+    },
+    {
       "id": "perplexity-ai",
       "name": "Perplexity AI",
       "category": "ai",
