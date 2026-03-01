@@ -1,0 +1,9 @@
+{
+  "id": "factor",
+  "name": "Factor",
+  "category": "software",
+  "price_usd": 220.0,
+  "type": "global",
+  "official_url": "Search \"Factor Meals\" on Google",
+  "official_cancel_url": "https://www.factor75.com/"
+}
