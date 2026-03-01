@@ -1,0 +1,9 @@
+{
+  "id": "fabletics",
+  "name": "Fabletics",
+  "category": "software",
+  "price_usd": 54.95,
+  "type": "global",
+  "official_url": "www.fabletics.com",
+  "official_cancel_url": "www.fabletics.com"
+}
