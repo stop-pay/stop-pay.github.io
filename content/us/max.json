@@ -1,0 +1,24 @@
+{
+  "title": "How to unsubscribe from Max",
+  "translated_name": "max",
+  "description": "Learn how to cancel your Max (formerly HBO Max) subscription. Follow these steps to unsubscribe whether you signed up directly through Max or via a third-party provider like Apple, Google, or Amazon.",
+  "steps": {
+    "steps_1": {
+      "title": "Cancel Max Subscription via Max Website/App",
+      "description": "If you subscribed directly through Max:\n\n*   Go to the Max website or app and sign in to your account.\n*   Go to your Profile or Account section.\n*   Select Subscription or Billing.\n*   Choose Cancel Subscription and confirm your cancellation."
+    },
+    "steps_2": {
+      "title": "Cancel Max Subscription via Third-Party Provider",
+      "description": "If you subscribed through a third-party provider:\n\n*   Determine where you subscribed to Max (directly through Max or a third-party provider).\n*   Cancel your subscription through that provider's platform."
+    },
+    "steps_3": {
+      "title": "Cancel Max Subscription via Apple App Store",
+      "description": "To cancel via the Apple App Store:\n\n*   Go to your iPhone/iPad settings.\n*   Tap your Apple ID.\n*   Tap Subscriptions.\n*   Tap Max.\n*   Tap Cancel Subscription."
+    },
+    "steps_4": {
+      "title": "Cancel Max Subscription via Google Play Store",
+      "description": "To cancel via the Google Play Store:\n\n*   Open the Play Store.\n*   Tap your profile icon.\n*   Tap Payments & subscriptions.\n*   Tap Subscriptions.\n*   Tap Max.\n*   Tap Cancel subscription."
+    }
+  },
+  "seo_text": "Cancel Max subscription, unsubscribe from Max, HBO Max cancellation, cancel HBO Max subscription, Max subscription, streaming service cancellation"
+}
