@@ -60,6 +60,15 @@
       "official_cancel_url": "badoo.com"
     },
     {
+      "id": "blue-apron",
+      "name": "Blue Apron",
+      "category": "software",
+      "price_usd": 9.99,
+      "type": "global",
+      "official_url": "https://www.blueapron.com",
+      "official_cancel_url": "https://www.blueapron.com"
+    },
+    {
       "id": "bolt-food-bolt-plus",
       "name": "Bolt Food (Bolt Plus)",
       "category": "software",
