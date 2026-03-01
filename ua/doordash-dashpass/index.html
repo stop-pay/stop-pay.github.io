@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPay</title>
+    
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body data-theme="dark">
+
+<!-- 🔥 ГОЛОВНИЙ КОНТЕЙНЕР -->
+<div class="main-wrapper">
+
+    <nav>
+        <div class="custom-select" id="langSelector" translate="no">
+            <div class="select-btn" onclick="toggleMenu()">
+                <div style="display: flex; align-items: stretch; gap: 8px;">
+                    <img src="" id="currentFlag" class="flag-icon">
+                    <span id="currentShort">UA</span>
+                </div>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="select-dropdown" id="dropdownList"></div>
+        </div>
+        <button class="btn-tool" onclick="toggleTheme()" id="themeBtn">🌙</button>
+    </nav>
+
+    <header>
+        <div class="counter-container">
+            <span id="counterLabel">Saved:</span>
+            <span id="moneyCounter">0</span>
+            <span id="currency">₴</span>
+        </div>
+
+        <div id="mainTitle">
+            <a href="/">
+                <img src="/Logo.png" alt="StopPay">
+            </a>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <div id="isServicePage" data-service-id="doordash-dashpass" style="display:none;"></div>
+
+<div class="service-page">
+    <h1 class="page-title">Як скасувати підписку DoorDash (DashPass)</h1>
+    <p class="page-desc">Ви можете скасувати свою підписку DashPass через додаток DoorDash або вебсайт. Виконайте ці кроки, щоб скасувати підписку та уникнути майбутніх платежів.</p>
+
+    <div class="steps-container">
+        <div class="instruction-card"><h2 class="step-card-title">СКАСУЙТЕ DOORDASH DASHPASS ЧЕРЕЗ ВЕБСАЙТ</h2><div class="step-card-content">Щоб скасувати підписку DoorDash DashPass через вебсайт:<br><br><ul class='steps-list-inner'><li>Відкрийте вебсайт DoorDash (doordash.com) і увійдіть.<br></li><li>Торкніться або клацніть розділ «Обліковий запис».<br></li><li>Знайдіть і виберіть «Керувати DashPass».<br></li><li>Торкніться або клацніть «Призупинити або скасувати членство» або «Завершити підписку».<br></li><li>Підтвердьте скасування, коли з’явиться запит.<br></li><li>Перевірте свою електронну пошту, щоб отримати підтвердження скасування.</li></ul></div></div><div class="instruction-card"><h2 class="step-card-title">СКАСУЙТЕ DOORDASH DASHPASS ЧЕРЕЗ ДОДАТОК</h2><div class="step-card-content">Щоб скасувати підписку DoorDash DashPass через мобільний додаток:<br><br><ul class='steps-list-inner'><li>Відкрийте додаток DoorDash і увійдіть.<br></li><li>Торкніться або клацніть розділ «Обліковий запис».<br></li><li>Знайдіть і виберіть «Керувати DashPass».<br></li><li>Торкніться або клацніть «Призупинити або скасувати членство» або «Завершити підписку».<br></li><li>Підтвердьте скасування, коли з’явиться запит.<br></li><li>Перевірте свою електронну пошту, щоб отримати підтвердження скасування.</li></ul></div></div>
+    </div>
+
+    <div class="action-section">
+        <a href="https://help.doordash.com/s/article/How-to-Cancel-DashPass?language=en_US" 
+           class="btn-cancel" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="handlePriceAdd('9.99', 'doordash-dashpass')">
+            Скасувати підписку
+        </a>
+        
+        <div class="link-hint">
+            <p>ℹ️ <b>Порада:</b> Це пряме посилання на сторінку керування послугами. Якщо воно не працює (сервіси іноді «ховають» ці сторінки), просто перейдіть на <a href="https://www.doordash.com" target="_blank" onclick="handlePriceAdd('9.99', 'doordash-dashpass')">головну сторінку</a> та скористайтеся кроками з інструкції вище.</p>
+        </div>
+    </div>
+
+    
+                    <div class="info-update-block" style="text-align: center; margin-top: 40px; border-top: 1px solid var(--border); padding-top: 20px;">
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text); opacity: 0.8; max-width: 700px; margin: 0 auto;">Ми постійно перевіряємо актуальність наших інструкцій, щоб ви могли швидко та без зайвих зусиль скасувати непотрібні підписки. Якщо ви помітили неточність або сервіс змінив інтерфейс — натисніть на кнопку <b>«?»</b>. Ваше зауваження допоможе нам стати кращими!</p>
+                        <div style="opacity: 0.5; font-size: 0.8rem; margin-top: 15px;">Дата останнього оновлення: 01.03.2026</div>
+                    </div>
+                    
+</div>
+
+    </main>
+
+    <div class="donate-section">
+        <h3 id="donateTitle"></h3>
+        <p id="donateDesc"></p>
+        <a href="https://buymeacoffee.com/pandadream" 
+           class="btn-donate" 
+           id="donateBtn" 
+           target="_blank">
+           ☕ Buy Me a Coffee
+        </a>
+    </div>
+
+    <div id="seoContent" class="seo-block"></div>
+
+    <footer>
+        <div class="footer-main">
+            <span id="footerCreated">Автор:</span> 
+            <span class="brand-name">PandaDream Game Studio</span> 
+            <span class="panda-emoji">🐼</span>
+        </div>
+        <div id="footerSlogan" class="footer-slogan"></div>
+    </footer>
+
+</div>
+<!-- 🔥 КІНЕЦЬ main-wrapper -->
+
+
+<!-- ❗ FAB І МОДАЛКА ЗАЛИШАЮТЬСЯ ПОЗА WRAPPER -->
+<div class="fab-btn" id="fabBtn" onclick="handleFabClick()">
+    <span id="fabIcon">+</span>
+</div>
+
+<div class="modal-overlay" id="feedbackModal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <h3 id="modalTitle">Додати сервіс</h3>
+        <p id="modalDesc">Напишіть назву, і ми додамо його.</p>
+        <input type="text" 
+               id="aiServiceInput" 
+               class="modal-input" 
+               placeholder="Назва сервісу...">
+        <button class="modal-btn" 
+                id="modalBtn" 
+                onclick="sendToAi()">
+                Надіслати
+        </button>
+    </div>
+</div>
+
+<script src="/assets/js/script.js"></script>
+
+</body>
+</html>
