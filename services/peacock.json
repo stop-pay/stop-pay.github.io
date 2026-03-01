@@ -1,0 +1,9 @@
+{
+  "id": "peacock",
+  "name": "Peacock",
+  "category": "tv",
+  "price_usd": 7.99,
+  "type": "global",
+  "official_url": "www.peacocktv.com",
+  "official_cancel_url": "www.peacocktv.com"
+}

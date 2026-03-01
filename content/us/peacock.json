@@ -1,0 +1,24 @@
+{
+  "title": "How to unsubscribe from Peacock",
+  "translated_name": "peacock",
+  "description": "You can cancel your Peacock subscription online through their website or through your third-party provider (e.g., Apple, Amazon, Roku, Xfinity). Canceling the subscription will stop future payments. You'll retain access until the end of your current billing cycle.",
+  "steps": {
+    "web": {
+      "title": "Cancel Peacock Subscription via Website",
+      "description": "To cancel your Peacock subscription via their website:\n\n*   Go to peacocktv.com and sign in to your account.\n*   Select your profile icon in the top right corner.\n*   Click on Account.\n*   Navigate to Plans & Payments and select Change or Cancel Plan.\n*   Select Cancel Plan and confirm your cancellation."
+    },
+    "app_ios": {
+      "title": "Cancel Peacock Subscription via Apple/iOS",
+      "description": "To cancel your Peacock subscription via Apple/iOS:\n\n*   Go to Settings > [Your Name] > Subscriptions."
+    },
+    "app_amazon": {
+      "title": "Cancel Peacock Subscription via Amazon/Fire TV",
+      "description": "To cancel your Peacock subscription via Amazon/Fire TV:\n\n*   Go to Apps > Appstore > Subscriptions."
+    },
+    "app_roku": {
+      "title": "Cancel Peacock Subscription via Roku",
+      "description": "To cancel your Peacock subscription via Roku:\n\n*   Go to the Home screen.\n*   Select the Peacock channel.\n*   Press the * button on your remote.\n*   Select Manage Subscription.\n*   Turn off auto-renew."
+    }
+  },
+  "seo_text": "Cancel Peacock subscription, stop Peacock payments, Peacock cancellation guide, unsubscribe from Peacock TV, Peacock subscription management."
+}
