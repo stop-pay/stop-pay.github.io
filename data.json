@@ -618,6 +618,15 @@
       "official_cancel_url": "https://www.pyszne.pl"
     },
     {
+      "id": "siriusxm",
+      "name": "SiriusXM",
+      "category": "music",
+      "price_usd": 10.99,
+      "type": "global",
+      "official_url": "https://www.siriusxm.com",
+      "official_cancel_url": "https://www.siriusxm.com/myaccount"
+    },
+    {
       "id": "skvot",
       "name": "Skvot",
       "category": "software",
