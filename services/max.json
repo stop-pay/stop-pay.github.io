@@ -1,6 +1,6 @@
 {
   "id": "max",
-  "name": "[ADD_SERVICE] Max (колишній HBO Max)",
+  "name": "Max",
   "category": "tv",
   "price_usd": 10.99,
   "type": "global",
