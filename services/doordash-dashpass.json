@@ -1,0 +1,9 @@
+{
+  "id": "doordash-dashpass",
+  "name": "DoorDash (DashPass)",
+  "category": "software",
+  "price_usd": 9.99,
+  "type": "global",
+  "official_url": "https://www.doordash.com",
+  "official_cancel_url": "https://help.doordash.com/s/article/How-to-Cancel-DashPass?language=en_US"
+}
