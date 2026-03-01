@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Blue Apron",
+  "translated_name": "blue apron",
+  "description": "Blue Apron has moved away from a traditional subscription model, allowing you to order meals à la carte without a recurring commitment. However, if you have a Blue Apron+ membership or an Autoship & Save plan, you may want to cancel it. Here's how:",
+  "steps": {
+    "web": {
+      "title": "Cancel Blue Apron Subscription via Website",
+      "description": "To cancel your Blue Apron subscription via the website:\n\n*   Sign in to your account on the Blue Apron website.\n*   Go to Account → Blue Apron+ (or Autoship & Save).\n*   Select \"Cancel Membership\" or \"Cancel Plan\".\n*   Follow the on-screen prompts to complete the cancellation.\n*   Ensure you cancel before the cutoff date for your next order, typically 6 to 7 days before your delivery day."
+    },
+    "app": {
+      "title": "Cancel Blue Apron Subscription via Mobile App",
+      "description": "To cancel your Blue Apron subscription via the mobile app:\n\n*   Sign in to your account on the Blue Apron mobile app.\n*   Go to Account → Blue Apron+ (or Autoship & Save).\n*   Select \"Cancel Membership\" or \"Cancel Plan\".\n*   Follow the on-screen prompts to complete the cancellation.\n*   Ensure you cancel before the cutoff date for your next order, typically 6 to 7 days before your delivery day."
+    },
+    "email": {
+      "title": "Cancel Blue Apron Subscription via Email",
+      "description": "To cancel your Blue Apron subscription via email:\n\n*   Send a cancellation request to cancellations@blueapron.com.\n*   Ensure you cancel before the cutoff date for your next order, typically 6 to 7 days before your delivery day."
+    }
+  },
+  "seo_text": "Cancel your Blue Apron subscription easily by following these steps. Whether you have a Blue Apron+ membership or an Autoship & Save plan, you can cancel online or via email. Remember to cancel before the cutoff date to avoid being charged for the next order."
+}

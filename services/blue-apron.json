@@ -1,0 +1,9 @@
+{
+  "id": "blue-apron",
+  "name": "Blue Apron",
+  "category": "software",
+  "price_usd": 9.99,
+  "type": "global",
+  "official_url": "https://www.blueapron.com",
+  "official_cancel_url": "https://www.blueapron.com"
+}
