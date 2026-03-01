@@ -1,6 +1,6 @@
 {
   "id": "barkbox",
-  "name": "[ADD_SERVICE] BarkBox",
+  "name": "BarkBox",
   "category": "software",
   "price_usd": 14.99,
   "type": "global",
