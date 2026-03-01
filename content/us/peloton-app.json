@@ -1,0 +1,20 @@
+{
+  "title": "How to unsubscribe from Peloton App",
+  "translated_name": "peloton app",
+  "description": "Learn how to cancel your Peloton App subscription through the website, app stores, or connected devices. Follow our step-by-step guide to manage your membership and avoid unwanted charges.",
+  "steps": {
+    "web": {
+      "title": "Cancel Peloton Membership via Website",
+      "description": "To cancel your Peloton membership via the website:\n\n*   Go to the Peloton website and log in to your account.\n*   Navigate to 'My Account' and then 'Subscriptions'. Alternatively, go to Account > Membership or visit your membership page.\n*   Click 'Manage Membership'.\n*   Select the option to cancel or suspend your membership.\n*   Follow the on-screen prompts to confirm your cancellation.\n*   Check your email (including the spam folder) for a confirmation email."
+    },
+    "app_ios": {
+      "title": "Cancel Peloton Membership via Apple App Store (iOS)",
+      "description": "To cancel your Peloton membership via the Apple App Store (iOS):\n\n*   Open the Settings app.\n*   Tap your name.\n*   Tap 'Subscriptions'.\n*   Select 'Peloton'.\n*   Tap 'Cancel Subscription'."
+    },
+    "app_android": {
+      "title": "Cancel Peloton Membership via Google Play Store (Android)",
+      "description": "To cancel your Peloton membership via the Google Play Store (Android):\n\n*   Open the Google Play Store app.\n*   Tap your profile icon.\n*   Tap 'Payments & subscriptions' > 'Subscriptions'.\n*   Choose 'Peloton'.\n*   Tap 'Cancel Subscription'."
+    }
+  },
+  "seo_text": "Cancel Peloton App subscription, unsubscribe Peloton, Peloton App cancellation, manage Peloton membership, cancel Peloton online, Peloton subscription refund, Peloton free trial cancellation, Peloton subscription fees, Peloton App subscription tiers, cancel Peloton on iPhone, cancel Peloton on Android."
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Jak zrezygnować z subskrypcji SiriusXM",
+  "translated_name": "siriusxm",
+  "description": "Subskrypcje SiriusXM można anulować online, telefonicznie lub za pośrednictwem sklepów z aplikacjami stron trzecich, w zależności od tego, gdzie rozpoczęto subskrypcję. Aby uniknąć opłat, anuluj subskrypcję co najmniej 24 godziny przed datą odnowienia. Pamiętaj, że subskrypcje audio nie podlegają zwrotowi od 15 marca 2024 r.",
+  "steps": {
+    "web": {
+      "title": "Anulowanie subskrypcji SiriusXM przez stronę internetową",
+      "description": "Aby anulować subskrypcję SiriusXM przez stronę internetową:\n\n*   Przejdź na stronę internetową SiriusXM.\n*   Zaloguj się na swoje konto.\n*   Przejdź do sekcji „Zarządzaj moim kontem”.\n*   Postępuj zgodnie z instrukcjami anulowania podanymi na stronie internetowej.\n*   Potwierdź anulowanie, aby uniknąć przyszłych opłat."
+    },
+    "phone": {
+      "title": "Anulowanie subskrypcji SiriusXM przez telefon",
+      "description": "Aby anulować subskrypcję SiriusXM przez telefon:\n\n*   Zadzwoń pod numer 1-888-539-7474, aby porozmawiać z konsultantem.\n*   Potwierdź anulowanie, aby uniknąć przyszłych opłat."
+    },
+    "app_store": {
+      "title": "Anulowanie subskrypcji SiriusXM przez App Store",
+      "description": "Aby anulować subskrypcję SiriusXM przez App Store:\n\n*   Otwórz aplikację Ustawienia.\n*   Stuknij swoje imię i nazwisko.\n*   Stuknij Subskrypcje.\n*   Wybierz SiriusXM.\n*   Stuknij Anuluj subskrypcję."
+    },
+    "google_play": {
+      "title": "Anulowanie subskrypcji SiriusXM przez Google Play",
+      "description": "Aby anulować subskrypcję SiriusXM przez Google Play:\n\n*   Otwórz aplikację Sklep Google Play.\n*   Stuknij ikonę swojego profilu.\n*   Stuknij Płatności i subskrypcje.\n*   Stuknij Subskrypcje.\n*   Wybierz SiriusXM.\n*   Stuknij Anuluj subskrypcję."
+    }
+  },
+  "seo_text": "Anuluj subskrypcję SiriusXM online lub telefonicznie. Postępuj zgodnie z naszym przewodnikiem, aby uniknąć opłat za odnowienie. Dowiedz się, jak anulować subskrypcje SiriusXM zakupione przez App Store lub Google Play."
+}
