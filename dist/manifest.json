@@ -1,0 +1,23 @@
+{
+  "name": "StopPay",
+  "short_name": "StopPay",
+  "description": "Stop subscriptions easily",
+  "start_url": "/stop_pay/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a1a1a",
+  "theme_color": "#ff4757",
+  "icons": [
+    {
+      "src": "/stop_pay/assets/favicons/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/stop_pay/assets/favicons/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
