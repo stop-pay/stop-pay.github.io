@@ -187,12 +187,12 @@
     },
     {
       "id": "edera",
-      "name": "Ukrainian EdTech Studio EdEra",
+      "name": "EdEra",
       "category": "education",
       "price_usd": 0.0,
       "type": "ua",
-      "official_url": "https://edera.dev",
-      "official_cancel_url": "https://edera.dev"
+      "official_url": "https://www.ed-era.com/",
+      "official_cancel_url": "https://www.ed-era.com/"
     },
     {
       "id": "elestio-prometheus",
