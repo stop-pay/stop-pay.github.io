@@ -1,9 +1,9 @@
 {
-  "id": "apple",
-  "name": "Apple TV+",
-  "category": "tv",
-  "price_usd": 12.99,
-  "type": "global",
-  "official_url": "https://tv.apple.com/",
-  "official_cancel_url": "https://support.apple.com/en-us/HT202039"
+"id": "apple",
+        "name": "Apple TV+",
+        "category": "tv",
+        "price_usd": 9.99,
+        "type": "global",
+        "official_url": "https://tv.apple.com/",
+        "official_cancel_url": "https://support.apple.com/en-us/HT202039"
 }
