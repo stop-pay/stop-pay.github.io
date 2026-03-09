@@ -1,9 +1,9 @@
 {
-  "id": "badoo",
-  "name": "Badoo",
-  "category": "software",
-  "price_usd": 9.99,
-  "type": "global",
-  "official_url": "badoo.com",
-  "official_cancel_url": "badoo.com"
+"id": "badoo",
+        "name": "Badoo",
+        "category": "lifestyle",
+        "price_usd": 12.99,
+        "type": "global",
+        "official_url": "https://badoo.com",
+        "official_cancel_url": "https://badoo.com/settings/payment"
 }
