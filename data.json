@@ -124,12 +124,12 @@
     },
     {
       "id": "claude",
-      "name": "Claude",
+      "name": "Claude Pro",
       "category": "ai",
       "price_usd": 20.0,
       "type": "global",
-      "official_url": "https://www.anthropic.com/",
-      "official_cancel_url": null
+      "official_url": "https://claude.ai/",
+      "official_cancel_url": "https://claude.ai/settings/billing"
     },
     {
       "id": "coursera",
